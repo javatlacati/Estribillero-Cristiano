@@ -1,0 +1,7 @@
+\item\ 1. Abba Padre\hbox {, 1}
+\item\ 2. A Cristo solo a Cristo\hbox {, 2}
+\item\ 3. A Dios el Padre Celestial\hbox {, 3}
+\item\ 4. Admirable\hbox {, 4}
+\item\ 5. A Nuestro Padre Dios\hbox {, 5}
+\item\ 6. Garment Of Praise\hbox {, 6}
+\item\ 7. Par\'abola\hbox {, 7}

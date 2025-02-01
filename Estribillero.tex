@@ -78,7 +78,7 @@
 
 
 
-  \renewcommand{\SBChorusTag}{Coro:}
+\renewcommand{\SBChorusTag}{Coro:}
 %%%
 % Revision Date and Release Date definitions.
 %
@@ -118,7 +118,7 @@
 % Title page information.
 %%%
 \title{Cuaderno de Himnos Tradicionales y Contemporáneos}
-\author{Javatlacati}
+\author{Ruslan L\'opez}
 \date{\'Ultima Revisi\'on:  \RevDate}
 
 %%%
@@ -136,33 +136,6 @@
 \newcommand{\LFootFont}{\scriptsize}            % = cmr8   at  8pt
 \newcommand{\CFootFont}{\tiny\myTinySF}         % = cmss8  at  8pt
 \newcommand{\RFootFont}{\scriptsize}            % = cmr8   at  8pt
-
-% comandos para pintar acordes
-\newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
-\newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
-\newcommand{\A}{\chord{t}{x,n,p2,p2,p2,n}{A}}
-\newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
-\newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
-\newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
-\newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
-\newcommand{\Bseven}{\chord{t}{x,f1p2,p4,f1p2,p4,f1p2,}{B7}}
-\newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
-\newcommand{\CssevenLight}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
-\newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
-\newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
-\newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
-\newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
-\newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
-\newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
-\newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
-\newcommand{\Eseven}{\chord{t}{n,p2,p2,p1,p3,n}{E7}}
-\newcommand{\Fsmin}{\chord{t}{f1p2,p4,p4,f1p2,f1p2,f1p2,}{F\#m}}
-\newcommand{\FsminLight}{\chord{t}{x,x,f3p4,f1p2,f1p2,f1p2,}{F\#m}}
-\newcommand{\FsminBasSeveN}{\chord{t}{x,x,f3p3,f1p2,f1p2,f1p2,}{F\#m/E\#}}
-\newcommand{\FsminBasSeven}{\chord{t}{x,x,f2p2,f1p2,f1p2,f1p2,}{F\#m/E}}
-\newcommand{\FsminSeven}{\chord{t}{f1p2,p4,p4,f1p2,p5,f1p2,}{F\#7m}}
-\newcommand{\G}{\chord{t}{p3,p2,n,p0,p2,p2}{G}}
-\newcommand{\Gsminseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4,}{G\#7}}
 
 %%%
 % Turn on and define fancy page heading/footing definition.
@@ -401,7 +374,7 @@ En quien confío yo;
   \begin{SBVerse}
 A nuestro Salvador
 Demos con fe loor
-½Gloria a Él!
+¡Gloria a Él!
 Su sangre derram\'o
 Con ella me lav\'o,
 Y el cielo me abri\'o
@@ -438,39 +411,122 @@ Al Trino Dios!
 \end{song}
 %\WBPageBrk %para forzar salto de pagina
 
-\begin{song}{Garment Of Praise}{C}
-  {}
-  {}
-  {Isaiah~61:3}
-  {\NotCCLIed}
+\begin{song}{Adonai}{G}
+{} %copyright \SBPubDom
+{Marcos Witt}
+{} %pasaje
+{} %\NotCCLIed
 
-  \renewcommand{\RevDate}{February~11,~1993}
-  %\SBRef{}{}
-  \FLineIdx{I have put on my garment of praise}
+%  \renewcommand{\RevDate}{February~11,~1993}
+%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
-  \begin{SBOpGroup}
-    I have \Ch{C}{put} on my garment of \Ch{G7}{praise,}
-    
-    I have \Ch{G7}{put} on my garment of \Ch{C}{prai}\Ch{C7}{se}
-    
-    And the \Ch{F}{spirit} of heaviness, is \Ch{C}{gone} from \Ch{Am}{me.}
-    
-    I have \Ch{C}{put} on my \Ch{G7}{gar}ment of \Ch{C}{praise!} \ChX{[}{}\ChX{F}{} \ChX{C}{}\ChX{]}{}
-  \end{SBOpGroup}
+    \begin{SBChorus}
+        Oh Adonai. Oh Adonai.
+        Dios del Universo, Señor de la Creación.
+    \end{SBChorus}
 
-  \begin{SBExtraKeys}{
-    \STitle{Garment Of Praise}{D}
+    \begin{SBVerse}
+        Los cielos cuentan tu gloria,
+        tus hijos hoy te adoran,
+        por todas tus maravillas, Adonai.
+    \end{SBVerse}
+
+    \ifChordBk
+    \begin{SBOpGroup}
+        Acordes:
+%\keyboardtwooctaves[Do][Fso][Ao]
+        \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+    \end{SBOpGroup}
+    \fi
+\end{song}
+
+\begin{song}{
+Ahora Que Estoy Contigo}{G}
+{\SBPubDom} %copyright \SBPubDom
+{}
+{} %pasaje
+{} %\NotCCLIed
+
+%  \renewcommand{\RevDate}{February~11,~1993}
+%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+
+    \begin{SBVerse}
+	Ahora que estoy contigo en tus brazos de amor,
+	puedo escuchar de Tí y de mí un latido
+	 el tuyo dice siempre te amaré, el mío te adoraré,
+	 que dulce comunión estar contigo.
+	 Ahora que estoy contigo, ante tus pies, oh Padre, yo
+	 me rindo,
+	 y en mi necesidad nada te pediré, solo te adoraré
+    \end{SBVerse}
+
+    \ifChordBk
+    \begin{SBOpGroup}
+        Acordes:
+%\keyboardtwooctaves[Do][Fso][Ao]
+        \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+    \end{SBOpGroup}
+    \fi
+\end{song}
+
+\begin{song}{Me dice que me ama}{C}
+{} %copyright \SBPubDom
+{Jesús Adrián Romero}
+{} %pasaje
+{\NotCCLIed} %\NotCCLIed
+
+%  \renewcommand{\RevDate}{February~11,~1993}
+    \FLineIdx{Me dice que me ama}
+    \SBRef{El aire de tu casa}{2005}%fuente \#
 
     \begin{SBOpGroup}
-      I have \Ch{D}{put} on my garment of \Ch{A7}{praise,}
-      
-      I have \Ch{A7}{put} on my garment of \Ch{D}{prai}\Ch{D7}{se}
-      
-      And the \Ch{G}{spirit} of heaviness, is \Ch{D}{gone} from \Ch{Bm}{me.}
-      
-      I have \Ch{D}{put} on my \Ch{A7}{gar}ment of \Ch{D}{praise!} \Ch{[}{}\Ch{G}{} \Ch{D}{}\Ch{]}{}
+        \Ch{G} \Ch{C} \Ch{Am} \Ch{D}
+        Intro (Teclado)
     \end{SBOpGroup}
-  }\end{SBExtraKeys}
+
+    \begin{SBVerse}
+        Me dice que me ama cuando escucho llover,
+        G                 C
+        me dice que ama con un atardecer,
+        G     C        Em        D
+        lo dice sin palabras, con las olas del mar,
+        Em                C   D
+        lo dice en la mañana con mi respirar.
+    \end{SBVerse}
+
+    \begin{SBChorus}
+        G             C             G   C  G
+        //Me dice que me ama y que conmigo quiere estar,
+        C           Am7            D
+        me dice que me busca cuando salgo yo a pasear,
+        Am7          C            Em
+        que ha hecho lo que existe para llamar mi atención,
+        Am          D          G   C  D
+        que quiere conquistarme y alegrar mi corazón.
+    \end{SBChorus}
+
+    \begin{SBChorus}
+        G                   C
+        Me dice que me ama cuando veo la cruz,
+        G                           C
+        sus manos extendidas así tan grande es su amor,
+        G   C       Em        D
+        lo dicen las heridas de sus manos y pies,
+        Em              C   D
+        me dice que me ama una y otra vez.
+    \end{SBChorus}
+    \ifChordBk
+    \begin{SBOpGroup}
+        Acordes:
+%\keyboardtwooctaves[Do][Fso][Ao]
+        \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor~~~~~~~~~~~~~~~~~~\upchord{\keyboard[Do][Go][Bo] \G}{~~~Sol} Mayor
+
+
+
+        \upchord{\keyboard[Do][Fso][Bo]\Bm}{Si} Menor
+    \end{SBOpGroup}
+
+    \fi
 \end{song}
 
 \begin{song}{Parábola}{G}

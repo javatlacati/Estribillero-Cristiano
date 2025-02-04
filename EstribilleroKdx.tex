@@ -34,9 +34,9 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt,twocolumn]{book}
-\usepackage{latexsym,fancyhdr}
-\usepackage[wordbk]{songbook}
+%\documentclass[12pt,twocolumn]{book}
+%\usepackage{latexsym,fancyhdr}
+%\usepackage[wordbk]{songbook}
 
 %%%
 % Revision Date and Release Date definitions.
@@ -44,8 +44,8 @@
 %       \RelDate - The last time this songbook was released.
 %       \RevDate - The last time this file was revised in any way.
 %%%
-\newcommand{\RelDate}{30~May'96}
-\newcommand{\RevDate}{\RelDate}
+%\newcommand{\RelDate}{30~May'96}
+%\newcommand{\RevDate}{\RelDate}
 
 %%%
 % Redefine fonts from SongBook style that I don't like, and define
@@ -54,18 +54,18 @@
 \font\myTinySF=cmss8    at  8pt
 \font\myHugeSF=cmssbx10 at 25pt
 \renewcommand{\CpyRtInfoFont}{\tiny\myTinySF}
-\newcommand{\myTitleFont}{\Huge\myHugeSF}
-\newcommand{\mySubTitleFont}{\large\sf}
+%\newcommand{\myTitleFont}{\Huge\myHugeSF}
+%\newcommand{\mySubTitleFont}{\large\sf}
 
 %%%
 % Define fonts to use in the headers and footers of the songbook.
 %%%
-\newcommand{\LHeadFont}{\normalsize}            % = cmr12  at 12pt
-\newcommand{\CHeadFont}{\normalsize\rm}         % = cmr12  at 12pt
-\newcommand{\RHeadFont}{\normalsize}            % = cmr12  at 12pt
-\newcommand{\LFootFont}{\scriptsize}            % = cmr8   at  8pt
-\newcommand{\CFootFont}{\tiny\myTinySF}         % = cmss8  at  8pt
-\newcommand{\RFootFont}{\scriptsize}            % = cmr8   at  8pt
+%\newcommand{\LHeadFont}{\normalsize}            % = cmr12  at 12pt
+%\newcommand{\CHeadFont}{\normalsize\rm}         % = cmr12  at 12pt
+%\newcommand{\RHeadFont}{\normalsize}            % = cmr12  at 12pt
+%\newcommand{\LFootFont}{\scriptsize}            % = cmr8   at  8pt
+%\newcommand{\CFootFont}{\tiny\myTinySF}         % = cmss8  at  8pt
+%\newcommand{\RFootFont}{\scriptsize}            % = cmr8   at  8pt
 
 %%%
 % Turn on and define fancy page heading/footing definition.
@@ -76,7 +76,7 @@
 \addtolength{\headwidth}{\marginparwidth}
 \renewcommand{\footrulewidth}{0.4pt}
 \lhead{\LHeadFont A Church Songbook}
-       \chead{\CHeadFont Índice~Tonal({\rm\thepage})}
+       \chead{\CHeadFont \'Indice~Tonal({\rm\thepage})}
        \rhead{\RHeadFont\RelDate}
 
 \lfoot{\LFootFont Property of a Church}
@@ -99,19 +99,19 @@
 %%                                                      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\begin{document}
+%\begin{document}
 
 %%%
 % Index begins.
 %%%
 {\parindent 8pt
-  {\myTitleFont --- Índice Tonal ---}}\par
+  {\myTitleFont --- \'Indice Tonal ---}}\par
 \vskip 20pt
 
-\input{Estribilero.kdx}
-
-\end{document}
-\bye
+\input{Estribillero.kdx}
+%
+%\end{document}
+%\bye
 %
 %%%
 % Document ends.

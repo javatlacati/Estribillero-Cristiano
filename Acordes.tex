@@ -1,38 +1,76 @@
-% comandos para pintar acordes
-\newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
-\newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
-\newcommand{\A}{\chord{t}{x,n,p2,p2,p2,n}{A}}
-\newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
-\newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
-\newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
-\newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
-\newcommand{\Bseven}{\chord{t}{x,f1p2,p4,f1p2,p4,f1p2,}{B7}}
-\newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
-\newcommand{\CssevenLight}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
-\newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
-\newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
-\newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
-\newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
-\newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
-\newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
-\newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
-\newcommand{\Eseven}{\chord{t}{n,p2,p2,p1,p3,n}{E7}}
-\newcommand{\Fsmin}{\chord{t}{f1p2,p4,p4,f1p2,f1p2,f1p2,}{F\#m}}
-\newcommand{\FsminLight}{\chord{t}{x,x,f3p4,f1p2,f1p2,f1p2,}{F\#m}}
-\newcommand{\FsminBasSeveN}{\chord{t}{x,x,f3p3,f1p2,f1p2,f1p2,}{F\#m/E\#}}
-\newcommand{\FsminBasSeven}{\chord{t}{x,x,f2p2,f1p2,f1p2,f1p2,}{F\#m/E}}
-\newcommand{\FsminSeven}{\chord{t}{f1p2,p4,p4,f1p2,p5,f1p2,}{F\#7m}}
-\newcommand{\G}{\chord{t}{p3,p2,n,p0,p2,p2}{G}}
-\newcommand{\Gsminseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4,}{G\#7}}
+%\begin{document}
 
-\begin{document}
+\ifguitarra
 
-\textbf{Acodes}
+\lhead{\LHeadFont Acodes~para~Guitarra}
+\chead{\CHeadFont ({\rm\thepage})}
+\rhead{\RHeadFont\RelDate}
+{\parindent 8pt
+        {\myTitleFont --- Acodes para Guitarra ---}}\par
+\vskip 20pt
+\textbf{Acodes Mayores}
 
-\upchord{\keyboard[Do][Fso][Ao]\D}{Re Mayor - D}
+%\small{El s\'imbolo \# significa sostenido y {\flat}~significa~bemol}
+\small
+\upchord{\A}{La Mayor} \upchord{\B}{Si Mayor} \upchord{\C}{Do Mayor} \upchord{\D}{Re Mayor} \upchord{\E}{Mi Mayor} \upchord{\F}{Fa Mayor} \upchord{\G}{Sol Mayor}
 
-\upchord{\keyboard[Do][Go][Bo]\G}{Sol Mayor - G}
+\upchord{\As}{A\#/$B\flat$ Mayor} \upchord{\Cs}{C\#/$D\flat$ Mayor} \upchord{\Ds}{D\#/$E\flat$ Mayor}  \upchord{\Fs}{F\#/$G\flat$ Mayor} \upchord{\Gs}{G\#/$A\flat$ Mayor} \upchord{\As}{A\#/$B\flat$ Mayor}
 
-\upchord{\keyboard[Do][Fso][Bo]\Bm}{Si} Menor - Bm
+\normalsize
 
-\end{document}
+\textbf{Acodes Menores}
+
+\small
+\upchord{\Am}{La} Menor \upchord{\Bm}{Si} Menor \upchord{\Cm}{Do} Menor \upchord{\Dm}{Re} Menor \upchord{\Em}{Mi} Menor \upchord{\Fm}{Fa} Menor \upchord{\Gm}{Sol} Menor
+
+\upchord{\Asm}{\small{A\#/B\flat Menor}} \upchord{\Csm}{\small{C\#/D\flat Menor}} \upchord{\Dsm}{\small{D\#/E\flat Menor}}  \upchord{\Fsm}{\small{F\#/G\flat Menor}} \upchord{\Gsm}{\small{G\#/A\flat Menor}} \upchord{\Asm}{\small{A\#/B\flat Menor}}
+\normalsize
+
+\vskip 20pt
+\textbf{Acodes Mayores S\'eptima}
+
+\upchord{\Gseven}{\small{Sol Mayor s\'eptima}}
+\vskip 20pt
+
+\textbf{Acodes Menores S\'eptima}
+
+\small
+\upchord{\Amseven}{La} Menor s\'eptima
+\normalsize
+
+\vskip 20pt
+\textbf{Acodes Con Bajo cambiado}
+
+\small
+\upchord{\ACs}{La Mayor bajo C\#}
+\upchord{\DA}{Re Mayor bajo A}
+\upchord{\DFs}{Re Mayor bajo F\#}
+\upchord{\GB}{Sol Mayor Bajo B}
+\normalsize
+
+\clearpage
+\fi
+
+\ifpiano
+\lhead{\LHeadFont Acodes~para~Piano}
+{\parindent 8pt
+        {\myTitleFont --- Acordes para Piano ---}}\par
+\vskip 30pt
+\textbf{Acodes Mayores}
+\vskip 25pt
+\upchord{\DPiano}{Re Mayor} - D
+\vskip 25pt
+\upchord{\GPiano}{Sol Mayor}
+
+\textbf{Acodes Menores}
+\vskip 25pt
+\vskip 25pt
+\upchord{\BmPiano}{Si} Menor
+\vskip 25pt
+\upchord{\EmPiano}{Mi} Menor
+\vskip 25pt
+\upchord{\keyboardf[Ao][Cso][Eo]}{La} Mayor
+\clearpage
+\fi
+%\end{document}
+%\bye

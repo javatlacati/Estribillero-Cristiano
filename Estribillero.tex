@@ -61,24 +61,36 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\documentclass[12pt, spanish]{book}
+\documentclass[12pt, spanish, titlepage]{book}
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{babel}
 \usepackage{mypiano}
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
-\usepackage[unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=false, 
- breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=false]
- {hyperref}
-\usepackage[chordbk]{songbook}                  %% Words & Chords edition.
+\usepackage{imakeidx}
+\usepackage[unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+    breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
+\usepackage[chordbk]{songbook} %% Words & Chords edition.
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
 %%\usepackage[wordbk]{songbook}                 %% Words Only edition.
 %%\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
 
 
+% genera acordes de guitarra
+\newif\ifguitarra
+
+%genera acordes de piano
+\newif\ifpiano
+
+\guitarratrue
+\pianofalse
+
+
 
 \renewcommand{\SBChorusTag}{Coro:}
+\newcommand{\myTitleFont}{\Huge\myHugeSF}
+\newcommand{\mySubTitleFont}{\large\sf}
 %%%
 % Revision Date and Release Date definitions.
 %
@@ -114,6 +126,81 @@
 \newcommand{\PGranted}{\relax}
 \newcommand{\PPending}{{\CpyRtInfoFont (Permission Pending)}}
 
+% comandos para pintar acordes de guitarra
+\newcommand{\A}{\chord{t}{x,n,p2,p2,p2,n}{A}}
+\newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
+\newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
+\newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
+\newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
+\newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
+
+\newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
+\newcommand{\Bflat}{\chord{t}{p1,p1,p3,p3,p3,p1}{B\flat}}
+
+\newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
+\newcommand{\Bseven}{\chord{t}{x,f1p2,p4,f1p2,p4,f1p2,}{B7}}
+\newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
+\newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
+\newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
+\newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
+\newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
+
+\newcommand{\C}{\chord{t}{x,p3,n,p2,p1,n}{C}}
+\newcommand{\Cm}{\chord{t}{x,p3,p1,n,p1,p3}{Cm}}
+
+\newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C\#}}
+\newcommand{\CssevenLight}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
+
+\newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
+\newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
+\newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
+\newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
+\newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
+\newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F\#}}
+
+\newcommand{\E}{\chord{t}{n,p2,p2,p1,n,n}{E}}
+\newcommand{\Eseven}{\chord{t}{n,p2,p2,p1,p3,n}{E7}}
+\newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
+\newcommand{\Em}{\chord{t}{n,p2,p2,n,n,n}{Em}}
+\newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
+\newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
+
+\newcommand{\F}{\chord{t}{1,p3,p3,p2,1,1}{F}}
+
+\newcommand{\Fsm}{\chord{t}{f1p2,p4,p4,f1p2,f1p2,f1p2,}{F\#m}}
+\newcommand{\FsminLight}{\chord{t}{x,x,f3p4,f1p2,f1p2,f1p2,}{F\#m}}
+\newcommand{\FsminBasSeveN}{\chord{t}{x,x,f3p3,f1p2,f1p2,f1p2,}{F\#m/E\#}}
+\newcommand{\FsminBasSeven}{\chord{t}{x,x,f2p2,f1p2,f1p2,f1p2,}{F\#m/E}}
+\newcommand{\FsminSeven}{\chord{t}{f1p2,p4,p4,f1p2,p5,f1p2,}{F\#7m}}
+
+\newcommand{\G}{\chord{t}{p3,p2,n,n,n,p2}{G}}
+\newcommand{\Gseven}{\chord{t}{p3,p2,n,n,n,p1}{G7}}
+\newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4,}{G\#7}}
+\newcommand{\GB}{\chord{t}{n,p2,n,n,p3,n}{G/B}}
+\newcommand{\Gnine}{\chord{t}{p3,p2,n,p0,p2,p2}{G9}}
+
+% comandos para pintar acordes de piano
+\newcommand{\APiano}{\keyboardf[Ao][Cso][Eo]}
+\newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
+\newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
+\newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
+
+\newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
+
+\newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
+
+\newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
+\newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
+\newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
+
+\newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
+
+\newcommand{\FsmPiano}{\keyboard[Cso][Fso][Ao]}
+
+\newcommand{\GPiano}{\keyboard[Do][Go][Bo]}
+\newcommand{\GsevenPiano}{\keyboard[Do][Fo][Go][Bo]}
+\newcommand{\GBPiano}{\keyboardtwooctaves[Bo][Dt][Gt]}
+
 %%%
 % Title page information.
 %%%
@@ -143,37 +230,37 @@
 \pagestyle{fancy}
 
 \ifChordBk
-  % It's a words & chords songbook...
-  \addtolength{\headwidth}{\marginparsep}
-  \addtolength{\headwidth}{\marginparwidth}
-  \renewcommand{\headrulewidth}{0.4pt}
-  \renewcommand{\footrulewidth}{0.4pt}
-  \fancyhead[LE,RO]{\LHeadFont\emph{\leftmark\/}\SBContinueMark}
-  \fancyhead[CE,CO]{\CHeadFont\thepage}
-  \fancyhead[RE,LO]{\RHeadFont\RelDate}
+% It's a words & chords songbook...
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[LE,RO]{\LHeadFont\emph{\leftmark\/}\SBContinueMark}
+\fancyhead[CE,CO]{\CHeadFont\thepage}
+\fancyhead[RE,LO]{\RHeadFont\RelDate}
 \else\ifOverhead
-  % It's an overhead...
-  \renewcommand{\footrulewidth}{0pt}
-  \renewcommand{\headrulewidth}{0pt}
-  \fancyhead[LE,RO]{}
-  \fancyhead[CE,CO]{}
-  \fancyhead[RE,LO]{}
+% It's an overhead...
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[LE,RO]{}
+\fancyhead[CE,CO]{}
+\fancyhead[RE,LO]{}
 \else\ifWordBk
-  % It's a words only songbook...
-  \addtolength{\headwidth}{\marginparsep}
-  \addtolength{\headwidth}{\marginparwidth}
-  \renewcommand{\headrulewidth}{0.4pt}
-  \renewcommand{\footrulewidth}{0.4pt}
-  \fancyhead[LE,RO]{\LHeadFont Estribillero}
-  \fancyhead[CE,CO]{\CHeadFont\thepage}
-  \fancyhead[RE,LO]{\RHeadFont\RelDate}
+% It's a words only songbook...
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[LE,RO]{\LHeadFont Estribillero}
+\fancyhead[CE,CO]{\CHeadFont\thepage}
+\fancyhead[RE,LO]{\RHeadFont\RelDate}
 \fi\fi\fi
 
 \fancyfoot[LE,RO]{\LFootFont Transcripciones}
 \ifSongEject
-  \fancyfoot[CE,CO]{\CFootFont \RevDate}
+\fancyfoot[CE,CO]{\CFootFont \RevDate}
 \else
-  \fancyfoot[CE,CO]{\CFootFont}
+\fancyfoot[CE,CO]{\CFootFont}
 \fi
 \fancyfoot[RE,LO]{\RFootFont Todo el material son transcripciones personales.}
 
@@ -185,7 +272,8 @@
 \makeTitleIndex         %% Title and First Line Index.
 \makeTitleContents      %% Table of Contents.
 \makeKeyIndex           %% Index of song by key.
-\makeArtistIndex	%% Index of song by artist.
+\makeArtistIndex        %% Index of song by artist.
+\makeindex
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -199,425 +287,488 @@
 %%%
 % Uncomment "\maketitle" statement to make a title page.
 %%%
-\maketitle
-
-\mainmatter
-\ifWordBk
-  \twocolumn
-\fi
-
-\include{EstribilleroToc.pdf}
-
+    \maketitle
+    %\mainmatter
+    \ifWordBk
+    \twocolumn
+    \fi
 %%%
 % Songbook begins.
 %%%
-\begin{song}{Abba Padre}{C}
-  {} %copyright \SBPubDom
-  {Marco Barrientos}
-  {Romanos 8:15} %pasaje
-  {\href{http://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
+    \begin{song}{Abba Padre}{D}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {Romanos 8:15} %pasaje
+    {\href{http://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
 
-%  \renewcommand{\RevDate}{February~11,~1993}
-  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+%        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+        \FLineIdx{Una Vez más}
 
-  \begin{SBVerse}
-\Ch{D}{Una} vez más
+        \begin{SBOptional}
+            \Ch{D}{Una} vez más
 
-me a\Ch{Bm}{cer}co a Tí
+            me a\Ch{Bm}{cer}co a Tí
 
-con \Ch{Em}{li}bertad
+            con \Ch{Em}{li}bertad
 
-en adora\Ch{A}{ci\'o}n
-  \end{SBVerse}
-  \begin{SBVerse}
-Tú e\Ch{D}{res} mi Dios
+            en adora\Ch{A}{ci\'o}n
+        \end{SBOptional}
 
-tu \Ch{Bm}{hi}jo soy
+        \begin{SBOptional}
+            T\'u e\Ch{D}{res} mi Dios
 
-mi \Ch{Em}{co}muni\'on contigo
+            tu \Ch{Bm}{hi}jo soy
 
-es una \Ch{A}{dul}ce bendici\'on
-  \end{SBVerse}
+            mi \Ch{Em}{co}muni\'on contigo
 
-  \begin{SBChorus}
-// ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! ¡\Ch{D}{A}bba Pa\Ch{G}{dre}!
+            es una \Ch{A}{dul}ce bendici\'on
+        \end{SBOptional}
 
-Es\Ch{D}{tar}\Ch{A/C#}{} conti\Ch{Bm}{go} \Ch{D/A}{es} una \Ch{Bm}{dul}ce bendi\Ch{A}{ci\'on}
+        \begin{SBChorus}
+            // ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! ¡\Ch{D}{A}bba Pa\Ch{G}{dre}!
 
-¡\Ch{D}{A}bba Pa\Ch{G}{dre}! te \Ch{F#m}{a}mo Se\Ch{Bm}{ñor}
+            Es\Ch{D}{tar}\Ch{A/C#}{} conti\Ch{Bm}{go}
 
-\Ch{G}{quie}ro estar en \Ch{D}{co}muni\'on
+            \Ch{D/A}{es} una \Ch{Bm}{dul}ce bendi\Ch{A}{ci\'on}
 
-\Ch{Em}{quie}ro es\Ch{A}{tar} con\Ch{D}{ti}go. //
-  \end{SBChorus}
-\ifChordBk
-\begin{SBOpGroup}
-    Acordes:
+            ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! te \Ch{F#m}{a}mo Se\Ch{Bm}{ñor}
+
+            \Ch{G}{quie}ro estar en \Ch{D}{co}muni\'on
+
+            \Ch{Em}{quie}ro es\Ch{A}{tar} con\Ch{D}{ti}go. //
+        \end{SBChorus}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes: \break
+
 %\keyboardtwooctaves[Do][Fso][Ao]
- \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor~~~~~~~~~~~~~~~~~~\upchord{\keyboard[Do][Go][Bo] \G}{~~~Sol} Mayor
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor\qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill \break
+            \upchord{\ACsPiano\ACs}{\qquad La} Mayor con bajo C\# \qquad\qquad
+            \upchord{\DAPiano\DA}{\qquad Re} Mayor con Bajo La \qquad\qquad
+        \end{SBOpGroup}
+        \fi
 
+    \end{song}
 
-
- \upchord{\keyboard[Do][Fso][Bo]\Bm}{Si} Menor
-\end{SBOpGroup}
-
-\fi
-\end{song}
-
-\begin{song}{A Cristo solo a Cristo}{G}
-  {} %copyright \SBPubDom
-  {Marcos Witt}
-  {} %pasaje
-  {} %\NotCCLIed
+    \begin{song}{A Cristo solo a Cristo}{G}
+    {Proyecto AA} %copyright \SBPubDom
+    {Marcos Witt}
+    {Hechos 4:12} %pasaje
+    {\href{https://open.spotify.com/track/31LsSTJ8P7HZWu6KVpY9Fz}{Escuchar}} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
-  \begin{SBVerse}
-A Cristo solo a Cristo, yo exaltaré
+        \begin{SBOptional}
+            \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{C}risto\Ch{Bm}{~}, \Ch{Am}{yo} exalta\Ch{D}{r\'e}
 
-A Cristo solo a Cristo, yo adoraré
-  \end{SBVerse}
-  \begin{SBVerse}
-Porque Él me ha dado vida eterna
-Porque Él me ha dado el poder
-Porque Él me ha dado la victoria
-Él es mi Rey.
-a Cristo he proclamado Rey
-  \end{SBVerse}
-\ifChordBk
-\begin{SBOpGroup}
-    Acordes:
-%\keyboardtwooctaves[Do][Fso][Ao]
- \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
-  \end{SBOpGroup}
-\fi
-\end{song}
+            \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{C}risto\Ch{Bm}{~}, \Ch{Am}{yo} adora\Ch{D}{r\'e}
+        \end{SBOptional}
 
-\begin{song}{A Dios el Padre Celestial}{G}
-  {} %copyright \SBPubDom
-  {Thomas Ken, Genevan Psalter, 1551, atr. a Louis Bourgeois}
-  {} %pasaje
-  {} %\NotCCLIed
+        \begin{SBOptional}
+            \Ch{Am}{Por}que \'El me ha dado vida e\Ch{D}{ter}na
 
-%  \renewcommand{\RevDate}{February~11,~1993}
-%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+            \Ch{Am}{Por}que \'El me ha dado el po\Ch{D}{der}
 
-  \begin{SBVerse}
-A Dios el Padre Celestial,
-Al Hijo nuestro Redentor.
-Y al Eternal Consolador,
-unidos todos alabad.
-Amén.
-  \end{SBVerse}
-\ifChordBk
-\begin{SBOpGroup}
-    Acordes:
-%\keyboardtwooctaves[Do][Fso][Ao]
- \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
-  \end{SBOpGroup}
-\fi
-\end{song}
+            \Ch{Am}{Por}que \'El me ha dado la vic\Ch{D}{to}ria
 
+            \Ch{D}{Él} \Ch{Em}{es} \Ch{D/F\#}{mi} \Ch{G}{Rey}.
 
-\begin{song}{Admirable}{G}
-  {} %copyright \SBPubDom
-  {}
-  {} %pasaje
-  {} %\NotCCLIed
+            a \Ch{C}{Cris}to he \Ch{Bm}{pro}cla\Ch{Am}{ma}\Ch{D}{do} \Ch{G}{Rey}
+        \end{SBOptional}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\GsevenPiano\Gseven}{\qquad Sol} Mayor S\'eptima \hfill \break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill \break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
-%  \renewcommand{\RevDate}{February~11,~1993}
-%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+    \begin{song}{Doxolog\'ia}{G}
+    {} %copyright \SBPubDom
+    {Thomas Ken, Genevan Psalter, 1551, atr. a Louis Bourgeois}
+    {Juan 17:22} %pasaje
+    {} %\NotCCLIed
 
-  \begin{SBVerse}
-Con poder y autoridad nuestro Dios venci\'o a la
-muerte
-Sobre el trono celestial siempre reinará.
-Sentado en majestad suyo es el reino por los
-Siglos y por la eternidad su luz de gloria brillará.
-  \end{SBVerse}
+        \FLineIdx{A Dios el Padre Celestial}
 
-\begin{SBChorus}
-Admirable, consejero mi Dios consolador,
-Eres digno de alabanza, Príncipe de paz.
-  \end{SBChorus}
-\ifChordBk
-\begin{SBOpGroup}
-    Acordes:
+        \begin{SBVerse}
+            \Ch{G}{A} Dios \Ch{D}{el} \Ch{Em}{Pa}\Ch{Bm}{dre} \Ch{Em}{Ce}\Ch{D}{les}\Ch{G}{tial},
+
+            Al Hijo \Ch{D}{nues}\Ch{Em}{tro} \Ch{C}{Re}\Ch{G}{den}\Ch{D}{tor}.
+
+            \Ch{Em}{Y} al \Ch{D}{E}\Ch{G}{ter}\Ch{D}{nal} \Ch{G}{Con}\Ch{C}{so}\Ch{Am7}{la}\Ch{G}{dor},
+
+            uni\Ch{Em}{dos} \Ch{D}{to}\Ch{Am}{dos} \Ch{G/B}{a}\Ch{D}{la}\Ch{G}{bad}.
+
+            \Ch{C}{A}\Ch{G}{m\'en}.
+        \end{SBVerse}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor \hfill \break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill \break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+            \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
 
-%\keyboardtwooctaves[Do][Fso][Ao]
- \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
-  \end{SBOpGroup}
-\fi
-\end{song}
-
-\begin{song}{A Nuestro Padre Dios}{G}
-  {} %copyright \SBPubDom
-  {An\'onimo en Thesaurus Musicus 1744}
-  {} %pasaje
-  {} %\NotCCLIed
+    \begin{song}{Admirable}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
-  \begin{SBVerse}
-A nuestro Padre Dios
-Alcemos nuestra voz
-¡Gloria a Él!
-Tal fué su amor que di\'o
-Al hijo que muri\'o,
-En quien confío yo;
-¡Gloria a Él!
-  \end{SBVerse}
+        \begin{SBVerse}
+            Con poder y autoridad nuestro Dios venci\'o a la
+            muerte
+            Sobre el trono celestial siempre reinará.
+            Sentado en majestad suyo es el reino por los
+            Siglos y por la eternidad su luz de gloria brillará.
+        \end{SBVerse}
 
-  \begin{SBVerse}
-A nuestro Salvador
-Demos con fe loor
-¡Gloria a Él!
-Su sangre derram\'o
-Con ella me lav\'o,
-Y el cielo me abri\'o
-¡Gloria a Él!
-  \end{SBVerse}
+        \begin{SBChorus}
+            Admirable, consejero mi Dios consolador,
+            Eres digno de alabanza, Príncipe de paz.
+        \end{SBChorus}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
 
-  \begin{SBVerse}
-Espíritu de Dios,
-Elevo a Ti mi voz;
-¡Gloria a Ti!
-Con celestial fulgor
-Me muestras el amor
-De Cristo mi Señor
-¡Gloria a Ti!
-  \end{SBVerse}
 
-  \begin{SBVerse}
-Con gozo y amor,
-Cantemos con fervor
-Al Trino Dios.
-En la eternidad
-Mora la Trinidad;
-¡Por siempre alabad
-Al Trino Dios!
-  \end{SBVerse}
-
-\ifChordBk
-\begin{SBOpGroup}
-    Acordes:
 %\keyboardtwooctaves[Do][Fso][Ao]
- \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
-  \end{SBOpGroup}
-\fi
-\end{song}
-%\WBPageBrk %para forzar salto de pagina
+            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
-\begin{song}{Adonai}{G}
-{} %copyright \SBPubDom
-{Marcos Witt}
-{} %pasaje
-{} %\NotCCLIed
+    \begin{song}{A Nuestro Padre Dios}{G}
+    {} %copyright \SBPubDom
+    {An\'onimo en Thesaurus Musicus 1744}
+    {} %pasaje
+    {} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
-    \begin{SBChorus}
-        Oh Adonai. Oh Adonai.
-        Dios del Universo, Señor de la Creación.
-    \end{SBChorus}
+        \begin{SBVerse}
+            A nuestro Padre Dios
+            Alcemos nuestra voz
+            ¡Gloria a Él!
+            Tal fué su amor que di\'o
+            Al hijo que muri\'o,
+            En quien confío yo;
+            ¡Gloria a Él!
+        \end{SBVerse}
 
-    \begin{SBVerse}
-        Los cielos cuentan tu gloria,
-        tus hijos hoy te adoran,
-        por todas tus maravillas, Adonai.
-    \end{SBVerse}
+        \begin{SBVerse}
+            A nuestro Salvador
+            Demos con fe loor
+            ¡Gloria a Él!
+            Su sangre derram\'o
+            Con ella me lav\'o,
+            Y el cielo me abri\'o
+            ¡Gloria a Él!
+        \end{SBVerse}
 
-    \ifChordBk
-    \begin{SBOpGroup}
-        Acordes:
+        \begin{SBVerse}
+            Espíritu de Dios,
+            Elevo a Ti mi voz;
+            ¡Gloria a Ti!
+            Con celestial fulgor
+            Me muestras el amor
+            De Cristo mi Señor
+            ¡Gloria a Ti!
+        \end{SBVerse}
+
+        \begin{SBVerse}
+            Con gozo y amor,
+            Cantemos con fervor
+            Al Trino Dios.
+            En la eternidad
+            Mora la Trinidad;
+            ¡Por siempre alabad
+            Al Trino Dios!
+        \end{SBVerse}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
 %\keyboardtwooctaves[Do][Fso][Ao]
-        \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
-    \end{SBOpGroup}
-    \fi
-\end{song}
+            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
-\begin{song}{
-Ahora Que Estoy Contigo}{G}
-{\SBPubDom} %copyright \SBPubDom
-{}
-{} %pasaje
-{} %\NotCCLIed
+
+    \begin{song}{Adonai}{G}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
-    \begin{SBVerse}
-	Ahora que estoy contigo en tus brazos de amor,
-	puedo escuchar de Tí y de mí un latido
-	 el tuyo dice siempre te amaré, el mío te adoraré,
-	 que dulce comunión estar contigo.
-	 Ahora que estoy contigo, ante tus pies, oh Padre, yo
-	 me rindo,
-	 y en mi necesidad nada te pediré, solo te adoraré
-    \end{SBVerse}
+        \begin{SBChorus}
+            Oh Adonai. Oh Adonai.
+            Dios del Universo, Señor de la Creación.
+        \end{SBChorus}
 
-    \ifChordBk
-    \begin{SBOpGroup}
-        Acordes:
+        \begin{SBVerse}
+            Los cielos cuentan tu gloria,
+            tus hijos hoy te adoran,
+            por todas tus maravillas, Adonai.
+        \end{SBVerse}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
 %\keyboardtwooctaves[Do][Fso][Ao]
-        \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
-    \end{SBOpGroup}
-    \fi
-\end{song}
+            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
-\begin{song}{Me dice que me ama}{C}
-{} %copyright \SBPubDom
-{Jesús Adrián Romero}
-{} %pasaje
-{\NotCCLIed} %\NotCCLIed
-
-%  \renewcommand{\RevDate}{February~11,~1993}
-    \FLineIdx{Me dice que me ama}
-    \SBRef{El aire de tu casa}{2005}%fuente \#
-
-    \begin{SBOpGroup}
-        \Ch{G} \Ch{C} \Ch{Am} \Ch{D}
-        Intro (Teclado)
-    \end{SBOpGroup}
-
-    \begin{SBVerse}
-        Me dice que me ama cuando escucho llover,
-        G                 C
-        me dice que ama con un atardecer,
-        G     C        Em        D
-        lo dice sin palabras, con las olas del mar,
-        Em                C   D
-        lo dice en la mañana con mi respirar.
-    \end{SBVerse}
-
-    \begin{SBChorus}
-        G             C             G   C  G
-        //Me dice que me ama y que conmigo quiere estar,
-        C           Am7            D
-        me dice que me busca cuando salgo yo a pasear,
-        Am7          C            Em
-        que ha hecho lo que existe para llamar mi atención,
-        Am          D          G   C  D
-        que quiere conquistarme y alegrar mi corazón.
-    \end{SBChorus}
-
-    \begin{SBChorus}
-        G                   C
-        Me dice que me ama cuando veo la cruz,
-        G                           C
-        sus manos extendidas así tan grande es su amor,
-        G   C       Em        D
-        lo dicen las heridas de sus manos y pies,
-        Em              C   D
-        me dice que me ama una y otra vez.
-    \end{SBChorus}
-    \ifChordBk
-    \begin{SBOpGroup}
-        Acordes:
-%\keyboardtwooctaves[Do][Fso][Ao]
-        \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor~~~~~~~~~~~~~~~~~~\upchord{\keyboard[Do][Go][Bo] \G}{~~~Sol} Mayor
-
-
-
-        \upchord{\keyboard[Do][Fso][Bo]\Bm}{Si} Menor
-    \end{SBOpGroup}
-
-    \fi
-\end{song}
-
-\begin{song}{Parábola}{G}
-  {Marcos Vidal} %copyright \SBPubDom
-  { Cara a cara }
-  {https://youtu.be/cxkfqxpuICM} %pasaje
-  {Escuchar} %\NotCCLIed
+    \begin{song}{
+        Ahora Que Estoy Contigo}{G}
+    {\SBPubDom} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
- \begin{SBOpGroup}
-  \Ch{G# maj7}{////}\Ch{Gm}{in}tro////\Ch{G7}{}
- \end{SBOpGroup}
+        \begin{SBVerse}
+            Ahora que estoy contigo en tus brazos de amor,
+            puedo escuchar de Tí y de mí un latido
+            el tuyo dice siempre te amaré, el mío te adoraré,
+            que dulce comunión estar contigo.
+            Ahora que estoy contigo, ante tus pies, oh Padre, yo
+            me rindo,
+            y en mi necesidad nada te pediré, solo te adoraré
+        \end{SBVerse}
 
-  \begin{SBVerse}
-       
-regre\Ch{Ddis}{sa}ba a casa un poco mas tem\Ch{G7}{pra}no de lo nor\Ch{Cm}{mal}
-       
-cuando \Ch{Ddis}{vi\'o} que sobre él ve\Ch{G7}{ni}an \Ch{Cm}{tres}
-    
-y na\Ch{G# maj7}{va}ja en mano le \Ch{Gm}{a}tacaron sin contempla\Ch{Fm}{ci\'on}
-      
-le de\Ch{Bb}{ja}ron incons\Ch{Bb7/B}{cien}te bajo el \Ch{Cm}{sol}
-  \end{SBVerse}
-\begin{SBOpGroup}
-  \Ch{G# maj7}{}\Ch{Gm}{}\Ch{G7}{}
- \end{SBOpGroup}
-  \begin{SBVerse}
-y ca  \Ch{Ddis}{mi}no de la i\Ch{G7}{gle}sia iba el pas\Ch{Cm}{tor} poco después
-                              
-la reu\Ch{Ddis}{nion} ya estaba a \Ch{G7}{pun}to de empe\Ch{Cm}{zar}
-                       
-iba \Ch{G#maj7}{tar}de y discu\Ch{Gm}{tien}do en el ca\Ch{Fm}{mi}no con su mujer
-                       
-inten\Ch{Bb}{tan}do no per\Ch{Bb7/B}{der} su autori\Ch{Cm}{dad}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+%\keyboardtwooctaves[Do][Fso][Ao]
+            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
-                    
-\Ch{G#maj7}{ay} si el maestro nos vol\Ch{Bbmaj7}{vie}ra a contar
-                              
-alguna his\Ch{Gm}{to}ria que nos hiciera \Ch{Cm}{re}capacitar
-           
-piensa\Ch{Gm}{lo} piensa\Ch{Cm}{lo}
+    \begin{song}{Me dice que me ama}{C}
+    {} %copyright \SBPubDom
+    {Jesús Adrián Romero}
+    {} %pasaje
+    {\NotCCLIed} %\NotCCLIed
 
-  \end{SBVerse}
-\begin{SBOpGroup}
-  \Ch{G# maj7}{}\Ch{Gm}{}\Ch{G7}{}
- \end{SBOpGroup}
+%  \renewcommand{\RevDate}{February~11,~1993}
+%        \SBRef{El aire de tu casa}{2005}%fuente \#
 
-  \begin{SBVerse}
+        \begin{SBOpGroup}
+            \Ch{G} \Ch{C} \Ch{Am} \Ch{D}
+            Intro (Teclado)
+        \end{SBOpGroup}
 
-tres mi\Ch{Ddis}{nu}tos mas y el \Ch{G7}{lí}der de ala\Ch{Cm}{ban}za aparecio
+        \begin{SBVerse}
+            Me dice que me ama cuando escucho llover,
+            G C
+            me dice que ama con un atardecer,
+            G C Em D
+            lo dice sin palabras, con las olas del mar,
+            Em C D
+            lo dice en la mañana con mi respirar.
+        \end{SBVerse}
 
-los te\Ch{Ddis}{cla}dos siete \Ch{G7}{ca}bles y un a\Ch{Cm}{tril}
+        \begin{SBChorus}
+            G C G C G
+            //Me dice que me ama y que conmigo quiere estar,
+            C Am7 D
+            me dice que me busca cuando salgo yo a pasear,
+            Am7 C Em
+            que ha hecho lo que existe para llamar mi atención,
+            Am D G C D
+            que quiere conquistarme y alegrar mi corazón.
+        \end{SBChorus}
 
-y aunque \Ch{G#maj7}{si} le pare\Ch{Gm}{ci\'o} ver algo \Ch{Fm}{ro}jo en el arcel
+        \begin{SBChorus}
+            G C
+            Me dice que me ama cuando veo la cruz,
+            G C
+            sus manos extendidas así tan grande es su amor,
+            G C Em D
+            lo dicen las heridas de sus manos y pies,
+            Em C D
+            me dice que me ama una y otra vez.
+        \end{SBChorus}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+%\keyboardtwooctaves[Do][Fso][Ao]
+            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor~~~~~~~~~~~~~~~~~~\upchord{\keyboard[Do][Go][Bo] \G}{~~~Sol} Mayor
 
-prefi\Ch{Bb}{ri\'o} pasar de \Ch{Bb7/B}{lar}go y de per\Ch{Cm}{fil}
-  \end{SBVerse}
-  \begin{SBVerse}
+            \upchord{\keyboard[Do][Fso][Bo]\Bm}{Si} Menor
+        \end{SBOpGroup}
 
-un gi\Ch{D#dis}{ta}no despei\Ch{G#7}{na}do que pa\Ch{Cm#}{sa}ba por ahi
+        \fi
+    \end{song}
 
-no sa\Ch{D#dis}{bía} ni \Ch{G#7}{leer} ni escri\Ch{Cm#}{bir}
-                    
-pero al \Ch{Amaj7}{ver} el pano\Ch{Gm#7}{ra}ma le do\Ch{Fm#7}{li\'o} en el coraz\'on
-                               
-y acer\Ch{B}{cán}dose hasta el \Ch{B7/C}{hom}bre le ayud\Ch{Cm#}{\'o}
+    \begin{song}{Par\'abola}{G}
+    {} %copyright \SBPubDom
+    { Marcos Vidal }
+    {Lucas 10:30} %pasaje
+    {\href{https://youtu.be/cxkfqxpuICM}{Escuchar}} %\NotCCLIed
 
-\Ch{G#maj7}{ay} si el maestro nos vol\Ch{Bbmaj7}{vie}ra a contar
-                              
-alguna his\Ch{Gm}{to}ria que nos hiciera \Ch{Cm}{re}capacitar
-           
-piensa\Ch{Gm}{lo} piensa\Ch{Cm}{lo}
+%  \renewcommand{\RevDate}{February~11,~1993}
+%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
-  \end{SBVerse}
+        \begin{SBOpGroup}
+            \Ch{G# maj7}{////}\Ch{Gm}{in}tro////\Ch{G7}{}
+        \end{SBOpGroup}
+
+        \begin{SBVerse}
+
+            regre\Ch{Ddis}{sa}ba a casa un poco mas tem\Ch{G7}{pra}no de lo nor\Ch{Cm}{mal}
+
+            cuando \Ch{Ddis}{vi\'o} que sobre él ve\Ch{G7}{ni}an \Ch{Cm}{tres}
+
+            y na\Ch{G# maj7}{va}ja en mano le \Ch{Gm}{a}tacaron sin contempla\Ch{Fm}{ci\'on}
+
+            le de\Ch{Bb}{ja}ron incons\Ch{Bb7/B}{cien}te bajo el \Ch{Cm}{sol}
+        \end{SBVerse}
+        \begin{SBOpGroup}
+            \Ch{G# maj7}{}\Ch{Gm}{}\Ch{G7}{}
+        \end{SBOpGroup}
+        \begin{SBVerse}
+            y ca  \Ch{Ddis}{mi}no de la i\Ch{G7}{gle}sia iba el pas\Ch{Cm}{tor} poco después
+
+            la reu\Ch{Ddis}{nion} ya estaba a \Ch{G7}{pun}to de empe\Ch{Cm}{zar}
+
+            iba \Ch{G#maj7}{tar}de y discu\Ch{Gm}{tien}do en el ca\Ch{Fm}{mi}no con su mujer
+
+            inten\Ch{Bb}{tan}do no per\Ch{Bb7/B}{der} su autori\Ch{Cm}{dad}
 
 
-\ifChordBk
-\begin{SBOpGroup}
-    Acordes:
+            \Ch{G#maj7}{ay} si el maestro nos vol\Ch{Bbmaj7}{vie}ra a contar
 
- \upchord{\keyboard[Do][Fo][Go][Bo]\Gs}{Sol} Mayor Séptima
-  \end{SBOpGroup}
-\fi
-\end{song}
+            alguna his\Ch{Gm}{to}ria que nos hiciera \Ch{Cm}{re}capacitar
 
-\include{EstribilleroTdx.pdf}
-\include{EstribilleroKdx.pdf}
-\include{EstribilleroKdx.pdf}
-\input{Acordes}
+            piensa\Ch{Gm}{lo} piensa\Ch{Cm}{lo}
+
+        \end{SBVerse}
+        \begin{SBOpGroup}
+            \Ch{G# maj7}{}\Ch{Gm}{}\Ch{G7}{}
+        \end{SBOpGroup}
+
+        \begin{SBVerse}
+
+            tres mi\Ch{Ddis}{nu}tos mas y el \Ch{G7}{lí}der de ala\Ch{Cm}{ban}za aparecio
+
+            los te\Ch{Ddis}{cla}dos siete \Ch{G7}{ca}bles y un a\Ch{Cm}{tril}
+
+            y aunque \Ch{G#maj7}{si} le pare\Ch{Gm}{ci\'o} ver algo \Ch{Fm}{ro}jo en el arcel
+
+            prefi\Ch{Bb}{ri\'o} pasar de \Ch{Bb7/B}{lar}go y de per\Ch{Cm}{fil}
+        \end{SBVerse}
+        \begin{SBVerse}
+
+            un gi\Ch{D#dis}{ta}no despei\Ch{G#7}{na}do que pa\Ch{Cm#}{sa}ba por ahi
+
+            no sa\Ch{D#dis}{bía} ni \Ch{G#7}{leer} ni escri\Ch{Cm#}{bir}
+
+            pero al \Ch{Amaj7}{ver} el pano\Ch{Gm#7}{ra}ma le do\Ch{Fm#7}{li\'o} en el coraz\'on
+
+            y acer\Ch{B}{cán}dose hasta el \Ch{B7/C}{hom}bre le ayud\Ch{Cm#}{\'o}
+
+            \Ch{G#maj7}{ay} si el maestro nos vol\Ch{Bbmaj7}{vie}ra a contar
+
+            alguna his\Ch{Gm}{to}ria que nos hiciera \Ch{Cm}{re}capacitar
+
+            piensa\Ch{Gm}{lo} piensa\Ch{Cm}{lo}
+
+        \end{SBVerse}
+
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+
+            \upchord{\keyboard[Do][Fo][Go][Bo]\Gs}{Sol} Mayor Séptima
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Grita, canta, danza}{Cm}
+    {\SBPubDom} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {} %\NotCCLIed
+
+%  \renewcommand{\RevDate}{February~11,~1993}
+%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+
+        \begin{SBChorus}
+            Cm Ab
+            Grita, canta, danza alegremente en su presencia
+
+            Bb
+            Gira, salta dando vueltas para Cristo
+
+            G7 Cm G7
+            Él vive y vive para siempre es el Rey
+        \end{SBChorus}
+        \begin{SBVerse}
+            Cm Bb
+            Te alabaré, te exaltaré y te agradeceré
+
+            Eb
+            Tu grande amor Jesús
+
+            Ab Cm
+            Cambiaste mi lamento en alabanza
+
+            Bb G7 Cm G7
+            Sanaste mi herido corazón
+        \end{SBVerse}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            %\keyboardtwooctaves[Do][Fso][Ao]
+            \upchord{\keyboard[Co][Dso][Go]\D}{Do} Menor
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \include{Acordes}
+    \include{EstribilleroAdx}
+    \include{EstribilleroTdx}
+    \include{EstribilleroKdx}
+    \include{EstribilleroToc}
 \end{document}
 \bye
 %

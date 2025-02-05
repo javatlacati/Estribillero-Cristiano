@@ -84,7 +84,7 @@
 \newif\ifpiano
 
 \guitarratrue
-\pianofalse
+\pianotrue
 
 
 
@@ -135,7 +135,7 @@
 \newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
 
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
-\newcommand{\Bflat}{\chord{t}{p1,p1,p3,p3,p3,p1}{B\flat}}
+\newcommand{\Bflat}{\chord{t}{p1,p1,p3,p3,p3,p1}{B$\flat$}}
 
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
 \newcommand{\Bseven}{\chord{t}{x,f1p2,p4,f1p2,p4,f1p2,}{B7}}
@@ -153,6 +153,8 @@
 
 \newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
 \newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
+\newcommand{\Dm}{\chord{t}{x,x,n,p2,p3,p1}{Dm}}
+\newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
 \newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
 \newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
@@ -175,9 +177,14 @@
 
 \newcommand{\G}{\chord{t}{p3,p2,n,n,n,p2}{G}}
 \newcommand{\Gseven}{\chord{t}{p3,p2,n,n,n,p1}{G7}}
-\newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4,}{G\#7}}
 \newcommand{\GB}{\chord{t}{n,p2,n,n,p3,n}{G/B}}
 \newcommand{\Gnine}{\chord{t}{p3,p2,n,p0,p2,p2}{G9}}
+\newcommand{\Gm}{\chord{t}{f1p3,p5,p5,f1p3,f1p3,f1p3,}{Gm}}
+\newcommand{\Gmseven}{\chord{t}{f1p3,p5,p3,f1p3,f1p3,f1p3,}{Gm7}}
+
+\newcommand{\Gs}{\chord{3}{x,x,p4,p3,p2,p2,}{G\#}}
+\newcommand{\Aflat}{\chord{3}{x,x,p4,p3,p2,p2,}{A$\flat$}}
+\newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4,}{G\#7}}
 
 % comandos para pintar acordes de piano
 \newcommand{\APiano}{\keyboardf[Ao][Cso][Eo]}
@@ -185,21 +192,34 @@
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 
+\newcommand{\BflatPiano}{\keyboard[Do][Fo][Aso]}
+
+\newcommand{\BPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
+\newcommand{\CmPiano}{\keyboard[Co][Dso][Go]}
 
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
+\newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
+\newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
 
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
+
+\newcommand{\FPiano}{\keyboard[Co][Fo][Ao]}
 
 \newcommand{\FsmPiano}{\keyboard[Cso][Fso][Ao]}
 
 \newcommand{\GPiano}{\keyboard[Do][Go][Bo]}
 \newcommand{\GsevenPiano}{\keyboard[Do][Fo][Go][Bo]}
 \newcommand{\GBPiano}{\keyboardtwooctaves[Bo][Dt][Gt]}
+\newcommand{\GmPiano}{\keyboard[Do][Go][Aso]}
+\newcommand{\GmsevenPiano}{\keyboard[Do][Go][Aso][Fo]}
+
+\newcommand{\GsPiano}{\keyboard[Dso][Gso][Co]}
+\newcommand{\AflatPiano}{\keyboard[Dso][Gso][Co]}
 
 %%%
 % Title page information.
@@ -400,7 +420,7 @@
     {} %copyright \SBPubDom
     {Thomas Ken, Genevan Psalter, 1551, atr. a Louis Bourgeois}
     {Juan 17:22} %pasaje
-    {} %\NotCCLIed
+    {\href{https://open.spotify.com/intl-es/track/24I9oe6qBsY3JHvL6g4yTT}{Escuchar}} %\NotCCLIed
 
         \FLineIdx{A Dios el Padre Celestial}
 
@@ -419,7 +439,7 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
-            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor \hfill \break
+            \upchord{\DPiano\D}{Re} Mayor \hfill \break
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
             \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
@@ -431,92 +451,96 @@
     \end{song}
 
 
-    \begin{song}{Admirable}{G}
+    \begin{song}{Admirable}{Dm7}
     {} %copyright \SBPubDom
-    {}
-    {} %pasaje
-    {} %\NotCCLIed
+    {Danilo Montero}
+    {Apocalipsis 1:18} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
-
-        \begin{SBVerse}
-            Con poder y autoridad nuestro Dios venci\'o a la
+        \FLineIdx{Con poder y autoridad}
+        \begin{SBOpGroup}
+            \Ch{Dm7}{Con} poder y au\Ch{B$\flat$}{to}ridad \Ch{F}{nues}tro Dios ven\Ch{C}{ci\'o} a la
             muerte
-            Sobre el trono celestial siempre reinará.
-            Sentado en majestad suyo es el reino por los
-            Siglos y por la eternidad su luz de gloria brillará.
-        \end{SBVerse}
+
+            \Ch{Dm7}{So}bre el trono \Ch{B$\flat$}{ce}lestial \Ch{Am7}{siem}pre reina\Ch{Dm7}{r\'a}.
+
+            \Ch{B$\flat$}{Sen}tado en \Ch{C}{ma}jestad \Ch{B$\flat$}{su}yo es el reino por los
+            \Ch{F}{Si}\Ch{C}{glos} \Ch{B$\flat$}{y} por la \Ch{C}{e}ternidad \Ch{B$\flat$}{su} luz de \Ch{Gm7}{glo}ria brilla\Ch{Am7}{r\'a}.
+        \end{SBOpGroup}
 
         \begin{SBChorus}
-            Admirable, consejero mi Dios consolador,
-            Eres digno de alabanza, Príncipe de paz.
+            Admi\Ch{C}{ra}\Ch{Dm7}{ble}, conse\Ch{C}{je}\Ch{Dm7}{ro} \Ch{B$\flat$}{mi} Dios \Ch{C}{con}sola\Ch{Dm7}{dor},\Ch{Am7}{}
+
+            Eres \Ch{C}{dig}\Ch{Dm7}{no} de a\Ch{C}{la}ban\Ch{Dm7}{za}, \Ch{B$\flat$}{Prín}ci\Ch{C}{pe} de \Ch{Dm7}{paz}.
         \end{SBChorus}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-
-
-%\keyboardtwooctaves[Do][Fso][Ao]
-            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+            \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \qquad\qquad
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill \break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \qquad\qquad
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
 
-    \begin{song}{A Nuestro Padre Dios}{G}
+    \begin{song}{A Nuestro Padre Dios}{F}
     {} %copyright \SBPubDom
     {An\'onimo en Thesaurus Musicus 1744}
-    {} %pasaje
+    {Juan 3:16} %pasaje
     {} %\NotCCLIed
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
         \begin{SBVerse}
-            A nuestro Padre Dios
-            Alcemos nuestra voz
-            ¡Gloria a Él!
-            Tal fué su amor que di\'o
-            Al hijo que muri\'o,
-            En quien confío yo;
-            ¡Gloria a Él!
+            \Ch{F}{A} nuestro Padre Dios
+            \Ch{F}{Al}cemos \Ch{F}{nues}tra voz
+            ¡Glo\Ch{F}{ria} a \Ch{F}{\'El}!
+            Tal fué su a\Ch{F}{mor} que di\'o
+            Al hijo que \Ch{F}{mu}ri\'o,
+            \Ch{F}{En} quien con\Ch{F}{fío} yo;
+            ¡Glo\Ch{F}{ria} a \Ch{F}{\'El}!
         \end{SBVerse}
 
         \begin{SBVerse}
-            A nuestro Salvador
-            Demos con fe loor
-            ¡Gloria a Él!
-            Su sangre derram\'o
-            Con ella me lav\'o,
-            Y el cielo me abri\'o
-            ¡Gloria a Él!
+            \Ch{F}{A} nuestro Salvador
+            \Ch{F}{De}mos con \Ch{F}{fe} loor
+            ¡Gloria a \Ch{F}{\'El}!
+            Su sangre \Ch{F}{de}rram\'o
+            Con ella me \Ch{F}{la}v\'o,
+            \Ch{F}{Y} el cielo \Ch{F}{me} abri\'o
+            ¡Glo\Ch{F}{ria} a \Ch{F}{\'El}!
         \end{SBVerse}
 
         \begin{SBVerse}
-            Espíritu de Dios,
-            Elevo a Ti mi voz;
-            ¡Gloria a Ti!
-            Con celestial fulgor
-            Me muestras el amor
-            De Cristo mi Señor
-            ¡Gloria a Ti!
+            \Ch{F}{Es}píritu de Dios,
+            \Ch{F}{El}evo a Ti mi voz;
+            ¡Glo\Ch{F}{ria} a \Ch{F}{Ti}!
+            Con celes\Ch{F}{tial} fulgor
+            Me muestras el \Ch{F}{a}mor
+            \Ch{F}{De} Cristo \Ch{F}{mi} Señor
+            ¡Glo\Ch{F}{ria} a \Ch{F}{Ti}!
         \end{SBVerse}
 
         \begin{SBVerse}
-            Con gozo y amor,
-            Cantemos con fervor
-            Al Trino Dios.
-            En la eternidad
-            Mora la Trinidad;
-            ¡Por siempre alabad
-            Al Trino Dios!
+            \Ch{F}{Con} gozo y amor,
+            \Ch{F}{Can}temos con fervor
+            Al \Ch{F}{Tri}no \Ch{F}{Dios}.
+            En la e\Ch{F}{ter}nidad
+            Mora la Tri\Ch{F}{ni}dad;
+            ¡\Ch{F}{Por} siempre \Ch{F}{a}labad
+            Al \Ch{F}{Tri}no \Ch{F}{Dios}!
         \end{SBVerse}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-%\keyboardtwooctaves[Do][Fso][Ao]
-            \upchord{\keyboard[Do][Fso][Ao]\D}{Re} Mayor
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -732,43 +756,83 @@
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
         \begin{SBChorus}
-            Cm Ab
-            Grita, canta, danza alegremente en su presencia
+            \Ch{Cm}{Gri}ta, canta, danza alegremente en su pre\Ch{Ab}{sen}cia
 
-            Bb
-            Gira, salta dando vueltas para Cristo
+            Gira, salta dando vueltas para \Ch{Bb}{Cris}to
 
-            G7 Cm G7
-            Él vive y vive para siempre es el Rey
+            Él vive y \Ch{G7}{vi}ve para siempre es el \Ch{Cm}{Rey}\Ch{G7}
         \end{SBChorus}
-        \begin{SBVerse}
-            Cm Bb
-            Te alabaré, te exaltaré y te agradeceré
+        \begin{SBOpGroup}
+            Te alaba\Ch{Cm}{ré}, te exaltaré y te agra\Ch{Bb}{de}ceré
 
-            Eb
-            Tu grande amor Jesús
+            Tu \Ch{Eb}{gran}de amor Jesús
 
-            Ab Cm
-            Cambiaste mi lamento en alabanza
+            Cam\Ch{Ab}{bias}te mi lamento en ala\Ch{Cm}{ban}za
 
-            Bb G7 Cm G7
-            Sanaste mi herido corazón
-        \end{SBVerse}
+            Sa\Ch{Bb}{nas}te mi \Ch{G7}{he}rido cora\Ch{Cm}{zón} \Ch{G7}
+        \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            %\keyboardtwooctaves[Do][Fso][Ao]
-            \upchord{\keyboard[Co][Dso][Go]\D}{Do} Menor
+            \upchord{\CmPiano\Cm}{\qquad Do} Menor \qquad\qquad
+            \upchord{\AflatPiano\Aflat}{La bemol} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Así como David danzaba}{Am}
+    {\SBPubDom} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {} %\NotCCLIed
+
+%  \renewcommand{\RevDate}{February~11,~1993}
+%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+
+        \begin{SBOpGroup}
+            \Ch{Am}{Cuan}do el Señor hiciere volver la cautivi\Ch{G}{dad}
+
+            seremos \Ch{Dm}{co}mo los que sue\Ch{E}{ñan}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+
+            \Ch{Am}{Mi} boca llenará de risa, \Ch{G}{mis} labios de alabanza,
+
+            \Ch{Dm}{En}tonces dirán las naciones:
+
+            \Ch{E}{Gran}des cosas ha hecho el Señor
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Me goza\Ch{Am}{ré}, me gozaré, me gozaré,
+
+            G
+            me gozaré en Jeho\Ch{G}{vá}.  [¡Gózate!]
+
+            Pues ha lle\Ch{Dm}{va}do todo dolor, me ha hecho \Ch{E}{li}bre
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{Am}{A}sí como David cantaba, \Ch{G}{a}sí como David danzaba,
+
+            \Ch{Dm}{a}sí como David fluía en su pre\Ch{E}{sen}cia
+        \end{SBChorus}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
 
     \include{Acordes}
     \include{EstribilleroAdx}
-    \include{EstribilleroTdx}
     \include{EstribilleroKdx}
-    \include{EstribilleroToc}
+    \include{EstribilleroTdx}
 \end{document}
 \bye
 %

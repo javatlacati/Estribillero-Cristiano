@@ -151,6 +151,7 @@
 \newcommand{\Cm}{\chord{t}{x,p3,p1,n,p1,p3}{Cm}}
 %\newcommand{\Cmseven}{\chord{t}{x,p3,p1,n,p1,p3}{Cm}}
 \newcommand{\CE}{\chord{t}{o,p3,n,p2,p1,n}{C/E}}
+\newcommand{\Ctwo}{\chord{t}{x,p3,p2,n,p3,n}{C2}}
 
 \newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C\#}}
 \newcommand{\Csm}{\chord{t}{p4,p4,p6,p6,p5,p4}{C\#m}}
@@ -166,6 +167,7 @@
 \newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
 \newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
 \newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F\#}}
+\newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
 
 \newcommand{\Ds}{\chord{t}{n,n,p1,p3,p4,p3}{D\#}}
 \newcommand{\Eflat}{\chord{t}{n,n,p1,p3,p4,p3}{E$\flat$}}
@@ -174,6 +176,7 @@
 \newcommand{\Eseven}{\chord{t}{n,p2,p2,p1,p3,n}{E7}}
 \newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
 \newcommand{\Em}{\chord{t}{n,p2,p2,n,n,n}{Em}}
+\newcommand{\Emseven}{\chord{t}{n,p2,p2,n,p3,n}{Em7}}
 \newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
 
@@ -227,6 +230,7 @@
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
+\newcommand{\DsusPiano}{\keyboard[Do][Go][Ao]}
 
 \newcommand{\DsPiano}{\keyboard[Dso][Go][Aso]}
 \newcommand{\EflatPiano}{\keyboard[Dso][Go][Aso]}
@@ -682,37 +686,49 @@
     {} %pasaje
     {} %\NotCCLIed
 
-        \SBIntro[N]{\Ch{G}{~} \Ch{Dm7/G}{~} \Ch{C}{~}}
+        \SBIntro[N]{\Ch{G}{~} \Ch{C2}{~} \Ch{G}{~}}
+        \SBBridge{LA-SI-DO-SI-LA-SOL}
 
-        \FLineIdx{}
-
-        \begin{SBOpGroup}
-            En el cielo y en la tierra te alabamos OH Se\Ch{G}{ñor}.
-
-            Eres \Ch{G}{dig}no de alabanza y de suprema adoración.
-
-            Te proclamamos Señor. Te proclamamos Se\Ch{G}{ñor}.
-        \end{SBOpGroup}
+        \FLineIdx{En el cielo y en la tierra te alabamos oh Señor}
 
         \begin{SBChorus}
-            Ale\Ch{G}{lu}ya, Alelu\Ch{Em7}{ya}, Ale\Ch{C2}{lu}ya \Ch{Am7}{al} Se\Ch{Dsus4}{ñor}.
-            Ale\Ch{G}{lu}ya, Alelu\Ch{G}{ya}, Aleluya al Se\Ch{G}{ñor}.
+            Ale\Ch{G}{lu}ya, Alelu\Ch{Em7}{ya}, Ale\Ch{C2}{lu}ya \Ch{Am7}{al} \Ch{Dsus4}{Se}\Ch{D}{ñor}.
+
+            Ale\Ch{G}{lu}ya, Alelu\Ch{Em7}{ya}, Ale\Ch{C2}{lu}ya \Ch{D}{al} Se\Ch{G}{ñor}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            \Ch{G}{En} la cruz por mí te diste para darme liber\Ch{G}{tad}.
+            \Ch{G}{En} el cielo y en la \Ch{D}{tie}rra te ala\Ch{C}{ba}mos OH Se\Ch{G}{ñor}.
 
-            De la tumba resurgiste y en tu trono ahora es\Ch{G}{tás}.
+            Eres digno de ala\Ch{D}{ban}za y de suprema adora\Ch{G}{ción}.
 
-            OH Jesús te proclamamos Señor.te proclamamos Señor
+            Te proclama\Ch{D}{mos} Señor.
+
+            Te proclama\Ch{D}{mos} Se\Ch{G}{ñor}.
         \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G}{En} la cruz por mí te \Ch{D}{dis}te para darme liber\Ch{G}{tad}.
+
+            De la tumba resur\Ch{D}{gis}te y en tu trono ahora es\Ch{G}{tás}.
+
+            OH Jesús te proclamamos Señor.
+
+            te proclamamos Se\Ch{G}{ñor}
+        \end{SBOpGroup}
+
+        \SBEnd{C-G-Am7-G}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
-            \upchord{\DPiano\D}{Re} Mayor \hfill \break
+            \upchord{\CtwoPiano\Ctwo}{\qquad Do} Aumentada 2 \hfill \break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \qquad\qquad
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill \break
+            \upchord{\DsusPiano\Dsus}{Re} Mayor suspendida cuarta \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}

@@ -155,6 +155,7 @@
 %\newcommand{\Cmseven}{\chord{t}{x,p3,p1,n,p1,p3}{Cm7}}
 \newcommand{\CE}{\chord{t}{o,p3,n,p2,p1,n}{C/E}}
 \newcommand{\CG}{\chord{t}{p3,n,p2,n,p1,n}{C/G}}
+\newcommand{\CMaj}{\chord{t}{p3,p3,p2,n,n,n}{C+}}
 \newcommand{\Ctwo}{\chord{t}{x,p3,p2,n,p3,n}{C2}}
 
 \newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C\#}}
@@ -239,6 +240,7 @@
 \newcommand{\CGPiano}{\keyboardf[Go][Co][Eo]}
 \newcommand{\CsevenPiano}{\keyboard[Co][Eo][Go][Aso]}
 \newcommand{\CmPiano}{\keyboard[Co][Dso][Go]}
+\newcommand{\CMajPiano}{\keyboard[Co][Eo][Go][Do]}
 
 \newcommand{\CsPiano}{\keyboard[Cso][Fo][Gso]}
 \newcommand{\CsmPiano}{\keyboard[Cso][Eo][Gso]}
@@ -478,6 +480,77 @@
         \fi
     \end{song}
 
+    \begin{song}{A Danzar}{C\#m}
+    {} %copyright \SBPubDom
+    {Barak}
+    {Juan 17:22} %pasaje
+    {} %\NotCCLIed
+
+        \SBMargNote{Notas del piano (figura)\vskip 10pt
+
+        E E E D\# E F\# E
+        \vskip 10pt
+
+        //E E D\# E F# E//
+        \vskip 10pt
+
+        E D\# E D\# C\# B
+        \vskip 10pt
+
+        G\# A G\# F\# G\# F\#}
+
+        \begin{SBChorus}
+            A Dan\Ch{C#m}{zar} de\Ch{A}{lan}te de su pre\Ch{E}{sen}cia
+
+            Su a\Ch{B}{mor} es quien nos sus\Ch{C#m}{ten}ta
+
+            El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
+        \end{SBChorus}
+
+        \SBBridge{ \Ch{C\#m}{~}  \Ch{A}{~}  \Ch{E}{~}  \Ch{B}{~} }
+
+        \begin{SBOpGroup}
+            Da un paso al frente\Ch{C\#m}{~}
+
+            Has algo diferente\Ch{C\#m}{~}
+
+            Demos toda gloria a Jesús\Ch{A}{~}
+
+
+            Levanta tus manos\Ch{C\#m}{~}
+
+            Grita que el es Santo\Ch{C\#m}{~}
+
+            es El gran yo soy murió en la \Ch{A}{cruz}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{B}{Si} tu respiras tienes que adorar
+
+            \Ch{A}{Que} nada te impida danzar
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            A dan\Ch{C#m}{zar} a \Ch{A}{Dios} vamos ado\Ch{E}{rar}
+
+            Su a\Ch{B}{mor} hay que cele\Ch{C#m}{brar}
+
+            El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
+
+            //A danzar//\Ch{C\#m}{~}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CsmPiano\Csm}{\qquad Do} Sostenido Menor \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \qquad\qquad
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Doxolog\'ia}{G}
     {} %copyright \SBPubDom
     {Thomas Ken, Genevan Psalter, 1551, atr. a Louis Bourgeois}
@@ -511,7 +584,6 @@
         \end{SBOpGroup}
         \fi
     \end{song}
-
 
     \begin{song}{Admirable}{Dm7}
     {} %copyright \SBPubDom
@@ -798,7 +870,7 @@
 
     \begin{song}{Al Trono Majestuoso}{Eb}
     {} %copyright \SBPubDom
-    {Aurelia \& Samuel sebastian Wesley}
+    {Aurelia \& Samuel Sebastian Wesley}
     {} %pasaje
     {} %\NotCCLIed
 
@@ -2297,7 +2369,7 @@
 
     \begin{song}{Él es el Rey}{Em}
     {} %copyright \SBPubDom
-    {}
+    {Emmanuel Espinosa \& Jesús Adrian Romero}
     {} %pasaje
     {}
 
@@ -3173,9 +3245,9 @@
 
     \begin{song}{Hoy es Tiempo}{Bm}
     {} %copyright \SBPubDom
-    {}
-    {} %pasaje
     {Marcos Witt}
+    {} %pasaje
+    {}
 
         \begin{SBOpGroup}
             Tiempo de vivir, tiempo de morir.
@@ -3239,9 +3311,9 @@
 
     \begin{song}{Jesús el Señor}{G}
     {} %copyright \SBPubDom
-    {}
-    {Filipenses 2:1-11} %pasaje
     {Jesús Adrián Romero}
+    {Filipenses 2:1-11} %pasaje
+    {}
 
         \FLineIdx{Jes\'us, Señor de la creaci\'on}
 
@@ -3382,9 +3454,9 @@
 
     \begin{song}{La Casa De Dios}{D}
     {} %copyright \SBPubDom
-    {}
-    {} %pasaje
     {Danilo Montero}
+    {} %pasaje
+    {}
 
         \FLineIdx{Mejor es un día en la casa de Dios}
 
@@ -3473,9 +3545,9 @@
 
     \begin{song}{La Niña De Tus Ojos}{C}
     {} %copyright \SBPubDom
-    {}
-    {} %pasaje
     {Daniel Calvetti}
+    {} %pasaje
+    {}
 
         \FLineIdx{Me viste a mí}
 
@@ -3521,11 +3593,25 @@
 
     \begin{song}{La Sunamita}{Ab}
     {} %copyright \SBPubDom
-    {}
-    {} %pasaje
     {Montesanto}
+    {} %pasaje
+    {}
 
         \SBIntro{\Ch{Ab}{~} \Ch{F}{~} \Ch{C}{~} \Ch{Ab}{~}}
+
+        \SBMargNote{Notas del piano (figura)\vskip 10pt
+
+        G-G\#-D\# / Ab
+        \vskip 10pt
+
+        Db-C-G\# / F
+        \vskip 10pt
+
+        G-G\#-G / C
+        \vskip 10pt
+
+        Db-C-G\# / Db}
+
 
         \begin{SBOpGroup}
             \Ch{Ab}{Vi}niste a mi \Ch{Db/F}{ca}sa
@@ -3578,12 +3664,213 @@
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill \break
             \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
             \upchord{\DflatFPiano\DflatF}{\qquad Re bemol} Mayor bajo F  \hfill \break
-            \upchord{\AflatPiano\AflatEflat}{\qquad La} bemol Mayor bajo Eb \qquad\qquad
+            \upchord{\AflatPiano\AflatEflat}{La} bemol Mayor bajo Eb \qquad\qquad
             \upchord{\DflatPiano\Dflat}{\qquad Re bemol} Mayor  \hfill \break
             \upchord{\FmsevenPiano\Fmseven}{\quad Fa} menor S\'eptima \qquad\qquad
             \upchord{\AflatPiano\AflatC}{\qquad La} bemol Mayor bajo C \hfill \break
-            \upchord{\BflatmsevenPiano\Bflatmseven}{\qquad Si Bemol} menor S\'eptima \qquad\qquad
+            \upchord{\BflatmsevenPiano\Bflatmseven}{Si Bemol} menor S\'eptima \qquad\qquad
             \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Lev\'antateSe\~nor}{Bm}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {}
+
+        \begin{SBChorus}
+            Levántate, levántate Señor. Levántate, levántate
+            Señor.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Huyan delante de Ti tus enemigos
+            se dispersen delante de Ti
+            todos aquellos que aborrecen tu presencia.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Espíritu de temor ¡Huye!, espíritu de maldad
+            ¡Huye!
+            Espíritu profanador ¡Huye!, espíritu de vanidad
+            ¡Huye!
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Levanto Mis Manos}{D}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Levanto mis manos
+            aunque no tenga fuerzas.
+            levanto mis manos
+            aunque tenga mil problemas.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Cuando levanto mis manos
+            comienzo a sentir
+            Una unción que me hace cantar.
+            Cuando levanto mis manos
+            comienzo a sentir
+            el fuego.
+            Cuando levanto mis manos
+            mis cargas se van,
+            nuevas fuerzas tu me das.
+            Todo eso es posible, todo eso es posible,
+            cuando levanto mis manos.
+        \end{SBChorus}
+
+        \begin{SBChorus}
+            Cuando levanto mis manos
+            comienzo a sentir
+            Una unción que me hace cantar.
+            Cuando levanto mis manos
+            comienzo a sentir
+            el fuego.
+            Cuando levanto mis manos
+            mis cargas se van,
+            nuevas fuerzas tu me das.
+            Todo eso es posible, todo eso es posible,
+            cuando levanto mis manos.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Lléname Señor}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \FLineIdx{Como el ciervo busca por las aguas}
+
+        \begin{SBOpGroup}
+            Como el ciervo busca por las aguas,
+            así clama mi alma por Tí Señor.
+            Día y noche yo tengo sed de Tí
+            y sólo a Tí buscaré.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Lléname, lléname Señor. Dame más, más de tu amor.
+            Yo tengo sed solo de Tí. Lléname Señor.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Libertad}{Dm}
+    {} %copyright \SBPubDom
+    {Jesús Adrián Romero}
+    {} %pasaje
+    {}
+
+        \FLineIdx{Me has dado libertad}
+
+        \begin{SBOpGroup}
+            Me has dado libertad, salí de mi prisión
+            tu gran poder en mi rompió
+            las cadenas de mi gran opresión
+            Me has dado salvación, cautivo ya no soy
+            no vivo mas en condenación
+            he sido libre por tu gran amor
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Libertad tu me has dado
+            libertad de mis cadenas
+            libertad no soy esclavo
+            soy tan libre puedo casi volar
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Libre soy en Jesús libre por su cruz
+            he visto en Él la luz porque no vienes tú
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Majestuoso, Poderoso}{D}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Majestuoso, Poderoso, digno de loor.
+            Proclamemos su grandeza hoy.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Jesucristo es Rey.
+            Jesucristo es Rey.
+            Postrados hoy ante sus pies.
+            Jesucristo es Rey.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    %Manda Señor
+    %Másquepalabras
+
+    \begin{song}{Mas El Dios De Toda Gracia}{A}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Mas el Dios de toda gracia que nos llamó a su gloria
+            eterna.
+            Os perfeccione y afirme, fortalezca y establezca.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            A Él se- a la gloria, a Él sea el imperio.
+            Por los siglos de los siglos. Amén, Amén, Amén y
+            Amén.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3599,34 +3886,32 @@
         \SBIntro[N]{\Ch{G}{~} \Ch{C}{~} \Ch{Am}{~} \Ch{D}{~}}
 
         \begin{SBOpGroup}
-            Me dice que me ama cuando escucho llover,
-            G C
-            me dice que ama con un atardecer,
-            G C Em D
-            lo dice sin palabras, con las olas del mar,
-            Em C D
-            lo dice en la mañana con mi respirar.
+            \Ch{G}{Me} dice que me \Ch{C}{a}ma cuando escucho llover,
+
+            \Ch{G}{Me} dice que me \Ch{C}{a}ma con un atardecer,
+
+            \Ch{G}{lo} di\Ch{C}{ce} sin pa\Ch{Em}{la}bras, \Ch{D}{con} las olas del mar,
+
+            \Ch{Em}{lo} dice en la \Ch{C}{ma}ña\Ch{D}{na} con mi respirar.
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            G C G C G
-            //Me dice que me ama y que conmigo quiere estar,
-            C Am7 D
+            \Ch{G}{Me} dice que me ama y que conmigo quiere estar,
+
             me dice que me busca cuando salgo yo a pasear,
-            Am7 C Em
+
             que ha hecho lo que existe para llamar mi atención,
-            Am D G C D
+
             que quiere conquistarme y alegrar mi corazón.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            G C
-            Me dice que me ama cuando veo la cruz,
-            G C
+            \Ch{G}{Me} dice que me \Ch{C}{a}ma cuando veo la cruz,
+
             sus manos extendidas así tan grande es su amor,
-            G C Em D
+
             lo dicen las heridas de sus manos y pies,
-            Em C D
+
             me dice que me ama una y otra vez.
         \end{SBOpGroup}
         \ifChordBk
@@ -3635,6 +3920,205 @@
             \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
         \end{SBOpGroup}
 
+        \fi
+    \end{song}
+
+    \begin{song}{Me Gozaré}{Em}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Me gozaré, me alegraré y cantaré al Señor.
+            Porque han llegado las bodas del Cordero de Dios.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y a su esposa se le ha concedido
+            que se vista de lino no.
+            Lino limpio y resplandeciente,
+            para recibir al Rey.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+%Mi Jesús, mi Amado
+
+    \begin{song}{Mi Nuevo Amor}{C}
+    {} %copyright \SBPubDom
+    {Robeto Orellana}
+    {} %pasaje
+    {}
+
+        \FLineIdx{Yo tengo un nuevo amor}
+
+        \begin{SBChorus}
+            Yo tengo un nuevo amor
+            el corazón me late sin parar
+            hay uno que me ha dicho, te amo de verdad
+            Jesús mi amor y mas que amor mi dulce paz.
+            Yo tengo un nuevo amor
+            jamás imaginé poder hallar,
+            aquél que le dio a mi vida una razón para amar
+            Jesús mi amor y mas que amor mi dulce paz.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Siento que tengo ganas de volar al firmamento
+            gritarle al mundo entero lo que estoy sintiendo,
+            que ya encontré mi dulce amor, Jesús es toda mi
+            verdad
+            y nunca yo me cansaré de repetirle hasta el final.
+            Que ahora yo...
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Su voz dulcísima en respuesta cuando llamo
+            sus ojos tiernos y hasta el toque de sus manos,
+            por siempre suyo quiero ser,Jesús es toda mi verdad
+            y nunca yo me cansaré de repetirle hasta el nal.
+            Que ahora yo...
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+% MiSerAlabaalSeñor
+%MiUniverso
+
+    \begin{song}{México Vamos a Cambiar}{G}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Hoy es tiempo de compartir
+            es el día no hay que esperar.
+            Tú yo yo debemos hablar
+            es tiempo de actuar.
+            A Cristo debemos levantar,
+            a Cristo debemos exaltar.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            En México todos tienen que saber
+            que Jesucristo es Dios y El es Rey.
+            Lo vamos a predicar, lo vamos a proclamar.
+            ¡México vamos a cambiar!
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{No hay Dios tan Grande}{E}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            No hay Dios tan grande como Tú,
+            no lo hay, no lo hay
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            No hay Dios que pueda hacer las obras
+            como las que haces Tú
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            No es con espada, ni con ejército
+            mas con tu santo Espíritu
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y esta iglesia se mueve ya
+        \end{SBOpGroup}
+
+        \SBEnd{con tu santo Espíritu}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Nadate turbe}{Am}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Nada te turbe, nada te espante.
+            Quien a Dios tiene, nada le falta.
+            Nada te turbe, nada te espante.
+            Sólo Dios basta.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+%NoMerecíaTantoAmor
+
+    \begin{song}{Pan de Vida}{G}
+    {} %copyright \SBPubDom
+    {Daniel Fraire \& Jesús Adrián Romero}
+    {} %pasaje
+    {}
+
+        \FLineIdx{Cuando flaquea mi fe}
+
+        \begin{SBOpGroup}
+            Cuando flaquea mi fe
+            Y siento desfallecer
+            Cuando no puedo seguir
+            Y faltan fuerzas en mí
+            Puedo a la mesa venir
+            Y puedo el pan compartir
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Es Jesús el Pan de Vida
+            El maná de mi desierto
+            Mi energía mi sustento
+            Es Jesús el Pan de Vida
+            Mi necesidad primera
+            Y sin tí yo nada fuera
+            Porque Jesús
+            Es pan de vida eterna
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
         \fi
     \end{song}
 
@@ -3724,6 +4208,64 @@
         \fi
     \end{song}
 
+    \begin{song}{Rey de reyes}{D}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {}
+
+        \SBIntro{\Ch{D}{~} \Ch{A}{~} \Ch{Em7}{~} \Ch{G}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{D}{Rey} de reyes, \Ch{A}{te} adoramos
+
+            \Ch{Em7}{Tu} grandeza procla\Ch{G}{ma}mos
+
+            \Ch{D}{Rey} de reyes, \Ch{A}{So}berano
+
+            \Ch{Em7}{Tu} victoria, ce\Ch{G}{le}bramos.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Bm7}{E}res Jesús \Ch{A}{el} que dio vida a \Ch{Em7}{nues}tro cora\Ch{D}{zón}
+
+            \Ch{Bm7}{E}res Jesús Dig\Ch{A}{no} de recibir \Ch{G}{to}da adora\Ch{A}{ción}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{G}{Rey} de reyes, te exal\Ch{D}{ta}mos
+
+            \Ch{Bm7}{Po}deroso en majestad
+
+            \Ch{A}{E}res el Camino y la Verdad.
+        \end{SBChorus}
+
+        \SBBridge{\Ch{Em7}{~} \Ch{Bm7}{~} \Ch{D}{~} \Ch{A}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{Em7}{No}, nadie jamás se podrá i\Ch{Bm7}{gua}lar
+
+            A Tu Poderío y Tu Majes\Ch{D}{tad}
+
+            Eres Principio y Eres Fi\Ch{A}{nal}
+
+            Y para siempre Tú reinas.\Ch{G}{~}
+        \end{SBOpGroup}
+
+        \SBEnd{\Ch{Em7}{~}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Será Llena la Tierra}{Am}
     {} %copyright \SBPubDom
     {Marco Barrientos}
@@ -3766,6 +4308,48 @@
             \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
             \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
             \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Yahweh}{Em7}
+    {} %copyright \SBPubDom
+    {Oasis Ministry}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            \Ch{Em7}{Se} siente tu gloria en este \Ch{Bm7}{lu}gar
+
+            Algo grande va a pa\Ch{C}{sar}
+
+            Se activa lo sobrenatu\Ch{Dsus}{ral}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Yah\Ch{C}{weh}, ra\Ch{Dsus}{fa}, elo\Ch{Bm7}{him}
+
+            \Ch{Em7}{Sha}ddai, jiYah\Ch{C}{reh}, a\Ch{Dsus}{do}nai
+
+            \Ch{Em7}{Se} manifestará
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{Em7}{Si} le adoras él se manifestara
+
+            \Ch{Dsus}{Si} le llamas él se manifiesta
+
+            \Ch{C}{Si} le buscas él se manifestará\Ch{Bm7}{~}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \qquad\qquad
+            \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \hfill \break
+            \upchord{\CMajPiano\CMaj}{\qquad Do} + \qquad\qquad
+            \upchord{\qquad \DsusPiano\Dsus}{Re} Mayor suspendida cuarta \hfill \break
+            \upchord{\qquad \DPiano\D}{\qquad Re} Mayor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}

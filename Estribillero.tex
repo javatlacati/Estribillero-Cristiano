@@ -139,6 +139,7 @@
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
 \newcommand{\Bflat}{\chord{t}{p1,p1,p3,p3,p3,p1}{Bb}}
 \newcommand{\Bflatseven}{\chord{t}{p1,p1,p3,p1,p3,p1}{Bb7}}
+\newcommand{\Bflatmseven}{\chord{t}{x,p1,p3,p1,p2,p1}{Bbm7}}
 
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
 \newcommand{\Bseven}{\chord{t}{x,f1p2,p4,f1p2,p4,f1p2,}{B7}}
@@ -162,6 +163,7 @@
 \newcommand{\CssevenLight}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
 
 \newcommand{\Dflat}{\chord{4}{n,n,p2,p2,p2,n}{Db}}
+\newcommand{\DflatF}{\chord{t}{x,x,p3,p5,p4,p4}{Db/F}}
 
 \newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
 \newcommand{\Dseven}{\chord{t}{x,x,n,p2,p1,p2}{D7}}
@@ -186,9 +188,11 @@
 \newcommand{\Emseven}{\chord{t}{n,p2,p2,n,p3,n}{Em7}}
 \newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
+\newcommand{\EGs}{\chord{t}{p4,o,p2,p1,n,n}{E/G\#}}
 
 \newcommand{\F}{\chord{t}{p1,p3,p3,p2,p1,p1}{F}}
 \newcommand{\Fm}{\chord{t}{p1,p3,p3,p1,p1,p1}{Fm}}
+\newcommand{\Fmseven}{\chord{t}{p1,p3,p1,p1,p1,p1}{Fm7}}
 
 \newcommand{\Fs}{\chord{t}{p2,p4,p4,p3,p2,p2}{F\#}}
 \newcommand{\Fsm}{\chord{t}{f1p2,p4,p4,f1p2,f1p2,f1p2,}{F\#m}}
@@ -207,6 +211,8 @@
 
 \newcommand{\Gs}{\chord{3}{x,x,p4,p3,p2,p2}{G\#}}
 \newcommand{\Aflat}{\chord{3}{x,x,p4,p3,p2,p2}{A$\flat$}}
+\newcommand{\AflatEflat}{\chord{3}{x,bp4,p4,p3,p2,p2}{A$\flat$/E$\flat$}}
+\newcommand{\AflatC}{\chord{t}{x,bp3,p1,p1,p1,p4}{A$\flat$/C}}
 \newcommand{\Aflatmajseven}{\chord{7}{p4,p3,x,o,p4,p4}{A$\flat$Maj7}}
 \newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4}{G\#7}}
 \newcommand{\Gssus}{\chord{t}{p4,p6,p6,p6,p4,p4}{Gsus4}}
@@ -221,6 +227,7 @@
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\BflatPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\BflatsevenPiano}{\keyboard[Do][Fo][Aso][Gso]}
+\newcommand{\BflatmsevenPiano}{\keyboard[Cso][Fo][Aso][Gso]}
 
 \newcommand{\BPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BsevenPiano}{\keyboard[Dso][Fso][Bo][Ao]}
@@ -236,8 +243,10 @@
 \newcommand{\CsPiano}{\keyboard[Cso][Fo][Gso]}
 \newcommand{\CsmPiano}{\keyboard[Cso][Eo][Gso]}
 \newcommand{\CsmsevenPiano}{\keyboard[Cso][Eo][Gso][Aso]}
+\newcommand{\CsFPiano}{\keyboardf[Fo][Gso][Cso]}
 
 \newcommand{\DflatPiano}{\CsPiano}
+\newcommand{\DflatFPiano}{\CsFPiano}
 
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
 \newcommand{\DsevenPiano}{\keyboard[Do][Fso][Ao][Co]}
@@ -258,6 +267,7 @@
 
 \newcommand{\FPiano}{\keyboard[Co][Fo][Ao]}
 \newcommand{\FmPiano}{\keyboard[Co][Fo][Aso]}
+\newcommand{\FmsevenPiano}{\keyboard[Co][Fo][Aso][Dso]}
 
 \newcommand{\FsPiano}{\keyboard[Cso][Fso][Aso]}
 \newcommand{\FsmPiano}{\keyboard[Cso][Fso][Ao]}
@@ -960,6 +970,7 @@
             \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
             \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -972,39 +983,67 @@
 
 
         \begin{SBOpGroup}
-            Cuando el mundo te inunda de fatalidad
-            y te agobia la vida con su mucho afán
-            y se llena tu alma de preocupación
-            y se seca la fuente de tu corazón
+            \Ch{Am}{Cuan}do el mundo te i\Ch{A/C\#}{nun}da de fa\Ch{Dm}{ta}lidad
+
+            \Ch{G}{y} te agobia la \Ch{G/B}{vi}da con su \Ch{C}{mu}cho afán
+
+            \Ch{F}{y} se llena tu alma de preo\Ch{Dm}{cu}pación
+
+            \Ch{Bm7}{y} se seca la fuente de tu cora\Ch{E}{zón}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Puedes sentarte a sus pies
-            y de sus manos beber
-            la plenitud que tu alma necesita
-            puedes sentarte a sus pies
-            y cada día tener
-            una nueva canción y nueva vida
-            a sus pies hay paz,
-            gracia y bendición
-            a sus pies tendrás
-            luz y dirección.
-            la plenitud en Él
-            nunca se agotará
-            puedes descansar en su presencia
+            \Ch{Am}{Pue}des sentarte a sus \Ch{E/G\#}{pies}
+
+            \Ch{E}{y} de sus manos be\Ch{Am}{ber}
+
+            la \Ch{Dm}{ple}nitud que tu \Ch{Bm7}{al}ma nece\Ch{E}{si}ta
+
+            \Ch{Am}{Pue}des sentarte a sus \Ch{E/G\#}{pies}
+
+            \Ch{E}{y} cada día te\Ch{Am}{ner}
+
+            u\Ch{Dm}{na} nueva can\Ch{Bm7}{ción} y nueva \Ch{E}{vi}da
+
+            \Ch{Am}{a} sus pies hay \Ch{Dm}{paz},
+
+            \Ch{E/G\#}{gra}cia y bendi\Ch{Am}{ción}
+
+            \Ch{F}{a} sus pies ten\Ch{Dm}{drás}
+
+            \Ch{B7}{luz} y direc\Ch{E}{ción}.
+
+            \Ch{A/C\#}{la} plenitud en \Ch{Dm}{Él}
+
+            \Ch{B7}{nun}ca se agota\Ch{E}{rá}
+
+            \Ch{F}{pue}des descan\Ch{E}{sar} en su pre\Ch{Am}{sen}cia
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Cuando quieras huir por que no puedes más
-            por que sólo te sientes entre los demás
-            y no hay más en tus ojos brillo y emoción
-            y se cierra tu boca por que no hay canción
+            \Ch{Am}{Cuan}do quieras hu\Ch{A/C\#}{ir} por que no \Ch{Dm}{pue}des más
+
+            \Ch{G}{por}que sólo te \Ch{G/B}{sien}tes entre \Ch{C}{los} demás
+
+            \Ch{F}{y} no hay más en tus ojos brillo y \Ch{Dm}{e}moción
+
+            \Ch{Bm7}{y} se cierra tu boca por que no \Ch{E}{hay} canción
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+            \upchord{\ACsPiano\ACs}{\qquad La} Mayor con bajo C\# \hfill \break
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill \break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill \break
+            \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \qquad\qquad
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill \break
+            \upchord{\EGsPiano\EGs}{\qquad Mi} Mayor con bajo G\# \qquad\qquad
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2969,6 +3008,586 @@
         \fi
     \end{song}
 
+    \begin{song}{Has Ganado la Victoria}{Bm}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Has ga\Ch{Bm}{na}do la victoria,
+            la victoria para mi.
+            Al pecado has vencido,
+            has ganado la batalla Tú por mi.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Porque Tú eres mi Dios en los cielos,
+            porque Tú eres mi Dios en la tierra.
+            Porque Tú eres mi Dios en los cielos,
+            porque Tú eres mi Dios en la tierra.
+            Tú eres mi Dios y te alabaré.
+            Tú eres mi Dios y te exaltaré.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Hay una Fuente en mi}{A}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Es un río de alabanza y de adoración dirigida hacia tí,
+            Señor Jesús, recíbelo
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Hay una fuente en mi que está brotando que está
+            fluyendo en mi.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{He Decidido Seguir a Cristo}{C}
+    {} %copyright \SBPubDom
+    {}
+    {Juan 12:26} %pasaje
+    {}
+
+        \begin{SBChorus}
+            He decidido seguir a Cristo,
+            he decidido seguir a Cristo,
+            he decidido seguir a Cristo,
+            no vuelvo atrás, no vuelvo atrás.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            La vida vieja la he dejado
+            la vida vieja la he dejado
+            la vida vieja la he dejado
+            no vuelvo atrás, no vuelvo atrás.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            El Rey de gloria me ha transformado
+            el Rey de gloria me ha transformado
+            el Rey de gloria me ha transformado
+            no vuelvo atrás, no vuelvo atrás.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            La cruz delante y el mundo atrás,
+            la cruz delante y el mundo atrás,
+            he decidido seguir a Cristo,
+            no vuelvo atrás, no vuelvo atrás.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{He de Confiar en Jesús}{A}
+    {} %copyright \SBPubDom
+    {}
+    {Juan 12:26} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            He de confiar en Jesús, en mi vida sí;
+            he de confiar en Jesús, pues me dió un cantar;
+            y aunque la nubes aquí, me ensombrecerán,
+            si voy con ando en Jesús, Él me sostendrá
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Gran amigo es Él,
+            ¡Oh que amigo tan fiel!
+            hasta el final, con fiaré en Él;
+            y aunque la nubes aquí, me ensombrecerán,
+            si voy confiando en Jesús, Él me sostendrá
+        \end{SBChorus}
+
+        \SBEnd{Si voy confiando en Jesús, Él me sostendrá}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{¡Hosanna! ¡Hosanna! ¡Hosanna!}{Bb}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            ¡Hosanna! ¡Hosanna! ¡Hosanna!
+            El cielo y tierra es del Señor,
+            la gloria y potestad;
+            y nos circunda con su amor
+            la excelsa Trinidad.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Alzad pues himnos de loor
+            que es grato al sumo Bien,
+            y a Dios rindamos todo honor
+            ahora y siempre. Amén.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            A Dios rindamos todo honor
+            todo honor, todo honor;
+            a Dios rindamos todo honor
+            ahora y siempre. Amén.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Hoy es Tiempo}{Bm}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {Marcos Witt}
+
+        \begin{SBOpGroup}
+            Tiempo de vivir, tiempo de morir.
+            Tiempo de llorar, tiempo de reir.
+            Tiempo de animar y redargüir hoy es tiempo.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Tiempo de aprender, tiempo de enseñar.
+            Tiempo de hablar, tiempo de callar.
+            Tiempo de sembrar y de cosechar hoy es tiempo.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Hoy es tiempo que seamos
+            ese pueblo glorioso el y victorioso de Dios.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Iglesia de Cristo}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            Iglesia de Cristo, reanima tu amor
+            y espera, velando, a tu amado Señor.
+            Jesús el esposo, vestido de honor,
+            viniendo se anuncia con fuerte clamor.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Si falta en algunos el santo fervor,
+            de todos la fe sea el despertador.
+            Velad compañeros Velad sin temor,
+            que está con nosotros el Consolador
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Quien sigue la senda del vil pecador
+            se entrega en los brazos de un sueño traidor;
+            mas para los siervos del buen Salvador,
+            velar, esperando, es su anhelo mejor.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Jesús el Señor}{G}
+    {} %copyright \SBPubDom
+    {}
+    {Filipenses 2:1-11} %pasaje
+    {Jesús Adrián Romero}
+
+        \FLineIdx{Jes\'us, Señor de la creaci\'on}
+
+        \begin{SBOpGroup}
+            Je\Ch{G}{sús}, Señor de la creación.
+            Siendo en forma de \Ch{G}{Dios}
+            se despojó de sí mismo.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            To\Ch{G}{mó} la semejanza de hombre
+            y siendo puro y sin \Ch{G}{man}cha
+            entre nosotros vivió.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y a sí mismo se humilló
+            tomando forma de siervo
+            hasta su vida entregar
+            y en una cruz terminar
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Mas \Ch{G}{Dios} a lo sumo le exaltó
+            y Su Nombre engrande\Ch{G}{ció}
+            para que ante Su autoridad
+            toda rodilla se \Ch{G}{do}ble
+            y toda lengua con\Ch{G}{fi}ese que
+            Jesús es el Se\Ch{G}{ñor}.
+        \end{SBChorus}
+
+        \SBEnd{El Señor El Señor\Ch{G}{~}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Jubilosos Te Adoramos}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Ju}bilosos, te adoramos,
+            Dios de gloria y Salvador;
+            \Ch{G}{nues}tras vidas te entregamos
+            como se abre al sol \Ch{G}{la} flor.
+            Ahuyenta nuestros males
+            y tristezas, oh Jesús.
+            \Ch{G}{Da}nos bienes celestiales.
+            Llénanos de go\Ch{G}{zo} y luz.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Tie}rra y cielo están gozosos,
+            reflejando así tu amor;
+            ángeles y estrellas todos
+            cantan siempre tu loor.
+            Monte, valle, río y fuente,
+            campo. selva y ancho mar
+            nos recuerdan que constante
+            te debemos alabar.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Tú}, que siempre nos perdonas,
+            danos hoy tu bendición;
+            Tú, que todo proporcionas,
+            da tu paz al corazón.
+            Padre, y Cristo nuestro hermano,
+            para siempre tuyos son
+            los que en todo trato humano
+            buscan tu alta aprobación.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            ¡\Ch{G}{Oh}, mortales, hoy cantemos
+            con el coro celestial!;
+            como hermanos habitemos
+            en amor santo y real.
+            Alabando siempre vamos
+            en la vida a conquistar;
+            si gozosos caminamos
+            fácil nos será triunfar.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{La Canción del Espíritu}{C}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \FLineIdx{Oh deja que el Señor te envuelva}
+
+        \begin{SBOpGroup}
+            Oh deja que el Señor te envuelva
+            en su Espíritu de amor,
+            satisfaga hoy tu alma y corazón;
+            entrégale lo que te pide
+            y su Espíritu vendrá
+            sobre ti y vida nueva te dará.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Cristo, Oh Cristo, ven y llénanos,
+            Cristo, Oh Cristo, llénanos de ti.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Alzamos nuestra voz con gozo
+            nuestra alabanza a ti,
+            con dulzura te entregamos, nuestro ser;
+            entrega toda tu tristeza,
+            en el nombre de Jesús
+            y abundante vida hoy tendrás en El.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{La Casa De Dios}{D}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {Danilo Montero}
+
+        \FLineIdx{Mejor es un día en la casa de Dios}
+
+        \begin{SBOpGroup}
+            Mejor es un día en la casa de Dios
+            que mil años lejos de Él
+            pre ero un rincón en la casa de Dios
+            que todo el palacio de un rey
+            que todo el palacio de un rey
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Ven conmigo a la casa de Dios,
+            celebraremos juntos su amor
+            haremos esta en honor de aquél que nos amó
+            Estando aquí en la casa de Dios
+            alegraremos su corazón,
+            le brindaremos ofrendas de obediencia y amor
+            ¡en la casa de Dios!
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Arde mi alma, arde de amor
+            por el que me dió la vida,
+            por eso le anhela mi corazón,
+            anhela de su compañía
+            anhela de su compañía
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{La Gloria de Cristo}{Ab}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+
+        \begin{SBOpGroup}
+            La gloria de Cristo el Señor cantaré,
+            Pues llena mi vida de gozo y de paz;
+            Callar los favores que de Él alcancé,
+            Mi labio no puede jamás.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Es todo bondad para mí,
+            Con Él nada puedo desear,
+            Pues todos mis altos deseos aquí,
+            Tan sólo él los puede llenar.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            En horas de angustia conmigo él está,
+            Y puedo escuchar su dulcísima voz,
+            Que me habla, y su paz inefable me da,
+            La paz in nita de Dios.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Si a rudos conflictos me mira que voy,
+            Me deja hasta el n a mí sólo luchar,
+            Mas pronto, si ve que cediendo ya estoy,
+            Socorro me viene a prestar.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            También cuando gozo lo miro llegar,
+            Y entonces mi dicha la aumenta el Señor,
+            Ya llena mi copa, la veo rebosar,
+            Con todos sus dones de amor.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{La Niña De Tus Ojos}{C}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {Daniel Calvetti}
+
+        \FLineIdx{Me viste a mí}
+
+        \begin{SBOpGroup}
+            Me viste a mí
+            cuando nadie me vió
+            me viste a mí
+            cuando nadie me amo
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y me diste nombre
+            yo soy tu niña
+            la niña de tus ojos
+            por que me amaste a mí
+            Me amaste a mí,
+            me amaste a mí,
+            me amaste a mí,
+            me amaste a mí,
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Te amo más que mi vida
+            te amo más que mi vida
+            te amo más que mi vida,
+            más
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Y me diste nombre
+            yo soy tu niña
+            la niña de tus ojos
+            por que me amaste a mí
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{La Sunamita}{Ab}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {Montesanto}
+
+        \SBIntro{\Ch{Ab}{~} \Ch{F}{~} \Ch{C}{~} \Ch{Ab}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{Ab}{Vi}niste a mi \Ch{Db/F}{ca}sa
+
+            Me visi\Ch{Ab/Eb}{tas}te
+
+            Disfruté tu pre\Ch{Db}{sen}cia
+
+            Me cauti\Ch{Fm7}{vas}te
+
+            No quiero que te va\Ch{Db}{yas}
+
+            Yo quiero que \Ch{Ab/C}{te} que\Ch{Bbm7}{des}
+
+            He pre\Ch{Db}{pa}rado un aposento para \Ch{Eb}{ti}\Ch{Ab/C}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Mi a\Ch{Db}{ma}do
+
+            Mi a\Ch{Bbm7}{ma}do
+
+            Yo soy La Suna\Ch{Ab}{mi}ta
+
+            Que te dice Vive a\Ch{Eb}{quí}
+
+            Mi a\Ch{Db}{ma}do
+
+            Mi a\Ch{Bb}{ma}do
+
+            Todo lo que \Ch{Ab}{ves} lo he preparado para \Ch{Eb}{ti}
+        \end{SBChorus}
+
+        \SBBridge{\Ch{F/Db}{~} \Ch{G/Eb}{~}  \hfill \break \Ch{Ab/F}{~} \Ch{G/Cm}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{Db}{No} importa todo lo que cues\Ch{Eb}{te}
+
+            Tu presencia vale mucho \Ch{Fm7}{más}
+
+            Solo quiero estar contigo
+
+            \Ch{Cm7}{U}na y otra, y otra, y otra \Ch{Db}{vez}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \qquad\qquad
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill \break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\DflatFPiano\DflatF}{\qquad Re bemol} Mayor bajo F  \hfill \break
+            \upchord{\AflatPiano\AflatEflat}{\qquad La} bemol Mayor bajo Eb \qquad\qquad
+            \upchord{\DflatPiano\Dflat}{\qquad Re bemol} Mayor  \hfill \break
+            \upchord{\FmsevenPiano\Fmseven}{\quad Fa} menor S\'eptima \qquad\qquad
+            \upchord{\AflatPiano\AflatC}{\qquad La} bemol Mayor bajo C \hfill \break
+            \upchord{\BflatmsevenPiano\Bflatmseven}{\qquad Si Bemol} menor S\'eptima \qquad\qquad
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Me dice que me ama}{G}
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
@@ -3100,6 +3719,7 @@
             Acordes:
 
             \upchord{\GssevenPiano\Gsseven}{Sol} sostenido Mayor S\'eptima
+            \upchord{\FmPiano\Fm}{\quad Fa} menor \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}

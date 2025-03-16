@@ -180,6 +180,7 @@
 
 \newcommand{\Ds}{\chord{t}{n,n,p1,p3,p4,p3}{D\#}}
 \newcommand{\Dsm}{\chord{t}{x,x,p1,p3,p4,p2}{D\#m}}
+\newcommand{\Dsmseven}{\chord{t}{x,x,p1,p3,p2,p2}{D\#m7}}
 \newcommand{\Eflat}{\chord{t}{n,n,p1,p3,p4,p3}{E$\flat$}}
 
 \newcommand{\E}{\chord{t}{n,p2,p2,p1,n,n}{E}}
@@ -261,6 +262,7 @@
 
 \newcommand{\DsPiano}{\keyboard[Dso][Go][Aso]}
 \newcommand{\DsmPiano}{\keyboard[Dso][Fso][Aso]}
+\newcommand{\DsmsevenPiano}{\keyboard[Dso][Fso][Aso][Cso]}
 \newcommand{\EflatPiano}{\keyboard[Dso][Go][Aso]}
 
 \newcommand{\EPiano}{\keyboard[Eo][Gso][Bo]}
@@ -1447,7 +1449,7 @@
             \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \qquad\qquad
             \upchord{\GssusPiano\Gssus}{\qquad Sol sostenido} suspendida cuarta \hfill \break
             \upchord{\CsmPiano\Csm}{\qquad Do sostenido} Menor \qquad\qquad
-            \upchord{\FsmsevenPiano\Fsmseven}{\qquad Fa sostenido} S\'eptima Menor \qquad\qquad
+            \upchord{\FsmsevenPiano\Fsmseven}{\qquad Fa sostenido} Menor S\'eptima \qquad\qquad
         \end{SBOpGroup}
         \fi
 
@@ -1816,9 +1818,11 @@
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            A dan\Ch{C#m}{zar} a \Ch{A}{Dios} vamos ado\Ch{E}{rar}
+            El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
 
-            Su a\Ch{B}{mor} hay que cele\Ch{C#m}{brar}
+            A dan\Ch{C\#m}{zar} a \Ch{A}{Dios} vamos ado\Ch{E}{rar}
+
+            Su a\Ch{B}{mor} hay que cele\Ch{C\#m}{brar}
 
             El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
 
@@ -1834,6 +1838,77 @@
             \upchord{\BPiano\B}{\qquad Si} Mayor \hfill \break
         \end{SBOpGroup}
         \fi
+
+        \begin{SBExtraKeys}{
+            \STitle{Danzar}{Em}
+
+%            \SBMargNote{Notas del piano (figura)\vskip 10pt
+%
+%            E E E D\# E F\# E
+%            \vskip 10pt
+%
+%            //E E D\# E F# E//
+%            \vskip 10pt
+%
+%            E D\# E D\# C\# B
+%            \vskip 10pt
+%
+%            G\# A G\# F\# G\# F\#}
+
+            \begin{SBChorus}
+                A Dan\Ch{Em}{zar} de\Ch{C}{lan}te de su pre\Ch{G}{sen}cia
+
+                Su a\Ch{D}{mor} es quien nos sus\Ch{Em}{ten}ta
+
+                El es \Ch{C}{Dios} El es \Ch{G}{quien} resuci\Ch{D}{tó}
+            \end{SBChorus}
+
+            \SBBridge{ \Ch{Em}{~}  \Ch{C}{~}  \Ch{G}{~}  \Ch{D}{~} }
+
+            \begin{SBOpGroup}
+                Da un paso al frente\Ch{Em}{~}
+
+                Has algo diferente\Ch{Em}{~}
+
+                Demos toda gloria a Jesús\Ch{C}{~}
+
+
+                Levanta tus manos\Ch{Em}{~}
+
+                Grita que el es Santo\Ch{Em}{~}
+
+                es El gran yo soy murió en la \Ch{C}{cruz}
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                \Ch{D}{Si} tu respiras tienes que adorar
+
+                \Ch{C}{Que} nada te impida danzar
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                El es \Ch{C}{Dios} El es \Ch{G}{quien} resuci\Ch{D}{t\'o}
+
+                A dan\Ch{Em}{zar} a \Ch{C}{Dios} vamos ado\Ch{G}{rar}
+
+                Su a\Ch{D}{mor} hay que cele\Ch{Em}{brar}
+
+                El es \Ch{C}{Dios} El es \Ch{G}{quien} resuci\Ch{D}{t\'o}
+
+                //A danzar//\Ch{Em}{~}
+            \end{SBOpGroup}
+
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+                \upchord{\CPiano\C}{\qquad C} Mayor \hfill \break
+                \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+                \upchord{\DPiano\D}{\qquad Re} Mayor \hfill \break
+            \end{SBOpGroup}
+            \fi
+
+        }\end{SBExtraKeys}
     \end{song}
 
     \begin{song}{De Gloria En Gloria}{D}
@@ -2670,7 +2745,7 @@
         \begin{SBOpGroup}
             ¿Cómo pues invocarán a Aquel
             en el cual no han creído?
-            ¾Y cómo creerán en Aquel
+            ¿Y cómo creerán en Aquel
             del cual no han oído?
             ¿Y cómo oirán
             si nadie les predica?
@@ -2860,6 +2935,41 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Eres Todopoderoso}{Bm}
+    {} %copyright \SBPubDom
+    {Juan Salinas}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/5WaVwloIYHm95mNQnrfyZT}{Escuchar}}
+
+        \begin{SBOpGroup}
+            La \Ch{Bm}{ú}nica razón de mi a\Ch{G}{do}ración, \Ch{D}{e}res Tú mi Je\Ch{A}{sús}
+
+            Mi \Ch{Bm}{ú}nico motivo pa\Ch{G}{ra} vivir, \Ch{D}{e}res Tú mi Se\Ch{A}{ñor}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Mi úni\Ch{Bm}{ca} verdad es\Ch{G}{tá} en tí, eres mi \Ch{D}{luz} y mi salva\Ch{A}{ción}
+
+            Mi úni\Ch{Bm}{co} amor eres \Ch{G}{Tú} Señor, y por \Ch{D}{siem}pre te alaba\Ch{A}{ré}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Eres \Ch{Bm}{To}dopode\Ch{G}{ro}so, eres \Ch{D}{gran}de y majes\Ch{A}{tuo}so
+
+            Eres \Ch{Bm}{fuer}te, inven\Ch{G}{ci}ble y no hay \Ch{D}{na}die como \Ch{A}{Tú}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3122,6 +3232,84 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Hay Libertad}{Em}
+    {} %copyright \SBPubDom
+    {Art Aguilera}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/4nxxZtSpkS3tEmuYxNMPmr}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{Em}{Hoy} puedo danzar con liber\Ch{C}{tad},
+
+            Porque soy su \Ch{G}{Hi}jo,
+
+            Porque soy su \Ch{D}{hi}jo.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Em}{Hoy} puedo danzar con liber\Ch{C}{tad},
+
+            Porque soy a\Ch{G}{ma}do,
+
+            Porque soy a\Ch{D}{ma}do.
+        \end{SBOpGroup}
+
+        \SBIntro{\Ch{Em}{~} \Ch{C}{~} \Ch{G}{~} \Ch{D}{~}}
+
+        \begin{SBOpGroup}
+            Podemos sen\Ch{Em}{tir}, tu gozo,
+
+            Podemos sen\Ch{C}{tir}, tu río.
+
+            Hay sani\Ch{G}{dad} en las aguas,
+
+            Queremos dan\Ch{D/F\#}{zar}.  \Ch{Em7}{~} \Ch{G}{~} \Ch{C}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Hay liber\Ch{Em}{tad} en la casa de Dios,
+
+            Hay liber\Ch{C}{tad} en la casa de Dios,
+
+            Hay liber\Ch{G}{tad}, hay liber\Ch{D}{tad}.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Hay \Ch{Em7}{li}~~\Ch{D/F\#}{ber}~~\Ch{G}{tad} en la \Ch{C}{ca}sa,
+
+            Hay \Ch{Em7}{li}~~\Ch{D/F\#}{ber}~~\Ch{G}{tad} al dan\Ch{D}{zar}.
+        \end{SBOpGroup}
+
+
+        \begin{SBChorus}
+            Puedo dan\Ch{Em}{zar} en la casa de Dios,
+
+            Puedo dan\Ch{C}{zar} en la casa de Dios.
+
+            Puedo dan\Ch{G}{zar} y disfru\Ch{D}{tar}.
+        \end{SBChorus}
+
+        \begin{SBChorus}
+            Que somos \Ch{Em}{li}bres, somos \Ch{C}{li}bres
+
+            Por tu \Ch{G}{san}gre, Libre \Ch{D}{soy}.
+        \end{SBChorus}
+
+        \SBEnd{Libre \Ch{C}{Soy}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill \break
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \qquad\qquad
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4358,6 +4546,46 @@
         \fi
     \end{song}
 
+    \begin{song}{Que Todos los Pueblos te Alaben}{Em}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/1Or830MfybqrnIWGGz2xWa}{Escuchar}}
+
+        \begin{SBOpGroup}
+            Que todos los pueblos te alaben
+            Que toda tu creación hoy te corone Rey
+            Y digan que Tú eres poderoso
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Tú eres Rey Tú eres Rey
+            Tú eres Rey Tú eres Rey
+        \end{SBChorus}
+
+        \SBEnd{///Tú eres Rey///.}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+            \upchord{\DEPiano\DE}{\qquad Re} Mayor bajo E \hfill \break
+            \upchord{\DCPiano\DC}{\qquad Re} Mayor bajo C \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+%QuieroAlabarte
+
+%Rebosa mi Corazón
+
+%Renuévame
+
+
     \begin{song}{Rey de reyes}{D}
     {} %copyright \SBPubDom
     {Marco Barrientos}
@@ -4416,6 +4644,18 @@
         \fi
     \end{song}
 
+% Sagrado es el Amor
+
+%Salmo84
+
+%Salmo150
+
+%Santo Espíritu Desciende
+
+%SantoEspírituLlenamiVida
+
+%½Santo! ½Santo! ½Santo!
+
     \begin{song}{Sentado en su trono}{G}
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
@@ -4450,6 +4690,16 @@
         \end{SBOpGroup}
         \fi
     \end{song}
+
+%SeñorHázmeunRadical
+
+%SeñorLlévameatusAtrios
+
+%Señor Venimos Ante Tí
+
+%SeOyeenlasNaciones
+
+%SiPuedesCreer
 
     \begin{song}{Será Llena la Tierra}{Am}
     {} %copyright \SBPubDom
@@ -4496,6 +4746,90 @@
         \end{SBOpGroup}
         \fi
     \end{song}
+
+%SoloTúEresSanto
+
+%Somos El Pueblo De Dios
+
+%SomosPueblo
+
+%Soy nueva criatura
+
+%Soy una saeta
+
+%Sumérgeme
+
+%Talcomosoy
+
+    \begin{song}{Te Alabaré}{E}
+    {} %copyright \SBPubDom
+    {Emmanuel Espinosa}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/7AyQEi7vGPBHyLwcLdtXxG}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{E}{E}res Tú la úni\Ch{B}{ca} razón de mi a\Ch{C\#m7}{do}ración ¡Oh Je\Ch{A}{sús}!
+
+            \Ch{E}{E}res Tú la espe\Ch{B}{ran}za que anhe\Ch{C\#m7}{lé} tener ¡Oh Je\Ch{A}{sús}!.
+
+            \Ch{F\#m7}{Con}fié en Ti, me has ayu\Ch{B}{da}do
+
+            \Ch{F\#m7}{tu} salvación me has rega\Ch{B}{la}do
+
+            \Ch{E}{hoy} hay gozo en mi \Ch{B}{co}razón con mi \Ch{A}{can}to te alaba\Ch{B}{ré}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{F\#}{Te} alaba\Ch{C\#}{ré},
+
+            \Ch{D\#m7}{te} glorifica\Ch{B}{ré},
+
+            \Ch{F\#}{Te} alaba\Ch{C\#}{ré},
+
+            mi buen Je\Ch{B}{sús}.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{E}{En} todo \Ch{A}{tiem}po te alaba\Ch{B}{ré}
+
+            \Ch{E}{En} todo \Ch{A}{tiem}po te adora\Ch{B}{ré}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{G}{Te} alaba\Ch{D}{ré},
+
+            \Ch{Em7}{te} glorifica\Ch{C}{ré},
+
+            \Ch{G}{Te} alaba\Ch{D}{ré},
+
+            mi buen Je\Ch{C}{sús}.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \qquad\qquad
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill \break
+            \upchord{\CsmsevenPiano\Csmseven}{Do Sostenido} Menor S\'eptima \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \upchord{\FsmsevenPiano\Fsmseven}{\qquad Fa sostenido} Menor S\'eptima \qquad\qquad
+            \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \hfill \break
+            \upchord{\CsPiano\Cs}{\qquad Do sostenido} Mayor \qquad\qquad
+            \upchord{\DsmsevenPiano\Dsmseven}{Re Sostenido} Menor S\'eptima \hfill \break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill \break
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+
+%TeCoronamos
+
+%TeDaréLoMejor
+
+%TeDaréloMejordelTrigo
 
     \begin{song}{Te doy gloria}{C}
     {} %copyright \SBPubDom
@@ -4555,6 +4889,19 @@
         \end{SBOpGroup}
         \fi
     \end{song}
+
+%TeExaltamos
+
+%TeNecesitoMás
+
+%TeVengoaBendecir
+
+%TeVengo a Decir
+
+%TiernasCancionesAlzadalSeñor
+
+
+%TodalaTierrateAlabará
 
     \begin{song}{Yahweh}{Em7}
     {} %copyright \SBPubDom

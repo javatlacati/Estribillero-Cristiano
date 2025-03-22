@@ -69,7 +69,7 @@
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
 \usepackage{imakeidx}
-\usepackage[unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=false,
+\usepackage[unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
     breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
 \usepackage[chordbk]{songbook} %% Words & Chords edition.
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
@@ -135,6 +135,7 @@
 \newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
 \newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
+\newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
 \newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
 \newcommand{\AAs}{\chord{t}{x,p1,p2,p2,p2,n}{A/Bb}}
 
@@ -237,6 +238,7 @@
 \newcommand{\AsevenPiano}{\keyboardf[Ao][Cso][Eo][Go]}
 \newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
+\newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
@@ -388,12 +390,11 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
-
 %%%
 % Uncomment "\maketitle" statement to make a title page.
 %%%
     \maketitle
-    %\mainmatter
+%    \mainmatter
     \ifWordBk
     \twocolumn
     \fi
@@ -1813,6 +1814,65 @@
         \fi
     \end{song}
 
+    \begin{song}{Cuán grande es Dios}{C}
+    {} %copyright \SBPubDom
+    {En Espíritu y en Verdad}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/0fpW2x6Cd3cBgTGaU8TZKE}{Escuchar}} %\NotCCLIed
+
+        \begin{SBOpGroup}
+            El \Ch{C}{es}plendor de un rey, \Ch{G}{~}ves\Ch{Am7}{ti}do en majestad
+
+            La tierra alegre es\Ch{Fmaj7}{tá}, la tierra alegre está
+
+            Cu\Ch{C}{bier}to está de luz, \Ch{G}{~}ven\Ch{Am7}{ció} la oscuridad
+
+            Y tiembla a su \Ch{Fmaj7}{voz}, tiembla a su voz
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Cuán \Ch{C}{gran}de es Dios, cántale\Ch{G}{~}
+
+            Cuán \Ch{Am7}{gran}de es Dios
+
+            Y todos lo ve\Ch{Fmaj7}{rán}, cuán \Ch{G}{gran}de es \Ch{C}{Dios}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{C}{Día} a día él está\Ch{G}{~}
+
+            El \Ch{Am7}{tiem}po está en Él
+
+            Principio \Ch{G}{y} el \Ch{F}{fin}, principio y el fin
+
+
+            La \Ch{C}{tri}nidad en Dios\Ch{G}{~}
+
+            El \Ch{Am7}{Pa}dre, Hijo, Espíritu
+
+            Cordero \Ch{G}{y} el le\Ch{F}{ón}, cordero y el le\Ch{G}{ón}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Tu nombre \Ch{C}{so}bre todo es
+
+            \Ch{G}{E}res \Ch{Am7}{dig}no de alabar
+
+            \Ch{G}{Y} mi \Ch{F}{ser} dirá, cuán \Ch{G}{gran}de es \Ch{C}{Dios}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \qquad\qquad
+            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \hfill \break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Dad a Dios Inmortal alabanza}{D}
     {} %copyright \SBPubDom
     {}
@@ -3154,6 +3214,93 @@
         \fi
     \end{song}
 
+    \begin{song}{Está cayendo aquí}{G}
+    {} %copyright \SBPubDom
+    {Jose Luis Reyes}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/6XXn8f7bPRT2hP4j5nYbcJ}{Escuchar}} %\NotCCLIed
+
+        \SBIntro[N]{\Ch{G}{~} \Ch{Em}{~} \Ch{C}{~} \Ch{D}{~}}
+        \SBMargNote{Piano: G-F\#-D}
+
+        \FLineIdx{Algo está cayendo aquí}
+
+        \begin{SBOpGroup}
+            \Ch{G}{al}go está cayendo a\Ch{Am}{quí}\Ch{D}{~}
+
+            es tan fuerte sobre \Ch{G}{mí}\Ch{Em}{~}
+
+            mis manos levanta\Ch{Am}{ré}\Ch{D}{~}
+
+            y su gloria toca\Ch{G}{ré}\Ch{D}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            esta ca\Ch{G}{yen}do
+
+            su gloria sobre \Ch{D}{mí}
+
+            sanando he\Ch{Am}{ri}das
+
+            levantando al ca\Ch{C}{í}do
+
+            su gloria está a\Ch{D}{quí}
+
+            su gloria está a\Ch{G}{quí}
+        \end{SBChorus}
+
+%        \SBEnd{C-G-Am7-G}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill \break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Este es el Cristo que yo predico}{E}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/4EAn2z1oc7qnfuC4BqoQ1X}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{E}{Es}te es el Cristo que yo predicó
+
+            Y no me canso de predi\Ch{B7}{car}
+
+            El sana a los enfermos
+
+            Reprende a los demonios
+
+            Y \Ch{A}{cal}ma la tem\Ch{B7}{pes}\Ch{E}{tad}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Y yo le alaba\Ch{A}{ré}
+
+            Y yo le alaba\Ch{E}{ré}
+
+            Y yo le alaba\Ch{ré}
+
+            Di\Ch{A}{cien}do glo\Ch{B7}{ria} a \Ch{E}{Dios}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \qquad\qquad
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill \break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Ex\'altate}{G}
     {} %copyright \SBPubDom
     {Samuel Luna E.}
@@ -3826,46 +3973,74 @@
     {\href{https://open.spotify.com/intl-es/track/2G8rT8LJJdx8tuTxPBDJIE}{Escuchar}}
 
         \begin{SBOpGroup}
-            \Ch{G}{Ju}bilosos, te adoramos,
-            Dios de gloria y Salvador;
+            \Ch{G}{Ju}bilosos, \Ch{D}{te} adoramos,
+
+            Dios de gloria y Sal\Ch{D}{va}dor;
+
             \Ch{G}{nues}tras vidas te entregamos
+
             como se abre al sol \Ch{G}{la} flor.
-            Ahuyenta nuestros males
-            y tristezas, oh Jesús.
+
+            \Ch{D}{A}huyenta nuestros males
+
+            y tristezas, oh Je\Ch{D}{sús}.
+
             \Ch{G}{Da}nos bienes celestiales.
+
             Llénanos de go\Ch{G}{zo} y luz.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             \Ch{G}{Tie}rra y cielo están gozosos,
+
             reflejando así tu amor;
+
             ángeles y estrellas todos
+
             cantan siempre tu loor.
+
             Monte, valle, río y fuente,
+
             campo. selva y ancho mar
+
             nos recuerdan que constante
+
             te debemos alabar.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             \Ch{G}{Tú}, que siempre nos perdonas,
+
             danos hoy tu bendición;
+
             Tú, que todo proporcionas,
+
             da tu paz al corazón.
+
             Padre, y Cristo nuestro hermano,
+
             para siempre tuyos son
+
             los que en todo trato humano
+
             buscan tu alta aprobación.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             ¡\Ch{G}{Oh}, mortales, hoy cantemos
+
             con el coro celestial!;
+
             como hermanos habitemos
+
             en amor santo y real.
+
             Alabando siempre vamos
+
             en la vida a conquistar;
+
             si gozosos caminamos
+
             fácil nos será triunfar.
         \end{SBOpGroup}
 
@@ -3873,6 +4048,7 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4482,6 +4658,8 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/4JX4pvZ5Q2XUBGyM8vA9SH}{Escuchar}}
 
+        \FLineIdx{Hoy es tiempo de compartir}
+
         \begin{SBOpGroup}
             \Ch{G}{Hoy} es tiempo de compartir
 
@@ -4539,11 +4717,35 @@
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            \Ch{E7}{Y} esos mon\Ch{A}{tes} se moverán \Ch{E}{ya}
+            \Ch{E7}{Y} esos mon\Ch{A}{tes} se move\Ch{E}{rán}
+
+            \Ch{B}{Y} esas almas se salva\Ch{E}{rán}
+
+            con tu \Ch{B}{san}to Espíri\Ch{E}{tu}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{E7}{Y} los enfermos \Ch{A}{se} sana\Ch{E}{rán}
+
+            \Ch{B}{Y} mi familia se salva\Ch{E}{rá}
+
+            con tu \Ch{B}{san}to Espíri\Ch{E}{tu}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{E7}{Y} a los cautivos \Ch{A}{li}bera\Ch{E}{rás}
+
+            \Ch{B}{Y} al que esté triste alegra\Ch{E}{rás}
+
+            con tu \Ch{B}{san}to Espíri\Ch{E}{tu}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             \Ch{E7}{Y} esta i\Ch{A}{gle}sia se mueve \Ch{E}{ya}
+
+            \Ch{B}{Y} esta iglesia se mueve \Ch{E}{ya}
+
+            con tu \Ch{B}{san}to Espíri\Ch{E}{tu}
         \end{SBOpGroup}
 
         \SBEnd{con tu \Ch{B}{san}to Espíri\Ch{E}{tu}}
@@ -4711,30 +4913,45 @@
     {\href{https://open.spotify.com/intl-es/track/1snvuOpocJJRNXLVAR7QVI}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
-            Porque para siempre Dios
-            tu misericordia es
-            porque para siempre Dios
-            tu misericordia es
+            \Ch{D}{Por}que para \Ch{Em}{siem}pre \Ch{A}{Dios}
+
+            tu miseri\Ch{F\#m}{cor}dia es
+
+            \Ch{Bm}{por}que para \Ch{Em}{siem}pre \Ch{A}{Dios}
+
+            tu miseri\Ch{D}{cor}dia es
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Mejor que la vida es
-            mi alma lo sabe bien
-            porque para siempre Dios
-            tu misericordia es
+            \Ch{D7}{Me}jor que la \Ch{G}{vi}da es
+
+            mi alma lo \Ch{F\#m}{sa}be bien
+
+            \Ch{Bm}{por}que para \Ch{Em}{siem}pre \Ch{A}{Dios}
+
+            tu miseri\Ch{D}{cor}dia es
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Más basta que el ancho mar
-            más alta que el cielo está
-            porque para siempre Dios
-            tu misericordia es
+            Más \Ch{D7}{bas}ta que el \Ch{G}{an}cho mar
+
+            más alta que el \Ch{F\#m}{cie}lo está
+
+            \Ch{Bm}{por}que para \Ch{Em}{siem}pre \Ch{A}{Dios}
+
+            tu miseri\Ch{D}{cor}dia es
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill \break
+            \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+            \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \hfill \break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \qquad\qquad
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill \break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4816,24 +5033,34 @@
         \FLineIdx{Enséñame tu camino Señor}
 
         \begin{SBOpGroup}
-            Enséñame tu camino Señor
-            y andaré en tu luz,
-            dame un corazón entregado a Tí,
-            para honrarte oh Dios
+            \Ch{C}{En}séña\Ch{Am}{me} tu ca\Ch{Dm}{mi}no Se\Ch{G}{ñor}
+
+            \Ch{Dm}{y} anda\Ch{G}{ré} en tu \Ch{C}{luz},\Ch{Am/F}{~}\Ch{G}{~}
+
+            \Ch{Am}{da}me un corazón entregado a \Ch{Am}{Tí},
+
+            pa\Ch{Dm}{ra} hon\Ch{Am/F}{rar}te oh \Ch{G}{Dios}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Purif\'icame, límpiame Señor,
-            y líbrame de lo que impida el uir
-            Purif\'icame, límpiame Señor,
-            y líbrame de lo que impida el uir
-            de tu amor.
+            \Ch{Am/F}{Pu}rif\'icame, límpiame Se\Ch{Am}{ñor},
+
+            y \Ch{Dm}{lí}brame \Ch{C}{de} lo que im\Ch{Dm}{pi}da el fluir
+
+            \Ch{Am/F}{Pu}rif\'icame, límpiame Se\Ch{Am}{ñor},
+
+            y \Ch{Dm}{lí}brame \Ch{C}{de} lo que im\Ch{Dm}{pi}da el fluir
+
+            de tu a\Ch{C}{mor}.
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill \break
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
+            \upchord{\AmFPiano\AmF}{\qquad La} Menor bajo F \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4845,17 +5072,20 @@
     {\href{https://open.spotify.com/intl-es/track/1Or830MfybqrnIWGGz2xWa}{Escuchar}}
 
         \begin{SBOpGroup}
-            Que todos los pueblos te alaben
-            Que toda tu creación hoy te corone Rey
-            Y digan que Tú eres poderoso
+            Que \Ch{Em11}{to}dos los pueblos te a\Ch{Am7}{la}ben
+
+            Que \Ch{Em11}{to}da tu creación hoy te co\Ch{Am7}{ro}ne Rey
+
+            Y \Ch{G}{di}gan que Tú \Ch{D}{e}res pode\Ch{Am7}{ro}so
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Tú eres Rey Tú eres Rey
-            Tú eres Rey Tú eres Rey
+            Tú eres \Ch{Am7}{Rey} Tú eres \Ch{G/B}{Rey}
+
+            Tú eres \Ch{C}{Rey} Tú eres \Ch{D}{Rey}
         \end{SBChorus}
 
-        \SBEnd{///Tú eres Rey///.}
+        \SBEnd{///\Ch{C}{Tú} e\Ch{D}{res} \Ch{Em11}{Rey}///.}
 
         \ifChordBk
         \begin{SBOpGroup}
@@ -4878,25 +5108,36 @@
     {\href{https://open.spotify.com/intl-es/track/41L7qAYXn62qmbZhkFXabi}{Escuchar}}
 
         \begin{SBOpGroup}
-            Quiero alabarte,
+            Quiero ala\Ch{D}{bar}te,
+
             más y más aún
+
             quiero alabarte,
+
             más y más aún
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             Buscar tu voluntad,
+
             tu gracia conocer
+
             quiero alabarte
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Las aves del cielo
+            Las \Ch{D}{a}ves del cielo
+
             cantan para ti,
+
             las bestias del campo
+
             reflejan tu poder;
+
             quiero yo cantar,
+
             quiero levantar
+
             mis manos a Tí
         \end{SBOpGroup}
 
@@ -4982,30 +5223,42 @@
     {\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}}
 
         \begin{SBOpGroup}
-            Sagrado es el amor
-            que nos ha unido aquí
-            a los que creemos del Señor
-            la voz que llama a sí.
+            \Ch{F}{Sa}grado es \Ch{C7}{el} a\Ch{F}{mor}
+
+            que \Ch{Bb}{nos} ha u\Ch{F}{ni}do a\Ch{C}{quí}
+
+            a los que \Ch{F}{cre}emos \Ch{C7}{del} Se\Ch{F}{ñor}
+
+            \Ch{Bb}{la} voz que \Ch{F}{lla}\Ch{C7}{ma} a \Ch{F}{sí}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             A nuestro Padre Dios
+
             roguemos con fervor,
+
             alúmbrenos la misma luz,
+
             nos una el mismo amor.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             Nos vamos a ausentar
-            mas nuestra rme unión
-            jamás podrase quebrantar
+
+            mas nuestra firme unión
+
+            jamás podráse quebrantar
+
             por la separación.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             Un día en la eternidad
+
             nos hemos de reunir,
+
             que Dios nos lo conceda, hará
+
             el férvido pedir.
         \end{SBOpGroup}
 
@@ -5013,17 +5266,158 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\FPiano\F}{\qquad Fa} Mayor \qquad\qquad
+            \upchord{\CsevenPiano\Cseven}{\qquad Do} Mayor s\'eptima \hfill \break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
 
 %Salmo84
 
-%Salmo150
+    \begin{song}{Salmo 150}{C}
+    {} %copyright \SBPubDom
+    {Osdy Soriano Millán}
+    {Salmo 150} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/2KVovqNBIZ2b366IDtEHq0}{Escuchar}} %1978
 
-%Santo Espíritu Desciende
+        \FLineIdx{Lo que respira alabe}
 
-%SantoEspírituLlenamiVida
+        \begin{SBOpGroup}
+            Lo \Ch{C}{que} res\Ch{Am}{pi}ra a\Ch{Dm}{la}be a Jeho\Ch{G7}{vá}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{C}{A}labad a nuestro Dios en su san\Ch{Am}{tua}rio
+
+            Por la hermosura de su \Ch{Dm}{cie}\Ch{G7}{lo}
+
+            por sus proezas ala\Ch{C}{bad}le a \Ch{G7}{Él}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{C}{A}labadle por la grandeza de su \Ch{Am}{nom}bre
+
+            Con el sonido de bo\Ch{Dm}{ci}\Ch{G7}{na}
+
+            Salterio y arpa a la \Ch{C}{vez} can\Ch{C7}{tad}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{F}{A}labadle \Ch{G}{con} el alegre pan\Ch{Em}{de}ro
+
+            \Ch{Am}{Con} el candor de la \Ch{Dm}{dan}za,\Ch{G7}{~}
+
+            Cantad con gozo al \Ch{C}{Se}\Ch{C7}{ñor}
+
+            \Ch{F}{A}labadle, \Ch{G}{con} cuerdas, flautas
+
+            y \Ch{Em}{cím}balo \Ch{Am}{de} jubilo reso\Ch{Dm}{nan}tes\Ch{G7}{~}
+
+            en su lenguaje todo
+        \end{SBChorus}
+
+        \SBEnd{\Ch{F}{A}\Ch{G7}{~}\Ch{C}{mén}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill \break
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \qquad\qquad
+            \upchord{\GsevenPiano\Gseven}{\qquad Sol} Mayor S\'eptima \hfill \break
+            \upchord{\CsevenPiano\Cseven}{\qquad Do} Mayor s\'eptima \qquad\qquad
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill \break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Santo Espíritu Desciende}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/4OhyEUIpuxNwBhsmKJCPZU}{Escuchar}} %1978
+
+        \begin{SBOpGroup}
+            Santo Espíritu desciende a mi pobre corazón,
+            Llénalo de tu presencia y haz en él tu habitación.
+            Llena hoy, llena hoy, llena hoy mi corazón!
+            Santo Espíritu desciende y haz de mi tu habitación!
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            De tu gracia puedes darme inundando el corazón,
+            Ven, que mucho te necesito, dame hoy tu bendición.
+            Débil soy,oh si,muy débil, y a tus pies postrado estoy,
+            Esperando que tu gracia con poder me llene hoy
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Santo Espíritu Llena mi Vida}{D}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/5dPxFbvXtjdWmzgrhUq9j0}{Escuchar}} %1978
+
+        \begin{SBOpGroup}
+            Santo Es\Ch{D}{pí}ritu \Ch{G}{lle}na mi \Ch{D}{vi}da
+
+            pues por \Ch{D}{Cris}to yo quiero bri\Ch{A7}{llar}
+
+            Santo Es\Ch{D}{pí}ritu \Ch{G}{lle}na mi \Ch{D}{vi}da
+
+            úsa\Ch{A7}{me} en las almas a sal\Ch{D}{var}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{D}{A}labanzas \Ch{G}{A}labanzas \Ch{A7}{A}labanzas
+
+            Doy a \Ch{D}{Cris}to el Rey
+
+            \Ch{D}{A}labanzas \Ch{G}{A}labanzas \Ch{A7}{A}labanzas
+
+            Doy al \Ch{D}{Rey}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Que mi \Ch{D}{vi}da una \Ch{G}{luz} siempre \Ch{D}{sea},
+
+            una \Ch{D}{lám}para oh Se\Ch{A7}{ñor};
+
+            que bri\Ch{D}{llan}do con\Ch{G}{duz}ca a las almas,
+
+            a los \Ch{A7}{pies} de mi buen Salva\Ch{D}{dor}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{D}{Haz} que brille, \Ch{G}{Haz} que brille, \Ch{A}{Haz} que brille
+
+            Siempre a\Ch{D}{quí} la luz
+
+            \Ch{D}{Haz} que brille, \Ch{G}{Haz} que brille, \Ch{A}{Haz} que brille
+
+            por Je\Ch{D}{sús}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
 %½Santo! ½Santo! ½Santo!
 

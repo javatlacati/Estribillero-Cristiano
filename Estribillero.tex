@@ -153,6 +153,7 @@
 \newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
 \newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
 \newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
+\newcommand{\Bmsevenbfive}{\chord{t}{x,p2,p3,p2,p3,n}{Bm7(b5)}} %si semidisminuido
 
 \newcommand{\C}{\chord{t}{x,p3,n,p2,p1,n}{C}}
 \newcommand{\Cseven}{\chord{t}{x,p3,p3,p2,p1,n}{C7}}
@@ -209,7 +210,7 @@
 \newcommand{\Fmseven}{\chord{t}{p1,p3,p1,p1,p1,p1}{Fm7}}
 
 \newcommand{\Fs}{\chord{t}{p2,p4,p4,p3,p2,p2}{F\#}}
-\newcommand{\Fsm}{\chord{t}{f1p2,p4,p4,f1p2,f1p2,f1p2,}{F\#m}}
+\newcommand{\Fsm}{\chord{t}{f1p2,f3p4,f4p4,f1p2,f1p2,f1p2,}{F\#m}}
 \newcommand{\FsmLight}{\chord{t}{x,x,f3p4,f1p2,f1p2,f1p2,}{F\#m}}
 \newcommand{\FsmBasSeveN}{\chord{t}{x,x,f3p3,f1p2,f1p2,f1p2,}{F\#m/E\#}}
 \newcommand{\FsmBasSeven}{\chord{t}{x,x,f2p2,f1p2,f1p2,f1p2,}{F\#m/E}}
@@ -222,8 +223,8 @@
 \newcommand{\GD}{\chord{t}{x,p2,p2,n,p3,p3}{G/D}} %verificar porque parece más ien G/E o G/A o Em7algo
 \newcommand{\GE}{\chord{t}{x,p2,p2,n,p3,p3}{G/E}}
 \newcommand{\GnineD}{\chord{t}{n,n,o,n,n,p1}{G9/D}}
-\newcommand{\Gm}{\chord{t}{f1p3,p5,p5,f1p3,f1p3,f1p3,}{Gm}}
-\newcommand{\Gmseven}{\chord{t}{f1p3,p5,p3,f1p3,f1p3,f1p3,}{Gm7}}
+\newcommand{\Gm}{\chord{t}{f1p3,f3p5,f4p5,f1p3,f1p3,f1p3,}{Gm}}
+\newcommand{\Gmseven}{\chord{t}{f1p3,f3p5,f1p3,f1p3,f1p3,f1p3,}{Gm7}}
 
 \newcommand{\Gs}{\chord{3}{x,x,p4,p3,p2,p2}{G\#}}
 \newcommand{\Aflat}{\chord{3}{x,x,p4,p3,p2,p2}{A$\flat$}}
@@ -418,7 +419,7 @@
 
             con \Ch{Em}{li}bertad
 
-            en adora\Ch{A}{ci\'o}n
+            \Ch{G}{en} adora\Ch{A}{ci\'o}n
         \end{SBOptional}
 
         \begin{SBOptional}
@@ -426,7 +427,7 @@
 
             tu \Ch{Bm}{hi}jo soy
 
-            mi \Ch{Em}{co}muni\'on contigo
+            mi \Ch{G}{co}muni\'on con\Ch{Em}{ti}go
 
             es una \Ch{A}{dul}ce bendici\'on
         \end{SBOptional}
@@ -436,13 +437,13 @@
 
             Es\Ch{D}{tar}\Ch{A/C#}{} conti\Ch{Bm}{go}
 
-            \Ch{D/A}{es} una \Ch{Bm}{dul}ce bendi\Ch{A}{ci\'on}
+            es una \Ch{G}{dul}ce bendi\Ch{A}{ci\'on}
 
             ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! te \Ch{F#m}{a}mo Se\Ch{Bm}{ñor}
 
             \Ch{G}{quie}ro estar en \Ch{D}{co}muni\'on
 
-            \Ch{Em}{quie}ro es\Ch{A}{tar} con\Ch{D}{ti}go. //
+            \Ch{Em}{quie}\Ch{F#m}{ro} es\Ch{G}{tar} con\Ch{D}{ti}go. //
         \end{SBChorus}
         \ifChordBk
         \begin{SBOpGroup}
@@ -3094,24 +3095,41 @@
     {\href{https://open.spotify.com/intl-es/track/5xmaJCdZm0kzGa7wajm5Eu}{Escuchar}}
 %        https://open.spotify.com/intl-es/track/2b7YBLRv13r2iS31yXBz7a
 
+        \SBIntro{D A/D C/D G/D}
+
         \begin{SBOpGroup}
-            //Señor Eres Fiel
-            Y tu misericordia eterna//
-            Gente de toda lengua y nación
-            De generación a generación
+            //Se\Ch{D}{ñor} Eres Fiel
+
+            Y tu \Ch{A/D}{mi}sericordia e\Ch{C}{ter}na//\Ch{G}{~}
+
+            \Ch{G}{Gen}te de toda \Ch{A}{len}gua y nación
+
+            De \Ch{G}{ge}neración a \Ch{Bb}{ge}nera\Ch{C}{ción}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Te Adoramos Hoy
-            Aleluya Aleluya
-            Adoramos hoy
-            Eres Señor
+            Te Ado\Ch{D}{ra}mos \Ch{A}{Hoy}
+
+            \Ch{C}{A}leluya \Ch{G}{A}leluya
+
+            Ado\Ch{F\#}{ra}mos \Ch{A}{hoy}
+
+            Eres Se\Ch{Bb}{ñor}\Ch{C}{~}
+
+            Eres \Ch{D}{Fiel}
         \end{SBChorus}
+        \SBBridge{DDFFG \hfill \break DDCCB}
+
+        \SBEnd{ERES SE\Ch{Bb}{ÑOR}\Ch{C}{~}\Ch{D}{~}\Ch{E}{~}\Ch{G}{~}\Ch{C}{~} eres \Ch{D}{Fiel}}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3141,6 +3159,49 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Eres señor vencedor}{Am}
+    {} %copyright \SBPubDom
+    {Juan Carlos Alvarado}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{E}res señor vencedor el \Ch{G}{in}ven\Ch{F}{ci}ble
+
+            \Ch{F}{e}res campeón ganador en batallas
+
+            \Ch{Dm}{e}res mi Rey y mi \Ch{E7}{Dios}, el que cuida a su pue\Ch{Am}{blo}\Ch{G}{~}\Ch{F}{~}\Ch{E}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Por \Ch{C}{e}so yo te \Ch{Bm7(b5)}{can}to y \Ch{E7}{te} a\Ch{Am7}{la}bo
+
+            por\Ch{Gm7}{que} sé  \Ch{C13sus4}{que} me \Ch{Fmaj7}{pro}teges por\Ch{Dm7}{que} estoy \Ch{Gsus}{de} tu lado\Ch{G}{~}
+
+            Por \Ch{C}{e}so yo te \Ch{Bm7(b5)}{can}to y \Ch{E7}{te} a\Ch{Am7}{do}ro
+
+            por\Ch{Gm7}{que} sé  \Ch{C13sus4}{que} nunca \Ch{Fmaj7}{ja}más me de\Ch{Dm7}{ja}ras de\Ch{Gsus}{sam}parado.\Ch{E}{~}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\AmPiano\Am}{\qquad La} Menor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \qquad\qquad
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill \break
+            \upchord{\EsevenPiano\Eseven}{\qquad Mi} S\'eptima \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+            \upchord{\BmsevenbfivePiano\Bmsevenbfive}{\qquad Si} Menor semidisminuido \qquad\qquad
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill \break
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \qquad\qquad
+            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \hfill \break
+            \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \qquad\qquad
+            \upchord{\GsusPiano\Gsus}{\qquad Sol} Mayor sus4 \hfill \break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3661,6 +3722,79 @@
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill \break
         \end{SBOpGroup}
         \fi
+
+        \begin{SBExtraKeys}{
+            \STitle{Hay Libertad}{Bm}
+
+            \begin{SBOpGroup}
+                \Ch{Bm}{Hoy} puedo danzar con liber\Ch{G}{tad},
+
+                Porque soy su \Ch{D}{Hi}jo,
+
+                Porque soy su \Ch{A}{hi}jo.
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                \Ch{Bm}{Hoy} puedo danzar con liber\Ch{G}{tad},
+
+                Porque soy a\Ch{D}{ma}do,
+
+                Porque soy a\Ch{A}{ma}do.
+            \end{SBOpGroup}
+
+            \SBIntro{\Ch{Bm}{~} \Ch{G}{~} \Ch{D}{~} \Ch{A}{~}}
+
+            \begin{SBOpGroup}
+                Podemos sen\Ch{Bm}{tir}, tu gozo,
+
+                Podemos sen\Ch{G}{tir}, tu río.
+
+                Hay sani\Ch{D}{dad} en las aguas,
+
+                Queremos dan\Ch{A/C}{zar}.  \Ch{Bm7}{~} \Ch{D}{~} \Ch{G}{~}
+            \end{SBOpGroup}
+
+            \begin{SBChorus}
+                Hay liber\Ch{Bm}{tad} en la casa de Dios,
+
+                Hay liber\Ch{G}{tad} en la casa de Dios,
+
+                Hay liber\Ch{D}{tad}, hay liber\Ch{A}{tad}.
+            \end{SBChorus}
+
+            \begin{SBOpGroup}
+                Hay \Ch{Bm7}{li}~~\Ch{A/C}{ber}~~\Ch{D}{tad} en la \Ch{G}{ca}sa,
+
+                Hay \Ch{Bm7}{li}~~\Ch{A/C}{ber}~~\Ch{D}{tad} al dan\Ch{A}{zar}.
+            \end{SBOpGroup}
+
+
+            \begin{SBChorus}
+                Puedo dan\Ch{Bm}{zar} en la casa de Dios,
+
+                Puedo dan\Ch{G}{zar} en la casa de Dios.
+
+                Puedo dan\Ch{D}{zar} y disfru\Ch{A}{tar}.
+            \end{SBChorus}
+
+            \begin{SBChorus}
+                Que somos \Ch{Bm}{li}bres, somos \Ch{G}{li}bres
+
+                Por tu \Ch{D}{san}gre, Libre \Ch{A}{soy}.
+            \end{SBChorus}
+
+            \SBEnd{Libre \Ch{G}{Soy}}
+
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\BmPiano\Bm}{\qquad Si} Menor \qquad\qquad
+                \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill \break
+                \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+                \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \end{SBOpGroup}
+            \fi
+        }\end{SBExtraKeys}
     \end{song}
 
     \begin{song}{Hay una Fuente en mi}{A}

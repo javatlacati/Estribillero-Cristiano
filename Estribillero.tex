@@ -164,6 +164,7 @@
 \newcommand{\CG}{\chord{t}{p3,n,p2,n,p1,n}{C/G}}
 \newcommand{\CMaj}{\chord{t}{p3,p3,p2,n,n,n}{C+}}
 \newcommand{\Ctwo}{\chord{t}{x,p3,p2,n,p3,n}{C2}}
+\newcommand{\Csusthirteen}{\chord{t}{x,p3,p3,p3,p3,p5}{C13sus4}}
 
 \newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C\#}}
 \newcommand{\Csm}{\chord{t}{p4,p4,p6,p6,p5,p4}{C\#m}}
@@ -178,7 +179,7 @@
 \newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
 \newcommand{\Dm}{\chord{t}{x,x,n,p2,p3,p1}{Dm}}
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
-\newcommand{\Dmaj}{\chord{t}{x,x,n,p2,p2,p2}{D+}}
+\newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
 \newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
@@ -254,6 +255,7 @@
 \newcommand{\BsevenPiano}{\keyboard[Dso][Fso][Bo][Ao]}
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
+\newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
 \newcommand{\CEPiano}{\keyboard[Eo][Go][Ct]}
@@ -261,7 +263,9 @@
 \newcommand{\CsevenPiano}{\keyboard[Co][Eo][Go][Aso]}
 \newcommand{\CmPiano}{\keyboard[Co][Dso][Go]}
 \newcommand{\CmsevenPiano}{\keyboard[Co][Dso][Go][Aso]}
+\newcommand{\CtwoPiano}{\keyboard[Co][Do][Eo][Go]}
 \newcommand{\CMajPiano}{\keyboard[Co][Eo][Go][Do]}
+\newcommand{\CsusthirteenPiano}{\keyboard[Co][Do][Fo][Go][Ao][Aso]}
 
 \newcommand{\CsPiano}{\keyboard[Cso][Fo][Gso]}
 \newcommand{\CsmPiano}{\keyboard[Cso][Eo][Gso]}
@@ -275,6 +279,7 @@
 \newcommand{\DsevenPiano}{\keyboard[Do][Fso][Ao][Co]}
 \newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
+\newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
 \newcommand{\DsusPiano}{\keyboard[Do][Go][Ao]}
@@ -302,6 +307,7 @@
 
 \newcommand{\GPiano}{\keyboard[Do][Go][Bo]}
 \newcommand{\GsevenPiano}{\keyboard[Do][Fo][Go][Bo]}
+\newcommand{\GsusPiano}{\keyboardf[Go][Co][Do]}
 \newcommand{\GBPiano}{\keyboardtwooctaves[Bo][Dt][Gt]}
 \newcommand{\GDPiano}{\keyboard[Do][Go][Bo]}
 \newcommand{\GmPiano}{\keyboard[Do][Go][Aso]}
@@ -1802,7 +1808,7 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\DmajPiano\Dmaj}{\qquad Re} Maj \qquad\qquad
+            \upchord{\DMajPiano\DMaj}{\qquad Re} Maj \qquad\qquad
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill \break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
             \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
@@ -3134,31 +3140,45 @@
         \fi
     \end{song}
 
-    \begin{song}{Eres mi Respirar}{A}
+    \begin{song}{Eres mi Respirar}{G}
     {} %copyright \SBPubDom
     {Ingrid Rosario}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/5RHBAg3cPHYOh6Fx2MUbYS}{Escuchar}}
 
         \begin{SBOpGroup}
-            Eres mi respirar Eres mi respirar
-            Dios tu presencia vive en mi
+            \Ch{G}{E}res mi \Ch{C}{res}pirar
+
+            \Ch{G}{E}res mi \Ch{C}{res}pirar
+
+            \Ch{G}{Dios} \Ch{D}{tu} \Ch{Em}{pre}sen\Ch{D}{cia}
+
+            \Ch{C}{vi}ve \Ch{Em}{en} \Ch{D}{mi}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Eres mi pan Señor Eres mi pan Señor
-            Dios tus palabras son para mí
+            \Ch{G}{E}res mi pan Se\Ch{C}{ñor}
+
+            \Ch{G}{E}res mi pan Se\Ch{C}{ñor}
+
+            \Ch{G}{Dios} \Ch{D}{tus} \Ch{Em}{pa}la\Ch{D}{bras}
+
+            \Ch{C}{Flu}yen \Ch{Em}{en} \Ch{D}{mí}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Y yo te anhelo Señor
-            Estoy perdido sin Tí
+            Y \Ch{G}{yo}\Ch{D}{~}\Ch{Em}{~}\Ch{D}{~} te anhelo \Ch{C}{Se}ñor\Ch{Em}{~}\Ch{D}{~}
+
+            Es\Ch{G}{toy}\Ch{D}{~}\Ch{Em}{~}\Ch{D}{~} perdido \Ch{C}{sin} Tí\Ch{Em}{~}\Ch{D}{~}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\APiano\A}{\qquad La} Mayor \qquad\qquad
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill \break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \qquad\qquad
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3174,7 +3194,9 @@
 
             \Ch{F}{e}res campeón ganador en batallas
 
-            \Ch{Dm}{e}res mi Rey y mi \Ch{E7}{Dios}, el que cuida a su pue\Ch{Am}{blo}\Ch{G}{~}\Ch{F}{~}\Ch{E}{~}
+            \Ch{Dm}{e}res mi Rey y mi \Ch{E7}{Dios},
+
+            el que cuida a su pue\Ch{Am}{blo}\Ch{G}{~}\Ch{F}{~}\Ch{E}{~}
         \end{SBOpGroup}
 
         \begin{SBChorus}
@@ -3199,9 +3221,10 @@
             \upchord{\BmsevenbfivePiano\Bmsevenbfive}{\qquad Si} Menor semidisminuido \qquad\qquad
             \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill \break
             \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \qquad\qquad
-            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \hfill \break
-            \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \qquad\qquad
-            \upchord{\GsusPiano\Gsus}{\qquad Sol} Mayor sus4 \hfill \break
+            \upchord{\CsusthirteenPiano\Csusthirteen}{\qquad Do} 13 suspendida cuarta \hfill \break
+            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \qquad\qquad
+            \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \hfill \break
+            \upchord{\GsusPiano\Gsus}{\qquad Sol} Mayor sus4 \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3623,25 +3646,37 @@
     {\href{https://open.spotify.com/intl-es/track/63iQevwEMdIdIREjXcv4IO}{Escuchar}}
 
         \begin{SBOpGroup}
-            Has ga\Ch{Bm}{na}do la victoria,
-            la victoria para mi.
-            Al pecado has vencido,
-            has ganado la batalla Tú por mi.
+            Has ga\Ch{Bm}{na}do la vic\Ch{A}{to}ria,
+
+            la vic\Ch{G}{to}ria para \Ch{Bm}{mi}.
+
+            Al pecado has ven\Ch{A}{ci}do,
+
+            has ga\Ch{G}{na}do la ba\Ch{Em}{ta}lla Tú por \Ch{F\#m}{mi}.
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Porque Tú eres mi Dios en los cielos,
-            porque Tú eres mi Dios en la tierra.
-            Porque Tú eres mi Dios en los cielos,
-            porque Tú eres mi Dios en la tierra.
-            Tú eres mi Dios y te alabaré.
-            Tú eres mi Dios y te exaltaré.
+            Porque \Ch{Bm}{Tú} eres mi \Ch{A}{Dios} en los \Ch{G}{cie}los,\Ch{A}{~}
+
+            Porque \Ch{Bm}{Tú} eres mi \Ch{A}{Dios} en la \Ch{G}{tie}rra.\Ch{A}{~}
+
+            Porque \Ch{Bm}{Tú} eres mi \Ch{A}{Dios} en los \Ch{G}{cie}los,\Ch{A}{~}
+
+            Porque \Ch{Bm}{Tú} eres mi \Ch{A}{Dios} en la \Ch{G}{tie}rra.\Ch{A}{~}
+
+            Tú eres mi \Ch{F\#m}{Dios} y te alaba\Ch{Bm}{ré}.
+
+            Tú eres mi \Ch{F\#m}{Dios} y te exalta\Ch{Bm}{ré}.
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill \break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \qquad\qquad
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill \break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \qquad\qquad
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill \break
+            \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \qquad\qquad
         \end{SBOpGroup}
         \fi
     \end{song}

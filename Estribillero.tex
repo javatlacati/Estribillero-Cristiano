@@ -235,7 +235,8 @@
 \newcommand{\AflatEflat}{\chord{3}{x,bp4,p4,p3,p2,p2}{A$\flat$/E$\flat$}}
 \newcommand{\AflatC}{\chord{t}{x,bp3,p1,p1,p1,p4}{A$\flat$/C}}
 \newcommand{\Aflatmajseven}{\chord{7}{p4,p3,x,o,p4,p4}{A$\flat$Maj7}}
-\newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4}{G\#7}}
+\newcommand{\Gsm}{\chord{t}{p4,p2,p1,p1,n,x}{G\#m}}
+\newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4}{G\#m7}}
 \newcommand{\Gssus}{\chord{t}{p4,p6,p6,p6,p4,p4}{G\#sus4}}
 \newcommand{\Gsdim}{\chord{3}{p1,p2,p3,p1,p1,p1}{G\#dim}}
 
@@ -247,6 +248,7 @@
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\AEPiano}{\keyboardtwooctaves[Eo][Ao][Cst]}
+\newcommand{\AsusPiano}{\keyboardf[Ao][Do][Eo]}
 
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\AsmPiano}{\keyboard[Cso][Fo][Aso]}
@@ -263,6 +265,7 @@
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
+\newcommand{\CDPiano}{\keyboardtwooctaves[Do][Eo][Go][Ct]}
 \newcommand{\CEPiano}{\keyboardtwooctaves[Eo][Go][Ct]}
 \newcommand{\CGPiano}{\keyboardf[Go][Co][Eo]}
 \newcommand{\CsevenPiano}{\keyboard[Co][Eo][Go][Aso]}
@@ -315,11 +318,14 @@
 \newcommand{\GsevenPiano}{\keyboard[Do][Fo][Go][Bo]}
 \newcommand{\GsusPiano}{\keyboardf[Go][Co][Do]}
 \newcommand{\GBPiano}{\keyboardtwooctaves[Bo][Dt][Gt]}
+\newcommand{\GEPiano}{\keyboardtwooctaves[Eo][Go][Bo][Dt]}
 \newcommand{\GDPiano}{\keyboard[Do][Go][Bo]}
 \newcommand{\GmPiano}{\keyboard[Do][Go][Aso]}
 \newcommand{\GmsevenPiano}{\keyboard[Do][Go][Aso][Fo]}
 
 \newcommand{\GsPiano}{\keyboard[Dso][Gso][Co]}
+\newcommand{\GsmPiano}{\keyboardf[Gso][Bo][Dso]}
+\newcommand{\GsdimPiano}{\keyboardf[Gso][Bo][Do]}
 \newcommand{\AflatPiano}{\keyboard[Dso][Gso][Co]}
 
 %%%
@@ -1817,9 +1823,9 @@
             \upchord{\DMajPiano\DMaj}{\qquad Re} Maj \hfill
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
-            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill\null\break
-            \upchord{\CDPiano\CD}{\qquad Do} Mayor bajo D \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
+            \upchord{\CDPiano\CD}{\qquad Do} Mayor bajo D \hfill\null\break
             \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
             \upchord{\GEPiano\GE}{\qquad Sol} Mayor bajo E \hfill\null\break
@@ -2748,25 +2754,34 @@
     {\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}}
 
         \begin{SBOpGroup}
-            Y los ojos de los ciegos se abrirán y ellos verán
-            los oídos de los sordos oirán
+            Y los \Ch{Cm}{o}jos de los ciegos se abrirán y ellos verán
+
+            los oídos de los sordos oi\Ch{G}{rán}
+
             el cojo saltará
+
             con el arpa danzará
-            la lengua de los mudos cantará
+
+            la lengua de los mudos canta\Ch{Cm}{rá}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Es el poderoso de Israel
-            el poderoso de Israel
+            Es el \Ch{Cm}{po}deroso de Israel
+
+            el poderoso de Isra\Ch{G}{el}
+
             su voz se oirá
+
             nadie lo detendrá
-            al poderoso de Israel
+
+            al poderoso de Isra\Ch{Cm}{el}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\CmPiano\Cm}{Do} menor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2915,37 +2930,53 @@
     {\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}}
 
         \begin{SBOpGroup}
-            Cuan glorioso es el cambio operado en mi ser,
-            viniendo a mi vida el Señor;
+            \Ch{Ab}{Cua}n glorioso es el cambio operado en mi ser,
+
+            vi\Ch{Db}{nien}do a mi vida el Se\Ch{Ab}{ñor};
+
             Hay en mi alma una paz que yo ansiaba tener,
-            la paz que me trajo su amor.
+
+            la \Ch{Bb7}{paz} que me trajo su a\Ch{Eb7}{mor}.
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Él vino a mi corazón,
-            Él vino a mi corazón.
+            \Ch{Eb}{Él} \Ch{Ab}{vi}no a mi corazón,
+
+            Él \Ch{Db}{vi}no a mi cora\Ch{Ab}{zón}.
+
             Soy felíz con la vida que Cristo me dio;
-            cuando Él vino a mi corazón.
+
+            \Ch{Db}{cuan}do Él \Ch{Ab}{vi}no a mi co\Ch{Eb7}{ra}\Ch{Ab}{zón}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Ya no voy por la senda que el mal me trazó,
-            do solo encontré confusión;
+            \Ch{Ab}{Ya} no voy por la senda que el mal me trazó,
+
+            do \Ch{Db}{so}lo encontré confu\Ch{Ab}{sión};
+
             Mis pecados pasados Jesús los borró;
-            Él vino a mi corazón.
+
+            Cuan\Ch{Bb7}{do} Él vino a mi cora\Ch{Eb7}{zón}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Ni una sombra de duda obscurece su amor,
-            amor que me trajo el perdón;
+            \Ch{Ab}{Ni} una sombra de duda obscurece su amor,
+
+            a\Ch{Db}{mor} que me trajo el per\Ch{Ab}{dón};
+
             La esperanza que aliento la debo al Señor;
-            Él vino a mi corazón
+
+            Cuan\Ch{Bb7}{do} Él vino a mi cora\Ch{Eb7}{zón}.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill
+            \upchord{\DflatPiano\Dflat}{\qquad Re bemol} Mayor  \hfill\null\break
+            \upchord{\BflatsevenPiano\Bflatseven}{\qquad Si bemol} Mayor S\'eptima \hfill
+            \upchord{\EflatsevenPiano\Eflatseven}{\qquad Mi} bemol Mayor S\'eptima \hfill
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2985,38 +3016,83 @@
         \fi
     \end{song}
 
-    \begin{song}{Enciende una luz}{G}
+    \begin{song}{Enciende una luz}{D}
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/4lTtpXPGs7NAqyQxgtDAct}{Escuchar}}
 
         \begin{SBChorus}
-            Enciende una luz y déjala brillar
-            la luz de Jesús
-            que brille en todo lugar
-            No la puedes esconder
-            No la puedes callar
-            ante tal necesidad
-            Enciende una luz en la oscuridad
+            \Ch{D}{En}ciende una \Ch{G}{luz} y déjala bri\Ch{Am}{llar}
+
+            la luz de Je\Ch{C}{sús}
+
+            que brille en to\Ch{D}{do} lugar
+
+            No la puedes escon\Ch{G}{der}
+
+            No la puedes ca\Ch{Am}{llar}
+
+            ante tal necesi\Ch{C}{dad}
+
+            Enciende una \Ch{D}{luz}
+
+            en la oscuri\Ch{G}{dad}
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            ¿Cómo pues invocarán a Aquel
-            en el cual no han creído?
-            ¿Y cómo creerán en Aquel
-            del cual no han oído?
-            ¿Y cómo oirán
-            si nadie les predica?
-            Hermosos son los pies
-            de los que anuncian la paz
-            Las Buenas Nuevas de Jesús
+            ¿\Ch{Em}{Có}mo pues invoca\Ch{A}{rán} a A\Ch{Am}{quél}
+
+            en el \Ch{C}{cual} no han cre\Ch{D}{í}do?
+
+            ¿Y \Ch{Em}{có}mo cree\Ch{A}{rán} en A\Ch{Am}{quél}
+
+            del cual no han o\Ch{D}{í}do?
+
+            ¿\Ch{F}{Y} cómo oi\Ch{C}{rán}
+
+            \Ch{Gm}{si} nadie les pre\Ch{Bb}{di}ca?
+
+            \Ch{F}{Her}mosos son los \Ch{C}{pies}
+
+            de los que anuncian la \Ch{D}{paz}
+
+            Las \Ch{G}{bue}nas Nuevas de Jes\Ch{C}{ú}\Ch{D}{~}\Ch{E}{~}s
         \end{SBOpGroup}
+
+
+        \begin{SBChorus}
+            \Ch{E}{En}ciende una \Ch{A}{luz} y déjala bri\Ch{Bm}{llar}
+
+            la luz de Je\Ch{D}{sús}
+
+            que brille en to\Ch{E}{do} lugar
+
+            No la puedes escon\Ch{A}{der}
+
+            No la puedes ca\Ch{Bm}{llar}
+
+            ante tal necesi\Ch{D}{dad}
+
+            Enciende una \Ch{E}{luz}
+
+            en la oscuri\Ch{A}{dad}
+        \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3028,25 +3104,41 @@
     {\href{https://open.spotify.com/intl-es/track/7EUjZLRFKP31lOpqpaokXY}{Escuchar}}
 
         \begin{SBChorus}
-            En la tierra habrá conocimiento
-            de la gloria del Señor como las aguas
-            cubren el mar
-            En la tierra habrá conocimiento
-            de la gloria del Señor como las aguas
-            cubren el mar
+            \Ch{Bb/C}{En} la \Ch{F}{tie}rra ha\Ch{C/E}{brá} conoci\Ch{Bb/D}{mien}to
+
+            de la \Ch{F/C}{glo}ria \Ch{F/A}{del} Se\Ch{Bb2}{ñor} como las a\Ch{F2/A}{gua}s\Ch{Dm7}{~}
+
+            \Ch{Gm7}{cu}\Ch{Am7}{bren} \Ch{BbMaj7}{el} \Ch{Bb/C}{mar}
+
+            \Ch{Bb/C}{En} la \Ch{F}{tie}rra ha\Ch{C/E}{brá} conoci\Ch{Bb/D}{mien}to
+
+            de la \Ch{F/C}{glo}ria \Ch{F/A}{del} Se\Ch{Bb2}{ñor} como las a\Ch{F2/A}{gua}s\Ch{Dm7}{~}
+
+            \Ch{Gm7}{cu}\Ch{BbMaj7}{bren} \Ch{C}{el} \Ch{F}{mar}\Ch{Dm7}{~}
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Ve y proclámalo entre las naciones
-            y da a conocer de su reino
-            su pueblo sin temor proclama al Señor
-            y la tierra de su gloria llenara.
+            \Ch{Gm7}{Ve} y procláma\Ch{C}{lo} entre las \Ch{Bb/F}{na}cio\Ch{F}{nes}\Ch{Dm7}{~}
+
+            \Ch{Gm7}{y} da a cono\Ch{C}{cer} de su \Ch{Bb/F}{rei}\Ch{F}{no}\Ch{F2/A}{~}
+
+            su \Ch{Bb}{pue}blo \Ch{C}{sin} te\Ch{F}{mor} pro\Ch{Bb}{cla}ma \Ch{C}{al} Se\Ch{D}{ñor}\Ch{D/F\#}{~}
+
+            y la \Ch{Gm7}{tie}rra de su \Ch{EbMaj9}{glo}ria llena\Ch{Bb/C}{rá}.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\CEPiano\CE}{Do} Mayor Bajo E \hfill\null\break
+            \upchord{\DmsevenPiano\Dmseven}{\qquad Re} menor s\'eptima \hfill
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill\null\break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
+            \upchord{\CPiano\C}{\qquad C} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6113,7 +6205,7 @@
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
             \upchord{\GsdimPiano\Gsdim}{\qquad Sol sostenido} disminuido \hfill
-            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}

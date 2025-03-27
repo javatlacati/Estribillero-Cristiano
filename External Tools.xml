@@ -1,0 +1,23 @@
+<toolSet name="External Tools">
+  <tool name="key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o Estribillero.kdx ./auxil/Estribillero.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="author index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o Estribillero.adx ./auxil/Estribillero.aIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o Estribillero.tdx ./auxil/Estribillero.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+</toolSet>

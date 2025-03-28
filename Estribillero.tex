@@ -139,6 +139,7 @@
 \newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
 \newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
 \newcommand{\AAs}{\chord{t}{x,p1,p2,p2,p2,n}{A/Bb}}
+\newcommand{\Atwo}{\chord{t}{x,n,p2,p2,n,n}{A2}}
 
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
 \newcommand{\Asm}{\chord{t}{x,p1,p3,p3,p2,p1}{A\#m}}
@@ -172,7 +173,7 @@
 \newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C\#}}
 \newcommand{\Csm}{\chord{t}{p4,p4,p6,p6,p5,p4}{C\#m}}
 \newcommand{\Csmseven}{\chord{t}{x,p4,p2,p1,o,o}{C\#m7}}
-\newcommand{\CssevenLight}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
+\newcommand{\Csseven}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
 
 \newcommand{\Dflat}{\chord{4}{n,n,p2,p2,p2,n}{Db}}
 \newcommand{\DflatF}{\chord{t}{x,x,p3,p5,p4,p4}{Db/F}}
@@ -190,6 +191,7 @@
 \newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F\#}}
 \newcommand{\DsevenFs}{\chord{t}{p2,n,n,p2,p1,p2}{D7/F\#}}
 \newcommand{\DmsevenG}{\chord{t}{p3,n,n,p2,p1,p1}{Dm7/G}}
+\newcommand{\DsusFs}{\chord{t}{p2,x,n,p2,p3,p3}{Dsus/F\#}}
 
 \newcommand{\Ds}{\chord{t}{n,n,p1,p3,p4,p3}{D\#}}
 \newcommand{\Dsseven}{\chord{t}{n,n,p1,p3,p4,p3}{D\#7}}
@@ -203,6 +205,7 @@
 \newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
 \newcommand{\Em}{\chord{t}{n,p2,p2,n,n,n}{Em}}
 \newcommand{\Emseven}{\chord{t}{n,p2,p2,n,p3,n}{Em7}}
+\newcommand{\Emseventr}{\chord{t}{n,p2,p2,n,p3,p3}{Em7}}
 \newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
 \newcommand{\EGs}{\chord{t}{p4,o,p2,p1,n,n}{E/G\#}}
@@ -249,6 +252,7 @@
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\AEPiano}{\keyboardtwooctaves[Eo][Ao][Cst]}
 \newcommand{\AsusPiano}{\keyboardf[Ao][Do][Eo]}
+\newcommand{\AtwoPiano}{\keyboardf[Ao][Bo][Cso][Eo]}
 
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\AsmPiano}{\keyboard[Cso][Fo][Aso]}
@@ -277,6 +281,7 @@
 \newcommand{\CsusthirteenPiano}{\keyboard[Co][Do][Fo][Go][Ao][Aso]}
 
 \newcommand{\CsPiano}{\keyboard[Cso][Fo][Gso]}
+\newcommand{\CssevenPiano}{\keyboard[Cso][Fo][Gso][Bo]}
 \newcommand{\CsmPiano}{\keyboard[Cso][Eo][Gso]}
 \newcommand{\CsmsevenPiano}{\keyboard[Cso][Eo][Gso][Aso]}
 \newcommand{\CsFPiano}{\keyboardf[Fo][Gso][Cso]}
@@ -292,6 +297,7 @@
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
 \newcommand{\DsusPiano}{\keyboard[Do][Go][Ao]}
+\newcommand{\DsusFsPiano}{\keyboardf[Fo][Go][Ao][Do]}
 
 \newcommand{\DsPiano}{\keyboard[Dso][Go][Aso]}
 \newcommand{\DsmPiano}{\keyboard[Dso][Fso][Aso]}
@@ -1710,44 +1716,68 @@
     {\href{https://open.spotify.com/intl-es/track/3Ggsjz5pIJ5ThuDx7V6xYT}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
-            Cristo me ayuda por Él a vivir
-            Cristo me ayuda por Él a morir;
-            Hasta que llegue su gloria a ver,
-            Cada momento le entrego mi ser
+            \Ch{F}{Cris}to me ayuda por \Ch{Bb}{Él} a vi\Ch{F}{vir}
+
+            \Ch{Am}{Cris}to me a\Ch{C7}{yu}da por \Ch{F}{Él} a mo\Ch{C7}{rir};
+
+            \Ch{F}{Has}ta que llegue su \Ch{Bb}{glo}ria \Ch{C\#7}{a} \Ch{F}{ver},
+
+            \Ch{F7}{Ca}da mo\Ch{Gm}{men}to le en\Ch{C}{tre}go mi \Ch{F}{ser}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Cada momento la vida me da,
-            Cada momento conmigo Él está;
-            Hasta que llegue su gloria a ver,
-            Cada momento le entrego ni sér.
+            \Ch{F}{Ca}da momento la \Ch{C}{vi}da me \Ch{F}{da},
+
+            Cada momento con\Ch{G7}{mi}go Él es\Ch{C7}{tá};
+
+            \Ch{F}{Has}ta que llegue su \Ch{D}{glo}ria a \Ch{Gm}{ver},
+
+            Cada momento le en\Ch{C}{tre}go ni \Ch{F}{ser}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Siento pesares, muy cerca él está,
-            Siento dolores, a livio me da;
-            Tengo aflicciones, me muestra su amor;
-            Cada momento me cuidas Señor.
+            \Ch{F}{Sien}to pesares, muy \Ch{Bb}{cer}ca él es\Ch{F}{tá},
+
+            \Ch{Am}{Sien}to do\Ch{C7}{lo}res, a\Ch{F}{li}vio me \Ch{C7}{da};
+
+            \Ch{F}{Ten}go aflicciones, me \Ch{Bb}{mues}tra su \Ch{C\#7}{a}\Ch{F}{mor};
+
+            \Ch{F7}{Ca}da mo\Ch{Gm}{men}to me \Ch{C}{cui}das Se\Ch{F}{ñor}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Tengo amarguras, o tengo temor
-            Tengo tristezas, me inspira valor;
-            Tengo conflictos o penas aquí
-            Cada momento te acuerdas de mí
+            \Ch{F}{Ten}go amarguras, o \Ch{Bb}{ten}go te\Ch{F}{mor}
+
+            \Ch{Am}{Ten}go tris\Ch{C7}{te}zas, me ins\Ch{F}{pi}ra va\Ch{C7}{lor};
+
+            \Ch{F}{Ten}go conflictos o \Ch{Bb}{pe}nas \Ch{C\#7}{a}\Ch{F}{quí}
+
+            \Ch{F7}{Ca}da mo\Ch{Gm}{men}to te a\Ch{C}{cuer}das de \Ch{F}{mí}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Tengo flaquezas, o débil estoy,
-            Cristo de dice Tu amparo yo soy ;
-            Cada momento en tinieblas o en luz,
-            Siempre conmigo está mi Jesús.
+            \Ch{F}{Ten}go flaquezas, o \Ch{Bb}{dé}bil es\Ch{F}{toy},
+
+            \Ch{Am}{Cris}to me \Ch{C7}{di}ce Tu am\Ch{F}{pa}ro yo \Ch{C7}{soy};
+
+            \Ch{F}{Ca}da momento en ti\Ch{Bb}{nie}blas o \Ch{C\#7}{en} \Ch{F}{luz},
+
+            \Ch{F7}{Siem}pre con\Ch{Gm}{mi}go es\Ch{C}{tá} mi Je\Ch{F}{sús}.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\CsevenPiano\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\CssevenPiano\Csseven}{\qquad Do sostenido} Mayor s\'eptima \hfill
+            \upchord{\FsevenPiano\Fseven}{\qquad Fa} Mayor s\'eptima \hfill\null\break
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\GsevenPiano\Gseven}{\qquad Sol} Mayor S\'eptima \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3432,7 +3462,7 @@
         \begin{SBOpGroup}
             Esperar en Tí, difícil sé que es
             mi mente dice no, no es posible
-            pero mi corazón, con ado está en Tí
+            pero mi corazón, confiado está en Tí
             tu siempre has sido el me has sostenido
         \end{SBOpGroup}
 
@@ -3590,29 +3620,39 @@
     {\href{https://open.spotify.com/intl-es/track/1jnUCPGWdEXtjTaviVG9E9}{Escuchar}}
 
         \begin{SBOpGroup}
-            Me has tomado en tus brazos y me has dado
-            salvación.
-            De tu amor has derramado en mi corazón.
-            No sabré agradecerte lo que has hecho por mí.
-            Sólo puedo darte ahora mi canción.
+            Me has to\Ch{F\#m}{ma}do en tus brazos y me has \Ch{E}{da}do salvación.
+
+            De tu a\Ch{F\#m}{mor} has derramado en mi cora\Ch{E}{zón}.
+
+            No sa\Ch{F\#m}{bré} agradecerte lo que has \Ch{E}{he}cho por mí.
+
+            Sólo \Ch{F\#m}{pue}do darte ahora mi can\Ch{E}{ción}.
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Gracias, gracias Señor.
-            Gracias, mi Señor Jesús.
+            \Ch{A}{Gra}\Ch{E}{cias}, \Ch{Bm}{gra}cias Se\Ch{F\#m}{ñor}.\Ch{E}{~}
+
+            \Ch{A}{Gra}cias, mi Se\Ch{E}{ñor} Je\Ch{D}{sús}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            En la cruz diste tu vida, entregaste todo ahí.
-            Vida eterna regalaste al morir.
-            Por tu sangre tengo entrada ante el trono celestial,
-            puedo entrar confiadamente ante Tí.
+            En la \Ch{F\#m}{cruz} diste tu vida, entre\Ch{E}{gas}te todo ahí.
+
+            Vida e\Ch{F\#m}{ter}na regalaste al mo\Ch{E}{rir}.
+
+            Por tu \Ch{F\#m}{san}gre tengo entrada ante el \Ch{E}{tro}no celestial,
+
+            puedo \Ch{F\#m}{en}trar confiadamente ante \Ch{E}{Tí}.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5603,6 +5643,48 @@
         \fi
     \end{song}
 
+    \begin{song}{Quiero más de tu espíritu}{G}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/0k0u25TtOWTHYhnYXMdz7F}{Escuchar}} %2010
+
+        \begin{SBOpGroup}
+            \Ch{G}{quie}\ldots \Ch{A2}{ro}\ldots   \Ch{F\#m}{mas}\ldots\Ch{Bm}{~}
+
+            \Ch{Em}{quie}\ldots \Ch{F\#m}{ro}\ldots   \Ch{Bm}{mas}\ldots\Ch{A2}{~}
+
+            \Ch{G}{más} de tu espíri\Ch{Dsus/F\#}{tu}\ldots
+
+            \Ch{G}{más} de tu presen\Ch{Bm}{cia}\ldots
+
+            \Ch{Em7}{quie}\ldots  \Ch{G/F\#}{ro}\ldots   \Ch{G}{mas}\ldots  \Ch{A2}{de}    \Ch{D}{ti}.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            yo quiero \Ch{D}{más}\ldots
+
+            yo quiero \Ch{G}{más}\ldots
+
+            yo quiero \Ch{Bm}{más} y más y \Ch{A2}{más} de ti mi \Ch{G}{Dios}\ldots\Ch{A2}{~}
+        \end{SBOpGroup}
+
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\AtwoPiano\Atwo}{\qquad La} Aumentada 2 \hfill\null\break
+            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\EmPiano\Em}{Mi} Menor \hfill
+            \upchord{\qquad \DsusFsPiano\DsusFs}{\qquad Re} Mayor suspendida cuarta bajo F\# \hfill\null\break
+            \upchord{\EmsevenPiano\Emseventr}{\qquad Mi} Menor S\'eptima \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
 %Rebosa mi Corazón
 
 %Renuévame
@@ -5983,30 +6065,42 @@
     {\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}}
 
         \begin{SBOpGroup}
-            Sentado en su trono, rodeado de luz
-            A la diestra del Padre, gobierna Jesús.
-            Con ojos de fuego, con rostro de sol
-            Cuando abre su boca, es trueno su voz
+            \Ch{G}{Sen}tado en su trono, rodeado de \Ch{Em}{luz}
+
+            \Ch{C}{A} la diestra del \Ch{Am}{Pa}dre, gobierna Je\Ch{D}{sús}.
+
+            \Ch{G}{Con} ojos de fuego, con rostro de \Ch{Em}{sol}
+
+            \Ch{C}{Cuan}do abre su \Ch{Am}{bo}ca, es trueno su \Ch{D}{voz}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Poderoso en majestad y reino, Poderoso
-            Poderoso en potestad e imperio, Poderoso
+            \Ch{G}{Po}de\Ch{D}{ro}\Ch{Am}{so} en majestad y \Ch{Em}{rei}no, Pode\Ch{D}{ro}so
+
+            \Ch{G}{Po}de\Ch{D}{ro}\Ch{Am}{so} en potestad e im\Ch{Em}{pe}rio, Pode\Ch{D}{ro}so
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Un gran arcoíris corona su ser
-            El es el cordero que pudo vencer
-            El es el primero, El es el postrer
-            Y arrojan coronas delante de El
+            \Ch{G}{Un} gran arcoíris corona su \Ch{Em}{ser}
+
+            \Ch{C}{El} es el cor\Ch{Am}{de}ro que pudo ven\Ch{D}{cer}
+
+            \Ch{G}{El} es el primero, El es el pos\Ch{Em}{trer}
+
+            \Ch{C}{Y} arrojan co\Ch{Am}{ro}nas delante de \Ch{D}{El}
         \end{SBOpGroup}
 
-        \SBEnd{Poderoso, Poderoso, Poderoso.}
+        \SBEnd{\Ch{Am}{~}\Ch{D}{~}\Ch{Em}{~}\Ch{Am}{~}\Ch{D}{~}\Ch{Bb}{~}\Ch{C}{~}\Ch{G}{~}}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6019,7 +6113,65 @@
 
 %SeOyeenlasNaciones
 
-%SiPuedesCreer
+    \begin{song}{Si Puedes Creer}{Em}
+    {} %copyright \SBPubDom
+    {Lilly Goodman}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/03zBrLi4BWMlf09IoK9TIJ}{Escuchar}} %\NotCCLIed
+
+        \FLineIdx{Sé que hay montañas tan altas}
+
+        \begin{SBOpGroup}
+            \Ch{Em}{Sé} que hay mon\Ch{Bm}{ta}ñas tan altas \Ch{C}{que} no crees esca\Ch{Em}{lar}
+
+            y un hori\Ch{Bm}{zon}te tan lejano \Ch{C}{que} no \Ch{Am}{cre}es alcan\Ch{Em}{zar}
+
+            sé que la \Ch{Bm}{du}da y la indeci\Ch{C}{sión}
+
+            son enemigos que hay que \Ch{Am}{de}rri\Ch{Em}{bar}
+
+            Le\Ch{C}{ván}tate con \Ch{D}{fe}, en Dios es\Ch{Am}{tá} el poder para hoy ven\Ch{D7}{cer}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Si pue\Ch{D}{des} creer, todo es posible si pue\Ch{Em}{des} creer
+
+            confiesa que es a\Ch{D}{sí} aunque no \Ch{C}{pue}das ver.
+
+            No \Ch{Bm}{des} lugar a duda ten \Ch{Am}{so}lo algo de \Ch{D}{fe}.
+
+            Si pue\Ch{D}{des} creer, no importa el milagro Dios tie\Ch{Em}{ne} el poder,
+
+            conforme a su \Ch{D}{vo}luntad se \Ch{C}{ha} de hacer
+
+            de\Ch{Bm}{clá}rate en victoria no \Ch{Am}{hay} de que te\Ch{D}{mer},
+
+            si puedes \Ch{C}{cre}\Ch{D}{er}.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            ¿\Ch{Em}{A}caso has \Ch{Bm}{ol}vidado \Ch{C}{que} Dios con\Ch{Am}{ti}go es\Ch{Em}{tá}?
+
+            ¿Que solo \Ch{Bm}{Él} puede se\Ch{C}{car} el mar para que pue\Ch{D}{das} cru\Ch{Em}{zar}?
+
+            en tí es\Ch{Bm}{tá} la de\Ch{C}{ci}sión de ser un \Ch{Am}{ven}ce\Ch{Em}{dor}
+
+            Le\Ch{C}{ván}tate con \Ch{D}{fe}, en Dios es\Ch{Am}{tá} el poder para hoy ven\Ch{D7}{cer}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
     \begin{song}{Será Llena la Tierra}{Am}
     {} %copyright \SBPubDom
@@ -6271,7 +6423,7 @@
     \include{EstribilleroTdx}
 \end{document}
 \bye
-%
+
 %%%
 % Document ends.
 %%%

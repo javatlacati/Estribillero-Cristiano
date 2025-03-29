@@ -310,8 +310,9 @@
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
 
-\newcommand{\FPiano}{\keyboard[Co][Fo][Ao]}
+\newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
+\newcommand{\FsusPiano}{\keyboardf[Aso][Co][Fo]}
 \newcommand{\FmajsevenPiano}{\keyboardf[Co][Fo][Ao][Eo]}
 \newcommand{\FmPiano}{\keyboard[Co][Fo][Aso]}
 \newcommand{\FmsevenPiano}{\keyboard[Co][Fo][Aso][Dso]}
@@ -950,7 +951,6 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}} %\NotCCLIed
 
-%  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{Nuestro legado}{2006}%fuente \#
 
         \begin{SBOpGroup}
@@ -971,7 +971,7 @@
         \begin{SBOpGroup}
             Me goza\Ch{Am}{ré}, me gozaré, me gozaré,
 
-            me gozaré en Jeho\Ch{G}{vá}.  [¡Gózate!]
+            me gozaré en Jeho\Ch{G}{vá}.~[¡Gózate!]
 
             Pues ha lle\Ch{Dm}{va}do todo dolor, me ha hecho \Ch{E}{li}bre
         \end{SBOpGroup}
@@ -990,6 +990,48 @@
             \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
+
+        \begin{SBExtraKeys}{
+            \STitle{Así como David danzaba}{Bm}
+
+            \begin{SBOpGroup}
+                \Ch{Bm}{Cuan}do el Señor hiciere volver la cautivi\Ch{A}{dad}
+
+                seremos \Ch{Em}{co}mo los que sue\Ch{F\#}{ñan}
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+
+                \Ch{Bm}{Mi} boca llenará de risa, \Ch{A}{mis} labios de alabanza,
+
+                \Ch{Em}{En}tonces dirán las naciones:
+
+                \Ch{F\#}{Gran}des cosas ha hecho el Señor
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                Me goza\Ch{Bm}{ré}, me gozaré, me gozaré,
+
+                me gozaré en Jeho\Ch{A}{vá}.~[¡Gózate!]
+
+                Pues ha lle\Ch{Em}{va}do todo dolor, me ha hecho \Ch{F\#}{li}bre
+            \end{SBOpGroup}
+
+            \begin{SBChorus}
+                \Ch{Bm}{A}sí como David cantaba, \Ch{A}{a}sí como David danzaba,
+
+                \Ch{Em}{a}sí como David fluía en su pre\Ch{F\#}{sen}cia
+            \end{SBChorus}
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+                \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+                \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+                \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \hfill\null\break
+            \end{SBOpGroup}
+            \fi
+        }\end{SBExtraKeys}
     \end{song}
 
     \begin{song}{A sus pies}{Am}
@@ -1473,37 +1515,58 @@
         \fi
     \end{song}
 
-    \begin{song}{Con Cánticos Señor}{C}
+    \begin{song}{Con Cánticos Señor}{D}
     {} %copyright \SBPubDom
     {}
     {Salmos 69:30} %pasaje
     {\href{https://open.spotify.com/intl-es/track/6N6loBqpYEfTL7OKZ3wWQB}{Escuchar}} %\NotCCLIed
 %        https://open.spotify.com/intl-es/track/20WfGgLcOYzd6CZCdbrIpv
 
-        \begin{SBOpGroup}
-            Con cánticos Señor mi corazón y voz
-            te adoran con fervor oh trino Santo Dios
-            Tu mano paternal marcó mi senda aquí
-            mis pasos, cada cual, velados son por Tí
-            Innumerables son tus bienes y sin par
-            que por tu compasión recibo sin cesar
-            Tú eres oh Señor mi sumo todo bien
-            mil lenguas tu amor cantando siempre están
-        \end{SBOpGroup}
+        \begin{SBVerse}
+            \Ch{D}{Con} cánticos Se\Ch{Bm}{ñor} mi \Ch{G}{co}razón y \Ch{A}{voz}
+
+            te a\Ch{D}{do}ran \Ch{Bm}{con} fer\Ch{E}{vor} oh \Ch{A}{tri}no San\Ch{E}{to} \Ch{A}{Dios}
+        \end{SBVerse}
 
         \begin{SBChorus}
-            En tu Mansión yo te veré
-            de tí perdón felíz tendré
+            \Ch{D}{En} \Ch{G}{tu} \Ch{A7}{Man}\Ch{D}{sión} yo te ve\Ch{G}{ré}
 
+            y galar\Ch{Bm}{dón} felíz \Ch{A7}{ten}\Ch{D}{dré}
+        \end{SBChorus}
 
-            En tu Mansión yo te veré
-            y galardón felíz tendré
+        \begin{SBVerse}
+            \Ch{D}{Tu} mano pater\Ch{Bm}{nal} mar\Ch{G}{có} mi senda a\Ch{A}{quí}
+
+            mis \Ch{D}{pa}sos, \Ch{Bm}{ca}da \Ch{E}{cual}, ve\Ch{A}{la}dos son por \Ch{A}{Tí}
+        \end{SBVerse}
+
+        \begin{SBVerse}
+            \Ch{D}{I}nnumerables \Ch{Bm}{son} tus \Ch{G}{bien}es y sin \Ch{A}{par}
+
+            que \Ch{D}{por} tu \Ch{Bm}{com}pa\Ch{E}{sión} recibo \Ch{A}{sin} \Ch{E}{ce}\Ch{A}{sar}
+        \end{SBVerse}
+
+        \begin{SBVerse}
+            \Ch{D}{Tú} eres oh Se\Ch{Bm}{ñor} mi \Ch{G}{su}mo todo \Ch{A}{bien}
+
+            mil \Ch{D}{len}guas \Ch{Bm}{tu} a\Ch{E}{mor} cantando \Ch{A}{siem}pre \Ch{E}{es}\Ch{A}{tán}
+        \end{SBVerse}
+
+        \begin{SBChorus}
+            \Ch{D}{En} \Ch{G}{tu} \Ch{A7}{Man}\Ch{D}{sión} yo te ve\Ch{G}{ré}
+
+            de tí per\Ch{Bm}{dón} felíz \Ch{A7}{ten}\Ch{D}{dré}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1642,22 +1705,37 @@
     {\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC?si=2c4442fba5e5403c}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
-            Con mis labios y mi vida
-            te alabo Señor, te alabo Señor,
-            con mis labios y mi vida te alabo bendito Señor,
+            \Ch{D}{Con} mis labios \Ch{G}{y} mi \Ch{D}{vi}da
+
+            te a\Ch{A}{la}bo Señor, te a\Ch{D}{la}bo Señor,
+
+            \Ch{D}{Con} mis labios \Ch{G}{y} mi \Ch{D}{vi}da
+
+            te a\Ch{A}{la}bo bendito Se\Ch{D}{ñor},\Ch{D7}{~}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Porque Tú has sido precioso para mí, precioso
-            para mí,precioso para mí,
-            Porque Tú has sido precioso para mí, te alabo
-            bendito Señor
+            Porque \Ch{G}{Tú} has \Ch{A}{si}do pre\Ch{F\#m}{cio}so para \Ch{Bm}{mí},
+
+            pre\Ch{Em}{cio}so para \Ch{A}{mí},
+
+            pre\Ch{D}{cio}so para \Ch{D7}{mí},
+
+            Porque \Ch{G}{Tú} has \Ch{A}{si}do pre\Ch{F\#m}{cio}so para \Ch{Bm}{mí},
+
+            te a\Ch{Em}{la}bo ben\Ch{A}{di}to Se\Ch{D}{ñor}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2268,21 +2346,28 @@
     {\href{https://open.spotify.com/intl-es/track/2ZcVBicMCi350sxdqR6jEq}{Escuchar}}
 
         \begin{SBOpGroup}
-            // Demos gracias al Señor, demos gracias,
-            demos gracias por su amor //
+            Demos \Ch{C}{gra}cias al Señor, \Ch{F}{de}mos \Ch{C}{gra}cias,
+
+            \Ch{F}{de}mos gracias \Ch{G7}{por} su a\Ch{C}{mor}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Por la mañana, las aves cantan
-            sus alabanza a Dios el Creador,
-            también nosotros a Él cantemos
-            y alabemos a Cristo el Redentor
+            Por la ma\Ch{F}{ña}na, las aves \Ch{C}{can}tan
+
+            sus alabanza a Dios el Crea\Ch{C}{dor},
+
+            también no\Ch{F}{so}tros a Él can\Ch{C}{te}mos
+
+            y ala\Ch{G}{be}mos a Cristo el Reden\Ch{C}{tor}
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\GsevenPiano\Gseven}{\qquad Sol} Mayor S\'eptima \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2351,7 +2436,7 @@
             Acordes:
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\CGPiano\CG}{\qquad Do} Mayor Bajo G \hfill\null\break
-            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \qquad
+            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill
             \upchord{\CEPiano\CE}{Do} Mayor Bajo E \hfill\null\break
             \upchord{\GninePiano\GnineD}{\qquad Sol} Mayor Novena Bajo D \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
@@ -2368,34 +2453,57 @@
     {\href{https://open.spotify.com/intl-es/track/7mcV2OhsG4VXxeaxEpl1iU}{Escuchar}}
 
         \begin{SBOpGroup}
-            Fue hasta que te conocí que con Tu amor un nuevo
-            día empezó
-            Y ahora quiero volar, en pos de Ti quiero andar
-            Y con ando en Tus brazos de amor viviré
+            \Ch{Am}{Fue} hasta que te cono\Ch{F}{cí}
+
+            que con Tu a\Ch{C}{mor}
+
+            \Ch{G}{un} nuevo día empe\Ch{Am}{zó}
+
+            Y ahora quiero vo\Ch{F}{lar},
+
+            en pos de \Ch{C}{Ti}
+
+            quiero an\Ch{G}{dar}
+
+            Y con\Ch{F}{fian}do en Tus \Ch{G}{bra}zos de amor viviré
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Desde el amanecer hasta que el sol se vuelva a
-            poner
-            Viviré en libertad,
-            Tu amor la victoria me dá
+            Desde el \Ch{F}{a}mane\Ch{G}{cer}
+
+            hasta \Ch{F}{que} el sol se vuelva a po\Ch{G}{ner}
+
+            Vivi\Ch{F}{ré} en liber\Ch{G}{tad},
+
+            Tu a\Ch{F}{mor} la vic\Ch{G}{to}ria me \Ch{C}{dá}
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Ya no correré más de Ti, puedo sentir que me atrae
-            Tu amor
-            Has sembrado dentro de mí esta pasión por santidad
-            Y con ando en Tus brazos de amor viviré
+            \Ch{Am}{Ya} no correré más de \Ch{F}{Ti},
+
+            puedo sen\Ch{C}{tir}
+
+            que me at\Ch{G}{rae} Tu a\Ch{Am}{mor}
+
+            Has sembrado dentro de \Ch{F}{mí}
+
+            esta pa\Ch{C}{sión}
+
+            por santi\Ch{G}{dad}
+
+            Y con\Ch{F}{fian}do en Tus \Ch{G}{bra}zos de amor viviré
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Nada apagará mi amor para Ti
-            Tu fuego consume mi ser
+            \Ch{Am}{Na}da apaga\Ch{G}{rá} mi a\Ch{C}{mor} para \Ch{Am}{Ti}
+
+            Tu \Ch{F}{fue}go con\Ch{G}{su}me mi \Ch{A}{ser}\Ch{E}{~}\Ch{D}{~}\Ch{G}{~}\Ch{A}{~}\Ch{G}{~}\Ch{A}{~}\Ch{G}{~}\Ch{D}{~}\Ch{A}{~}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Te daré todo lo que soy
-            Tú eres mi Dios
+            \Ch{Bm}{Te} daré todo lo que \Ch{G}{soy}
+
+            Tú eres mi \Ch{D}{Dios}
         \end{SBOpGroup}
 
         \ifChordBk
@@ -2405,6 +2513,10 @@
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2416,27 +2528,40 @@
     {\href{https://open.spotify.com/intl-es/track/16U7geOUCbpaVmQ9ILpyfa}{Escuchar}}
 
         \begin{SBOpGroup}
-            De tal manera me am\'o
-            que su vida no escatim\'o
-            hasta el nal el se entreg\'o,
-            y a la muerte fue porque me am\'o
+            De \Ch{C}{tal} manera me a\Ch{G}{m\'o}
+
+            que su \Ch{F}{vi}da no es\Ch{C}{ca}ti\Ch{G}{m\'o}
+
+            has\Ch{C}{ta} el nal el se entre\Ch{G}{g\'o,}
+
+            y a la \Ch{F}{muer}te fue por\Ch{G}{que} me a\Ch{C}{m\'o}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            De tal manera me am\'o
+            De \Ch{C}{tal} manera me a\Ch{G}{m\'o}
+
             y no hay forma en que podr\'e pagar
+
             el precio de su grande amor
+
             pero toda mi alma quiero dar.
         \end{SBOpGroup}
 
         \begin{SBChorus}
             Por su amor yo viviré
+
             De su amor yo cantaré
+
             Con mi jesus caminaré
+
             Porque el me amo a mi
+
             Por su amor yo viviré
+
             De su amor yo cantaré
+
             Con mi jesus caminaré
+
             Por que el murió por mi le seguiré.
         \end{SBChorus}
 
@@ -2452,7 +2577,8 @@
             Acordes:
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
+            \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill\null\break
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
         \end{SBOpGroup}
         \fi
@@ -2496,31 +2622,45 @@
 
     \begin{song}{Dios Manda Lluvia}{G}
     {} %copyright \SBPubDom
-    {}
+    {Ericson Alexander Molano}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/6HHoCvGgwqWxvuFKz6jzY8}{Escuchar}}
 
         \begin{SBOpGroup}
-            Dios manda lluvia
-            derrama de tu Espíritu
-            envía hoy tu fuego
-            Sana mis heridas
-            Sálvame Señor
+            \Ch{G}{Dios} manda lluvia
+
+            derrama de tu Espíri\Ch{Em}{tu}
+
+            envía hoy tu \Ch{C}{fue}go
+
+            Sana mis heri\Ch{Am}{das}
+
+            \Ch{D}{Sál}vame Se\Ch{G}{ñor}\Ch{G7}{~}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Manda la Lluvia, el rocío de tu amor,
-            llenando las vidas de la tierra hoy Señor
-            Manda la Lluvia, el rocío de tu amor,
-            Visita mi viDa
-            Cámbiame Señor
+            Manda la \Ch{C}{Llu}via, \Ch{D}{el} rocío de tu a\Ch{Bm}{mor},
+
+            \Ch{Em}{lle}nando las \Ch{Am}{vi}das \Ch{D}{de} la tierra hoy Se\Ch{G}{ñor}\Ch{G7}{~}
+
+            Manda la \Ch{C}{Llu}via, \Ch{D}{el} rocío de tu a\Ch{Bm}{mor},
+
+            \Ch{Em}{Vi}sita mi vi\Ch{Am}{da}
+
+            \Ch{D}{Cám}biame Se\Ch{G}{ñor}\Ch{G7}{~}
         \end{SBChorus}
 
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\DPiano\D}{Re} Mayor \hfill
+            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2559,51 +2699,70 @@
         \fi
     \end{song}
 
-    \begin{song}{Dulce Melodías Cantaré}{Ab}
+    \begin{song}{Dulces Melodías Cantaré}{Ab}
     {} %copyright \SBPubDom
     {}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/7EwdiktzwNNAGuFbRtioCI}{Escuchar}}
 
-        \begin{SBOpGroup}
-            Dulces melodías cantaré,
-            y alabanzas al Señor,
-            a su nombre gloria yo daré,
-            por su inefable amor
-        \end{SBOpGroup}
+        \begin{SBVerse}
+            \Ch{Ab}{Dul}ces melo\Ch{Db}{dí}\Ch{Ab}{as} canta\Ch{Bb}{ré},
+
+            \Ch{Eb}{y} alabanzas al Señor\Ch{Eb7}{~},
+
+            \Ch{Ab}{a} su nombre \Ch{Db}{glo}\Ch{Ab}{ria} yo da\Ch{Bb}{ré},
+
+            \Ch{Eb}{por} su inefable a\Ch{Ab}{mor}
+        \end{SBVerse}
 
         \begin{SBChorus}
-            De Jesús el nombre,
-            dulce es para mí
-            canta el alma mía
-            melodías a mi Rey.
+            \Ch{Ab}{De} Jesús el \Ch{Eb7}{nom}\Ch{Eb}{bre},
+
+            dulce es para \Ch{Ab}{mí}
+
+            canta el alma \Ch{Bb}{mí}a
+
+            \Ch{Eb}{me}lodías a mi \Ch{Ab}{Rey}.
         \end{SBChorus}
 
-        \begin{SBOpGroup}
+        \begin{SBVerse}
             Yo vivía en sombras y en dolor,
+
             triste herido, pobre y vil,
+
             mas la tierna mano del Señor
+
             me llevó a su redil.
-        \end{SBOpGroup}
+        \end{SBVerse}
 
-        \begin{SBOpGroup}
+        \begin{SBVerse}
             Fuente perennal de gracia hallé
-            al amparo de su amor.
-            Su sonriente faz me imparte fe,
-            esperanza y valor.
-        \end{SBOpGroup}
 
-        \begin{SBOpGroup}
+            al amparo de su amor.
+
+            Su sonriente faz me imparte fe,
+
+            esperanza y valor.
+        \end{SBVerse}
+
+        \begin{SBVerse}
             Aunque por el valle de aflicción
+
             tenga que pasar aquí
+
             mi Jesús dará su protección.
+
             Él se acordará de mí.
-        \end{SBOpGroup}
+        \end{SBVerse}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill\null\break
+            \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill
+            \upchord{\DflatPiano\Dflat}{\qquad Re bemol} Mayor  \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill\null\break
+            \upchord{\EflatsevenPiano\Eflatseven}{\qquad Mi} Mayor bemol s\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2678,32 +2837,47 @@
 % 2000
 
         \begin{SBOpGroup}
-            El Espíritu de Dios
-            Esta en este lugar,
+            El Es\Ch{D}{pí}ritu de Dios
+
+            Es\Ch{G}{tá} en este lu\Ch{D}{gar},
+
             El Espíritu De Dios
-            Se mueve en este lugar
+
+            Se \Ch{G}{mue}ve en este lu\Ch{A}{gar}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Esta aquí para consolar
-            Esta aquí para liberar
-            Esta aquí para guiar
-            El Espíritu de Dios está aquí
+            Esta a\Ch{D}{quí} para conso\Ch{G}{lar}
+
+            Esta a\Ch{D}{quí} para libe\Ch{G}{rar}
+
+            Esta a\Ch{D}{quí} para guiar
+
+            El Es\Ch{A}{pí}ritu de Dios está a\Ch{D}{quí}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Muévete en mí Muévete en mí
-            Toca mi mente mi corazón
-            Llena mi vida de tu amor
-            Muévete en mí
-            Dios Espíritu
-            Muévete en mí.
+            Muévete en \Ch{G}{mí} Muévete en \Ch{A}{mí}
+
+            Toca mi \Ch{G}{men}te mi cora\Ch{A}{zón}
+
+            Llena mi \Ch{F\#m}{vi}da de tu a\Ch{Bm}{mor}
+
+            Muévete en \Ch{G}{mí}
+
+            Dios Es\Ch{A}{pí}ritu
+
+            Muévete en \Ch{D}{mí}.
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2715,23 +2889,34 @@
     {\href{https://open.spotify.com/intl-es/track/2uYUh6fNl30dQ9tQbSLuXJ}{Escuchar}}
 
         \begin{SBOpGroup}
-            Él me levantará,
-            Él me levantará,
-            Él me levantará,
-            así es el Señor
+            \Ch{D}{Él} me levanta\Ch{Em}{rá},
+
+            \Ch{A}{Él} me levanta\Ch{D}{rá},
+
+            \Ch{Bm}{Él} me levanta\Ch{Em}{rá},
+
+            \Ch{A}{a}sí es el Se\Ch{D}{ñor}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Él me levantará,
-            Él me levantará,
-            En sus manos me sostendrá,
-            Él me levantará
+            \Ch{D7}{Él} me levanta\Ch{G}{rá},
+
+            \Ch{A}{Él} me levanta\Ch{D}{rá},
+
+            \Ch{Bm}{En} sus manos me sosten\Ch{Em}{drá},
+
+            \Ch{A}{Él} me levanta\Ch{D}{rá}
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2743,36 +2928,51 @@
     {\href{https://open.spotify.com/intl-es/track/3mDfxXKhilk9iDxVxCMfi2}{Escuchar}}
 
         \begin{SBOpGroup}
-            Él es el Rey infinito en poder
-            Él es el Rey de los cielos
-            Seré para Él siervo el
-            pues mi vida compró con amor
+            \Ch{Em}{Él} es el Rey infi\Ch{C}{ni}to en poder
+
+            \Ch{Em}{Él} es el Rey de los \Ch{C}{cie}los
+
+            \Ch{Em}{Se}ré para \Ch{C}{Él} siervo el
+
+            pues mi \Ch{G}{vi}da compró con Su a\Ch{D}{mor}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Él es el Rey lo con esa mi ser
-            Él es el Rey de los siglos
-            Mi vida la rindo a sus pies,
-            Él es Rey sobre mi corazón
+            \Ch{Em}{Él} es el Rey lo con\Ch{C}{fie}sa mi ser
+
+            \Ch{Em}{Él} es el Rey de los \Ch{C}{si}glos
+
+            \Ch{Em}{Mi} vida la \Ch{C}{rin}do a sus pies,
+
+            Él es \Ch{G}{Rey} sobre mi cora\Ch{D}{zón}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Él es el rey, Él es el rey
-            Él es el rey de mi vida
-            Él es el rey, Él es el rey
-            reina con autoridad
+            \Ch{Em}{Él} es el rey, \Ch{C}{Él} es el rey
+
+            \Ch{G}{Él} es el rey de mi \Ch{D}{vi}da
+
+            \Ch{Em}{Él} es el rey, \Ch{C}{Él} es el rey
+
+            \Ch{D}{rei}na con autori\Ch{D}{dad}
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Su reino eterno es
-            Su trono el cielo es
-            Él es el rey que viene su pueblo a llevar
+            Su \Ch{C}{rei}no eter\Ch{D}{no} es
+
+            \Ch{Em}{Su} trono el \Ch{C}{cie}lo es
+
+            \Ch{Am}{Él} es el rey que \Ch{D}{vie}ne su pue\Ch{Em}{blo} a llevar
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5687,7 +5887,7 @@
 
 %Rebosa mi Corazón
 
-%Renuévame
+%Renuévame https://open.spotify.com/intl-es/track/0XUwyz1NfrKue4iVrfm7aP
 
     \begin{song}{Rey de reyes}{D}
     {} %copyright \SBPubDom

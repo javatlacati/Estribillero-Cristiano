@@ -185,6 +185,7 @@
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
 \newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
+\newcommand{\DmF}{\chord{t}{p1,n,n,p2,p3,x}{Dm/F}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
 \newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
 \newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
@@ -295,6 +296,7 @@
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
 \newcommand{\DsevenPiano}{\keyboard[Do][Fso][Ao][Co]}
 \newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
+\newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
@@ -6849,8 +6851,58 @@
         \fi
     \end{song}
 
-
 %TeCoronamos
+    \begin{song}{Te Coronamos}{A}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/34YoO3OXgRaei529O2KUlq}{Escuchar}}
+
+        \SBIntro{\Ch{A}{~}\Ch{D}{~}\Ch{E}{~}\Ch{D}{~}\Ch{E}{~}\Ch{G}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{F\#m}{No} hay nadie \Ch{E}{co}mo Tú, Se\Ch{D}{ñor}
+
+            \Ch{F\#m}{No} hay quien pueda ha\Ch{E}{cer} lo que haces \Ch{D}{Tú}
+
+            \Ch{F\#m}{Je}sucristo, e\Ch{E}{ter}no Salva\Ch{D}{dor}
+
+            \Ch{F\#m}{To}dopode\Ch{E}{ro}so vence\Ch{D}{dor}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{A}{Te} coronamos \Ch{D}{e}res Señor Jesús
+
+            Re\Ch{E}{ci}be adora\Ch{D}{ción}\Ch{E}{~}
+
+            \Ch{A}{Te} celebramos, \Ch{D}{a} la muerte Tú venciste
+
+            Tu \Ch{E}{vi}ves, eterno Se\Ch{G}{ñor}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Eterno Se\Ch{G}{ñor}
+
+            Eterno Se\Ch{D/F\#}{ñor}
+
+            Eterno Se\Ch{Dm/F}{ñor}
+
+            Eterno Se\Ch{A}{ñor}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \hfill
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
+            \upchord{\DmFPiano\DmF}{\qquad Re} menor con bajo F \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
 %TeDaréLoMejor
 
@@ -6904,7 +6956,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill

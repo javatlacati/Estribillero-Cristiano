@@ -133,13 +133,16 @@
 \newcommand{\Asus}{\chord{t}{x,n,p2,p2,p3,n}{Asus4}}
 \newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
 \newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
+\newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
+\newcommand{\AD}{\chord{t}{x,x,n,p2,p2,n}{A/D}}
+\newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
+\newcommand{\AG}{\chord{t}{p3,n,p2,n,p2,n}{A/G}}
+\newcommand{\AAs}{\chord{t}{x,p1,p2,p2,p2,n}{A/Bb}}
+\newcommand{\Atwo}{\chord{t}{x,n,p2,p2,n,n}{A2}}
+
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
 \newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
 \newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
-\newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
-\newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
-\newcommand{\AAs}{\chord{t}{x,p1,p2,p2,p2,n}{A/Bb}}
-\newcommand{\Atwo}{\chord{t}{x,n,p2,p2,n,n}{A2}}
 
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
 \newcommand{\Asm}{\chord{t}{x,p1,p3,p3,p2,p1}{A\#m}}
@@ -152,6 +155,7 @@
 \newcommand{\Bsus}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p5,f1p2}{Bsus4}}
 \newcommand{\Bseven}{\chord{t}{x,f1p2,f3p4,f1p2,f4p4,f1p2,}{B7}}
 \newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
+\newcommand{\BDs}{\chord{2}{x,p4,p2,p2,n,x}{B/D\#}}
 \newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
 \newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
 \newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
@@ -189,6 +193,7 @@
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
 \newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
 \newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
+\newcommand{\DC}{\chord{t}{x,o,n,p2,p3,p2}{D/C}}
 \newcommand{\DE}{\chord{t}{n,n,p2,p2,p3,p2}{D/E}}
 \newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F\#}}
 \newcommand{\DsevenFs}{\chord{t}{p2,n,n,p2,p1,p2}{D7/F\#}}
@@ -208,6 +213,7 @@
 \newcommand{\Em}{\chord{t}{n,p2,p2,n,n,n}{Em}}
 \newcommand{\Emseven}{\chord{t}{n,p2,p2,n,p3,n}{Em7}}
 \newcommand{\Emseventr}{\chord{t}{n,p2,p2,n,p3,p3}{Em7}}
+\newcommand{\Emeleven}{\chord{t}{n,n,n,n,n,n}{Em11}}
 \newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
 \newcommand{\EGs}{\chord{t}{p4,o,p2,p1,n,n}{E/G\#}}
@@ -254,7 +260,9 @@
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
+\newcommand{\ADPiano}{\keyboardtwooctaves[Do][Eo][Ao][Cst]}
 \newcommand{\AEPiano}{\keyboardtwooctaves[Eo][Ao][Cst]}
+\newcommand{\AGPiano}{\keyboardf[Go][Ao][Cso][Eo]}
 \newcommand{\AsusPiano}{\keyboardf[Ao][Do][Eo]}
 \newcommand{\AtwoPiano}{\keyboardf[Ao][Bo][Cso][Eo]}
 
@@ -267,6 +275,7 @@
 
 \newcommand{\BPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BsusPiano}{\keyboard[Eo][Fso][Bo]}
+\newcommand{\BDsPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BsevenPiano}{\keyboard[Dso][Fso][Bo][Ao]}
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
@@ -315,6 +324,7 @@
 \newcommand{\EsevenPiano}{\keyboard[Eo][Gso][Bo][Do]}
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
+\newcommand{\EmelevenPiano}{\keyboard[Eo][Fso][Go][Ao][Bo][Do]}
 
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
@@ -1818,6 +1828,8 @@
         %https://open.spotify.com/intl-es/track/4W6MNK8ntpLsoyXHtmxpVb 2020
         %https://open.spotify.com/intl-es/track/1u44o5yVxLBhAM6e29asXb 2021
 
+        \SBMargNote{Intro piano:\break ABC BA\break AABC BA\break AG AG}
+
         \begin{SBOpGroup}
             \Ch{Am}{Quie}ro levantar a ti mis \Ch{F}{ma}nos
 
@@ -1842,6 +1854,7 @@
             En \Ch{C}{mí}, en \Ch{G}{mí}
         \end{SBOpGroup}
 
+        \SBMargNote{Arreglo piano:\break AABC C CC A\break AABC C CC A\break AA G\break G G AG}
         \begin{SBChorus}
             Recibe \Ch{Am}{to}da la gloria
 
@@ -3003,6 +3016,8 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/3mDfxXKhilk9iDxVxCMfi2}{Escuchar}}
 
+        \SBIntro{\Ch{G}{~}\Ch{G}{~}~\Ch{C}{~}\Ch{C}{~}~~\Ch{G}{~}\Ch{G}{~}~\Ch{D}{~}\Ch{D}{~}}
+
         \begin{SBOpGroup}
             \Ch{Em}{Él} es el Rey infi\Ch{C}{ni}to en poder
 
@@ -3032,6 +3047,9 @@
 
             \Ch{D}{rei}na con autori\Ch{D}{dad}
         \end{SBChorus}
+
+        \SBMargNote{Metales:\break E ECD EE\break E ECD EE\break EF\#G DCD\break E ECD EE\break E ECD EE\break DD}
+        \SBBridge{\Ch{Em}{~}\Ch{D}{~}\Ch{Em}{~}\Ch{D}{~}}
 
         \begin{SBOpGroup}
             Su \Ch{C}{rei}no eter\Ch{D}{no} es
@@ -3958,6 +3976,9 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/3NlfXlQdsoJIAufkIMfDz8}{Escuchar}}
 
+        \SBMargNote{Intro Metales:\break GA E\break E DCA EGAE CBG\break EGAE EGAE EGAB A}
+        \SBIntro{\Ch{Am}{~}\Ch{F}{~}\Ch{Dm}{~}\Ch{E}{~}}
+
         \begin{SBOpGroup}
             \Ch{Am}{hay} una llama que arde en mi\ldots
 
@@ -3968,11 +3989,15 @@
             \Ch{E}{pue}do sentirlo esta aquí
         \end{SBOpGroup}
 
+        \SBMargNote{DE GA}
+
         \begin{SBChorus}
             \Ch{Am}{fue}go, fuego, \Ch{F}{fue}go del señor
 
             \Ch{G}{fue}go,fuego, \Ch{E}{fue}go purificador\ldots
         \end{SBChorus}
+
+        \SBMargNote{Intro}
 
         \begin{SBOpGroup}
             \Ch{Am}{yo} tengo alegría, \Ch{F}{yo} tengo de su paz
@@ -4682,6 +4707,7 @@
             \Ch{Bm}{Ho}ssana al Rey de Salva\Ch{D}{ción}
 
             Hossana al Dios Altisi\Ch{Em}{mo}
+            \SBMargNote{EEEEEEEE DDDD AAAA x3\break F\#F\#F\#F\#F\#F\#\break EF\#GF\#ED AA\break EEE DDD C\#C\#C\# F\#F\#F\# F\#GA\break EEE DDD C\#C\#C\# D EEEE DE F\#F\#F\#F\#F\#F\#\break EF\# AA A AAA\break F\#A BBBBB\break GF\# ME AA F\#}
 
             Hossana, \Ch{G}{Je}sucristo, \Ch{A}{Je}sucristo es \Ch{Bm}{Rey}
         \end{SBChorus}
@@ -5427,21 +5453,35 @@
     {\href{https://open.spotify.com/intl-es/track/3e6ZHPRTo7IUtB2vonUeta}{Escuchar}}
 
         \begin{SBOpGroup}
-            Majestuoso, Poderoso, digno de loor.
-            Proclamemos su grandeza hoy.
+            \Ch{D}{Ma}jes\Ch{A/D}{tuo}so, \Ch{G}{Po}de\Ch{D}{ro}so,
+
+            \Ch{G}{dig}no \Ch{D/F\#}{de} lo\Ch{A7}{or}
+
+            \Ch{D}{Pro}cla\Ch{A/D}{me}mos \Ch{G}{su} gran\Ch{D}{de}za \Ch{Em}{hoy}~\Ch{D/F\#}{~}\Ch{G}{~}\Ch{A}{~}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Jesucristo es Rey.
-            Jesucristo es Rey.
-            Postrados hoy ante sus pies.
-            Jesucristo es Rey.
+            Jesu\Ch{G}{cris}to \Ch{A7}{es} \Ch{F\#m}{Rey}~\Ch{Bm}{~}
+
+            Jesu\Ch{G}{cris}to \Ch{A7}{es} \Ch{F\#m}{Rey}~\Ch{Bm}{~}
+
+            Pos\Ch{G}{tra}dos hoy an\Ch{A7}{te} sus \Ch{F\#m}{pies}~\Ch{Bm}{~}
+
+            Jesu\Ch{Em}{cris}to \Ch{A7}{es} \Ch{D}{Rey}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\ADPiano\AD}{\qquad La} Mayor con bajo D \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5921,32 +5961,44 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/5ChFLnl5ZYGy7peefLf99Q}{Escuchar}}
 
-        \SBIntro{Poderoso, Poderoso}
+        \SBIntro{\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}, \Ch{G}{~}\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}}
 
         \begin{SBOpGroup}
-            El León de Judá nunca perderá,
-            porque es el Poderoso,Poderoso
+            El \Ch{Dm}{León} de Judá nunca perderá,
+
+            porque es el \Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}, \Ch{G}{~}\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            es el Santo de Israel nada temeré, porque es el
-            Poderoso,Poderoso
+            es el \Ch{Dm}{San}to de Israel nada temeré, porque es el
+
+            \Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}, \Ch{G}{~}\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             Cristo es el Rey no hay nadie como El
+
             es Poderoso.
-            Sobre satanás El tomó la autoridad
+
+            \Ch{Dm7}{So}bre satanás El tomó la autori\Ch{G}{dad}
+
             es Poderoso.
-            Ante Su poder las tinieblas han de caer es Poderoso.
-            Sobre el trono está coronado en majestad.
-            Él nos prometió que pronto regresará.
+
+            Ante Su poder las tinieblas han de \Ch{G}{caer} es Poderoso.
+
+            \Ch{Dm7}{So}bre el trono está coronado en majestad.
+
+            \Ch{Esus7}{Él} nos prometió que pronto re\Ch{E7}{gre}sará.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\DmPiano\Dm}{\qquad Re} menor  \hfill
+            \upchord{\DmsevenPiano\Dmseven}{\qquad Re} menor s\'eptima \hfill\null\break
+            \upchord{\EsevenPiano\Eseven}{\qquad Mi} S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5959,27 +6011,44 @@
         \FLineIdx{No busco una herencia ni cruzar el Jordán}
 
         \begin{SBOpGroup}
-            No busco una herencia ni cruzar el Jordán
-            No voy tras fortuna ni prosperidad
-            No anhelo tesoros ni la bendición
-            No busco mas dones no busco la unción
-            Si tú quieres todo esto lo puedes tener
-            Mas no saciará para siempre tu sed
+            \Ch{G}{No} busco una he\Ch{C}{ren}cia ni cru\Ch{D}{zar} el Jordán
+
+            \Ch{G}{No} voy tras for\Ch{C}{tu}na ni \Ch{D}{pros}peridad
+
+            \Ch{G}{No} anhelo te\Ch{C}{so}ros ni \Ch{D}{la} bendición
+
+            \Ch{G}{No} busco mas \Ch{C}{do}nes no \Ch{D}{bus}co la un\Ch{Em}{ción}
+
+            \Ch{G}{Si} tú quieres todo \Ch{D}{es}to lo \Ch{B/D\#}{pue}des te\Ch{Em}{ner}
+
+            \Ch{C}{Mas} no sacia\Ch{Am}{rá} para siempre tu \Ch{D}{sed}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Prefiero a Cristo antes que tener
-            Todos los reinos del mundo
-            No se comparan con Él
-            Prefiero a Cristo me quedo con Él
-            Es el tesoro escondido
-            Que tanto busqué
+            \Ch{G}{Pre}fiero a \Ch{D}{Cris}to\Ch{Em}{~} antes que te\Ch{Bm}{ner}
+
+            \Ch{C}{To}dos los reinos del \Ch{G/B}{mun}\Ch{Em}{do}
+
+            \Ch{Am}{No} se comparan con \Ch{D}{Él}
+
+            \Ch{G}{Pre}fiero a \Ch{D}{Cris}to\Ch{Em}{~} me quedo con \Ch{Bm}{Él}
+
+            \Ch{C}{Es} el tesoro escon\Ch{Bm}{di}\Ch{Em}{do}
+
+            \Ch{Am}{Que} \Ch{D}{tan}to \Ch{G}{bus}qué
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\BDsPiano\BDs}{\qquad Si} Mayor con bajo D\# \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+            \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6099,13 +6168,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
-            \upchord{\DEPiano\DE}{\qquad Re} Mayor bajo E \hfill\null\break
-            \upchord{\DCPiano\DC}{\qquad Re} Mayor bajo C \hfill
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+            \upchord{\EmelevenPiano\Emeleven}{\qquad Mi} Menor 11 \hfill
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\GBPiano\GB}{\qquad Sol} Mayor Bajo B \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
-            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6737,6 +6805,66 @@
             \upchord{\DEPiano\DE}{\qquad Re} Mayor bajo E \hfill\null\break
             \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
             \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+
+    \begin{song}{Señor, Señor Jesús}{D}
+    {} %copyright \SBPubDom
+    {Juan Salinas}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/0UNe2yoagUBru92YuO4Bzb}{Escuchar}}
+        % 1992 aunque el disco lo subieron a potify con el año 2004
+        %https://open.spotify.com/intl-es/track/123lQLH6YPEn9yW6zHpRZe 1998 instrumental
+        %https://open.spotify.com/intl-es/track/6d6U1jtjUznMoD8QSOd11a 2004
+
+        \FLineIdx{Gloria a Ti yo daré}
+
+        \SBIntro{\Ch{D}{~}~\Ch{A}{~}~\Ch{D}{~}~\Ch{Am7}{~}~\Ch{D7}{~}~\Ch{G}{~}~\Ch{A}{~}~\Ch{D}{~}}
+
+        \begin{SBOpGroup}
+            Se\Ch{D}{ñor},\Ch{A}{~} Señor Je\Ch{D}{sús}\Ch{Am7}{~}~\Ch{D7}{~}
+
+            Yo \Ch{G}{sé} que \Ch{A}{tú} eres \Ch{D}{gran}de\Ch{Am7}{~}~\Ch{D7}{~}
+
+            Yo \Ch{G}{sé} que \Ch{A}{tú} eres \Ch{F\#m}{fuer}\Ch{Bm}{te}
+
+            Se\Ch{Em7}{ñor}, se\Ch{A}{ñor} Je\Ch{D}{sús}.\Ch{G}{~}~\Ch{A}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{D}{Glo}ria a Tí \Ch{Bm}{yo} daré, \Ch{F\#m}{glo}ria
+
+            Y lo ha\Ch{G}{ré} e\Ch{A}{ter}na\Ch{D}{men}te\Ch{Am7}{~}~\Ch{D7}{~}
+
+            Te da\Ch{G}{ré} por \Ch{A}{siem}pre \Ch{D}{glo}\Ch{A}{o}\Ch{Bm}{ria}
+
+            Se\Ch{Em}{ñor}, se\Ch{A}{ñor} Je\Ch{D}{sús}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Yo} te ama\Ch{A}{ré} y te a\Ch{F\#m}{do}ra\Ch{Bm}{ré}
+
+            \Ch{G}{No} importa lo que \Ch{A}{pue}da \Ch{D}{ve}nir\Ch{D7}{~}
+
+            En \Ch{G}{Tí} señor \Ch{A}{siem}pre con\Ch{F\#m}{fia}\Ch{Bm}{ré}
+
+            Y \Ch{G}{te} amaré \Ch{A}{has}ta el \Ch{D}{fin}.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}

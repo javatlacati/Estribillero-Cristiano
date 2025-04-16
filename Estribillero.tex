@@ -188,6 +188,7 @@
 \newcommand{\Dm}{\chord{t}{x,x,n,p2,p3,p1}{Dm}}
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
 \newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+}}
+\newcommand{\DsevenMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+7}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
 \newcommand{\DmF}{\chord{t}{p1,n,n,p2,p3,x}{Dm/F}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
@@ -308,6 +309,7 @@
 \newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
+\newcommand{\DsevenMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DEPiano}{\keyboardtwooctaves[Eo][Fso][Ao][Dt]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
@@ -3585,6 +3587,9 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/33TOmRFdGrNCxdLxIefA1r}{Escuchar}}
 
+        \SBMargNote{Piano:\break EEE BBB\break AAA G\#G\#G\#\break G\#AE x4 F\#F\#F\# EEE\break GGG D\#D\#D\# }
+        \SBIntro{\Ch{E}{~}~\Ch{B}{~}~\Ch{A}{~}~\Ch{C\#m}{~}~\Ch{B}{~}~\Ch{E}{~}}
+
         \begin{SBOpGroup}
             \Ch{E}{Tan} consumidos por tu amor
 
@@ -3993,6 +3998,8 @@
     {Samuel Luna E.}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/1gkSSTrGjnwr904VOykCOj}{Escuchar}}
+
+        \FLineIdx{Al borde de tu gran trono}
 
         \begin{SBOpGroup}
             Al \Ch{G}{bor}de de tu gran \Ch{Em}{Tro}no
@@ -4781,6 +4788,57 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\APiano\A}{\qquad La} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Hermoso Eres}{A}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3TbInL4DEBxLRExpqtHDw8}{Escuchar}}
+
+        \FLineIdx{En mi corazón hay una canción}
+
+        \SBIntro{\Ch{D}{~}~\Ch{E}{~}~\Ch{A}{~}~\Ch{D}{~}~\Ch{E}{~}~\Ch{F\#m}{~}\hfill\break \Ch{A}{~}~\Ch{D}{~}~\Ch{C\#}{~}~\Ch{Bm}{~}~\Ch{D}{~}~\Ch{E}{~}~\Ch{A}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{A}{En} mi cora\Ch{D+7}{zón} hay una can\Ch{E}{ción}
+
+            \Ch{A}{Que} de\Ch{D+7}{mues}tra mi pa\Ch{E}{sión}
+
+            \Ch{F\#m}{Pa}ra mi \Ch{E}{Rey} y mi Se\Ch{D}{ñor}~\Ch{A}{~}
+
+            \Ch{Bm}{Pa}ra A\Ch{A}{quél} que me a\Ch{E}{mó}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{A}{Her}moso e\Ch{C\#m7}{res}, \Ch{D}{mi} Se\Ch{E}{ñor}
+
+            \Ch{A}{Her}moso e\Ch{C\#m7}{res} Tú, \Ch{D}{A}mado \Ch{E}{mío}
+
+            \Ch{Bm7}{Tú} eres la fuente de mi vi\Ch{E}{da}
+
+            \Ch{Bm7}{Y} el anhe\Ch{A/C\#}{lo} \Ch{D}{de} mi cora\Ch{E}{zón}
+
+            \Ch{Bm7}{Y} el anhe\Ch{A/C\#}{lo} \Ch{D}{de} mi cora\Ch{E}{zón}
+        \end{SBChorus}
+
+        \SBBridge{\Ch{A}{~}~\Ch{D}{~}~\Ch{E}{~}}
+
+        \SBEnd{\Ch{A}{~}~\Ch{D}{~}~\Ch{E}{~} ~\Ch{A}{~}~\Ch{D}{~}~\Ch{E}{~} ~\Ch{A}{~}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+            \upchord{\CsmsevenPiano\Csmseven}{Do Sostenido} Menor S\'eptima \hfill\null\break
+            \upchord{\DsevenMajPiano\DsevenMaj}{\qquad Re} Maj S\'eptima Aumentada \hfill
+            \upchord{\ACsPiano\ACs}{\qquad La} Mayor con bajo C\# \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6576,6 +6634,7 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/41L7qAYXn62qmbZhkFXabi}{Escuchar}}
 
+        \SBMargNote{Synth:\break DAF\# DAE\break DAF\# GF\#ED\break DGF\# GF\#ED}
         \SBIntro{\Ch{D}{~} \Ch{A}{~} \Ch{Em7}{~} \Ch{G}{~}}
 
         \begin{SBOpGroup}
@@ -6583,6 +6642,7 @@
 
             \Ch{Em7}{Tu} grandeza procla\Ch{G}{ma}mos
 
+            \SBMargNote{Piano:\break MD: DAF\#E\break MI: D A E G}
             \Ch{D}{Rey} de reyes, \Ch{A}{So}berano
 
             \Ch{Em7}{Tu} victoria, ce\Ch{G}{le}bramos.
@@ -6597,11 +6657,13 @@
         \begin{SBChorus}
             \Ch{G}{Rey} de reyes, te exal\Ch{D}{ta}mos
 
+            \SBMargNote{Piano:\break EF\#E}
             \Ch{Bm7}{Po}deroso en majestad
 
             \Ch{A}{E}res el Camino y la Verdad.
         \end{SBChorus}
 
+        \SBMargNote{Synth:\break F\#EAF\# F\#EAF\#\breaf F\#GF\#ED\break A3E4 A3DC\#}
         \SBBridge{\Ch{Em7}{~} \Ch{Bm7}{~} \Ch{D}{~} \Ch{A}{~}}
 
         \begin{SBOpGroup}
@@ -6614,6 +6676,7 @@
             Y para siempre Tú reinas.\Ch{G}{~}
         \end{SBOpGroup}
 
+        \SBMargNote{Synth:\break EF\#B EF\#E}
         \SBEnd{\Ch{Em7}{~}}
 
         \ifChordBk
@@ -7868,46 +7931,64 @@
         \FLineIdx{Tus ojos revelan que yo}
 
         \begin{SBOpGroup}
-            Tus ojos revelan que yo
-            nada puedo esconder
-            que no soy nada sin Tí
-            oh el Señor
+            \Ch{G}{Tus} ojos revelan que yo
+
+            \Ch{Em}{na}da puedo esconder
+
+            que no soy \Ch{C+}{na}da sin Tí
+
+            oh fiel Se\Ch{C/D}{ñor}~\Ch{D}{~}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Todo lo sabes de mí
-            cuando miras el corazón
-            todo lo puedes ver
-            muy dentro de mí
+            \Ch{G}{To}do lo sabes de mí
+
+            cuando \Ch{Em}{mi}ras el corazón
+
+            todo lo que no soy \Ch{C+}{pue}des ver
+
+            muy dentro de \Ch{C/D}{mí}~\Ch{D}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G/B}{Lle}va mi \Ch{C}{vi}da
+
+            a una \Ch{G/B}{so}la ver\Ch{C}{dad}
+
+            que \Ch{G/B}{cuan}do me \Ch{C}{mi}ra
+
+            nada \Ch{G/B}{pue}do ocul\Ch{D}{tar}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Sé que es tu fidelidad
-            que lleva mi vida más allá
-            de lo que puedo imaginar
-            Sé que no puedo negar
-            que tu mirada puesta en mí
-            me llena de tu paz
+            \Ch{G}{Sé} que es tu fi\Ch{D/F\#}{de}li\Ch{Em}{dad}
+
+            que lleva mi \Ch{Em7}{vi}da más a\Ch{C9}{llá}
+
+            de lo que puedo imagi\Ch{C/D}{nar}~\Ch{D}{~}
+
+            \Ch{G}{Sé} que \Ch{D/F\#}{no} puedo ne\Ch{Em}{gar}
+
+            que tu mi\Ch{Em7}{ra}da puesta en \Ch{C9}{mí}
+
+            me \Ch{D}{lle}na de tu \Ch{G}{paz}
         \end{SBChorus}
 
-        \begin{SBOpGroup}
-            Lleva mi vida
-            a una sola verdad
-            que cuando me mira
-            nada puedo oculta
-        \end{SBOpGroup}
-
-        \SBEnd{Que tu mirada puesta en mí me llena de tu paz.}
+        \SBEnd{Que tu mi\Ch{Em7}{ra}da puesta en \Ch{C9}{mí} me \Ch{D}{lle}na de tu \Ch{G}{paz}.}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill
+            \upchord{\CDPiano\CD}{\qquad Do} Mayor bajo D \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
-            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\GsdimPiano\Gsdim}{\qquad Sol sostenido} disminuido \hfill
-            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill
+            \upchord{\CninePiano\Cnine}{\qquad Do} Novena \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}

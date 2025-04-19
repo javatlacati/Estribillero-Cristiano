@@ -209,6 +209,9 @@
 \newcommand{\Eflatseven}{\chord{t}{n,n,p1,p3,p2,p3}{E$\flat$7}}
 
 \newcommand{\E}{\chord{t}{n,p2,p2,p1,n,n}{E}}
+\newcommand{\Esus}{\chord{t}{n,p2,p2,p2,n,n}{Esus4}}
+\newcommand{\Efive}{\chord{t}{n,p2,p2,p4,n,n}{E5}}
+\newcommand{\Edimfive}{\chord{t}{n,p1,p2,p3,n,n}{E(b5)}}
 \newcommand{\Eseven}{\chord{t}{n,p2,p2,p1,p3,n}{E7}}
 \newcommand{\EseveN}{\chord{t}{n,p2,p2,p4,p3,p4}{E7}}
 \newcommand{\Em}{\chord{t}{n,p2,p2,n,n,n}{Em}}
@@ -323,6 +326,9 @@
 \newcommand{\EflatsevenPiano}{\keyboard[Dso][Go][Aso][Cso]}
 
 \newcommand{\EPiano}{\keyboard[Eo][Gso][Bo]}
+\newcommand{\EsusPiano}{\keyboard[Eo][Ao][Bo]}
+\newcommand{\EfivePiano}{\keyboard[Eo][Bo]}
+\newcommand{\EdimfivePiano}{\keyboard[Eo][Aso][Bo]}
 \newcommand{\EsevenPiano}{\keyboard[Eo][Gso][Bo][Do]}
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
@@ -4966,8 +4972,6 @@
 
         \FLineIdx{En mi corazón hay una canción}
 
-        \SBIntro{\Ch{D}{~}~\Ch{E}{~}~\Ch{A}{~}~\Ch{D}{~}~\Ch{E}{~}~\Ch{F\#m}{~}\hfill\break \Ch{A}{~}~\Ch{D}{~}~\Ch{C\#}{~}~\Ch{Bm}{~}~\Ch{D}{~}~\Ch{E}{~}~\Ch{A}{~}}
-
         \begin{SBOpGroup}
             \Ch{A}{En} mi cora\Ch{D+7}{zón} hay una can\Ch{E}{ción}
 
@@ -7747,6 +7751,85 @@
             \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \hfill\null\break
             \upchord{\CsPiano\Cs}{\qquad Do sostenido} Mayor \hfill
             \upchord{\DsmsevenPiano\Dsmseven}{Re Sostenido} Menor S\'eptima \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Te Alabaré}{E}
+    {} %copyright \SBPubDom
+    {Rojo}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/2qQyA9SeWyCun6KYm7qnHF}{Escuchar}}
+
+        \SBMargNote{Guitarra acc:\break E5~E(b5)~Esus4~E}
+        \SBIntro{\Ch{E}{~}~\Ch{B}{~}~\Ch{A}{~}}
+        \SBMargNote{Solo:\break B A-Ab-E}
+
+        \begin{SBOpGroup}
+            \Ch{E}{E}res Tú la úni\Ch{B}{ca} razón de mi a\Ch{C\#m7}{do}ración ¡Oh Je\Ch{A}{sús}!
+
+            \Ch{E}{E}res Tú la espe\Ch{B}{ran}za que anhe\Ch{C\#m7}{lé} tener ¡Oh Je\Ch{A}{sús}!.
+
+            \Ch{F\#m7}{Con}fié en Ti, me has ayu\Ch{B}{da}do
+
+            \Ch{D}{tu} salvación me has rega\Ch{B}{la}do
+
+            \Ch{E}{hoy} hay gozo en mi \Ch{B}{co}razón con mi \Ch{A}{can}to te alaba\Ch{B}{ré}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{F\#}{Te} alaba\Ch{C\#}{ré},
+
+            \Ch{D\#m7}{te} glorifica\Ch{B}{ré}~\Ch{C\#}{~},
+
+            \Ch{F\#}{Te} alaba\Ch{C\#}{ré},
+
+
+            \SBMargNote{Órgano:\break B Bb B C}
+            mi buen Je\Ch{B}{sús}.
+        \end{SBChorus}
+
+        \SBBridge{\Ch{E}{~}~\Ch{B}{~}~\Ch{C\#m7}{~}\Ch{A}{~}~\Ch{B}{~}}
+
+        \begin{SBOpGroup}
+            \Ch{E}{En} todo \Ch{A}{tiem}po te alaba\Ch{B}{ré}
+
+            \SBMargNote{Piano:\break E5 E6 E5 E6 E5}
+            \Ch{E}{En} todo \Ch{A}{tiem}po te adora\Ch{B}{ré}.
+        \end{SBOpGroup}
+
+        \SBBridge{\Ch{Em7}{~}~\Ch{C}~\Ch{D}{~}~\Ch{Bm7}{~} ¡Te alabaré!}
+
+        \begin{SBChorus}
+            \Ch{G}{Te} alaba\Ch{D}{ré},
+
+            \Ch{Em7}{te} glorifica\Ch{C}{ré},
+
+            \Ch{G}{Te} alaba\Ch{D}{ré},
+
+            \SBMargNote{Órgano:\break C B C D}
+            mi buen Je\Ch{C}{sús}.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EfivePiano\Efive}{\qquad Mi} 5 \hfill
+            \upchord{\EdimfivePiano\Edimfive}{\qquad Mi} dim5 \hfill\null\break
+            \upchord{\EsusPiano\Esus}{\qquad Mi} Mayor suspendido \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill
+            \upchord{\CsmsevenPiano\Csmseven}{Do Sostenido} Menor S\'eptima \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\FsmsevenPiano\Fsmseven}{\qquad Fa sostenido} Menor S\'eptima \hfill\null\break
+            \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \hfill
+            \upchord{\CsPiano\Cs}{\qquad Do sostenido} Mayor \hfill\null\break
+            \upchord{\DsmsevenPiano\Dsmseven}{Re Sostenido} Menor S\'eptima \hfill
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill

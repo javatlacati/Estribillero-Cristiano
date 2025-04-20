@@ -150,6 +150,7 @@
 \newcommand{\Bflatseven}{\chord{t}{p1,p1,p3,p1,p3,p1}{Bb7}}
 \newcommand{\Bflatm}{\chord{t}{x,p1,p3,p3,p2,p1}{Bbm}}
 \newcommand{\Bflatmseven}{\chord{t}{x,p1,p3,p1,p2,p1}{Bbm7}}
+\newcommand{\BflatG}{\chord{t}{p3,p1,n,n,p3,p3}{Bb/G}}
 
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
 \newcommand{\Bsus}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p5,f1p2}{Bsus4}}
@@ -161,6 +162,7 @@
 \newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
 \newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
 \newcommand{\Bmsevenbfive}{\chord{t}{x,p2,p3,p2,p3,n}{Bm7(b5)}} %si semidisminuido
+\newcommand{\BmajsevenG}{\chord{t}{p3,x,p1,p3,n,p2}{B+/G}}
 
 \newcommand{\C}{\chord{t}{x,p3,n,p2,p1,n}{C}}
 \newcommand{\Cseven}{\chord{t}{x,p3,p3,p2,p1,n}{C7}}
@@ -250,6 +252,7 @@
 \newcommand{\Gs}{\chord{3}{x,x,p4,p3,p2,p2}{G\#}}
 \newcommand{\Aflat}{\chord{3}{x,x,p4,p3,p2,p2}{A$\flat$}}
 \newcommand{\AflatEflat}{\chord{3}{x,bp4,p4,p3,p2,p2}{A$\flat$/E$\flat$}}
+\newcommand{\AflatF}{\chord{t}{p1,p3,p1,p1,p1,p1}{A$\flat$/F}}
 \newcommand{\AflatC}{\chord{t}{x,bp3,p1,p1,p1,p4}{A$\flat$/C}}
 \newcommand{\Aflatmajseven}{\chord{7}{p4,p3,x,o,p4,p4}{A$\flat$Maj7}}
 \newcommand{\Gsm}{\chord{t}{p4,p2,p1,p1,n,x}{G\#m}}
@@ -276,6 +279,7 @@
 \newcommand{\BflatsevenPiano}{\keyboard[Do][Fo][Aso][Gso]}
 \newcommand{\BflatmPiano}{\keyboard[Cso][Fo][Aso]}
 \newcommand{\BflatmsevenPiano}{\keyboard[Cso][Fo][Aso][Gso]}
+\newcommand{\BflatGPiano}{\keyboardf[Go][Aso][Do][Fo]}
 
 \newcommand{\BPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BsusPiano}{\keyboard[Eo][Fso][Bo]}
@@ -284,6 +288,7 @@
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
+\newcommand{\BmajsevenGPiano}{\keyboardf[Go][Bo][Dso][Fso]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
 \newcommand{\CDPiano}{\keyboardtwooctaves[Do][Eo][Go][Ct]}
@@ -359,6 +364,7 @@
 \newcommand{\GsmPiano}{\keyboardf[Gso][Bo][Dso]}
 \newcommand{\GsdimPiano}{\keyboardf[Gso][Bo][Do]}
 \newcommand{\AflatPiano}{\keyboard[Dso][Gso][Co]}
+\newcommand{\AflatFPiano}{\keyboardf[Fo][Gso][Co][Dso]}
 
 %%%
 % Title page information.
@@ -3379,6 +3385,45 @@
         \fi
     \end{song}
 
+    \begin{song}{El Señor es mi Rey}{Cm}
+    {} %copyright \SBPubDom
+    {Miel San Marcos}
+    {Salmos 51:8-13} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}}
+
+        \SBIntro{\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Gm}{~}\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Fm}{~}}
+
+        \begin{SBOpGroup}
+            El Señor es mi \Ch{Ab/F}{Rey},\Ch{Bb/G}{~} \Ch{Ab}{mi} to\Ch{Bb}{do}\Ch{B+/G}{~}
+
+            \Ch{Cm}{~}el Señor es mi \Ch{Cm}{luz}, mi \Ch{Bb}{Rey}\ldots
+
+            \Ch{Ab}{~}el que me hace vi\Ch{Ab}{brar} de \Ch{Gm}{go}\Ch{Cm}{zo}
+
+            \Ch{Ab}{~}el que guía mis \Ch{Gm}{pa}sos
+
+            \Ch{Ab}{~}el que extiende sus \Ch{Cm}{bra}zos
+
+            \Ch{Ab}{~}el creador de los \Ch{Cm}{cie}\Ch{Bb}{e}\Ch{Cm}{los}
+        \end{SBOpGroup}
+
+        \SBEnd{\Ch{Cm}{~}\Ch{Bb}{~}\Ch{Cm}{~}\Ch{Bb}{~}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\CmPiano\Cm}{\qquad Do} Menor \hfill
+            \upchord{\AflatPiano\Aflat}{\qquad La bemol} Mayor \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill\null\break
+            \upchord{\FmPiano\Fm}{\qquad Fa} Menor \hfill
+            \upchord{\AflatFPiano\AflatF}{\qquad La bemol} Mayor bajo F \hfill\null\break
+            \upchord{\BflatGPiano\BflatG}{\qquad Si bemol} Mayor bajo G \hfill
+            \upchord{\BmajsevenGPiano\BmajsevenG}{\qquad Si} + bajo G \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{El Señor Marchando Va}{Bm}
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
@@ -5638,6 +5683,7 @@
             \upchord{\AflatPiano\AflatC}{\qquad La} bemol Mayor bajo C \hfill\null\break
             \upchord{\BflatmsevenPiano\Bflatmseven}{Si Bemol} menor S\'eptima \hfill
             \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill
+            \upchord{\AflatFPiano\AflatF}{\qquad La bemol} Mayor bajo F \hfill\null\break
             \upchord{\CmsevenPiano\Cmseven}{\qquad Do} Menor s\'eptima \hfill
         \end{SBOpGroup}
         \fi
@@ -6239,7 +6285,7 @@
 
     \begin{song}{Óleo de Alegría}{Am}
     {} %copyright \SBPubDom
-    {Toda la noche sin parar}
+    {Aristides Mendez}
     {Hebreos 1:9} %pasaje
     {\href{https://open.spotify.com/intl-es/track/1dh89sm1r18WIQGULi2oBs}{Escuchar}}
 
@@ -6280,6 +6326,54 @@
         \end{SBOpGroup}
         \fi
     \end{song}
+
+    \begin{song}{Óleo de Alegría}{Cm}
+    {} %copyright \SBPubDom
+    {Miel San Marcos}
+    {Hebreos 1:9} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/56W5sxRrdEjCgAO0ZrWWVK}{Escuchar}}
+
+        %1996
+        \FLineIdx{Toda la noche sin parar}
+
+        \begin{SBChorus}
+            \Ch{Cm}{To}da la noche sin pa\Ch{Eb}{rar},
+
+            can\Ch{Bb}{tan}do alabanzas al Se\Ch{Gm}{ñor},
+
+            di\Ch{Ab}{cien}do de Su Gloria y Majes\Ch{Fm}{tad},
+
+            El es el \Ch{G7}{Rey}
+
+            De Isra\Ch{Cm}{el}.
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Con \Ch{Cm}{ó}leo de alegría me has un\Ch{Bb}{gi}do.
+
+            Con \Ch{Ab}{go}zo y con pandero danza\Ch{G7}{ré}.
+
+            De\Ch{Cm}{lan}te de tu pueblo redi\Ch{Bb}{mi}do
+
+            la \Ch{Ab}{glo}ria de tu Nombre exalta\Ch{G7}{ré}
+
+            con el pan\Ch{Am}{de}ro.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CmPiano\Cm}{\qquad Do} Menor \hfill
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si Bemol} Mayor \hfill
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill\null\break
+            \upchord{\AflatPiano\Aflat}{\qquad La bemol} Mayor \hfill
+            \upchord{\FmPiano\Fm}{\qquad Fa} Menor \hfill\null\break
+            \upchord{\GsevenPiano\Gseven}{\qquad Sol} S\'eptima \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
 
 %NoMerecíaTantoAmor
 

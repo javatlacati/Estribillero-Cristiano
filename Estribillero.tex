@@ -223,6 +223,7 @@
 \newcommand{\Emeleven}{\chord{t}{n,n,n,n,n,n}{Em11}}
 \newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
+\newcommand{\EFs}{\chord{t}{p2,o,p2,p1,n,n}{E/F\#}}
 \newcommand{\EGs}{\chord{t}{p4,o,p2,p1,n,n}{E/G\#}}
 
 \newcommand{\F}{\chord{t}{p1,p3,p3,p2,p1,p1}{F}}
@@ -339,17 +340,19 @@
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
 \newcommand{\EmelevenPiano}{\keyboard[Eo][Fso][Go][Ao][Bo][Do]}
+\newcommand{\EFsPiano}{\keyboardf[Fso][Eo][Gso][Bo]}
+\newcommand{\EGsPiano}{\keyboardf[Gso][Eo][Bo]}
 
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
 \newcommand{\FsusPiano}{\keyboardf[Aso][Co][Fo]}
 \newcommand{\FmajsevenPiano}{\keyboardf[Co][Fo][Ao][Eo]}
-\newcommand{\FmPiano}{\keyboard[Co][Fo][Aso]}
+\newcommand{\FmPiano}{\keyboardf[Fo][Aso][Co]}
 \newcommand{\FmsevenPiano}{\keyboard[Co][Fo][Aso][Dso]}
 
 \newcommand{\FsPiano}{\keyboard[Cso][Fso][Aso]}
 \newcommand{\FssusPiano}{\keyboard[Cso][Fso][Bo]}
-\newcommand{\FsmPiano}{\keyboard[Cso][Fso][Ao]}
+\newcommand{\FsmPiano}{\keyboardf[Cso][Fso][Ao]}
 \newcommand{\FsmsevenPiano}{\keyboard[Cso][Fso][Ao][Eo]}
 
 \newcommand{\GPiano}{\keyboard[Do][Go][Bo]}
@@ -1947,6 +1950,7 @@
         %https://open.spotify.com/intl-es/track/1u44o5yVxLBhAM6e29asXb 2021
 
         \SBMargNote{Intro piano:\break ABC BA\break AABC BA\break AG AG}
+        \FLineIdx{Quiero levantar mis manos}
 
         \begin{SBOpGroup}
             \Ch{Am}{Quie}ro levantar a ti mis \Ch{F}{ma}nos
@@ -6353,6 +6357,74 @@
             \upchord{\EsevenPiano\Eseven}{\qquad Mi} S\'eptima \hfill
             \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
         \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{No hay nadie como tú}{G}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/1W1vJMrKPucMewFWZiBoeS}{Escuchar}} %\NotCCLIed
+
+%        \SBRef{El aire de tu casa}{2005}%fuente \#
+
+        \begin{SBOpGroup}
+            Se\Ch{G}{ñor}, \Ch{D/F\#}{~}     aqui es\Ch{Em}{ta}mos,\Ch{D/E}{~}     dispuestos an\Ch{C}{te} ti,\Ch{G/B}{~}
+
+            Para ado\Ch{Am}{rar}te,\Ch{Dsus4}{~}\Ch{D}{~}
+
+            Se\Ch{G}{ñor}, \Ch{D/F\#}{~}     hoy te entre\Ch{Em}{ga}mos,\Ch{D/E}{~}    nuestro cora\Ch{C}{zón},\Ch{G/B}{~}
+
+            Como o\Ch{Am}{fren}da de amor,\Ch{Dsus4}{~}\Ch{D}{~}
+
+            Se\Ch{G}{ñor}, \Ch{D/F\#}{~}     hemos ve\Ch{Em}{ni}do,\Ch{D/E}{~}    a minis\Ch{C}{trar}te,\Ch{G/B}{~}
+
+            Para ado\Ch{Am}{rar}te,\Ch{Dsus4}{~}\Ch{D}{~}
+
+            Se\Ch{G}{ñor}, \Ch{D/F\#}{~}     recono\Ch{Em}{ce}mos,\Ch{D/E}{~}    que no hay nadie \Ch{C}{co}mo tu,\Ch{G/B}{~}
+
+            Y hoy te can\Ch{Am}{ta}mos,\Ch{Dsus4}{~}\Ch{D}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            No \Ch{G}{hay} nadie como tu, \Ch{D/F\#}{~}     no \Ch{Em}{hay} nadie como tu,\Ch{D/E}{~}
+
+            Pre\Ch{C}{cio}so y glorioso, \Ch{G/B}{~}   tan \Ch{Am}{be}llo y tan \Ch{Dsus4}{her}moso,\Ch{D}{~}
+
+            //Je\Ch{G}{sús}, \Ch{D/F\#}{~}   Je\Ch{Em}{sús}, pre\Ch{D/E}{cio}so Je\Ch{C}{sús},//\Ch{G/B}{~}\Ch{Am}{~}\Ch{D}{~}
+        \end{SBChorus}
+
+
+        \begin{SBChorus}
+            No \Ch{A}{hay} nadie como tu, \Ch{E/G\#}{~}     no \Ch{F\#m}{hay} nadie como tu,\Ch{E/F\#}{~}
+
+            Pre\Ch{D}{cio}so y glorioso, \Ch{A/C\#}{~}   tan \Ch{Bm}{be}llo y tan \Ch{Esus4}{her}moso,\Ch{E}{~}
+
+            //Je\Ch{A}{sús}, \Ch{E/G\#}{~}   Je\Ch{F\#m}{sús}, pre\Ch{E/F\#}{cio}so Je\Ch{D}{sús},//\Ch{A/C#}{~}\Ch{Bm}{~}\Ch{E}{~}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\DEPiano\DE}{\qquad Re} Mayor bajo E \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\GBPiano\GB}{Sol} Mayor Bajo B \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\qquad \DsusPiano\Dsus}{\qquad Re} Mayor suspendida cuarta \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\EGsPiano\EGs}{\qquad Mi} Mayor con bajo G\# \hfill
+            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill\null\break
+            \upchord{\EFsPiano\EFs}{\qquad Mi} Mayor con bajo F\# \hfill
+            \upchord{\ACsPiano\ACs}{\qquad La} Mayor con bajo C\# \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+            \upchord{\EsusPiano\Esus}{\qquad Mi} Mayor suspendido \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+        \end{SBOpGroup}
+
         \fi
     \end{song}
 

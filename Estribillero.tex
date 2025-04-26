@@ -169,6 +169,7 @@
 \newcommand{\Cseven}{\chord{t}{x,p3,p3,p2,p1,n}{C7}}
 \newcommand{\Cm}{\chord{t}{x,p3,p1,n,p1,p3}{Cm}}
 \newcommand{\Cmseven}{\chord{2}{p1,p1,p3,p1,p2,p1}{Cm7}}
+\newcommand{\CmAflat}{\chord{3}{x,x,p4,p3,p2,p1}{Cm/Ab}}
 \newcommand{\CD}{\chord{t}{n,n,n,n,p1,n}{C/D}}
 \newcommand{\CE}{\chord{t}{o,p3,n,p2,p1,n}{C/E}}
 \newcommand{\CG}{\chord{t}{p3,n,p2,n,p1,n}{C/G}}
@@ -299,6 +300,7 @@
 \newcommand{\CsevenPiano}{\keyboard[Co][Eo][Go][Aso]}
 \newcommand{\CmPiano}{\keyboard[Co][Dso][Go]}
 \newcommand{\CmsevenPiano}{\keyboard[Co][Dso][Go][Aso]}
+\newcommand{\CmAflatPiano}{\keyboardtwooctaves[Gso][Ct][Dst][Gt]}
 \newcommand{\CtwoPiano}{\keyboard[Co][Do][Eo][Go]}
 \newcommand{\CninePiano}{\keyboard[Co][Do][Eo][Go][Aso]}
 \newcommand{\CMajPiano}{\keyboard[Co][Eo][Go][Do]}
@@ -467,7 +469,7 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {Romanos 8:15} %pasaje
-    {\href{http://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
+    {\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
 
 %        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
         \FLineIdx{Una Vez más}
@@ -764,7 +766,7 @@
     {\href{https://open.spotify.com/intl-es/track/2zLgzu8nD1GLLFwuJxirRl}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
-            Te a\Ch{A}{la}bo en el valle, Te ala\Ch{C\#sus2}{bo} en el mon\Ch{A}{te}
+            Te a\Ch{A}{la}bo en el valle, Te ala\Ch{Bm/A}{bo} en el mon\Ch{A}{te}
 
             Te a\Ch{E/A}{la}bo en el día, Te ala\Ch{D/A}{bo} en la no\Ch{A}{che}
 
@@ -829,6 +831,73 @@
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
         \end{SBOpGroup}
         \fi
+
+        \begin{SBExtraKeys}{
+            \STitle{Alaba}{G}
+
+            \begin{SBOpGroup}
+                Te a\Ch{G}{la}bo en el valle, Te ala\Ch{Csus2}{bo} en el mon\Ch{G}{te}
+
+                Te a\Ch{D/G}{la}bo en el día, Te ala\Ch{C/G}{bo} en la no\Ch{G}{che}
+
+                Te a\Ch{G}{la}bo en el medio, Estan\Ch{Am/G}{do} rodeado\Ch{G}{~}
+
+                Porque \Ch{D/G}{cuan}do alabo, \Ch{C/G}{Tú} estás a mi la\Ch{G}{do}
+
+                Mien\Ch{D}{tras} tenga aliento, \Ch{C}{Mi} alma canta y
+            \end{SBOpGroup}
+
+            \begin{SBChorus}
+                \Ch{Em}{A}\Ch{C}{la}\Ch{G}{ba} a Dios
+
+                MI cora\Ch{D}{zón}
+            \end{SBChorus}
+
+            \begin{SBOpGroup}
+                Te a\Ch{G}{la}bo al sentirlo, Y \Ch{Am}{aún} cuando \Ch{G}{no},
+
+                Te a\Ch{D}{la}bo y sé, que \Ch{C}{es}tás en con\Ch{G}{trol},
+
+                Es más \Ch{G}{que} un sonido, \Ch{Am}{es} adora\Ch{G}{ción},
+
+                Y \Ch{D}{cuan}do alaba\Ch{C}{mos} Caerá Jeri\Ch{G}{có}.
+
+                Mient\Ch{D}{ras} tenga aliento, Mi \Ch{C}{al}ma canta y?
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                No \Ch{Em}{me} detengo, Mi Dios vivo es\Ch{C}{tá}
+
+                Có\Ch{G}{mo} me voy a ca\Ch{D}{llar}
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                A\Ch{G}{la}bo al que reina, A\Ch{C/G}{la}bo al Señor,
+
+                a\Ch{D/G}{la}bo a aquel que la \Ch{C/G}{tum}ba venció.
+
+                Ala\Ch{g}{b}o al que es bueno, A\Ch{C/G}{la}bo al que es fiel,
+
+                Le a\Ch{D/G}{la}bo porque no \Ch{C/G}{hay} otro como Él.
+
+                Ala\Ch{G}{b}o al que reina, A\Ch{Am}{la}bo al Señor,
+
+                A\Ch{Em7}{l}abo a aquel que la \Ch{C}{tum}ba venció.
+
+                Ala\Ch{G}{b}o al que es bueno, A\Ch{Am}{la}bo al que es fiel,
+
+                Le a\Ch{Em7}{la}bo porque \Ch{C}{no} hay otro como él.
+            \end{SBOpGroup}
+
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+                \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+                \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \end{SBOpGroup}
+            \fi
+        }\end{SBExtraKeys}
     \end{song}
 
     \begin{song}{Aleluya}{G}
@@ -1648,6 +1717,65 @@
             \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
             \upchord{\DmPiano\Dm}{\qquad Re} menor  \hfill\null\break
             \upchord{\GsevenPiano\Gseven}{\qquad Sol} Mayor S\'eptima \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Como hizo David}{Cm}
+    {} %copyright \SBPubDom
+    {Juan Carlos Alvarado}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/75IhuMXXHxnSCnaWKwPjSQ}{Escuchar}} %\NotCCLIed
+
+        \begin{SBOpGroup}
+            \Ch{Cm}{Co}mo hizo David \Ch{Gm}{de}lante de dios
+
+            \Ch{Cm}{Yo} danzaré y me \Ch{Gm}{go}zaré
+
+            De\Ch{Bb}{lan}te de mi \Ch{Cm}{Rey}\Ch{Gm}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Cm}{Co}mo hizo María con el \Ch{Gm}{tam}boril
+
+            \Ch{Cm}{Yo} aplaudiré y me \Ch{Gm}{go}zaré
+
+            De\Ch{Bb}{lan}te de mi \Ch{Cm}{Rey}\Ch{Gm}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Cm}{Co}mo hizo Judá cuando fue a \Ch{Gm}{pe}lear
+
+            \Ch{Cm}{Da}ré un grito de a\Ch{Gm}{cla}mación
+
+            De\Ch{Bb}{lan}te de mi \Ch{Cm}{Rey}\Ch{Gm}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Cm}{Co}mo hizo Josué en \Ch{Gm}{Je}ricó
+
+            \Ch{Cm}{Gri}taré y \Ch{Gm}{con}quistaré
+
+            De\Ch{Bb}{lan}te de mi \Ch{Cm}{Rey}\Ch{Gm}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Ahora \Ch{Cm/Ab}{pue}do yo venir ante \Ch{Bb}{Tí}
+
+            Y ala\Ch{Cm/Ab}{bar}te \Ch{Bb}{~} mi \Ch{Cm}{Rey}
+
+            Me \Ch{Cm/Ab}{pos}traré y adoraré\Ch{Bb}{~}
+
+            A \Ch{Cm/Ab}{Cris}to \Ch{Bb}{~} mi \Ch{Cm}{Rey}.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\CmPiano\Cm}{Do} menor \hfill
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
+            \upchord{\CmAflatPiano\CmAflat}{Do Menor} bajo Ab \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4232,7 +4360,6 @@
         \fi
     \end{song}
 
-
     \begin{song}{Esperar en Tí}{G}
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
@@ -4240,30 +4367,43 @@
     {\href{https://open.spotify.com/intl-es/track/3YkViDWlrUcCIafb1nXxjQ}{Escuchar}}
 
         \begin{SBOpGroup}
-            Esperar en Tí, difícil sé que es
-            mi mente dice no, no es posible
-            pero mi corazón, confiado está en Tí
-            tu siempre has sido el me has sostenido
+            \Ch{G}{Es}perar en Tí, di\Ch{Em}{fí}cil sé que es
+
+            mi \Ch{C}{men}te dice no, \Ch{Am}{no} es posi\Ch{D}{ble}
+
+            pe\Ch{G}{ro} mi corazón, con\Ch{Em}{fia}do está en Tí
+
+            tu \Ch{C}{siem}pre has sido \Ch{Am}{fiel} me has soste\Ch{D}{ni}do
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Y esperaré, pacientemente
-            aunque la duda me atormente
-            yo no confío con la mente
-            lo hago con el corazón.
+            Y es\Ch{G}{pe}raré, paciente\Ch{D}{men}te
+
+            \Ch{C}{aun}que la duda me atormente
+
+            \Ch{Am}{yo} no confío con la mente
+
+            lo ha\Ch{Em}{go} con el cora\Ch{D}{zón}.
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Y esperaré en la tormenta
-            aunque tardare tu respuesta
-            yo con are en tu providencia
-            tu siempre tienes el control
+            Y es\Ch{G}{pe}raré en la tor\Ch{D}{men}ta
+
+            \Ch{C}{aun}que tardare tu respuesta
+
+            \Ch{Am}{yo} confiaré en tu providencia
+
+            tu siempre \Ch{C}{tie}nes \Ch{D}{el} con\Ch{G}{trol}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5064,13 +5204,15 @@
     {\href{https://open.spotify.com/intl-es/track/5QcC5tFnqsNOjxksGXZHCB}{Escuchar}}
 
         \begin{SBChorus}
-            Hay una fuente en mi que está brotando que está
-            fluyendo en mi.
+            Hay una \Ch{A}{fuen}te en mi que está bro\Ch{A}{tan}do
+
+            que está flu\Ch{A}{yen}do en \Ch{A}{mi}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Es un río de alabanza y de adoración dirigida hacia tí,
-            Señor Jesús, recíbelo
+            Es un río de ala\Ch{A}{ban}za y de adoración
+
+            dirigida hacia tí, Señor Jesús, recíbelo
         \end{SBOpGroup}
 
         \ifChordBk
@@ -5088,37 +5230,53 @@
     {\href{https://open.spotify.com/intl-es/track/7AFZgROuKik53o560tuwwq}{Escuchar}}
 
         \begin{SBChorus}
-            He decidido seguir a Cristo,
+            He deci\Ch{C}{di}do se\Ch{F}{guir} a \Ch{C}{Cris}to,
+
+            he \Ch{C7}{de}ci\Ch{F}{di}do seguir a Cris\Ch{C}{to},
+
             he decidido seguir a Cristo,
-            he decidido seguir a Cristo,
-            no vuelvo atrás, no vuelvo atrás.
+
+            no \Ch{G7}{vuel}vo a\Ch{C}{trás},\Ch{D7}{~} no \Ch{G7}{vuel}vo a\Ch{C}{trás}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
             La vida vieja la he dejado
+
             la vida vieja la he dejado
+
             la vida vieja la he dejado
+
             no vuelvo atrás, no vuelvo atrás.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             El Rey de gloria me ha transformado
+
             el Rey de gloria me ha transformado
+
             el Rey de gloria me ha transformado
-            no vuelvo atrás, no vuelvo atrás.
+
+            no vuelvo atrás, no vuelvo más.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             La cruz delante y el mundo atrás,
+
             la cruz delante y el mundo atrás,
+
             he decidido seguir a Cristo,
+
             no vuelvo atrás, no vuelvo atrás.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\CsevenPiano\Cseven}{\qquad Do} Mayor s\'eptima \hfill
+            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill\null\break
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5130,26 +5288,36 @@
     {\href{https://open.spotify.com/intl-es/track/6xNBmT6PtVJJZxVBBqw9rT}{Escuchar}}
 
         \begin{SBOpGroup}
-            He de confiar en Jesús, en mi vida sí;
-            he de confiar en Jesús, pues me dió un cantar;
-            y aunque la nubes aquí, me ensombrecerán,
-            si voy con ando en Jesús, Él me sostendrá
+            \Ch{A}{He} de con\Ch{D}{fiar} en Jesús, en mi vida \Ch{A}{sí};
+
+            he de con\Ch{G}{fiar} en Jesús, pues me \Ch{D}{dió} un cantar;
+
+            y aunque la \Ch{D7}{nu}bes aquí, me ensombrece\Ch{G}{rán},
+
+            si voy con\Ch{A}{fian}do en Jesús, Él me sostendrá
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Gran amigo es Él,
-            ¡Oh que amigo tan fiel!
-            hasta el final, confiaré en Él;
-            y aunque la nubes aquí, me ensombrecerán,
-            si voy confiando en Jesús, Él me sostendrá
+            Gran amigo es \Ch{A}{Él},
+
+            ¡Oh que amigo tan \Ch{D}{fiel}!
+
+            hasta el \Ch{A}{final}, confiaré en \Ch{D}{Él};
+
+            y aunque la \Ch{D7}{nu}bes aquí, me ensombrece\Ch{G}{rán},
+
+            si voy con\Ch{A}{fian}do en Jesús, Él me sosten\Ch{D}{drá}
         \end{SBChorus}
 
-        \SBEnd{Si voy confiando en Jesús, Él me sostendrá}
+        \SBEnd{Si voy con\Ch{A}{fian}do en Jesús, Él me sosten\Ch{D}{drá}}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}

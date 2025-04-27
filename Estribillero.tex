@@ -62,6 +62,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 \documentclass[12pt, spanish, titlepage]{book}
+
 \usepackage[T1]{fontenc}
 \usepackage[latin9]{inputenc}
 \usepackage{babel}
@@ -72,6 +73,7 @@
 \usepackage[unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
     breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
 \usepackage[chordbk]{songbook} %% Words & Chords edition.
+\usepackage{endnotes}
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
 %%\usepackage[wordbk]{songbook}                 %% Words Only edition.
 %%\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
@@ -86,13 +88,14 @@
 \guitarratrue
 \pianotrue
 
-
-
 \renewcommand{\SBChorusTag}{Coro:}
 \renewcommand{\SBBridgeTag}{Puente:}
 \renewcommand{\SBEndTag}{Fin:}
 \newcommand{\myTitleFont}{\Huge\myHugeSF}
 \newcommand{\mySubTitleFont}{\large\sf}
+
+\renewcommand{\notesnam}{Notas}
+
 %%%
 % Revision Date and Release Date definitions.
 %
@@ -957,7 +960,7 @@
     \begin{song}{Al que me ciñe}{E}
     {} %copyright \SBPubDom
     {Casa de Oración}
-    {} %pasaje
+    {Salmo 18:32} %pasaje
     {\href{https://open.spotify.com/intl-es/track/2rN79VScHGBTOW3wrMKWVL}{Escuchar}} %\NotCCLIed
 
         % 1993
@@ -1225,6 +1228,7 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/0YwFMo2jsOKL1dWEYHKccl}{Escuchar}} %\NotCCLIed
 
+        \FLineIdx{Cuando el mundo te inunda}
 
         \begin{SBOpGroup}
             \Ch{Am}{Cuan}do el mundo te i\Ch{A/C\#}{nun}da de fa\Ch{Dm}{ta}lidad
@@ -1361,7 +1365,7 @@
     \begin{song}{Bueno es alabar}{G}
     {} %copyright \SBPubDom
     {Danilo Montero}
-    {} %pasaje
+    {Salmo 92:1} %pasaje
     {\href{https://open.spotify.com/intl-es/track/6S90J1ENA9sgzfBDEHNyJ7}{Escuchar}}
 
         \SBMargNote{Intro Flauta:\break GGGG ED CD E F\# G\break GGGG ED CD G B A}
@@ -1433,7 +1437,7 @@
     \begin{song}{Cada Mañana}{D}
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
-    {} %pasaje
+    {salmo 92:1-2} %pasaje
     {\href{https://open.spotify.com/intl-es/track/0AazdjQf5l6Wtih13ya0Se}{Escuchar}} %\NotCCLIed
 
         \SBIntro{\Ch{D}{~}\Ch{G}{~}}
@@ -1977,7 +1981,7 @@
     \begin{song}{Con Mis Labios}{D}
     {} %copyright \SBPubDom
     {Eddie Espinosa}
-    {} %pasaje
+    {Salmo 66:17-18} %pasaje
     {\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC?si=2c4442fba5e5403c}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
@@ -2019,7 +2023,7 @@
     \begin{song}{Con Mis Manos Levantadas}{G}
     {} %copyright \SBPubDom
     {Danilo Montero}
-    {} %pasaje
+    {Salmo 141:2} %pasaje
     {\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}} %\NotCCLIed
 
         \SBIntro{\Ch{G}{~} \Ch{D/F\#}{~} \Ch{F}{~} \Ch{C/E}{~} \Ch{G}{~} \Ch{D/F\#}{~} \Ch{Am}{~} \Ch{D}{~}}
@@ -2066,7 +2070,7 @@
     \begin{song}{Creo En Tí}{G}
     {} %copyright \SBPubDom
     {Julio Melgar}
-    {} %pasaje
+    {Salmo 118:14-17} %pasaje
     {\href{https://open.spotify.com/intl-es/track/4Y3DmWSsh6sKPlvhX8EvnJ}{Escuchar}} %\NotCCLIed
 
         % 2010
@@ -2216,6 +2220,7 @@
 
         \begin{SBOpGroup}
             \Ch{C}{Lo} siento en mis manos, Lo \Ch{C}{sien}to en mis pies
+\endnote{La biblia no menciona que se pueda percibir sensorialmente la unción}
 
             Lo \Ch{C}{sien}to en todo mí ser
 
@@ -2276,7 +2281,7 @@
         \begin{SBOpGroup}
             \Ch{Cm}{Lo} siento en mis manos,
 
-            \Ch{Bbm}{~}\Ch{Bm}{~}\Ch{Cm}{Lo} siento en mis pies
+            \Ch{Bbm}{~}\Ch{Bm}{~}\Ch{Cm}{Lo} siento en mis pies\endnote{La biblia no menciona que se pueda percibir sensorialmente la unción}
 
             \Ch{Bbm}{~}\Ch{Bm}{~}\Ch{Cm}{Lo} siento en todo mí ser
         \end{SBOpGroup}
@@ -4597,7 +4602,7 @@
     {\href{https://open.spotify.com/intl-es/track/4VVZMguosiqCkCLg3k5hjB}{Escuchar}}
 
         \begin{SBOpGroup}
-            \Ch{D}{Tu} Amor enseña a danzar
+            \Ch{D}{Tu} Amor enseña a danzar\endnote{La biblia no menciona que el amor de Dios enseñe a danzar}
 
             A \Ch{Bm}{ce}lebrar de corazón
 
@@ -4605,7 +4610,7 @@
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            \Ch{D}{Tu} Gloria enseña a gritar
+            \Ch{D}{Tu} Gloria enseña a gritar\endnote{La biblia no menciona que la gloria de Dios enseñe a gritar}
 
             A \Ch{Bm}{le}vantar tu nombre Dios
 
@@ -4623,13 +4628,13 @@
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Se\Ch{D}{re}mos la Generación que danza
+            Se\Ch{D}{re}mos la Generación que danza\endnote{La biblia no menciona una generación que danza}
 
             Que \Ch{Em}{dan}za por tu gran Amor oh Dios
 
             \Ch{G}{Tu} gran Amor oh \Ch{D}{Dios}
 
-            Se\Ch{D}{re}mos la Generación que grita
+            Se\Ch{D}{re}mos la Generación que grita\endnote{La biblia no menciona una generación que grita}
 
             Que \Ch{Em}{gri}ta por tu grande Gloria Dios
 
@@ -5506,30 +5511,42 @@
     {\href{https://open.spotify.com/intl-es/track/1syiUnSkF3ZiwJD5XnuTsJ}{Escuchar}}
 
         \begin{SBOpGroup}
-            Iglesia de Cristo, reanima tu amor
-            y espera, velando, a tu amado Señor.
-            Jesús el esposo, vestido de honor,
-            viniendo se anuncia con fuerte clamor.
-        \end{SBOpGroup}
+            \Ch{G}{I}glesia \Ch{D}{de} \Ch{G}{Cris}to, rea\Ch{C}{ni}ma tu a\Ch{D}{mor}
 
-        \begin{SBOpGroup}
-            Si falta en algunos el santo fervor,
-            de todos la fe sea el despertador.
-            Velad compañeros Velad sin temor,
-            que está con nosotros el Consolador
-        \end{SBOpGroup}
+            y es\Ch{G}{pe}ra, \Ch{D}{ve}\Ch{G}{lan}do, a tu a\Ch{C}{ma}do \Ch{D7}{Se}\Ch{G}{ñor}.
 
+            \Ch{D}{Je}sús el esposo, vestido de ho\Ch{D7}{nor},
+
+            vi\Ch{G}{nien}do \Ch{D}{se} a\Ch{G}{nun}cia con \Ch{C}{fuer}te \Ch{D7}{cla}\Ch{G}{mor}.
+        \end{SBOpGroup}
+        \vskip 20pt
         \begin{SBOpGroup}
-            Quien sigue la senda del vil pecador
-            se entrega en los brazos de un sueño traidor;
-            mas para los siervos del buen Salvador,
-            velar, esperando, es su anhelo mejor.
+            \Ch{G}{Si} falta en \Ch{D}{al}\Ch{G}{gu}nos el \Ch{C}{san}to fer\Ch{D}{vor},
+
+            le \Ch{G}{fe} sea \Ch{D}{de} \Ch{G}{to}dos el \Ch{C}{des}per\Ch{D7}{ta}\Ch{G}{dor}.
+
+            \Ch{D}{ve}lad compañeros velad sin te\Ch{D7}{mor},
+
+            que es\Ch{G}{tá} con \Ch{D}{no}\Ch{G}{so}tros el \Ch{C}{Con}so\Ch{D7}{la}\Ch{G}{dor}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{G}{Quien} sigue \Ch{D}{la} \Ch{G}{sen}da del \Ch{C}{vil} peca\Ch{D}{dor}
+
+            se en\Ch{G}{tre}ga en \Ch{D}{los} \Ch{G}{bra}zos de un \Ch{C}{sue}ño \Ch{D7}{trai}\Ch{G}{dor};
+
+            \Ch{D}{mas} para los siervos del buen Salva\Ch{D7}{dor},
+
+            ve\Ch{G}{lar}, es\Ch{D}{pe}\Ch{G}{ran}do, es su an\Ch{C}{he}lo \Ch{D7}{me}\Ch{G}{jor}.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6446,7 +6463,7 @@
 
             Si es una can\Ch{C}{ción} que can\Ch{G}{to}, mi me\Ch{Em}{lo}día Te \Ch{D}{la} doy
 
-            Dime que Te \Ch{C}{mue}\Ch{G}{ve}, yo quie\Ch{Em}{ro} mover\Ch{D}{te}
+            Dime que Te \Ch{C}{mue}\Ch{G}{ve}, yo quie\Ch{Em}{ro} mover\Ch{D}{te}\endnote{No está claro  qué se refiere el autor con "mover", ya que las decisiones de Dios son inamovibles (Isaías 14:27), respecto a conmover a dios para que cambie de opinión tampoco es posible(Salmo 96:10), en cuanto a provocar sentimientos podemos encontrar sorpresa y es posible si nuestra fe es mucha(Mateo 8:10)}
         \end{SBOpGroup}
 
         \ifChordBk
@@ -7276,6 +7293,57 @@
     \end{song}
 
 %Rebosa mi Corazón
+
+    \begin{song}{Remolineando}{Cm}
+    {} %copyright \SBPubDom
+    {Fernel Monroy}
+    {2 Samuel 6:22} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/1NmECxDikubj4Hhu1dbrhl}{Escuchar}}
+
+        %1996
+        \FLineIdx{Hay muchas formas de alabar Tu nombre}
+
+        \begin{SBOpGroup}
+            \Ch{Cm}{Hay} muchas formas de alabar Tu nombre
+
+            Y de exal\Ch{Bb}{tar}te oh Jeho\Ch{Eb}{vá}.
+
+            Hay muchas \Ch{Ab}{for}mas de magnifi\Ch{Cm}{car}te
+
+            Pero a\Ch{Bb}{ho}ra \Ch{G}{lo} haré a\Ch{Cm}{sí}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Cm}{Sa}có mi vida del anonimato
+
+            Me dio co\Ch{Bb}{ro}na y vestido \Ch{Eb}{real},
+
+            Así es Jeho\Ch{Ab}{vá} que exalta al peque\Ch{Cm}{ño}
+
+            Por causa de \Ch{Bb}{El}, \Ch{G}{yo} me haré más \Ch{Cm}{vil}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{Cm}{Re}molineando, remolineando,
+
+            Celebra\Ch{Bb}{ré} A Jeho\Ch{Cm}{vá}.
+
+            Remolineando, remolineando,
+
+            Me haré más \Ch{Bb}{vil} por \Ch{G}{cau}sa de Jeho\Ch{Cm}{vá}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\CmPiano\Cm}{\qquad Do} Menor \hfill
+            \upchord{\BflatPiano\Bflat}{\qquad Si Bemol} Mayor \hfill\null\break
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
     \begin{song}{Renuévame}{D}
     {} %copyright \SBPubDom
@@ -8966,7 +9034,7 @@
 
             Tú eres la Luz que guía
 
-            \Ch{Cm}{Co}mo un fuego ardiente
+            \Ch{Cm}{Co}mo un fuego ardiente\endnote{En la biblia el fuego no guía, sino que consume y es metáfora de Juicio}
 
             Hijo de Dios
 
@@ -8978,7 +9046,7 @@
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Vamos \Ch{Eb}{a} cantar con la música del cielo
+            Vamos \Ch{Eb}{a} cantar con la música del cielo\endnote{La biblia no habla de la música del cielo}
 
             Vamos \Ch{Cm}{a} cantar alegres porque escuchas
 
@@ -9220,6 +9288,7 @@
         \fi
     \end{song}
 
+    \theendnotes
     \include{Acordes}
     \include{EstribilleroAdx}
     \include{EstribilleroKdx}

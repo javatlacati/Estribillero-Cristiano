@@ -75,8 +75,8 @@
 \usepackage[chordbk]{songbook} %% Words & Chords edition.
 \usepackage{endnotes}
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
-%%\usepackage[wordbk]{songbook}                 %% Words Only edition.
-%%\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
+%\usepackage[wordbk]{songbook}                 %% Words Only edition.
+%\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
 
 
 % genera acordes de guitarra
@@ -3488,7 +3488,7 @@
 
             Es\Ch{G}{tá} en este lu\Ch{D/A}{gar},
 
-            El Espíritu De Dios
+            El Es\Ch{D}{pí}ritu de Dios
 
             Se \Ch{G}{mue}ve en este lu\Ch{A}{gar}
         \end{SBOpGroup}
@@ -9891,11 +9891,13 @@
         \end{SBOpGroup}
         \fi
     \end{song}
+    \ifChordBk
+        \theendnotes
+        \include{Acordes}
+        \include{EstribilleroAdx}
+        \include{EstribilleroKdx}
+    \fi
 
-    \theendnotes
-    \include{Acordes}
-    \include{EstribilleroAdx}
-    \include{EstribilleroKdx}
     \include{EstribilleroTdx}
 \end{document}
 \bye

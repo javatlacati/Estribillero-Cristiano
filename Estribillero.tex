@@ -213,6 +213,7 @@
 \newcommand{\Dsm}{\chord{t}{x,x,p1,p3,p4,p2}{D\#m}}
 \newcommand{\Dsmseven}{\chord{t}{x,x,p1,p3,p2,p2}{D\#m7}}
 \newcommand{\Eflat}{\chord{t}{n,n,p1,p3,p4,p3}{E$\flat$}}
+\newcommand{\EflatF}{\chord{t}{p1,p1,p1,p3,p4,p3}{E$\flat$/F}}
 \newcommand{\Eflatseven}{\chord{t}{n,n,p1,p3,p2,p3}{E$\flat$7}}
 
 \newcommand{\E}{\chord{t}{n,p2,p2,p1,n,n}{E}}
@@ -338,6 +339,7 @@
 \newcommand{\DsmPiano}{\keyboard[Dso][Fso][Aso]}
 \newcommand{\DsmsevenPiano}{\keyboard[Dso][Fso][Aso][Cso]}
 \newcommand{\EflatPiano}{\keyboard[Dso][Go][Aso]}
+\newcommand{\EflatFPiano}{\keyboardf[Fo][Go][Aso][Dso]}
 \newcommand{\EflatsevenPiano}{\keyboard[Dso][Go][Aso][Cso]}
 
 \newcommand{\EPiano}{\keyboard[Eo][Gso][Bo]}
@@ -6550,23 +6552,34 @@
         \FLineIdx{Me has dado libertad}
 
         \begin{SBOpGroup}
-            Me has dado libertad, salí de mi prisión
-            tu gran poder en mi rompió
-            las cadenas de mi gran opresión
+            Me has dado \Ch{Dm}{li}bertad, salí de mi pri\Ch{Dm}{sión}
+
+            tu gran po\Ch{Dm}{der} en mi rom\Ch{Eb/F}{pió}
+
+            las cadenas de mi \Ch{Bb+}{gran} opresión\Ch{Em7}{~}\Ch{A+}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
             Me has dado salvación, cautivo ya no soy
+
             no vivo mas en condenación
+
             he sido libre por tu gran amor
         \end{SBOpGroup}
 
         \begin{SBChorus}
             Libertad tu me has dado
+
             libertad de mis cadenas
+
             libertad no soy esclavo
+
             soy tan libre puedo casi volar
         \end{SBChorus}
 
         \begin{SBOpGroup}
             Libre soy en Jesús libre por su cruz
+
             he visto en Él la luz porque no vienes tú
         \end{SBOpGroup}
 
@@ -6574,6 +6587,43 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
+            \upchord{\EflatFPiano\EflatF}{\qquad Mi bemol}  bajo F \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Libre}{G}
+    {} %copyright \SBPubDom
+    {Juan Carlos Alvarado}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/2ingUl2WYQjhm4JQCmVBLs}{Escuchar}}
+
+        \FLineIdx{Libre yo soy libre}
+        \SBMargNote{Metales:\break B BB BAG AGEG\break G GG EGA BAGA}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Li}bre yo soy \Ch{Em}{li}bre
+
+            las ca\Ch{C}{de}nas del pecado han sido \Ch{D}{ro}tas.
+
+            \Ch{G}{Li}bre yo soy \Ch{Em}{li}bre
+
+            para can\Ch{C}{tar}, para dan\Ch{D}{zar}, para go\Ch{G}{zar}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            He ven\Ch{Em}{ci}do, al ene\Ch{D}{mi}go
+
+            por la \Ch{C}{san}gre de Jesu\Ch{D}{cris}to yo soy \Ch{G}{li}bre.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7944,7 +7994,7 @@
             \Ch{A}{E}res el Camino y la Verdad.
         \end{SBChorus}
 
-        \SBMargNote{Synth:\break F\#EAF\# F\#EAF\#\breaf F\#GF\#ED\break A3E4 A3DC\#}
+        \SBMargNote{Synth:\break F\#EAF\# F\#EAF\#\break F\#GF\#ED\break A3E4 A3DC\#}
         \SBBridge{\Ch{Em7}{~} \Ch{Bm7}{~} \Ch{D}{~} \Ch{A}{~}}
 
         \begin{SBOpGroup}
@@ -7970,11 +8020,72 @@
             \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \hfill
         \end{SBOpGroup}
         \fi
+
+        \begin{SBExtraKeys}{
+            \clearpage
+            \STitle{Rey de reyes}{C}
+
+            \SBMargNote{Synth:\break CGE CGD\break CGE FEDC\break CFE FEDC}
+            \SBIntro{\Ch{C}{~} \Ch{G}{~} \Ch{Dm7}{~} \Ch{A}{~}}
+
+            \begin{SBOpGroup}
+                \Ch{C}{Rey} de reyes, \Ch{G}{te} adoramos
+
+                \Ch{Dm7}{Tu} grandeza procla\Ch{F}{ma}mos
+
+                \SBMargNote{Piano:\break MD: CGED\break MI: C G D F}
+                \Ch{C}{Rey} de reyes, \Ch{G}{So}berano
+
+                \Ch{Dm7}{Tu} victoria, ce\Ch{F}{le}bramos.
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                \Ch{Am7}{E}res Jesús \Ch{G}{el} que dio vida a \Ch{Dm7}{nues}tro cora\Ch{C}{zón}
+
+                \Ch{Am7}{E}res Jesús Dig\Ch{G}{no} de recibir \Ch{F}{to}da adora\Ch{G}{ción}.
+            \end{SBOpGroup}
+
+            \begin{SBChorus}
+                \Ch{F}{Rey} de reyes, te exal\Ch{C}{ta}mos
+
+                \SBMargNote{Piano:\break DED}
+                \Ch{Am7}{Po}deroso en majestad
+
+                \Ch{G}{E}res el Camino y la Verdad.
+            \end{SBChorus}
+
+            \SBMargNote{Synth:\break EDGGE EDGE\breaK EFEDC\break G3D4 G3CB}
+            \SBBridge{\Ch{Dm7}{~} \Ch{Am7}{~} \Ch{C}{~} \Ch{G}{~}}
+
+            \begin{SBOpGroup}
+                \Ch{Dm7}{No}, nadie jamás se podrá i\Ch{Am7}{gua}lar
+
+                A Tu Poderío y Tu Majes\Ch{C}{tad}
+
+                Eres Principio y Eres Fi\Ch{G}{nal}
+
+                Y para siempre Tú reinas.\Ch{F}{~}
+            \end{SBOpGroup}
+
+            \SBMargNote{Synth:\break DEA DED}
+            \SBEnd{\Ch{Dm7}{~}}
+
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+                \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+                \upchord{\DmsevenPiano\Dmseven}{\qquad Re} Menor S\'eptima \hfill
+                \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+                \upchord{\AmsevenPiano\Amseven}{\qquad Si} Menor S\'eptima \hfill
+            \end{SBOpGroup}
+            \fi
+        }\end{SBExtraKeys}
     \end{song}
 
     \begin{song}{Sagrado es el Amor}{F}
     {} %copyright \SBPubDom
-    {}
+    {Lowell Mason}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}}
 
@@ -7989,33 +8100,33 @@
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            A nuestro Padre Dios
+            \Ch{F}{A} nuestro \Ch{C7}{Pa}dre Dios
 
-            roguemos con fervor,
+            ro\Ch{Bb}{gue}mos \Ch{F}{con} fervor,
 
-            alúmbrenos la misma luz,
+            alúmbre\Ch{F}{nos} la \Ch{C7}{mis}ma \Ch{F}{luz},
 
-            nos una el mismo amor.
+            \Ch{Bb}{nos} una el \Ch{F}{mis}\Ch{C7}{mo} a\Ch{F}{mor}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Nos vamos a ausentar
+            \Ch{F}{Nos} vamos a \Ch{C7}{au}sen\Ch{F}{tar}
 
-            mas nuestra firme unión
+            mas \Ch{Bb}{nues}tra \Ch{F}{fir}me unión
 
-            jamás podráse quebrantar
+            jamás po\Ch{F}{drá}se \Ch{C7}{que}bran\Ch{F}{tar}
 
-            por la separación.
+            \Ch{Bb}{por} la se\Ch{F}{pa}\Ch{C7}{ra}\Ch{F}{ción}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Un día en la eternidad
+            \Ch{F}{Un} día en la e\Ch{C7}{ter}ni\Ch{F}{dad}
 
-            nos hemos de reunir,
+            nos \Ch{Bb}{he}mos \Ch{F}{de} reunir,
 
-            que Dios nos lo conceda, hará
+            que Dios nos lo conceda, ha\Ch{F}{rá}
 
-            el férvido pedir.
+            \Ch{Bb}{el} fér\Ch{F}{vi}do \Ch{C7}{pe}\Ch{F}{dir}.
         \end{SBOpGroup}
 
         \ifChordBk

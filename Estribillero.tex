@@ -94,7 +94,7 @@
 \newcommand{\myTitleFont}{\Huge\myHugeSF}
 \newcommand{\mySubTitleFont}{\large\sf}
 
-\renewcommand{\notesnam}{Notas}
+\renewcommand{\notesname}{Notas}
 
 %%%
 % Revision Date and Release Date definitions.
@@ -106,7 +106,7 @@
 %                  way.  This command will be renewed inside every
 %                  song.
 %%%
-\newcommand{\RelDate}{15~Abril,~2025}
+\newcommand{\RelDate}{\today}
 \newcommand{\RevDate}{\today}
 
 %%%
@@ -135,7 +135,7 @@
 \newcommand{\A}{\chord{t}{x,n,p2,p2,p2,n}{A}}
 \newcommand{\Asus}{\chord{t}{x,n,p2,p2,p3,n}{Asus4}}
 \newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
-\newcommand{\AsevenMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
+\newcommand{\AMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
 \newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
 \newcommand{\AD}{\chord{t}{x,x,n,p2,p2,n}{A/D}}
 \newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
@@ -158,7 +158,8 @@
 
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
 \newcommand{\Bsus}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p5,f1p2}{Bsus4}}
-\newcommand{\Bseven}{\chord{t}{x,f1p2,f3p4,f1p2,f4p4,f1p2,}{B7}}
+\newcommand{\Bseven}{\chord{t}{x,f1p2,f3p4,f1p2,f4p4,f1p2}{B7}}
+\newcommand{\BsevenFs}{\chord{t}{f2p2,n,f1p1,f3p2,n,f4p2}{B7/F\#}}
 \newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
 \newcommand{\BDs}{\chord{2}{x,p4,p2,p2,n,x}{B/D\#}}
 \newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
@@ -177,6 +178,7 @@
 \newcommand{\CE}{\chord{t}{o,p3,n,p2,p1,n}{C/E}}
 \newcommand{\CG}{\chord{t}{p3,n,p2,n,p1,n}{C/G}}
 \newcommand{\CMaj}{\chord{t}{p3,p3,p2,n,n,n}{C+}}
+\newcommand{\Csustwo}{\chord{t}{x,p3,n,n,p1,p3}{Csus2}}
 \newcommand{\Ctwo}{\chord{t}{x,p3,p2,n,p3,n}{C2}}
 \newcommand{\Cnine}{\chord{t}{x,p3,p2,p3,p3,n}{C9}}
 \newcommand{\Csusthirteen}{\chord{t}{x,p3,p3,p3,p3,p5}{C13sus4}}
@@ -195,7 +197,6 @@
 \newcommand{\Dm}{\chord{t}{x,x,n,p2,p3,p1}{Dm}}
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
 \newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+}}
-\newcommand{\DsevenMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+7}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
 \newcommand{\DmF}{\chord{t}{p1,n,n,p2,p3,x}{Dm/F}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
@@ -234,7 +235,7 @@
 \newcommand{\EGs}{\chord{t}{p4,o,p2,p1,n,n}{E/G\#}}
 
 \newcommand{\F}{\chord{t}{p1,p3,p3,p2,p1,p1}{F}}
-\newcommand{\Fmajseven}{\chord{t}{x,x,p3,p2,p1,n}{FMaj7}}
+\newcommand{\FMaj}{\chord{t}{x,x,p3,p2,p1,n}{FMaj7}}
 \newcommand{\Fseven}{\chord{t}{p1,p3,p1,p2,p1,p1}{F7}}
 \newcommand{\Fm}{\chord{t}{p1,p3,p3,p1,p1,p1}{Fm}}
 \newcommand{\Fmseven}{\chord{t}{p1,p3,p1,p1,p1,p1}{Fm7}}
@@ -264,7 +265,7 @@
 \newcommand{\AflatEflat}{\chord{3}{x,bp4,p4,p3,p2,p2}{A$\flat$/E$\flat$}}
 \newcommand{\AflatF}{\chord{t}{p1,p3,p1,p1,p1,p1}{A$\flat$/F}}
 \newcommand{\AflatC}{\chord{t}{x,bp3,p1,p1,p1,p4}{A$\flat$/C}}
-\newcommand{\Aflatmajseven}{\chord{7}{p4,p3,x,o,p4,p4}{A$\flat$Maj7}}
+\newcommand{\AflatMaj}{\chord{7}{p4,p3,x,o,p4,p4}{A$\flat$Maj7}}
 \newcommand{\Gsm}{\chord{t}{p4,p2,p1,p1,n,x}{G\#m}}
 \newcommand{\Gsmseven}{\chord{t}{f2p4,x,f4p4,f4p4,f4p4,f4p4}{G\#m7}}
 \newcommand{\Gssus}{\chord{t}{p4,p6,p6,p6,p4,p4}{G\#sus4}}
@@ -273,7 +274,7 @@
 % comandos para pintar acordes de piano
 \newcommand{\APiano}{\keyboardf[Ao][Cso][Eo]}
 \newcommand{\AsevenPiano}{\keyboardf[Ao][Cso][Eo][Go]}
-\newcommand{\AsevenMajPiano}{\keyboardf[Ao][Cso][Eo][Gso]}
+\newcommand{\AMajPiano}{\keyboardf[Ao][Cso][Eo][Gso]}
 \newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
@@ -296,6 +297,7 @@
 \newcommand{\BsusPiano}{\keyboard[Eo][Fso][Bo]}
 \newcommand{\BDsPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BsevenPiano}{\keyboard[Dso][Fso][Bo][Ao]}
+\newcommand{\BsevenFsPiano}{\keyboardf[Fso][Ao][Bo][Dso]}
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
@@ -310,6 +312,7 @@
 \newcommand{\CmsevenPiano}{\keyboard[Co][Dso][Go][Aso]}
 \newcommand{\CmAflatPiano}{\keyboardtwooctaves[Gso][Ct][Dst][Gt]}
 \newcommand{\CtwoPiano}{\keyboard[Co][Do][Eo][Go]}
+\newcommand{\CsustwoPiano}{\keyboard[Co][Do][Go]}
 \newcommand{\CninePiano}{\keyboard[Co][Do][Eo][Go][Aso]}
 \newcommand{\CMajPiano}{\keyboard[Co][Eo][Go][Do]}
 \newcommand{\CsusthirteenPiano}{\keyboard[Co][Do][Fo][Go][Ao][Aso]}
@@ -329,7 +332,6 @@
 \newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
-\newcommand{\DsevenMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DEPiano}{\keyboardtwooctaves[Eo][Fso][Ao][Dt]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
@@ -359,7 +361,7 @@
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
 \newcommand{\FsusPiano}{\keyboardf[Aso][Co][Fo]}
-\newcommand{\FmajsevenPiano}{\keyboardf[Co][Fo][Ao][Eo]}
+\newcommand{\FMajPiano}{\keyboardf[Co][Fo][Ao][Eo]}
 \newcommand{\FmPiano}{\keyboardf[Fo][Aso][Co]}
 \newcommand{\FmsevenPiano}{\keyboard[Co][Fo][Aso][Dso]}
 
@@ -372,6 +374,7 @@
 \newcommand{\GPiano}{\keyboard[Do][Go][Bo]}
 \newcommand{\GsevenPiano}{\keyboard[Do][Fo][Go][Bo]}
 \newcommand{\GsusPiano}{\keyboardf[Go][Co][Do]}
+\newcommand{\GMajPiano}{\keyboardf[Do][Go][Bo][Fso]}
 \newcommand{\GBPiano}{\keyboardtwooctaves[Bo][Dt][Gt]}
 \newcommand{\GEPiano}{\keyboardtwooctaves[Eo][Go][Bo][Dt]}
 \newcommand{\GDPiano}{\keyboard[Do][Go][Bo]}
@@ -478,66 +481,6 @@
 %%%
 % Songbook begins.
 %%%
-    \begin{song}{Abba Padre}{D}
-    {} %copyright \SBPubDom
-    {Marco Barrientos}
-    {Romanos 8:15} %pasaje
-    {\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
-
-%        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
-        \FLineIdx{Una Vez más}
-
-        \begin{SBOpGroup}
-            \Ch{D}{Una} vez más
-
-            me a\Ch{Bm}{cer}co a Tí
-
-            con \Ch{Em}{li}bertad
-
-            \Ch{G}{en} adora\Ch{A}{ci\'o}n
-        \end{SBOpGroup}
-
-        \begin{SBOpGroup}
-            T\'u e\Ch{D}{res} mi Dios
-
-            tu \Ch{Bm}{hi}jo soy
-
-            mi \Ch{G}{co}muni\'on con\Ch{Em}{ti}go
-
-            es una \Ch{A}{dul}ce bendici\'on
-        \end{SBOpGroup}
-
-        \begin{SBChorus}
-            // ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! ¡\Ch{D}{A}bba Pa\Ch{G}{dre}!
-
-            Es\Ch{D}{tar}\Ch{A/C#}{} conti\Ch{Bm}{go}
-
-            es una \Ch{G}{dul}ce bendi\Ch{A}{ci\'on}
-
-            ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! te \Ch{F#m}{a}mo Se\Ch{Bm}{ñor}
-
-            \Ch{G}{quie}ro estar en \Ch{D}{co}muni\'on
-
-            \Ch{Em}{quie}\Ch{F#m}{ro} es\Ch{G}{tar} con\Ch{D}{ti}go. //
-        \end{SBChorus}
-        \ifChordBk
-        \begin{SBOpGroup}
-            Acordes:\break
-
-%\keyboardtwooctaves[Do][Fso][Ao]
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
-            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
-            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
-            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill\null\break
-            \upchord{\ACsPiano\ACs}{La} Mayor con bajo C\#  \hfill
-            \upchord{\DAPiano\DA}{Re} Mayor con Bajo La \hfill\null\break
-        \end{SBOpGroup}
-        \fi
-
-    \end{song}
-
     \begin{song}{A Cristo solo a Cristo}{G}
     {Proyecto AA} %copyright \SBPubDom
     {Marcos Witt}
@@ -575,43 +518,6 @@
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
             \upchord{\DFsPiano\DFs}{Re} Mayor con bajo F\# \hfill\null\break
-        \end{SBOpGroup}
-        \fi
-    \end{song}
-
-    \begin{song}{Admirable}{Dm7}
-    {} %copyright \SBPubDom
-    {Danilo Montero}
-    {Apocalipsis 1:18} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}} %\NotCCLIed
-
-%  \renewcommand{\RevDate}{February~11,~1993}
-%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
-        \FLineIdx{Con poder y autoridad}
-        \begin{SBOpGroup}
-            \Ch{Dm7}{Con} poder y au\Ch{Bb}{to}ridad \Ch{F}{nues}tro Dios ven\Ch{C}{ci\'o} a la
-            muerte
-
-            \Ch{Dm7}{So}bre el trono \Ch{Bb}{ce}lestial \Ch{Am7}{siem}pre reina\Ch{Dm7}{r\'a}.
-
-            \Ch{Bb}{Sen}tado en \Ch{C}{ma}jestad \Ch{Bb}{su}yo es el reino por los
-            \Ch{F}{Si}\Ch{C}{glos} \Ch{Bb}{y} por la \Ch{C}{e}ternidad \Ch{Bb}{su} luz de \Ch{Gm7}{glo}ria brilla\Ch{Am7}{r\'a}.
-        \end{SBOpGroup}
-
-        \begin{SBChorus}
-            Admi\Ch{C}{ra}\Ch{Dm7}{ble}, conse\Ch{C}{je}\Ch{Dm7}{ro} \Ch{Bb}{mi} Dios \Ch{C}{con}sola\Ch{Dm7}{dor},\Ch{Am7}{}
-
-            Eres \Ch{C}{dig}\Ch{Dm7}{no} de a\Ch{C}{la}ban\Ch{Dm7}{za}, \Ch{Bb}{Prín}ci\Ch{C}{pe} de \Ch{Dm7}{paz}.
-        \end{SBChorus}
-        \ifChordBk
-        \begin{SBOpGroup}
-            Acordes:
-            \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \hfill
-            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
-            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
-            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
-            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -704,6 +610,102 @@
         \fi
     \end{song}
 
+    \begin{song}{Abba Padre}{D}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {Romanos 8:15} %pasaje
+    {\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
+
+%        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+        \FLineIdx{Una Vez más}
+
+        \begin{SBOpGroup}
+            \Ch{D}{Una} vez más
+
+            me a\Ch{Bm}{cer}co a Tí
+
+            con \Ch{Em}{li}bertad
+
+            \Ch{G}{en} adora\Ch{A}{ci\'o}n
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            T\'u e\Ch{D}{res} mi Dios
+
+            tu \Ch{Bm}{hi}jo soy
+
+            mi \Ch{G}{co}muni\'on con\Ch{Em}{ti}go
+
+            es una \Ch{A}{dul}ce bendici\'on
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            // ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! ¡\Ch{D}{A}bba Pa\Ch{G}{dre}!
+
+            Es\Ch{D}{tar}\Ch{A/C#}{} conti\Ch{Bm}{go}
+
+            es una \Ch{G}{dul}ce bendi\Ch{A}{ci\'on}
+
+            ¡\Ch{D}{A}bba Pa\Ch{G}{dre}! te \Ch{F#m}{a}mo Se\Ch{Bm}{ñor}
+
+            \Ch{G}{quie}ro estar en \Ch{D}{co}muni\'on
+
+            \Ch{Em}{quie}\Ch{F#m}{ro} es\Ch{G}{tar} con\Ch{D}{ti}go. //
+        \end{SBChorus}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+
+%\keyboardtwooctaves[Do][Fso][Ao]
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill\null\break
+            \upchord{\ACsPiano\ACs}{La} Mayor con bajo C\#  \hfill
+            \upchord{\DAPiano\DA}{Re} Mayor con Bajo La \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+
+    \end{song}
+
+    \begin{song}{Admirable}{Dm7}
+    {} %copyright \SBPubDom
+    {Danilo Montero}
+    {Apocalipsis 1:18} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}} %\NotCCLIed
+
+%  \renewcommand{\RevDate}{February~11,~1993}
+%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+        \FLineIdx{Con poder y autoridad}
+        \begin{SBOpGroup}
+            \Ch{Dm7}{Con} poder y au\Ch{Bb}{to}ridad \Ch{F}{nues}tro Dios ven\Ch{C}{ci\'o} a la
+            muerte
+
+            \Ch{Dm7}{So}bre el trono \Ch{Bb}{ce}lestial \Ch{Am7}{siem}pre reina\Ch{Dm7}{r\'a}.
+
+            \Ch{Bb}{Sen}tado en \Ch{C}{ma}jestad \Ch{Bb}{su}yo es el reino por los
+            \Ch{F}{Si}\Ch{C}{glos} \Ch{Bb}{y} por la \Ch{C}{e}ternidad \Ch{Bb}{su} luz de \Ch{Gm7}{glo}ria brilla\Ch{Am7}{r\'a}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Admi\Ch{C}{ra}\Ch{Dm7}{ble}, conse\Ch{C}{je}\Ch{Dm7}{ro} \Ch{Bb}{mi} Dios \Ch{C}{con}sola\Ch{Dm7}{dor},\Ch{Am7}{}
+
+            Eres \Ch{C}{dig}\Ch{Dm7}{no} de a\Ch{C}{la}ban\Ch{Dm7}{za}, \Ch{Bb}{Prín}ci\Ch{C}{pe} de \Ch{Dm7}{paz}.
+        \end{SBChorus}
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \hfill
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
     \begin{song}{Adonai}{Em}
     {} %copyright \SBPubDom
@@ -732,6 +734,56 @@
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\DPiano\D}{Re} Mayor \hfill\null\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Adoramos por siempre al Creador}{C}
+    {\SBPubDom} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/6voTqFcZ1Bap3BTMo1SjkX}{Escuchar}} %\NotCCLIed
+        %1992
+
+        %La alabanza original está en inglés https://open.spotify.com/intl-es/track/79o8EHlOEKbABOFvQzEYCV de 1987
+        \FLineIdx{Tu nombre Santo es}
+        \begin{SBOpGroup}
+            \Ch{C}{A}do\Ch{C/E}{ra}mos, por \Ch{F}{siem}pre al \Ch{Gsus4}{Cre}\Ch{G}{ador}.
+
+            \Ch{C}{A} Ti Se\Ch{F}{ñor}, al\Ch{Dm}{za}mos nuestra \Ch{G}{voz},
+
+            \Ch{Am}{Tu} nombre \Ch{G}{San}to \Ch{F}{es},\Ch{C}{~}
+
+            \Ch{Dm}{Tu} nombre \Ch{G}{San}to \Ch{C}{es}.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+                Cuan \Ch{C+}{San}to eres Tu,
+
+                \Ch{F}{San}ta Trini\Ch{Dm}{dad},
+
+                \Ch{C}{Rey} de Reyes \Ch{Csus2}{fi}el Se\Ch{F}{ñor},
+
+                \Ch{Dm}{Tu} \Ch{Em}{nom}\Ch{F}{bre} \Ch{G}{es},
+
+                \Ch{Em}{Tu} nom\Ch{Am}{bre} es,
+
+                \Ch{Dm}{Tu} \Ch{Em}{nom}\Ch{F}{bre} \Ch{G}{San}to \Ch{C}{es}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\CEPiano\CE}{\qquad Do} Mayor Bajo E  \hfill\null\break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
+            \upchord{\GsusPiano\Gsus}{\qquad Sol} Mayor sus4 \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DmPiano\Dm}{Re} menor \hfill\null\break
+            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill
+            \upchord{\CsustwoPiano\Csustwo}{\qquad Do} sus2 \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
@@ -2502,7 +2554,7 @@
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
             \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
-            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \hfill\null\break
+            \upchord{\FMajPiano\FMaj}{\qquad Fa} Maj 7 \hfill\null\break
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
         \end{SBOpGroup}
         \fi
@@ -4456,7 +4508,7 @@
             \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
             \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill
             \upchord{\CsusthirteenPiano\Csusthirteen}{\qquad Do} 13 suspendida cuarta \hfill\null\break
-            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \hfill
+            \upchord{\FMajPiano\FMaj}{\qquad Fa} Maj 7 \hfill
             \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \hfill\null\break
             \upchord{\GsusPiano\Gsus}{\qquad Sol} Mayor sus4 \hfill
         \end{SBOpGroup}
@@ -5071,6 +5123,7 @@
             \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
             \upchord{\BPiano\B}{\qquad Si} Mayor \hfill
             \upchord{\EmGPiano\EmG}{\qquad Mi} Menor Bajo G \hfill\null\break
+            \upchord{\BsevenFsPiano\BsevenFs}{\qquad Si} S\'eptima bajo F$\#$ \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5157,7 +5210,7 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
-            \upchord{\FmajsevenPiano\Fmajseven}{\qquad Fa} Maj 7 \hfill\null\break
+            \upchord{\FMajPiano\FMaj}{\qquad Fa} Maj 7 \hfill\null\break
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill
             \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
             \upchord{\AsusPiano\Asus}{\qquad La} Suspendida 4 \hfill
@@ -5748,7 +5801,7 @@
             \upchord{\FsmPiano\Fsm}{Fa sostenido} Menor \hfill\null\break
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
             \upchord{\CsmsevenPiano\Csmseven}{Do Sostenido} Menor S\'eptima \hfill\null\break
-            \upchord{\DsevenMajPiano\DsevenMaj}{\qquad Re} Maj S\'eptima Aumentada \hfill
+            \upchord{\DMajPiano\DMaj}{\qquad Re} Maj S\'eptima Aumentada \hfill
             \upchord{\ACsPiano\ACs}{\qquad La} Mayor con bajo C\# \hfill\null\break
         \end{SBOpGroup}
         \fi

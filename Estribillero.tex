@@ -226,6 +226,7 @@
 \newcommand{\Emseven}{\chord{t}{n,p2,p2,n,p3,n}{Em7}}
 \newcommand{\Emseventr}{\chord{t}{n,p2,p2,n,p3,p3}{Em7}}
 \newcommand{\Emeleven}{\chord{t}{n,n,n,n,n,n}{Em11}}
+\newcommand{\EmG}{\chord{t}{p3,p2,p2,n,n,n}{Em/G}}
 \newcommand{\EsevenFour}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNine}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
 \newcommand{\EFs}{\chord{t}{p2,o,p2,p1,n,n}{E/F\#}}
@@ -350,6 +351,7 @@
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
 \newcommand{\EmelevenPiano}{\keyboard[Eo][Fso][Go][Ao][Bo][Do]}
+\newcommand{\EmGPiano}{\keyboardf[Go][Bo][Eo]}
 \newcommand{\EFsPiano}{\keyboardf[Fso][Eo][Gso][Bo]}
 \newcommand{\EGPiano}{\keyboardf[Go][Eo][Bo]}
 \newcommand{\EGsPiano}{\keyboardf[Gso][Eo][Bo]}
@@ -3320,6 +3322,44 @@
         \fi
     \end{song}
 
+    \begin{song}{Donde está el Espíritu de Dios}{F}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3cWdcVBkdDAx4PAwiodx3P}{Escuchar}}
+
+        \FLineIdx{Libertad, libertad}
+
+        \begin{SBOpGroup}
+            \Ch{C7}{Don}de es\Ch{F}{tá} el Espíritu de \Ch{C}{Dios}
+
+            hay liber\Ch{G}{tad}, hay liber\Ch{C}{tad}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{C7}{Don}de es\Ch{F}{tá} el Espíritu de \Ch{C}{Dios}
+
+            a\Ch{G}{llí} siempre hay \Ch{G7}{li}ber\Ch{C}{tad}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            liber\Ch{G}{tad}, liber\Ch{C}{tad}
+
+            liber\Ch{G}{tad}, liber\Ch{C}{tad}
+        \end{SBOpGroup}
+
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Doxolog\'ia}{G}
     {} %copyright \SBPubDom
     {Thomas Ken, Genevan Psalter, 1551, atr. a Louis Bourgeois}
@@ -4992,6 +5032,45 @@
             \upchord{\APiano\A}{\qquad La} Mayor \hfill
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Grande es el Señor}{Em}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/7uZ2Jy1jcKf1cZLxOrwZ6f}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{Em}{Gran}de es el Señor, Creador del Universo,
+
+            \Ch{Am}{can}ta y danza al Rey que viene pronto,
+
+            \Ch{Em}{de} felicidad el corazón nos llena,
+
+            \Ch{Bsus4}{Gran}de \Ch{B7}{es} \Ch{B}{el} \Ch{Am}{Se}ñor\Ch{Em/G}{~}\Ch{B7/F\#}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{Em}{Oh}, oh, oh, Hosanna al Altísimo.
+
+            \Ch{D}{Oh}, oh, oh, Hosanna al Altísimo.
+
+            \Ch{Em}{Oh}, oh, oh, Hosanna al Altísimo.
+
+            \Ch{Bsus4}{Gran}de \Ch{B7}{es} \Ch{B}{el} \Ch{Am}{Se}ñor\Ch{Em/G}{~}\Ch{B7/F\#}{~}\Ch{Em}{~}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\BsusPiano\Bsus}{\qquad Si} Suspendida 4 \hfill
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill
+            \upchord{\EmGPiano\EmG}{\qquad Mi} Menor Bajo G \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -9539,6 +9618,37 @@
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
             \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Tú me hiciste libre}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/659td3cm4QUQfC08Kmfbwu}{Escuchar}}
+
+        %2012
+        % no queda claro hasta donde el original proviene de un canto más extenso: https://open.spotify.com/intl-es/track/4C3pXZL0RT6lmchZRqTVUk 1984
+
+        \FLineIdx{Libre tu me hiciste libre}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Li}bre tu me hiciste \Ch{C}{li}bre
+
+            Tu me hiciste \Ch{D}{li}bre, libre Se\Ch{G}{ñor}
+
+            \Ch{G}{Ro}tas fueron las ca\Ch{C}{de}nas
+
+            Que tenían a\Ch{D}{ta}do a mi cora\Ch{G}{zón}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}

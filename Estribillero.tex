@@ -135,7 +135,7 @@
 \newcommand{\A}{\chord{t}{x,n,p2,p2,p2,n}{A}}
 \newcommand{\Asus}{\chord{t}{x,n,p2,p2,p3,n}{Asus4}}
 \newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
-\newcommand{\AMaj}{\chord{t}{x,n,p2,p1,p2,n}{A7+}}
+\newcommand{\AMaj}{\chord{t}{x,n,p2,p1,p2,n}{A+7}}
 \newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
 \newcommand{\AD}{\chord{t}{x,x,n,p2,p2,n}{A/D}}
 \newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
@@ -148,6 +148,7 @@
 \newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
 
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
+\newcommand{\AsMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{A\#+7}}
 \newcommand{\Asm}{\chord{t}{x,p1,p3,p3,p2,p1}{A\#m}}
 \newcommand{\Asthirteen}{\chord{t}{x,p1,p1,p1,p3,p3}{A\#13}}
 \newcommand{\Bflat}{\chord{t}{p1,p1,p3,p3,p3,p1}{Bb}}
@@ -167,7 +168,7 @@
 \newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
 \newcommand{\BmsevenA}{\chord{t}{x,n,p4,p4,p3,n}{Bm/A}}
 \newcommand{\Bmsevenbfive}{\chord{t}{x,p2,p3,p2,p3,n}{Bm7(b5)}} %si semidisminuido
-\newcommand{\BmajsevenG}{\chord{t}{p3,x,p1,p3,n,p2}{B+/G}}
+\newcommand{\BmajsevenG}{\chord{t}{p3,x,p1,p3,n,p2}{B+7/G}}
 
 \newcommand{\C}{\chord{t}{x,p3,n,p2,p1,n}{C}}
 \newcommand{\Cseven}{\chord{t}{x,p3,p3,p2,p1,n}{C7}}
@@ -177,7 +178,7 @@
 \newcommand{\CD}{\chord{t}{n,n,n,n,p1,n}{C/D}}
 \newcommand{\CE}{\chord{t}{o,p3,n,p2,p1,n}{C/E}}
 \newcommand{\CG}{\chord{t}{p3,n,p2,n,p1,n}{C/G}}
-\newcommand{\CMaj}{\chord{t}{p3,p3,p2,n,n,n}{C+}}
+\newcommand{\CMaj}{\chord{t}{p3,p3,p2,n,n,n}{C+7}}
 \newcommand{\Csustwo}{\chord{t}{x,p3,n,n,p1,p3}{Csus2}}
 \newcommand{\Ctwo}{\chord{t}{x,p3,p2,n,p3,n}{C2}}
 \newcommand{\Cnine}{\chord{t}{x,p3,p2,p3,p3,n}{C9}}
@@ -193,10 +194,9 @@
 
 \newcommand{\D}{\chord{t}{x,x,n,p2,p3,p2}{D}}
 \newcommand{\Dseven}{\chord{t}{x,x,n,p2,p1,p2}{D7}}
-\newcommand{\DseveN}{\chord{t}{x,x,n,p2,p2,p2}{D7+}}
 \newcommand{\Dm}{\chord{t}{x,x,n,p2,p3,p1}{Dm}}
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
-\newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+}}
+\newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+7}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
 \newcommand{\DmF}{\chord{t}{p1,n,n,p2,p3,x}{Dm/F}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
@@ -251,7 +251,7 @@
 
 \newcommand{\G}{\chord{t}{p3,p2,n,n,n,p3}{G}}
 \newcommand{\Gseven}{\chord{t}{p3,p2,n,n,n,p1}{G7}}
-\newcommand{\GMaj}{\chord{t}{p3,p2,n,n,n,p2}{G+}}
+\newcommand{\GMaj}{\chord{t}{p3,p2,n,n,n,p2}{G+7}}
 \newcommand{\Gsus}{\chord{t}{p3,p2,n,n,p1,p3}{Gsus4}}
 \newcommand{\GB}{\chord{t}{n,p2,n,n,p3,n}{G/B}}
 \newcommand{\GD}{\chord{t}{x,p2,p2,n,p3,p3}{G/D}} %verificar porque parece más ien G/E o G/A o Em7algo
@@ -286,6 +286,7 @@
 \newcommand{\AtwoPiano}{\keyboardf[Ao][Bo][Cso][Eo]}
 
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
+\newcommand{\AsMajPiano}{\keyboard[Do][Fo][Ao][Aso]}
 \newcommand{\AsmPiano}{\keyboard[Cso][Fo][Aso]}
 \newcommand{\BflatPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\BflatsevenPiano}{\keyboard[Do][Fo][Aso][Gso]}
@@ -760,7 +761,7 @@
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-                Cuan \Ch{C+}{San}to eres Tu,
+                Cuan \Ch{C+7}{San}to eres Tu,
 
                 \Ch{F}{San}ta Trini\Ch{Dm}{dad},
 
@@ -782,7 +783,7 @@
             \upchord{\GsusPiano\Gsus}{\qquad Sol} Mayor sus4 \hfill\null\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\DmPiano\Dm}{Re} menor \hfill\null\break
-            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill
+            \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill
             \upchord{\CsustwoPiano\Csustwo}{\qquad Do} sus2 \hfill\null\break
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
@@ -1715,7 +1716,7 @@
 
             y no con\Ch{Em7}{fiar} nunca más en Él
 
-            no tengo a \Ch{C+}{don}de ir,\Ch{Am7}{~}
+            no tengo a \Ch{C+7}{don}de ir,\Ch{Am7}{~}
 
             no tengo a \Ch{Dsus4}{don}de \Ch{D}{ir}
         \end{SBOpGroup}
@@ -1751,7 +1752,7 @@
             Acordes:
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
-            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill
+            \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill
             \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
             \upchord{\qquad \DsusPiano\Dsus}{\qquad Re} Mayor suspendida cuarta \hfill
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
@@ -2462,13 +2463,13 @@
     {\href{https://open.spotify.com/intl-es/track/3iJcqcWzfTi5Pkp2or41d9}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
-            \Ch{D+}{Cuán} bello es el Se\Ch{Em}{ñor}
+            \Ch{D+7}{Cuán} bello es el Se\Ch{Em}{ñor}
 
             \Ch{G}{Cuán} hermoso es el Se\Ch{D}{ñor}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            \Ch{D+}{Cuán} bello es el Se\Ch{Em}{ñor}
+            \Ch{D+7}{Cuán} bello es el Se\Ch{Em}{ñor}
 
             \Ch{A7}{Hoy} le quiero ado\Ch{D}{rar}
         \end{SBOpGroup}
@@ -3910,7 +3911,7 @@
         \SBIntro{\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Gm}{~}\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Fm}{~}}
 
         \begin{SBOpGroup}
-            El Señor es mi \Ch{Ab/F}{Rey},\Ch{Bb/G}{~} \Ch{Ab}{mi} to\Ch{Bb}{do}\Ch{B+/G}{~}
+            El Señor es mi \Ch{Ab/F}{Rey},\Ch{Bb/G}{~} \Ch{Ab}{mi} to\Ch{Bb}{do}\Ch{B+7/G}{~}
 
             \Ch{Cm}{~}el Señor es mi \Ch{Cm}{luz}, mi \Ch{Bb}{Rey}\ldots
 
@@ -3935,7 +3936,7 @@
             \upchord{\FmPiano\Fm}{\qquad Fa} Menor \hfill
             \upchord{\AflatFPiano\AflatF}{\qquad La bemol} Mayor bajo F \hfill\null\break
             \upchord{\BflatGPiano\BflatG}{\qquad Si bemol} Mayor bajo G \hfill
-            \upchord{\BmajsevenGPiano\BmajsevenG}{\qquad Si} + bajo G \hfill\null\break
+            \upchord{\BmajsevenGPiano\BmajsevenG}{\qquad Si} +7 bajo G \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4879,7 +4880,7 @@
 
             \Ch{G}{yo} tengo de su espíritu
 
-            \Ch{E}{me} inunda cada dia mas\ldots
+            \Ch{E}{me} inunda cada día mas\ldots
 
             \Ch{Am}{yo} tengo en su espada, \Ch{F}{mi} alma de batalla
 
@@ -4954,6 +4955,48 @@
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
             \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill
             \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Gloria y honor}{Dm}
+    {} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/1Ju0r5RwVaubO9PGJMBPWF}{Escuchar}}
+
+        \SBMargNote{DD E G E C D\break DDCD   DDCD}
+
+        \begin{SBOpGroup}
+            \Ch{Dm}{Glo}ria y \Ch{Gm}{ho}nor \Ch{A7}{de}mos al cor\Ch{Dm}{de}ro\Ch{C9}{~}
+
+            \Ch{Dm}{Glo}ria y \Ch{Gm}{ho}nor \Ch{A7}{dad} a nuestro \Ch{Dm}{Rey}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{C}{sa}\Ch{D}{cri}\Ch{Gm7}{fi}\Ch{C}{cio} te o\Ch{F}{frez}\Ch{A\#+7}{co}
+
+            mi \Ch{Em7}{can}\Ch{A7}{to} te \Ch{Dm}{doy}
+
+            \Ch{C}{con} \Ch{D}{mi} \Ch{Gm7}{vi}\Ch{C}{da} pro\Ch{F}{cla}\Ch{A\#+7}{mo}
+
+            tu gran\Ch{Em}{de}\Ch{A7}{za} se\Ch{D}{ñor}\Ch{Dm}{~}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
+            \upchord{\CninePiano\Cnine}{\qquad Do} Novena \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor  \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\AsMajPiano\AsMaj}{A\#} Maj \hfill
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5386,7 +5429,7 @@
     \begin{song}{Has Cambiado mi Lamento en Baile}{C}
     {} %copyright \SBPubDom
     {Marcos Witt}
-    {} %pasaje
+    {Salmo 30:12} %pasaje
     {\href{https://open.spotify.com/intl-es/track/31xfacYtNo5vMxk6CggXCQ}{Escuchar}}
 
         \begin{SBOpGroup}
@@ -6746,7 +6789,7 @@
 
             tu gran po\Ch{Dm}{der} en mi rom\Ch{Eb/F}{pió}
 
-            las cadenas de mi \Ch{Bb+}{gran} opresión\Ch{Em7}{~}\Ch{A+}{~}
+            las cadenas de mi \Ch{Bb+7}{gran} opresión\Ch{Em7}{~}\Ch{A+7}{~}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
@@ -7999,11 +8042,11 @@
 
             \Ch{G/E}{quie}\ldots \Ch{B/F\#}{ro}\ldots\Ch{B/Bb}{~}   \Ch{Bm7/B}{mas}\ldots\Ch{Bm7/A}{~}
 
-            \Ch{G+}{más} de tu espíri\Ch{Bm7/F\#}{tu}\ldots
+            \Ch{G+7}{más} de tu espíri\Ch{Bm7/F\#}{tu}\ldots
 
-            \Ch{G+}{más} de tu presen\Ch{Bm7/B}{cia}\ldots
+            \Ch{G+7}{más} de tu presen\Ch{Bm7/B}{cia}\ldots
 
-            \Ch{G/E}{quie}\ldots  \Ch{Bm7/F\#}{ro}\ldots   \Ch{G+}{mas}\ldots  \Ch{Asus4}{~}\Ch{A}{de}    \Ch{D}{ti}.
+            \Ch{G/E}{quie}\ldots  \Ch{Bm7/F\#}{ro}\ldots   \Ch{G+7}{mas}\ldots  \Ch{Asus4}{~}\Ch{A}{de}    \Ch{D}{ti}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
@@ -8724,7 +8767,7 @@
         \begin{SBOpGroup}
             \Ch{Em}{Se}ñor llévame a tus atrios,
 
-            \Ch{C+}{Al} lugar santo,
+            \Ch{C+7}{Al} lugar santo,
 
             \Ch{D}{Al} altar de bronce;
 
@@ -8732,7 +8775,7 @@
 
             \Ch{Em}{Pa}saré la muchedumbre
 
-            Donde el \Ch{C+}{sa}cerdote canta
+            Donde el \Ch{C+7}{sa}cerdote canta
 
             Tengo \Ch{D}{ham}bre y sed de justicia
 
@@ -8753,7 +8796,7 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
-            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill\null\break
+            \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
             \upchord{\CDPiano\CD}{\qquad Do} Mayor bajo D \hfill\null\break
@@ -9088,7 +9131,65 @@
 
 %Soy una saeta
 
-%Sumérgeme
+    \begin{song}{Sumérgeme}{C}
+    {} %copyright \SBPubDom
+    {Jesús Adrián Romero}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/4vmPvQY7m6MC77mKDdJIkD}{Escuchar}}
+% 2003
+
+        \FLineIdx{Cansado del camino}
+
+        \begin{SBOpGroup}
+            Can\Ch{C}{sa}do del camino
+
+            se\Ch{G}{dien}to de Tí,
+
+            un de\Ch{Am}{sier}to he cruzado,
+
+            sin \Ch{F}{fuer}zas he quedado
+
+            \Ch{G}{ven}go a Tí
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Lu\Ch{C}{ché} como soldado,
+
+            y a \Ch{G}{ve}ces sufrí
+
+            y aunque la \Ch{Am}{lu}cha he ganado,
+
+            mi arma\Ch{F}{du}ra he desgastado\endnote{esta armadura es poética, ya que la armadura de Dios de Efesios 6 no se desgasta},
+
+            \Ch{G}{ven}go a Tí
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Sumérge\Ch{C}{me}
+
+            en el río de tu Es\Ch{Em}{pí}ritu,
+
+            nece\Ch{F}{si}to refrescar
+
+            este \Ch{Dm}{se}co corazón,
+
+            se\Ch{G}{dien}to de Tí
+        \end{SBChorus}
+
+        \SBEnd{Sumérge\Ch{C}{me}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
 %Talcomosoy
 
@@ -9690,7 +9791,7 @@
     \begin{song}{Tu Habitas}{Em}
     {} %copyright \SBPubDom
     {Marco Barrientos}
-    {} %pasaje
+    {Salmo 22:3} %pasaje
     {\href{https://open.spotify.com/intl-es/track/583hMDX7vZQSs0wRsJL3k4}{Escuchar}} %\NotCCLIed
 
         %1992
@@ -9778,7 +9879,7 @@
 
             \Ch{Em}{na}da puedo esconder
 
-            que no soy \Ch{C+}{na}da sin Tí
+            que no soy \Ch{C+7}{na}da sin Tí
 
             oh fiel Se\Ch{C/D}{ñor}~\Ch{D}{~}
         \end{SBOpGroup}
@@ -9788,7 +9889,7 @@
 
             cuando \Ch{Em}{mi}ras el corazón
 
-            todo lo que no soy \Ch{C+}{pue}des ver
+            todo lo que no soy \Ch{C+7}{pue}des ver
 
             muy dentro de \Ch{C/D}{mí}~\Ch{D}{~}
         \end{SBOpGroup}
@@ -9824,7 +9925,7 @@
             Acordes:\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill
+            \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill
             \upchord{\CDPiano\CD}{\qquad Do} Mayor bajo D \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
             \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill\null\break
@@ -10073,7 +10174,7 @@
         \begin{SBOpGroup}
             \Ch{D}{Mu}chas veces he pensado
 
-            \Ch{D+}{de} problemas tan cargado,
+            \Ch{D+7}{de} problemas tan cargado,
 
             \Ch{D7}{me} pregunto, ¿Por qué hay tanta \Ch{G}{prue}ba y do\Ch{Em}{lor}?
 
@@ -10210,7 +10311,7 @@
             Acordes:
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill
             \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\CMajPiano\CMaj}{\qquad Do} + \hfill
+            \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill
             \upchord{\qquad \DsusPiano\Dsus}{Re} Mayor suspendida cuarta \hfill\null\break
             \upchord{\qquad \DPiano\D}{\qquad Re} Mayor \hfill
         \end{SBOpGroup}

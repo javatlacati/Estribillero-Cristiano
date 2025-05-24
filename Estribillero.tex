@@ -1,58 +1,3 @@
-%%%%%% rcsid = @(#)$Id: sample-sb.tex,v 1.23 2010-04-12 18:04:11 rathc Exp $
-%%%%%%
-%%
-%%      ===============================
-%%      Sample Songbook (sample-sb.tex)
-%%      ===============================
-%%
-%%      Version 4.5, 30 April, 2010
-%%
-%%      Copyright 1992--2010 Christopher Rath <christopher@rath.ca>
-%%
-%%      This package is free software; you can redistribute it and/or
-%%      modify it under the terms of version 2.1 of the GNU Lesser
-%%	General Public License as published by the Free Software 
-%%	Foundation.
-%%
-%%      This package is distributed in the hope that it will be
-%%      useful, but WITHOUT ANY WARRANTY; without even the implied
-%%      warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-%%      PURPOSE.  See the GNU Lesser General Public License for more
-%%      details.
-%%
-%%      This file contains a subset of the songbook we distribute
-%%      at our church.  To the best of my knowledge, all of the lyrics
-%%      contained herein are freely distributable.  This file has been
-%%      provided as a sample of what can be produced by the chordbk,
-%%      wordbk, and overhead LaTeX styles.
-%%
-%%      NEEDED:  The fancyhdr LaTeX style is required to properly
-%%              format this file.  If you don't have that then comment
-%%              out the commands in the preamble which deal with the
-%%              fancyhdr style.
-%%
-%%%%%%
-%%%%%%
-%%
-%%      1. Chord notation.  Within this songbook the following
-%%         conventions have been adopted:
-%%
-%%              "Minor" is entered as "m";
-%%                      e.g. Cm7 for C minor 7th.
-%%              "Major" is entered as "M";
-%%                      e.g. CM7 for C major 7th.
-%%
-%%%%%%
-%%%%%%
-%%      ============
-%%      Bibliography
-%%      ============
-%%
-%%    
-%%
-%%%%%%
-%%%%%%
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                      %%
@@ -60,10 +5,10 @@
 %%                                                      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
 \documentclass[12pt, spanish, titlepage]{book}
 
-\usepackage[T1]{fontenc}
+\usepackage[T1]{fontenc} %pdflatex
+%\usepackage{fontspec} %xelatex
 \usepackage[latin9]{inputenc}
 \usepackage{babel}
 \usepackage{mypiano}
@@ -202,7 +147,7 @@
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
 \newcommand{\DmBasB}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
 \newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
-\newcommand{\DC}{\chord{t}{x,o,n,p2,p3,p2}{D/C}}
+\newcommand{\DC}{\chord{t}{x,p3,n,p2,p3,p2}{D/C}}
 \newcommand{\DE}{\chord{t}{n,n,p2,p2,p3,p2}{D/E}}
 \newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F\#}}
 \newcommand{\DsevenFs}{\chord{t}{p2,n,n,p2,p1,p2}{D7/F\#}}
@@ -333,6 +278,7 @@
 \newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
+\newcommand{\DCPiano}{\keyboard[Co][Do][Fso][Ao]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
 \newcommand{\DEPiano}{\keyboardtwooctaves[Eo][Fso][Ao][Dt]}
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
@@ -790,6 +736,46 @@
             \upchord{\CsustwoPiano\Csustwo}{\qquad Do} sus2 \hfill\null\break
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Agnus Dei}{A}
+    {\SBPubDom} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}} %\NotCCLIed
+        \FLineIdx{Tu nombre Santo es}
+
+        \begin{SBChorus}
+            //\Ch{A}{A}leluya, Alelu\Ch{D}{ya}
+
+            Reinas tu poderoso \Ch{A}{Dios}//
+
+            \Ch{A}{A}lelu\Ch{D}{ya}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{E}{San}\Ch{A}{to}, \Ch{E}{San}\Ch{A}{to}
+
+            El Se\Ch{A}{ñor} Dios \Ch{F\#m}{po}dero\Ch{E}{so}
+
+            \Ch{A}{dig}no eres \Ch{D}{Tú}, \Ch{A}{dig}no eres \Ch{D}{Tú}
+
+            Tú eres \Ch{E}{San}\Ch{A}{to}, \Ch{E}{San}\Ch{A}{to}
+
+            El Se\Ch{A}{ñor} Dios \Ch{F\#m}{po}dero\Ch{E}{so}
+
+            \Ch{A}{Dig}no eres \Ch{E}{Tú}, \Ch{A}{dig}no eres \Ch{D}{Tú}, \Ch{E}{a}\Ch{A}{mén}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{\qquad Fa\#} Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7058,30 +7044,44 @@
         \FLineIdx{Yo tengo un nuevo amor}
 
         \begin{SBChorus}
-            Yo tengo un nuevo amor
-            el corazón me late sin parar
-            hay uno que me ha dicho, te amo de verdad
-            Jesús mi amor y mas que amor mi dulce paz.
-            Yo tengo un nuevo amor
-            jamás imaginé poder hallar,
-            aquél que le dio a mi vida una razón para amar
-            Jesús mi amor y mas que amor mi dulce paz.
+            \Ch{C}{Yo} \Ch{G}{ten}go un nuevo a\Ch{Am}{mor}
+
+            el \Ch{F}{co}razón me \Ch{G}{la}te sin pa\Ch{C}{rar}
+
+            \Ch{F}{hay} uno que me ha \Ch{G}{di}cho, te \Ch{C}{a}mo de ver\Ch{Am}{dad}
+
+            Jesús mi a\Ch{F}{mor} y mas que a\Ch{G}{mor} mi dulce \Ch{C}{paz}.
+
+            Yo \Ch{G}{ten}go un nuevo a\Ch{Am}{mor}
+
+            ja\Ch{F}{más} imagi\Ch{G}{né} poder ha\Ch{C}{llar},
+
+            a\Ch{F}{quél} que le dio a mi \Ch{G}{vi}da \Ch{C}{u}na razón para a\Ch{Am}{mar}
+
+            Jesús mi a\Ch{F}{mor} y mas que a\Ch{G}{mor} mi dulce \Ch{C}{paz}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Siento que tengo ganas de volar al firmamento
-            gritarle al mundo entero lo que estoy sintiendo,
-            que ya encontré mi dulce amor, Jesús es toda mi
-            verdad
-            y nunca yo me cansaré de repetirle hasta el final.
+            \Ch{C}{Sien}to que tengo \Ch{F}{ga}nas de vo\Ch{G}{lar} al firma\Ch{C}{men}to
+
+            gritarle al \Ch{F}{mun}do entero \Ch{G}{lo} que estoy sin\Ch{C}{tien}do,
+
+            que ya encon\Ch{G}{tré} mi dulce amor, Jesús es \Ch{Am}{to}da mi verdad
+
+            y nunca \Ch{F}{yo} me cansaré de repe\Ch{G}{tir}le hasta el final
+
             Que ahora yo\ldots
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Su voz dulcísima en respuesta cuando llamo
-            sus ojos tiernos y hasta el toque de sus manos,
-            por siempre suyo quiero ser,Jesús es toda mi verdad
-            y nunca yo me cansaré de repetirle hasta el final.
+            \Ch{C}{Su} voz dul\Ch{F}{cí}sima en res\Ch{G}{pues}ta cuando \Ch{C}{lla}mo
+
+            sus ojos \Ch{F}{tier}nos y hasta el \Ch{G}{to}que de sus \Ch{C}{ma}nos,
+
+            por siempre \Ch{G}{su}yo quiero ser,Jesús es \Ch{Am}{to}da mi verdad
+
+            y nunca \Ch{F}{yo} me cansaré de repe\Ch{G}{tir}le hasta el final
+
             Que ahora yo\ldots
         \end{SBOpGroup}
 
@@ -7089,6 +7089,45 @@
         \begin{SBOpGroup}
             Acordes:
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Mi plenitud}{A}
+    {} %copyright \SBPubDom
+    {Marcos Brunet}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/1wGFaE9jsAhJb7b8WfNBkT}{Escuchar}}
+
+        \FLineIdx{Si te tengo a Ti}
+
+        \begin{SBOpGroup}
+            Cristo Je\Ch{A}{sús} eres mi \Ch{B}{ple}ni\Ch{C\#m}{tud}~\Ch{G\#m}{~}
+
+            Cristo Je\Ch{A}{sús} eres mi pleni\Ch{E}{tud}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Si te tengo a \Ch{A}{Ti} lo tengo todo
+
+            \Ch{B}{mi} a\Ch{C\#m}{ma}do mi te\Ch{G\#m}{so}ro
+
+            Fuera de \Ch{A}{Ti} nada deseo
+
+            Se\Ch{E}{ñor}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill\null\break
+            \upchord{\CsmPiano\Csm}{\qquad Do sostenido} Menor \hfill
+            \upchord{\GsmPiano\Gsm}{\qquad Sol sostenido} Menor \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7795,6 +7834,63 @@
         \fi
     \end{song}
 
+    \begin{song}{Por quien eres Tú}{G}
+    {} %copyright \SBPubDom
+    {Coalo Zamorano}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/1VK9sZT2SNbz4UbDk9APAo}{Escuchar}}
+        %2004
+
+        \begin{SBOpGroup}
+            Por \Ch{G}{quien} eres \Ch{Am}{Tú} te doy la glo\Ch{G/B}{ria}\Ch{C}{~}\Ch{D}{~}
+
+            Por \Ch{G}{quien} e\Ch{(D/F\#)}{res}        \Ch{Em7}{Tú} te doy mi a\Ch{Am7}{mor}\Ch{D}{~}
+
+            Por \Ch{C}{quien} eres \Ch{D/C}{Tu} hoy le\Ch{B}{van}ta\Ch{B/D\#}{ré} mi \Ch{Em7}{voz}
+
+%       Am7       Dsus   D   Em  Em/D#   Em/D
+            Y te a\Ch{Am7}{do}raré por \Ch{D}{quien} eres \Ch{Em}{Tú}~\Ch{A7}{~}
+
+            Y te a\Ch{Am7}{do}raré por \Ch{D}{quien} eres \Ch{(D/F\#)}{Tú}~\Ch{G}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Jehova \Ch{C+7}{Ji}reh, eres quien pro\Ch{G/B}{vee}~\Ch{Em7}{~}
+
+%            Am7 C/D Dm Db Cmaj7
+            Jehova \Ch{Am7}{Ni}ssi,           Tu pe\Ch{Dm}{le} - - as por \Ch{G}{mi}
+
+%         Cmaj7    F#°   B     Em7
+            Jehova \Ch{C+7}{Sha}lom, mi \Ch{B7}{Prín}cipe de \Ch{Em7}{paz}
+
+%            Am7 Bm7 Dsus D
+            Y te a\Ch{Am7}{do}raré por \Ch{Bm7}{quien} eres \Ch{D}{Tú}~\Ch{G}{~}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\GBPiano\GB}{\qquad Sol} Mayor Bajo B \hfill\qquad\qquad\qquad
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
+            \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\DCPiano\DC}{\qquad Re} Mayor con bajo C \hfill
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill\null\break
+            \upchord{\BDsPiano\BDs}{\qquad Si} Mayor con bajo D\# \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
+            \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill\null\break
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill
+            \upchord{\DmPiano\Dm}{\qquad Re} menor  \hfill\null\break
+            \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Prefiero a Cristo}{C}
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
@@ -7832,7 +7928,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
@@ -7841,6 +7937,56 @@
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
             \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Pueblos todos}{G}
+    {} %copyright \SBPubDom
+    {Dailo Montero}
+    {Filipenses 1:21} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/0QOoX8FrCo3w85YES5pvCP}{Escuchar}}
+        \FLineIdx{Cantad a Dios, cantad}
+
+        \begin{SBOpGroup}
+            Pueblos \Ch{G}{to}dos batid las \Ch{C}{ma}nos
+
+            ala\Ch{G}{bad} a \Ch{Em}{Dios} con voz de \Ch{Am7}{jú}bilo\Ch{D}{~}
+
+            Pueblos \Ch{G}{to}dos batid las \Ch{C}{pal}mas
+
+            ala\Ch{G}{bad} al \Ch{D}{Dios} de Isra\Ch{G}{el}~\Ch{G7}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Can\Ch{C}{tad} a Dios, cantad
+
+            can\Ch{G}{tad} a nuestro \Ch{Em}{Rey}
+
+            porque \Ch{Am7}{Él} es el \Ch{D}{Rey}
+
+            de \Ch{G}{to}da la \Ch{G7}{tie}rra.
+
+
+            Can\Ch{C}{tad} a Dios, cantad
+
+            can\Ch{G}{tad} a nuestro \Ch{Em}{Rey}
+
+            al\Ch{A7}{zan}do nuestras manos
+
+            al\Ch{D}{zan}do en nuestra voz
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -9414,7 +9560,6 @@
         \fi
     \end{song}
 
-%TeCoronamos
     \begin{song}{Te Coronamos}{A}
     {} %copyright \SBPubDom
     {Marco Barrientos}

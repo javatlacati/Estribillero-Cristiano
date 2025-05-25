@@ -91,6 +91,8 @@
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
 \newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
 \newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
+\newcommand{\AmsevenF}{\chord{t}{p1,n,p2,n,p1,x}{Am7/F}}
+\newcommand{\AmFs}{\chord{t}{p2,n,p2,p2,p1,x}{Am/F\#}}
 
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
 \newcommand{\AsMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{A\#+7}}
@@ -124,6 +126,7 @@
 \newcommand{\CE}{\chord{t}{o,p3,n,p2,p1,n}{C/E}}
 \newcommand{\CG}{\chord{t}{p3,n,p2,n,p1,n}{C/G}}
 \newcommand{\CMaj}{\chord{t}{p3,p3,p2,n,n,n}{C+7}}
+\newcommand{\CMajtwoD}{\chord{t}{x,x,o,p4,p1,n}{C+7+2/D}}
 \newcommand{\Csustwo}{\chord{t}{x,p3,n,n,p1,p3}{Csus2}}
 \newcommand{\Ctwo}{\chord{t}{x,p3,p2,n,p3,n}{C2}}
 \newcommand{\Cnine}{\chord{t}{x,p3,p2,p3,p3,n}{C9}}
@@ -223,6 +226,8 @@
 \newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
+\newcommand{\AmFsPiano}{\keyboardf[Fo][Ao][Co][Eo]}
+\newcommand{\AmsevenFPiano}{\keyboardf[Fo][Go][Ao][Co][Eo]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\ADPiano}{\keyboardtwooctaves[Do][Eo][Ao][Cst]}
 \newcommand{\AEPiano}{\keyboardtwooctaves[Eo][Ao][Cst]}
@@ -260,7 +265,8 @@
 \newcommand{\CtwoPiano}{\keyboard[Co][Do][Eo][Go]}
 \newcommand{\CsustwoPiano}{\keyboard[Co][Do][Go]}
 \newcommand{\CninePiano}{\keyboard[Co][Do][Eo][Go][Aso]}
-\newcommand{\CMajPiano}{\keyboard[Co][Eo][Go][Do]}
+\newcommand{\CMajPiano}{\keyboard[Co][Eo][Go][Bo]}
+\newcommand{\CMajtwoDPiano}{\keyboardtwooctaves[Do][Eo][Go][Bo][Ct]}
 \newcommand{\CsusthirteenPiano}{\keyboard[Co][Do][Fo][Go][Ao][Aso]}
 
 \newcommand{\CsPiano}{\keyboard[Cso][Fo][Gso]}
@@ -277,6 +283,7 @@
 \newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
 \newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
+\newcommand{\DmsevenGPiano}{\keyboardf[Go][Do][Fo][Ao][Co]}
 \newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
 \newcommand{\DCPiano}{\keyboard[Co][Do][Fso][Ao]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
@@ -766,7 +773,7 @@
 
             El Se\Ch{A}{ñor} Dios \Ch{F\#m}{po}dero\Ch{E}{so}
 
-            \Ch{A}{Dig}no eres \Ch{E}{Tú}, \Ch{A}{dig}no eres \Ch{D}{Tú}, \Ch{E}{a}\Ch{A}{mén}
+            \Ch{A}{Dig}no eres \Ch{D}{Tú}, \Ch{A}{dig}no eres \Ch{D}{Tú}, \Ch{D}{a}\Ch{E}{~}\Ch{A}{mén}
         \end{SBOpGroup}
 
         \ifChordBk
@@ -1444,6 +1451,8 @@
         \end{SBChorus}
 
         \SBMargNote{Solo de Piano:\break DEGAGD D5\break CBGEA DEGAGD\break F\#F\#GF\#G\break EEE BB A}
+
+        \SBEnd{¡\Ch{G}{Bue}no es ala\Ch{C}{bar}te Se\Ch{D}{ñor}!\Ch{G}{~}}
 
         \ifChordBk
         \begin{SBOpGroup}
@@ -4839,7 +4848,7 @@
     \begin{song}{Fuego}{Am}
     {} %copyright \SBPubDom
     {Bily Bunster}
-    {} %pasaje
+    {Malaquías 3:2} %pasaje
     {\href{https://open.spotify.com/intl-es/track/3NlfXlQdsoJIAufkIMfDz8}{Escuchar}}
 
         \SBMargNote{Intro Metales:\break GA E\break E DCA EGAE CBG\break EGAE EGAE EGAB A}
@@ -7841,30 +7850,29 @@
     {\href{https://open.spotify.com/intl-es/track/1VK9sZT2SNbz4UbDk9APAo}{Escuchar}}
         %2004
 
+        \FLineIdx{Because of who You are}
+
         \begin{SBOpGroup}
             Por \Ch{G}{quien} eres \Ch{Am}{Tú} te doy la glo\Ch{G/B}{ria}\Ch{C}{~}\Ch{D}{~}
 
             Por \Ch{G}{quien} e\Ch{(D/F\#)}{res}        \Ch{Em7}{Tú} te doy mi a\Ch{Am7}{mor}\Ch{D}{~}
 
-            Por \Ch{C}{quien} eres \Ch{D/C}{Tu} hoy le\Ch{B}{van}ta\Ch{B/D\#}{ré} mi \Ch{Em7}{voz}
+            Por \Ch{C}{quien} eres \Ch{D/C}{Tu} hoy le\Ch{B}{van}ta\Ch{(B/D\#)}{ré} mi \Ch{Em7}{voz}
 
-%       Am7       Dsus   D   Em  Em/D#   Em/D
             Y te a\Ch{Am7}{do}raré por \Ch{D}{quien} eres \Ch{Em}{Tú}~\Ch{A7}{~}
 
             Y te a\Ch{Am7}{do}raré por \Ch{D}{quien} eres \Ch{(D/F\#)}{Tú}~\Ch{G}{~}
         \end{SBOpGroup}
 
+        \SBBridge{Dm7/G G7}
         \begin{SBChorus}
-            Jehova \Ch{C+7}{Ji}reh, eres quien pro\Ch{G/B}{vee}~\Ch{Em7}{~}
+            Jehova \Ch{C+7}{Ji}reh, eres quien pro\Ch{Bm7}{vee}~\Ch{Em7}{~}
 
-%            Am7 C/D Dm Db Cmaj7
-            Jehova \Ch{Am7}{Ni}ssi,           Tu pe\Ch{Dm}{le} - - as por \Ch{G}{mi}
+            Jehova \Ch{Am7}{Ni}ssi,      Tu pe\Ch{Cmaj7add2/D}{le}\Ch{Am7/F}{as} por \Ch{G/B}{mi}
 
-%         Cmaj7    F#°   B     Em7
-            Jehova \Ch{C+7}{Sha}lom, mi \Ch{B7}{Prín}cipe de \Ch{Em7}{paz}
+            Jehova \Ch{C+7}{Sha}lom, mi \Ch{(Am/F\#)}{~}\Ch{B7}{Prín}cipe de \Ch{Em7}{paz}
 
-%            Am7 Bm7 Dsus D
-            Y te a\Ch{Am7}{do}raré por \Ch{Bm7}{quien} eres \Ch{D}{Tú}~\Ch{G}{~}
+            Y te a\Ch{Am7}{do}raré por \Ch{D}{quien} eres \Ch{G}{Tú}
         \end{SBChorus}
 
         \ifChordBk
@@ -7883,10 +7891,14 @@
             \upchord{\BDsPiano\BDs}{\qquad Si} Mayor con bajo D\# \hfill
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
             \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
+            \upchord{\DmsevenGPiano\DmsevenG}{Re} Menor S\'eptima bajo G \hfill\null\break
+            \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill
             \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill\null\break
-            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill
-            \upchord{\DmPiano\Dm}{\qquad Re} menor  \hfill\null\break
             \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \hfill
+            \upchord{\AmsevenFPiano\AmsevenF}{\qquad La} Menor S\'eptima bajo F \hfill\null\break
+            \upchord{\CMajtwoDPiano\CMajtwoD}{\qquad Do}+7+2/D \hfill\null\break
+            \upchord{\AmFsPiano\AmFs}{\qquad La} Menor bajo F\# \hfill
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -9653,6 +9665,10 @@
     {En Espiritu y en Verdad}
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/2i4CXpjRlDuxAoUXajh2we}{Escuchar}}
+        %2008
+        % https://open.spotify.com/intl-es/track/7G6kc971s9rYBDkLGjiDdg 2009
+
+        \FLineIdx{I give you glory}
 
         \begin{SBOpGroup}
             ¡Cuan! Her\Ch{C}{mo}so Eres Je\Ch{G}{sús}
@@ -9677,7 +9693,7 @@
 
             Te Doy \Ch{Am}{Glo}ria, Gloria
 
-            A Ti Je\Ch{G}{sús}
+            A Ti Je\Ch{F}{sús}
         \end{SBChorus}
 
         \begin{SBOpGroup}
@@ -9688,10 +9704,6 @@
             //Con \Ch{F}{u}na Corona De Es\Ch{G}{pi}nos
 
             Te Hi\Ch{G\#dim}{cis}te Rey Por \Ch{Am}{Siem}pre//
-
-            //Con \Ch{F}{u}na Corona De Es\Ch{G}{pi}nos
-
-            Te Hi\Ch{E}{cis}te Rey Por \Ch{Am}{Siem}pre//
         \end{SBOpGroup}
 
         \ifChordBk
@@ -10315,7 +10327,7 @@
 
             Tú eres la Luz que guía
 
-            \Ch{Cm}{Co}mo un fuego ardiente\endnote{En la biblia el fuego no guía, sino que consume y es metáfora de Juicio}
+            \Ch{Cm}{Co}mo un fuego ardiente
 
             Hijo de Dios
 

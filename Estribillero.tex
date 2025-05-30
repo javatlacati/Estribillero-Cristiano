@@ -5,7 +5,7 @@
 %%                                                      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt, spanish, titlepage]{book}
+\documentclass[12pt, spanish]{book}
 
 \usepackage[T1]{fontenc} %pdflatex
 %\usepackage{fontspec} %xelatex
@@ -15,7 +15,7 @@
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
 \usepackage{imakeidx}
-\usepackage[unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
+\usepackage[pdfpagelabels,hyperindex,unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
     breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
 \usepackage[chordbk]{songbook} %% Words & Chords edition.
 \usepackage{endnotes}
@@ -81,7 +81,7 @@
 \newcommand{\Asus}{\chord{t}{x,n,p2,p2,p3,n}{Asus4}}
 \newcommand{\Aseven}{\chord{t}{x,n,p2,n,p2,n}{A7}}
 \newcommand{\AMaj}{\chord{t}{x,n,p2,p1,p2,n}{A+7}}
-\newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C\#}}
+\newcommand{\ACs}{\chord{t}{x,p3,p2,p2,p2,n}{A/C$\#$}}
 \newcommand{\AD}{\chord{t}{x,x,n,p2,p2,n}{A/D}}
 \newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
 \newcommand{\AG}{\chord{t}{p3,n,p2,n,p2,n}{A/G}}
@@ -92,12 +92,12 @@
 \newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
 \newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
 \newcommand{\AmsevenF}{\chord{t}{p1,n,p2,n,p1,x}{Am7/F}}
-\newcommand{\AmFs}{\chord{t}{p2,n,p2,p2,p1,x}{Am/F\#}}
+\newcommand{\AmFs}{\chord{t}{p2,n,p2,p2,p1,x}{Am/F$\#$}}
 
-\newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A\#}}
-\newcommand{\AsMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{A\#+7}}
-\newcommand{\Asm}{\chord{t}{x,p1,p3,p3,p2,p1}{A\#m}}
-\newcommand{\Asthirteen}{\chord{t}{x,p1,p1,p1,p3,p3}{A\#13}}
+\newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A$\#$}}
+\newcommand{\AsMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{A$\#$+7}}
+\newcommand{\Asm}{\chord{t}{x,p1,p3,p3,p2,p1}{A$\#$m}}
+\newcommand{\Asthirteen}{\chord{t}{x,p1,p1,p1,p3,p3}{A$\#$13}}
 \newcommand{\Bflat}{\chord{t}{p1,p1,p3,p3,p3,p1}{Bb}}
 \newcommand{\Bflatseven}{\chord{t}{p1,p1,p3,p1,p3,p1}{Bb7}}
 \newcommand{\Bflatm}{\chord{t}{x,p1,p3,p3,p2,p1}{Bbm}}
@@ -107,9 +107,9 @@
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
 \newcommand{\Bsus}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p5,f1p2}{Bsus4}}
 \newcommand{\Bseven}{\chord{t}{x,f1p2,f3p4,f1p2,f4p4,f1p2}{B7}}
-\newcommand{\BsevenFs}{\chord{t}{f2p2,n,f1p1,f3p2,n,f4p2}{B7/F\#}}
-\newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D\#}}
-\newcommand{\BDs}{\chord{2}{x,p4,p2,p2,n,x}{B/D\#}}
+\newcommand{\BsevenFs}{\chord{t}{f2p2,n,f1p1,f3p2,n,f4p2}{B7/F$\#$}}
+\newcommand{\BsevenBasDs}{\chord{t}{x,x,p1,p2,n,p2}{B7/D$\#$}}
+\newcommand{\BDs}{\chord{2}{x,p4,p2,p2,n,x}{B/D$\#$}}
 \newcommand{\Bm}{\chord{t}{x,p2,p4,p4,p3,p2}{Bm}}
 \newcommand{\Bmseven}{\chord{t}{x,p2,p4,p2,p3,p2}{Bm7}}
 \newcommand{\BmseveN}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
@@ -132,10 +132,10 @@
 \newcommand{\Cnine}{\chord{t}{x,p3,p2,p3,p3,n}{C9}}
 \newcommand{\Csusthirteen}{\chord{t}{x,p3,p3,p3,p3,p5}{C13sus4}}
 
-\newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C\#}}
-\newcommand{\Csm}{\chord{t}{p4,p4,p6,p6,p5,p4}{C\#m}}
-\newcommand{\Csmseven}{\chord{t}{x,p4,p2,p1,o,o}{C\#m7}}
-\newcommand{\Csseven}{\chord{t}{x,p4,p3,p4,p2,x}{C\#7}}
+\newcommand{\Cs}{\chord{4}{n,n,p2,p2,p2,n}{C$\#$}}
+\newcommand{\Csm}{\chord{t}{p4,p4,p6,p6,p5,p4}{C$\#$m}}
+\newcommand{\Csmseven}{\chord{t}{x,p4,p2,p1,o,o}{C$\#$m7}}
+\newcommand{\Csseven}{\chord{t}{x,p4,p3,p4,p2,x}{C$\#$7}}
 
 \newcommand{\Dflat}{\chord{4}{n,n,p2,p2,p2,n}{Db}}
 \newcommand{\DflatF}{\chord{t}{x,x,p3,p5,p4,p4}{Db/F}}
@@ -152,12 +152,12 @@
 \newcommand{\DA}{\chord{t}{x,o,n,p2,p3,p2}{D/A}}
 \newcommand{\DC}{\chord{t}{x,p3,n,p2,p3,p2}{D/C}}
 \newcommand{\DE}{\chord{t}{n,n,p2,p2,p3,p2}{D/E}}
-\newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F\#}}
-\newcommand{\DsevenFs}{\chord{t}{p2,n,n,p2,p1,p2}{D7/F\#}}
+\newcommand{\DFs}{\chord{t}{p2,n,n,p2,p3,p2}{D/F$\#$}}
+\newcommand{\DsevenFs}{\chord{t}{p2,n,n,p2,p1,p2}{D7/F$\#$}}
 \newcommand{\DmsevenG}{\chord{t}{p3,n,n,p2,p1,p1}{Dm7/G}}
 \newcommand{\DsusFs}{\chord{t}{p2,x,n,p2,p3,p3}{Dsus/F\#}}
 
-\newcommand{\Ds}{\chord{t}{n,n,p1,p3,p4,p3}{D\#}}
+\newcommand{\Ds}{\chord{t}{n,n,p1,p3,p4,p3}{D$\#$}}
 \newcommand{\Dsseven}{\chord{t}{n,n,p1,p3,p4,p3}{D\#7}}
 \newcommand{\Dsm}{\chord{t}{x,x,p1,p3,p4,p2}{D\#m}}
 \newcommand{\Dsmseven}{\chord{t}{x,x,p1,p3,p2,p2}{D\#m7}}
@@ -406,17 +406,6 @@
 \fi
 \fancyfoot[RE,LO]{\RFootFont Todo el material son transcripciones personales.}
 
-%%%
-% Turn on/off index-file generation.  Uncomment the \makeindex line to
-% turn index generation on;  comment it out to turn index generation
-% off.
-%%%
-\makeTitleIndex         %% Title and First Line Index.
-\makeTitleContents      %% Table of Contents.
-\makeKeyIndex           %% Index of song by key.
-\makeArtistIndex        %% Index of song by artist.
-\makeindex
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%                                                      %%
@@ -425,10 +414,51 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{document}
+\hypersetup{pageanchor=false}
+
 %%%
-% Uncomment "\maketitle" statement to make a title page.
+% Custom titlepage for Christian church songbook
 %%%
-    \maketitle
+    \begin{titlepage}
+        \thispdfpagelabel{Portada}
+        \centering
+
+        \vspace*{1cm}
+
+        {\Huge\bfseries\sffamily{$\dagger$}\par}
+
+        \vspace{1.5cm}
+
+        {\Huge\bfseries\sffamily Cuaderno de Himnos\par}
+        \vspace{0.5cm}
+        {\Huge\bfseries\sffamily Tradicionales y Contemporáneos\par}
+
+        \vspace{2cm}
+
+        \begin{center}
+            \Large\itshape ``Cantad alegres a Dios, habitantes de toda la tierra.\\
+            Servid a Jehová con alegría;\\
+            Venid ante su presencia con regocijo.''\\
+            \vspace{0.3cm}
+            --- Salmos 100:1-2
+        \end{center}
+
+        \vspace{2cm}
+
+        {\Large\bfseries Compilado por:\par}
+        \vspace{0.5cm}
+        {\Large Ruslan López\par}
+
+        \vfill
+
+        {\large Última Revisión: \RevDate\par}
+
+        \vspace{1cm}
+
+    \end{titlepage}
+
+\hypersetup{pageanchor=true}
+
 %    \mainmatter
     \ifWordBk
     \twocolumn
@@ -2964,18 +2994,25 @@
     {} %pasaje
     {\href{https://open.spotify.com/intl-es/track/3A4pZLhpwaA5qww6r1Li33}{Escuchar}}
 
+        %1992
         \begin{SBOpGroup}
-            // De\Ch{G}{lan}te de tu trono
+            De\Ch{G}{lan}te de tu trono
+
             Se\Ch{Em}{ñor} yo quiero estar
+
             \Ch{C}{pa}ra contemplar
-            tu hermo\Ch{D}{su}ra y santidad //
+
+            tu hermo\Ch{D}{su}ra y santidad
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             Y de\Ch{G}{ci}\Ch{D}{rte}: Te \Ch{Em}{a}mo
-            Y decir\Ch{G}{te}: Te a\Ch{Am}{do}\Ch{D}{ro}
+
+            Y de\Ch{C}{cir}\Ch{G}{te}: Te a\Ch{Am}{do}\Ch{D}{ro}
+
             Y de\Ch{G}{cir}\Ch{D}{te}: Te \Ch{Em}{a}mo
-            Y que eres todo \Ch{D}{pa}ra \Ch{G}{mí}.
+
+            Y que \Ch{C}{e}res todo \Ch{D}{pa}ra \Ch{G}{mí}.
         \end{SBOpGroup}
 
         \ifChordBk
@@ -4801,6 +4838,52 @@
             \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
             \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
             \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Estoy Alegre}{D}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/2jbMpzd5ikmPdMNYDQVmfe}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{D}{es}toy alegre,
+
+            ¿\Ch{G}{Por} que estas alegre?
+
+            \Ch{D}{es}toy alegre,
+
+            \Ch{A}{cuén}tame por que.
+
+            \Ch{D}{es}toy alegre,
+
+            ¿\Ch{G}{Por} que estas alegre?
+
+            eso quiero \Ch{A7}{yo} sa\Ch{D}{ber}.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{G}{Voy} a contarte, \Ch{D}{vas} a contarme,
+
+%            B#          E
+            la razón de estar alegre así (\Ch{A7}{aleluya})
+
+            \Ch{D}{por}que Cristo un día me salvó
+
+            y \Ch{G}{con} poder me transformó,
+
+            \Ch{D}{y} por eso a\Ch{A7}{le}gre es\Ch{D}{toy}.
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -8824,6 +8907,78 @@
         \fi
     \end{song}
 
+    \begin{song}{Santo por siempre}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/7DYbHdGgjF3XN66TJ65Ujp}{Escuchar}} %2008
+
+        \FLineIdx{Claman Ángeles}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Mil} generaciones se \Ch{C}{pos}tran a ado\Ch{G}{rar}le
+
+            \Ch{Em}{Le} cantan al cor\Ch{D}{de}ro que ven\Ch{C}{ció}
+
+            \Ch{G}{Los} que nos precedieron y \Ch{C}{los} que en él cree\Ch{G}{rán}
+
+            \Ch{Em}{Le} cantarán a a\Ch{D}{quel} que ya ven\Ch{C}{ció}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{C}{Tu} nombre es más \Ch{(Em)}{al}to
+
+            \Ch{D}{tu} nombre es más grande
+
+            \Ch{Em}{Tu} nombre, \Ch{D}{so}bre todo \Ch{C}{es},
+
+            \Ch{C}{Sean} tronos, do\Ch{(Em)}{mi}nios
+
+            \Ch{D}{Po}deres, potestades,
+
+            Tu \Ch{Em}{nom}bre, \Ch{D}{so}bre \Ch{Am7}{to}do es
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{C}{Cla}man án\Ch{Em}{ge}les Saan\Ch{D}{to}, clama la crea\Ch{G/B}{ción} San\Ch{Em}{to}
+
+            \Ch{Am7}{E}xaltado \Ch{Dsus4}{Dios} Santo, \Ch{G}{San}to por siempre
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Si} te ha perdonado y \Ch{C}{tie}nes salva\Ch{G}{ción}
+
+            \Ch{Em}{Cán}tale al Cor\Ch{D}{de}ro que ven\Ch{C}{ció}
+
+            \Ch{G}{Si} te ha libertado, Su \Ch{C}{nom}bre ha puesto en \Ch{G}{ti}
+
+            \Ch{Em}{Cán}tale al cor\Ch{D}{de}ro que ven\Ch{C}{ció}, \Ch{Em}{Can}taremos \Ch{D}{siem}pre a\Ch{Am7}{mén}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{C}{Cla}man án\Ch{Em}{ge}les Saan\Ch{D}{to}, clama la crea\Ch{G/B}{ción} San\Ch{Em}{to}
+
+            \Ch{Am7}{E}xaltado \Ch{Dsus4}{Dios} Santo, \Ch{G}{San}to por siempre
+
+            Canta el pueblo al \Ch{C}{Rey} \Ch{Em}{San}\Ch{D}{to}, soberano es \Ch{G/B}{Él}, San\Ch{Em}{to}
+        \end{SBOpGroup}
+
+        \SBEndTag{Y por siempre \Ch{Am7}{es},   San\Ch{D}{to}, Santo por \Ch{G/D}{siem}pre}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\GBPiano\GB}{\qquad Sol} Mayor Bajo B \hfill\null\break
+            \upchord{\GDPiano\GD}{\qquad Sol} Mayor Bajo D \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{¡Santo! ¡Santo! ¡Santo!}{D}
     {} %copyright \SBPubDom
     {Regina Heber}
@@ -9982,6 +10137,61 @@
         \fi
     \end{song}
 
+    \begin{song}{Toma el  pandero}{Em}
+    {} %copyright \SBPubDom
+    {Restauración}
+    {Jeremías 31:3} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/7I44iQLWTTp1Lcw1O9tIiY}{Escuchar}}
+
+        \FLineIdx{Yo te he amado con amor eterno}
+        \FLineIdx{Cantare danzaré y me alegraré}
+
+        \begin{SBOpGroup}
+            \Ch{Em}{Yo} te he a\Ch{Am}{ma}do con amor eter\Ch{Em}{no}
+
+            Te \Ch{C}{he} acercado \Ch{Am}{con} bondad y a\Ch{B7}{mor}
+
+            Yo te \Ch{Am}{le}vanté oh \Ch{(B7)}{hi}ja de \Ch{Em}{Sión}
+
+            %C      D     B
+            Y \Ch{C}{le}vanta\Ch{Am}{da} se\Ch{B7}{rás}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{Em}{To}ma el pandero y ven \Ch{Am}{a} danzar
+
+            \Ch{B7}{To}ma el pandero y ven a go\Ch{Em}{zar}
+
+            \Ch{E}{Ven} y subamos ante \Ch{Am}{nues}tro Dios
+
+            \Ch{B7}{To}ma el pandero y ven \Ch{(Em)}{a} \Ch{(D)}{dan}\Ch{Em}{zar}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Cantaré, danzaré y \Ch{D}{me} alegraré
+
+            más y \Ch{C}{más} Cada \Ch{B7}{vez} yo te alabaré
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Em}{De}lante de tu trono yo me \Ch{D}{go}zaré
+
+            En \Ch{C}{tu} amor y tu gracia me \Ch{B7}{de}leitaré
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Tu Amor Por Mí}{D}
     {} %copyright \SBPubDom
     {Marcos Witt}
@@ -10780,6 +10990,86 @@
     \end{song}
 
     \ifChordBk
+
+\section{Pads Para Yamaha E-473}
+
+\textbf{Pad adoración 1}
+\vskip 25pt
+
+Touch res: Medium
+M. Voice: 002 GandPno
+M. Volume: 115
+M. Octave: 0
+M.Pan: R30
+M. Reverb: 100
+M. Chorus: 64
+M. Attack: 64
+M. Release: 64
+M. Cutoff: 64
+M. Reso: 64
+D. Voice: 661 WarmPad
+D. Volume: 100
+D. Octave: 0
+D. Pan: L30
+D. Reverb: 100
+D. Chorus: 0
+D. Attack: 64
+D. Release: 115
+D. Cutoff: 64
+D. Reso: 64
+\vskip 25pt
+
+\textbf{Brass Coritos}
+\vskip 25pt
+
+Touch res: Medium
+M. Voice: 002 GandPno
+M. Volume: 115
+M. Octave: 0
+M. Pan: R10
+M. Reverb: 28
+M. Chorus: 0
+M. Attack: 64
+M. Release: 64
+M. Cutoff: 64
+M. Reso: 64
+D. Voice: 133 OctBrass
+D. Volume: 100
+D. Octave: 1
+D. Pan: L10
+D. Reverb: 80
+D. Chorus: 0
+D. Attack: 64
+D. Release: 72
+D. Cutoff: 75
+D. Reso: 64
+\vskip 25pt
+
+\textbf{Acordeón coritos}
+\vskip 25pt
+
+Touch res: Medium
+M. Voice: 370 El.Grand
+M. Volume: 90
+M. Octave: 0
+M. Pan: C
+M. Reverb: 22
+M. Chorus: 0
+M. Attack: 64
+M. Release: 64
+M. Cutoff: 64
+M. Reso: 64
+D. Voice: 56 ReedOrgn
+D. Volume: 64
+D. Octave: 1
+D. Pan: C
+D. Reverb: 51
+D. Chorus: 38
+D. Attack: 61
+D. Release: 29
+D. Cutoff: 64
+D. Reso: 64
+
         \theendnotes
         \include{Acordes}
         \include{EstribilleroAdx}
@@ -10788,6 +11078,19 @@
 
     \include{EstribilleroTdx}
 \end{document}
+
+%%%
+% Turn on/off index-file generation.  Uncomment the \makeindex line to
+% turn index generation on;  comment it out to turn index generation
+% off.
+%%%
+\pdfbookmark[0]{Índice de primeras líneas y títulos}{primeraslineas}
+\makeTitleIndex         %% Title and First Line Index.
+\makeTitleContents      %% Table of Contents.
+\makeKeyIndex           %% Index of song by key.
+\pdfbookmark[0]{Índice por artista}{artista}
+\makeArtistIndex        %% Index of song by artist.
+\makeindex
 \bye
 
 %%%

@@ -39,6 +39,18 @@
 %\newcommand{\myTitleFont}{\Huge\myHugeSF}
 \newcommand{\mySubTitleFont}{\large\sf}
 
+
+%%%
+% Turn on/off index-file generation.  Uncomment the \makeindex line to
+% turn index generation on;  comment it out to turn index generation
+% off.
+%%%
+\makeTitleIndex         %% Title and First Line Index.
+\makeTitleContents      %% Table of Contents.
+\makeKeyIndex           %% Index of song by key.
+\makeArtistIndex        %% Index of song by artist.
+\makeindex
+
 \renewcommand{\notesname}{Notas}
 
 %%%
@@ -11381,17 +11393,6 @@ D. Reso: 64
 %    \pdfbookmark[0]{Índice de primeras líneas y títulos}{primeraslineas}
     \include{EstribilleroTdx}
 \end{document}
-
-%%%
-% Turn on/off index-file generation.  Uncomment the \makeindex line to
-% turn index generation on;  comment it out to turn index generation
-% off.
-%%%
-\makeTitleIndex         %% Title and First Line Index.
-\makeTitleContents      %% Table of Contents.
-\makeKeyIndex           %% Index of song by key.
-\makeArtistIndex        %% Index of song by artist.
-\makeindex
 \bye
 
 %%%

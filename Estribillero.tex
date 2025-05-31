@@ -36,7 +36,7 @@
 \renewcommand{\SBChorusTag}{Coro:}
 \renewcommand{\SBBridgeTag}{Puente:}
 \renewcommand{\SBEndTag}{Fin:}
-\newcommand{\myTitleFont}{\Huge\myHugeSF}
+%\newcommand{\myTitleFont}{\Huge\myHugeSF}
 \newcommand{\mySubTitleFont}{\large\sf}
 
 \renewcommand{\notesname}{Notas}
@@ -90,9 +90,12 @@
 
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
 \newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
+\newcommand{\AmCs}{\chord{t}{x,p4,p2,p2,p1,x}{Am/C$\#$}}
 \newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
-\newcommand{\AmsevenF}{\chord{t}{p1,n,p2,n,p1,x}{Am7/F}}
 \newcommand{\AmFs}{\chord{t}{p2,n,p2,p2,p1,x}{Am/F$\#$}}
+\newcommand{\AmG}{\chord{t}{p3,n,p2,p2,p1,x}{Am/G}}
+\newcommand{\AmGs}{\chord{t}{p4,n,p2,p2,p1,x}{Am/G$\#$}}
+\newcommand{\AmsevenF}{\chord{t}{p1,n,p2,n,p1,x}{Am7/F}}
 
 \newcommand{\As}{\chord{t}{p1,p1,p3,p3,p3,p1}{A$\#$}}
 \newcommand{\AsMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{A$\#$+7}}
@@ -206,6 +209,7 @@
 \newcommand{\GB}{\chord{t}{n,p2,n,n,p3,n}{G/B}}
 \newcommand{\GD}{\chord{t}{x,p2,p2,n,p3,p3}{G/D}} %verificar porque parece más ien G/E o G/A o Em7algo
 \newcommand{\GE}{\chord{t}{x,p2,p2,n,p3,p3}{G/E}}
+\newcommand{\GF}{\chord{t}{p1,p2,n,n,p3,p3}{G/F}}
 \newcommand{\GnineD}{\chord{t}{n,n,o,n,n,p1}{G9/D}}
 \newcommand{\Gm}{\chord{t}{f1p3,f3p5,f4p5,f1p3,f1p3,f1p3,}{Gm}}
 \newcommand{\Gmseven}{\chord{t}{f1p3,f3p5,f1p3,f1p3,f1p3,f1p3,}{Gm7}}
@@ -227,8 +231,11 @@
 \newcommand{\AMajPiano}{\keyboardf[Ao][Cso][Eo][Gso]}
 \newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
+\newcommand{\AmCsPiano}{\keyboardtwooctaves[Cso][Ao][Eo][Ct]}
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
-\newcommand{\AmFsPiano}{\keyboardf[Fo][Ao][Co][Eo]}
+\newcommand{\AmFsPiano}{\keyboardf[Fso][Ao][Co][Eo]}
+\newcommand{\AmGPiano}{\keyboardf[Go][Ao][Co][Eo]}
+\newcommand{\AmGsPiano}{\keyboardf[Gso][Ao][Co][Eo]}
 \newcommand{\AmsevenFPiano}{\keyboardf[Fo][Go][Ao][Co][Eo]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\ADPiano}{\keyboardtwooctaves[Do][Eo][Ao][Cst]}
@@ -336,6 +343,7 @@
 \newcommand{\GMajPiano}{\keyboardf[Do][Go][Bo][Fso]}
 \newcommand{\GBPiano}{\keyboardtwooctaves[Bo][Dt][Gt]}
 \newcommand{\GEPiano}{\keyboardtwooctaves[Eo][Go][Bo][Dt]}
+\newcommand{\GFPiano}{\keyboardf[Fo][Go][Bo][Do]}
 \newcommand{\GDPiano}{\keyboard[Do][Go][Bo]}
 \newcommand{\GnineDPiano}{\keyboard[Do][Fo][Go][Ao][Bo]}
 \newcommand{\GmPiano}{\keyboard[Do][Go][Aso]}
@@ -480,9 +488,9 @@
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
         \begin{SBOpGroup}
-            \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{C}risto\Ch{Bm}{~}, \Ch{Am}{yo} exalta\Ch{D}{r\'e}
+            \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{Cris}to~\Ch{Bm}{~}, \Ch{Am}{yo} exalta\Ch{D}{ré}
 
-            \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{C}risto\Ch{Bm}{~}, \Ch{Am}{yo} adora\Ch{D}{r\'e}
+            \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{C}risto~\Ch{Bm}{~}, \Ch{Am}{yo} adora\Ch{D}{ré}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
@@ -8279,19 +8287,19 @@
 
             \Ch{Dm}{y} anda\Ch{G}{ré} en tu \Ch{C}{luz},\Ch{Am/F}{~}\Ch{G}{~}
 
-            \Ch{Am}{da}me un corazón entregado a \Ch{Am}{Tí},
+            \Ch{Am}{da}me un \Ch{Am/G\#}{co}razón \Ch{Am/G}{en}tregado a \Ch{Am/F\#}{Tí},
 
-            pa\Ch{Dm}{ra} hon\Ch{Am/F}{rar}te oh \Ch{G}{Dios}
+            pa\Ch{Dm}{ra} \Ch{Em}{hon}\Ch{Am/F}{rar}te oh \Ch{G}{Dios}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            \Ch{Am/F}{Pu}rif\'icame, límpiame Se\Ch{Am}{ñor},
+            \Ch{Am/F}{Pu}rif\'ica\Ch{G/F}{me}, \Ch{G/E}{lím}piame Se\Ch{Am}{ñor},
 
-            y \Ch{Dm}{lí}brame \Ch{C}{de} lo que im\Ch{Dm}{pi}da el fluir
+            y \Ch{Dm}{lí}brame \Ch{C}{de} \Ch{Am/C\#}{lo} que im\Ch{Dm}{pi}da el flu\Ch{G}{ir}
 
-            \Ch{Am/F}{Pu}rif\'icame, límpiame Se\Ch{Am}{ñor},
+            \Ch{Am/F}{Pu}rif\'ica\Ch{G/F}{me}, \Ch{G/E}{lím}piame Se\Ch{Am}{ñor},
 
-            y \Ch{Dm}{lí}brame \Ch{C}{de} lo que im\Ch{Dm}{pi}da el fluir
+            y \Ch{Dm}{lí}brame \Ch{C}{de} \Ch{Am/C\#}{lo} que im\Ch{Dm}{pi}da el flu\Ch{G}{ir}
 
             de tu a\Ch{C}{mor}.
         \end{SBChorus}
@@ -8302,7 +8310,15 @@
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
             \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
-            \upchord{\AmFPiano\AmF}{\qquad La} Menor bajo F \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AmFPiano\AmF}{\qquad La} Menor bajo F \hfill
+            \upchord{\AmGsPiano\AmGs}{\qquad La} Menor bajo G\# \hfill\null\break
+            \upchord{\AmGPiano\AmG}{\qquad La} Menor bajo G \hfill
+            \upchord{\AmFsPiano\AmFs}{\qquad La} Menor bajo F\# \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\GFPiano\GF}{\qquad Sol} Mayor bajo F \hfill\null\break
+            \upchord{\GEPiano\GE}{\qquad Sol} Mayor bajo E \hfill\null\break
+            \upchord{\AmCsPiano\AmCs}{\qquad La} Menor bajo C\# \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -8544,6 +8560,7 @@
             \upchord{\EmsevenPiano\Emseventr}{\qquad Mi} Menor S\'eptima \hfill
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
             \upchord{\AGPiano\AG}{\qquad La} Mayor Bajo G \hfill
+            \upchord{\GEPiano\GE}{\qquad Sol} Mayor bajo E \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -9364,7 +9381,9 @@
             \Ch{D}{Al} altar de bronce;
 
             Señor tu \Ch{Em}{ros}tro quiero \Ch{D}{ver}.
+        \end{SBOpGroup}
 
+        \begin{SBOpGroup}
             \Ch{Em}{Pa}saré la muchedumbre
 
             Donde el \Ch{C+7}{sa}cerdote canta
@@ -9386,7 +9405,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
             \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
@@ -10913,6 +10932,41 @@
         \fi
     \end{song}
 
+    \begin{song}{Ven y deléitate}{D}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {Salmos 37:4} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/5xj5no7AwtNMeBRY5bsVY9}{Escuchar}} %\NotCCLIed
+        %1991
+
+        \FLineIdx{oh ven}
+
+        \begin{SBOpGroup}
+            \Ch{D}{Oh}, oh, oh ven. \Ch{G}{Ven} y deléitate \Ch{D}{en} el Se\Ch{A7}{ñor}
+
+
+            Y \Ch{D}{Él} te concede\Ch{G}{rá} las peti\Ch{D}{cio}nes de \Ch{A7}{tu} cora\Ch{D}{zón}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{Bm}{Con}fía sólo en \Ch{F\#m}{Él} \Ch{G}{y} Él te da\Ch{D}{rá}
+
+            Es\Ch{Bm}{pe}ra sólo en \Ch{F\#m}{Él} \Ch{E}{y} Él ha\Ch{A7}{rá}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\FsmPiano\Fsm}{Fa sostenido} Menor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Vencedor}{D}
     {} %copyright \SBPubDom
     {}
@@ -11319,10 +11373,12 @@ D. Reso: 64
 
         \theendnotes
         \include{Acordes}
+%        \pdfbookmark[0]{Índice por artista}{artista}
         \include{EstribilleroAdx}
         \include{EstribilleroKdx}
     \fi
 
+%    \pdfbookmark[0]{Índice de primeras líneas y títulos}{primeraslineas}
     \include{EstribilleroTdx}
 \end{document}
 
@@ -11331,11 +11387,9 @@ D. Reso: 64
 % turn index generation on;  comment it out to turn index generation
 % off.
 %%%
-\pdfbookmark[0]{Índice de primeras líneas y títulos}{primeraslineas}
 \makeTitleIndex         %% Title and First Line Index.
 \makeTitleContents      %% Table of Contents.
 \makeKeyIndex           %% Index of song by key.
-\pdfbookmark[0]{Índice por artista}{artista}
 \makeArtistIndex        %% Index of song by artist.
 \makeindex
 \bye

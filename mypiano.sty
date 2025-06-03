@@ -10,7 +10,7 @@
 %			   Ct, Cst, Dt, Dst, Et, Ft, Fst, Gt, Gst, At, Ast and Bt
 %
 % CREATED BY : Émile Daneault
-% VERSION    : 1.0
+% VERSION    : 1.1
 % COMMENT    : This package is very limited. You have no control over the size
 %              or the color of the keyboard/highlighting. I'm uploading this to
 %              CTAN because I though someone might need a basic tool like this
@@ -38,6 +38,20 @@
 \usepackage{xargs}
 
 \definecolor{orange}{RGB}{255,127,0}
+
+%% defining switch
+
+\newboolean{default}
+\newcommand{\case}{}
+\newcommand{\default}{}
+
+\newenvironment{switch}[1]{%
+    \setboolean{default}{true}
+    \renewcommand{\case}[2]{\ifthenelse{\equal{#1}{##1}}{%
+        \setboolean{default}{false}##2}{}}%
+    \renewcommand{\default}[1]{\ifthenelse{\boolean{default}}{##1}{}}
+}{}
+%end of switch definition
 
 \newcommandx*{\keyboardtwooctaves}[7][1=0, 2=0, 3=0, 4=0, 5=0, 6=0, 7=0]{
 
@@ -72,180 +86,196 @@
 %Rond de note
 {\color{orange}
 
-\ifthenelse{\equal{#1}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#1}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#1}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#1}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#1}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#1}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#1}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#1}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#1}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#1}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#1}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#1}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#1}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#1}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#1}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#1}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#1}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#1}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#1}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#1}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#1}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#1}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#1}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#1}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#2}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#2}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#2}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#2}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#2}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#2}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#2}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#2}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#2}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#2}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#2}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#2}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#2}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#2}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#2}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#2}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#2}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#2}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#2}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#2}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#2}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#2}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#2}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#2}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#3}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#3}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#3}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#3}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#3}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#3}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#3}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#3}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#3}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#3}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#3}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#3}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#3}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#3}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#3}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#3}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#3}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#3}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#3}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#3}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#3}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#3}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#3}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#3}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#4}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#4}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#4}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#4}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#4}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#4}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#4}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#4}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#4}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#4}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#4}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#4}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#4}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#4}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#4}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#4}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#4}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#4}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#4}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#4}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#4}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#4}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#4}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#4}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#5}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#5}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#5}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#5}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#5}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#5}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#5}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#5}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#5}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#5}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#5}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#5}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#5}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#5}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#5}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#5}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#5}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#5}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#5}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#5}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#5}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#5}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#5}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#5}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#6}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#6}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#6}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#6}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#6}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#6}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#6}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#6}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#6}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#6}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#6}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#6}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#6}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#6}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#6}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#6}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#6}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#6}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#6}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#6}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#6}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#6}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#6}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#6}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#7}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#7}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#7}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#7}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#7}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#7}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#7}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#7}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#7}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#7}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#7}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#7}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#7}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#7}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#7}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#7}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#7}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#7}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#7}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#7}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#7}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#7}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#7}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#7}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+\begin{switch}{#1}
+    \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+    \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+    \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+    \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+    \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+    \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+\end{switch}
+
+ \begin{switch}{#2}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#3}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#4}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#5}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+
+ \begin{switch}{#6}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#7}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
 }
 
 
@@ -280,187 +310,199 @@
 %Rond de note
 {\color{orange}
 
-\ifthenelse{\equal{#1}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#1}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#1}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#1}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#1}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#1}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#1}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#1}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#1}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#1}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#1}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#1}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#1}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#1}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#1}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#1}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#1}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#1}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#1}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#1}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#1}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#1}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#1}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#1}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#2}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#2}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#2}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#2}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#2}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#2}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#2}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#2}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#2}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#2}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#2}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#2}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#2}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#2}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#2}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#2}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#2}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#2}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#2}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#2}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#2}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#2}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#2}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#2}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#3}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#3}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#3}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#3}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#3}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#3}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#3}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#3}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#3}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#3}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#3}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#3}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#3}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#3}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#3}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#3}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#3}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#3}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#3}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#3}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#3}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#3}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#3}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#3}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#4}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#4}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#4}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#4}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#4}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#4}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#4}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#4}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#4}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#4}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#4}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#4}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#4}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#4}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#4}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#4}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#4}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#4}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#4}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#4}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#4}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#4}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#4}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#4}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#5}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#5}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#5}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#5}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#5}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#5}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#5}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#5}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#5}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#5}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#5}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#5}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#5}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#5}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#5}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#5}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#5}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#5}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#5}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#5}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#5}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#5}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#5}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#5}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#6}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#6}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#6}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#6}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#6}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#6}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#6}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#6}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#6}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#6}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#6}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#6}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#6}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#6}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#6}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#6}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#6}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#6}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#6}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#6}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#6}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#6}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#6}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#6}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
-                       
-\ifthenelse{\equal{#7}{Co}}{\put(0.5,0.5){\circle*{0.5}}}{
- \ifthenelse{\equal{#7}{Do}}{\put(1.5,0.5){\circle*{0.5}}}{
-  \ifthenelse{\equal{#7}{Eo}}{\put(2.5,0.5){\circle*{0.5}}}{
-   \ifthenelse{\equal{#7}{Fo}}{\put(3.5,0.5){\circle*{0.5}}}{
-    \ifthenelse{\equal{#7}{Go}}{\put(4.5,0.5){\circle*{0.5}}}{
-     \ifthenelse{\equal{#7}{Ao}}{\put(5.5,0.5){\circle*{0.5}}}{
-      \ifthenelse{\equal{#7}{Bo}}{\put(6.5,0.5){\circle*{0.5}}}{
-       \ifthenelse{\equal{#7}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{ 
-        \ifthenelse{\equal{#7}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-         \ifthenelse{\equal{#7}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-          \ifthenelse{\equal{#7}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-           \ifthenelse{\equal{#7}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-            \ifthenelse{\equal{#7}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-             \ifthenelse{\equal{#7}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-              \ifthenelse{\equal{#7}{Cso}}{\put(1,1.5){\circle*{0.5}}}{
-               \ifthenelse{\equal{#7}{Dso}}{\put(2,1.5){\circle*{0.5}}}{
-                \ifthenelse{\equal{#7}{Fso}}{\put(4,1.5){\circle*{0.5}}}{
-                 \ifthenelse{\equal{#7}{Gso}}{\put(5,1.5){\circle*{0.5}}}{
-                  \ifthenelse{\equal{#7}{Aso}}{\put(6,1.5){\circle*{0.5}}}{
-                   \ifthenelse{\equal{#7}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-                    \ifthenelse{\equal{#7}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-                     \ifthenelse{\equal{#7}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-                      \ifthenelse{\equal{#7}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-                       \ifthenelse{\equal{#7}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#1}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#2}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#3}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#4}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#5}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#6}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#7}
+  \case{Co}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Fo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Cso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Fso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(11,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
 }
 
 \makeatother
 \end{picture}
 }
-
-
 
 
 \newcommandx*{\keyboardf}[7][1=0, 2=0, 3=0, 4=0, 5=0, 6=0, 7=0]{
@@ -490,180 +532,159 @@
 %Rond de note
 {\color{orange}
 
-\ifthenelse{\equal{#1}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Ft}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Gt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{At}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Bt}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Ct}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Dt}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Et}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Fso}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Gso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Aso}}{\put(3,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Cso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Dso}}{\put(6,1.5){\circle*{0.5}}}{ %aqui
-\ifthenelse{\equal{#1}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#1}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#1}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 
-\ifthenelse{\equal{#2}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Fso}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Gso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Aso}}{\put(3,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Cso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Dso}}{\put(6,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#2}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#2}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 
-\ifthenelse{\equal{#3}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Fso}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Gso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Aso}}{\put(3,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Cso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Dso}}{\put(6,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#3}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#3}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 
-\ifthenelse{\equal{#4}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Fso}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Gso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Aso}}{\put(3,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Cso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Dso}}{\put(6,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#4}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#4}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 
-\ifthenelse{\equal{#5}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Fso}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Gso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Aso}}{\put(3,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Cso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Dso}}{\put(6,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#5}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#5}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 
-\ifthenelse{\equal{#6}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Gt}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{At}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Bt}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Fso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Gso}}{\put(4,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Aso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Cso}}{\put(6,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Dso}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Cst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Dst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Fst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#6}{Gst}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#6}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 
-\ifthenelse{\equal{#7}{Fo}}{\put(0.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Go}}{\put(1.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Ao}}{\put(2.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Bo}}{\put(3.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Co}}{\put(4.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Do}}{\put(5.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Eo}}{\put(6.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Ct}}{\put(7.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Dt}}{\put(8.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Et}}{\put(9.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Ft}}{\put(10.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Gt}}{\put(11.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{At}}{\put(12.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Bt}}{\put(13.5,0.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Fso}}{\put(1,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Gso}}{\put(2,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Aso}}{\put(4,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Cso}}{\put(5,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Dso}}{\put(6,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Cst}}{\put(8,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Dst}}{\put(9,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Fst}}{\put(11,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Gst}}{\put(12,1.5){\circle*{0.5}}}{
-\ifthenelse{\equal{#7}{Ast}}{\put(13,1.5){\circle*{0.5}}}}{}}}}}}}}}}}}}}}}}}}}}}}
+ \begin{switch}{#7}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+ \end{switch}
 }
 
 \makeatother

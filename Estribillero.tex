@@ -98,6 +98,7 @@
 \newcommand{\AEg}{\chord{t}{n,n,p2,p2,p2,n}{A/E}}
 \newcommand{\AG}{\chord{t}{p3,n,p2,n,p2,n}{A/G}}
 \newcommand{\AAs}{\chord{t}{x,p1,p2,p2,p2,n}{A/Bb}}
+\newcommand{\AsevenCs}{\chord{t}{x,p3,p2,n,p2,n}{A7/C\#}}
 \newcommand{\Atwo}{\chord{t}{x,n,p2,p2,n,n}{A2}}
 
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
@@ -117,6 +118,9 @@
 \newcommand{\Bflatseven}{\chord{t}{p1,p1,p3,p1,p3,p1}{Bb7}}
 \newcommand{\Bflatm}{\chord{t}{x,p1,p3,p3,p2,p1}{Bbm}}
 \newcommand{\Bflatmseven}{\chord{t}{x,p1,p3,p1,p2,p1}{Bbm7}}
+\newcommand{\BflatMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{Bb+7}}
+\newcommand{\BflatC}{\chord{t}{x,p3,n,p3,p1,p1}{Bb/C}}
+\newcommand{\BflatD}{\chord{t}{p1,p1,p3,p3,p3,p1}{Bb/D}}
 \newcommand{\BflatG}{\chord{t}{p3,p1,n,n,p3,p3}{Bb/G}}
 
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
@@ -133,6 +137,7 @@
 \newcommand{\BmajsevenG}{\chord{t}{p3,x,p1,p3,n,p2}{B+7/G}}
 
 \newcommand{\C}{\chord{t}{x,p3,n,p2,p1,n}{C}}
+\newcommand{\Csus}{\chord{t}{x,p3,p3,n,p1,p1}{Csus4}}
 \newcommand{\Cseven}{\chord{t}{x,p3,p3,p2,p1,n}{C7}}
 \newcommand{\Cm}{\chord{t}{x,p3,p1,n,p1,p3}{Cm}}
 \newcommand{\Cmseven}{\chord{2}{p1,p1,p3,p1,p2,p1}{Cm7}}
@@ -178,6 +183,7 @@
 \newcommand{\Dsm}{\chord{t}{x,x,p1,p3,p4,p2}{D\#m}}
 \newcommand{\Dsmseven}{\chord{t}{x,x,p1,p3,p2,p2}{D\#m7}}
 \newcommand{\Eflat}{\chord{t}{n,n,p1,p3,p4,p3}{E$\flat$}}
+\newcommand{\EflatMaj}{\chord{t}{n,n,p1,p3,p4,p3}{E$\flat$+7}}
 \newcommand{\EflatF}{\chord{t}{p1,p1,p1,p3,p4,p3}{E$\flat$/F}}
 \newcommand{\Eflatseven}{\chord{t}{n,n,p1,p3,p2,p3}{E$\flat$7}}
 
@@ -200,6 +206,8 @@
 \newcommand{\EGs}{\chord{t}{p4,o,p2,p1,n,n}{E/G\#}}
 
 \newcommand{\F}{\chord{t}{p1,p3,p3,p2,p1,p1}{F}}
+\newcommand{\FA}{\chord{t}{x,o,p3,p2,p1,p1}{F/A}}
+\newcommand{\FtwoA}{\chord{t}{x,o,p3,n,p1,p1}{F2/A}}
 \newcommand{\FMaj}{\chord{t}{x,x,p3,p2,p1,n}{FMaj7}}
 \newcommand{\Fseven}{\chord{t}{p1,p3,p1,p2,p1,p1}{F7}}
 \newcommand{\Fm}{\chord{t}{p1,p3,p3,p1,p1,p1}{Fm}}
@@ -248,6 +256,7 @@
 \newcommand{\AmFsPiano}{\keyboardf[Fso][Ao][Co][Eo]}
 \newcommand{\AmGPiano}{\keyboardf[Go][Ao][Co][Eo]}
 \newcommand{\AmGsPiano}{\keyboardf[Gso][Ao][Co][Eo]}
+\newcommand{\AsevenCsPiano}{\keyboard[Cso][Eo][Ao][Go]}
 \newcommand{\AmsevenFPiano}{\keyboardf[Fo][Go][Ao][Co][Eo]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\ADPiano}{\keyboardtwooctaves[Do][Eo][Ao][Cst]}
@@ -263,6 +272,9 @@
 \newcommand{\BflatsevenPiano}{\keyboard[Do][Fo][Aso][Gso]}
 \newcommand{\BflatmPiano}{\keyboard[Cso][Fo][Aso]}
 \newcommand{\BflatmsevenPiano}{\keyboard[Cso][Fo][Aso][Gso]}
+\newcommand{\BflatMajPiano}{\keyboard[Do][Fo][Ao][Aso]}
+\newcommand{\BflatCPiano}{\keyboard[Co][Do][Fo][Aso]}
+\newcommand{\BflatDPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\BflatGPiano}{\keyboardf[Go][Aso][Do][Fo]}
 
 \newcommand{\BPiano}{\keyboard[Dso][Fso][Bo]}
@@ -276,6 +288,7 @@
 \newcommand{\BmajsevenGPiano}{\keyboardf[Go][Bo][Dso][Fso]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
+\newcommand{\CsusPiano}{\keyboard[Co][Fo][Go]}
 \newcommand{\CDPiano}{\keyboardtwooctaves[Do][Eo][Go][Ct]}
 \newcommand{\CEPiano}{\keyboardtwooctaves[Eo][Go][Ct]}
 \newcommand{\CGPiano}{\keyboardf[Go][Co][Eo]}
@@ -319,6 +332,7 @@
 \newcommand{\DsmPiano}{\keyboard[Dso][Fso][Aso]}
 \newcommand{\DsmsevenPiano}{\keyboard[Dso][Fso][Aso][Cso]}
 \newcommand{\EflatPiano}{\keyboard[Dso][Go][Aso]}
+\newcommand{\EflatMajPiano}{\keyboard[Dso][Go][Aso][Do]}
 \newcommand{\EflatFPiano}{\keyboardf[Fo][Go][Aso][Dso]}
 \newcommand{\EflatsevenPiano}{\keyboard[Dso][Go][Aso][Cso]}
 
@@ -338,6 +352,8 @@
 
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
+\newcommand{\FAPiano}{\keyboardf[Ao][Co][Ft]}
+\newcommand{\FtwoAPiano}{\keyboardtwooctaves[Ao][Ct][Ft][Gt]}
 \newcommand{\FsusPiano}{\keyboardf[Aso][Co][Fo]}
 \newcommand{\FMajPiano}{\keyboardf[Co][Fo][Ao][Eo]}
 \newcommand{\FmPiano}{\keyboardf[Fo][Aso][Co]}
@@ -2480,7 +2496,7 @@
     \begin{song}{Conozco a un hombre de poder}{Bb}
     {} %copyright \SBPubDom
     {}
-    {} %pasaje
+    {Lucas 24:19} %pasaje
     {\href{https://open.spotify.com/intl-es/track/6eS6MBxWUEnRTE6lHJZMZ8}{Escuchar}} %\NotCCLIed
 
         \begin{SBOpGroup}
@@ -4651,12 +4667,14 @@
             \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
             \upchord{\CEPiano\CE}{Do} Mayor Bajo E \hfill\null\break
-            \upchord{\DmsevenPiano\Dmseven}{\qquad Re} menor s\'eptima \hfill
-            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill\null\break
-            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
-            \upchord{\CPiano\C}{\qquad C} Mayor \hfill\null\break
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
-            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
+            \upchord{\FAPiano\FA}{Fa} Mayor bajo A \hfill
+            \upchord{\DmsevenPiano\Dmseven}{\qquad Re} menor s\'eptima \hfill\null\break
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\CPiano\C}{\qquad C} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill
+            \upchord{\BflatCPiano\BflatC}{Si bemol} Mayor bajo C \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4866,16 +4884,18 @@
         \end{SBChorus}
         \SBBridge{DDFFG \hfill\null\break DDCCB}
 
-        \SBEnd{ERES SE\Ch{Bb}{ÑOR}\Ch{C}{~}\Ch{D}{~}\Ch{E}{~}\Ch{G}{~}\Ch{C}{~} eres \Ch{D}{Fiel}}
+        \SBEnd{eres Se\Ch{Bb}{ñor}\Ch{C}{~}\Ch{D}{~}\Ch{E}{~}\Ch{G}{~}\Ch{C}{~} eres \Ch{D}{Fiel}}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
-            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\ADPiano\AD}{\qquad La} Mayor con bajo D \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
+            \upchord{\FsPiano\Fs}{\qquad Fa sostenido} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5081,7 +5101,7 @@
 
             tu \Ch{C}{siem}pre has sido \Ch{Am}{fiel} me has soste\Ch{D}{ni}do
         \end{SBOpGroup}
-
+        \vskip 20pt
         \begin{SBOpGroup}
             Y es\Ch{G}{pe}raré, paciente\Ch{D}{men}te
 
@@ -5104,12 +5124,12 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
-            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5231,7 +5251,7 @@
 
             Y yo le alaba\Ch{E}{ré}
 
-            Y yo le alaba\Ch{ré}
+            Y yo le alaba\Ch{B7}{ré}
 
             Di\Ch{A}{cien}do glo\Ch{B7}{ria} a \Ch{E}{Dios}
         \end{SBChorus}
@@ -5399,7 +5419,7 @@
 
             Y con \Ch{G}{dan}za daremos \Ch{D}{gra}cias
         \end{SBOpGroup}
-
+        \vskip 20pt
         \begin{SBOpGroup}
             \Ch{D}{Tu} Gloria enseña a gritar\endnote{La biblia no menciona que la gloria de Dios enseñe a gritar}
 
@@ -5407,7 +5427,7 @@
 
             Y con \Ch{G}{gri}tos te damos la \Ch{D}{glo}ria
         \end{SBOpGroup}
-
+        \vskip 20pt
         \begin{SBOpGroup}
             Es el \Ch{Em}{des}bordar
 
@@ -5434,7 +5454,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
@@ -7758,7 +7778,65 @@
         \fi
     \end{song}
 
-% MiSerAlabaalSeñor
+    \begin{song}{Mi ser alaba al Señor}{F}
+    {} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3DeVx6gIrm1EbxmsoKy79W}{Escuchar}}
+
+        \begin{SBOpGroup}
+            \Ch{F}{Mi} \Ch{F/A}{ser} a\Ch{C}{la}\Ch{C/E}{ba} al Se\Ch{F}{ñor}~\Ch{C/E}{~}~\Ch{Bb/D}{~}
+
+            y se \Ch{Bb}{go}za mi es\Ch{Dm7}{pí}ritu \Ch{C}{Je}su\Ch{Gm}{cris}\Ch{F}{to}
+
+            \Ch{F}{Mi} \Ch{F/A}{ser} a\Ch{C}{la}\Ch{C/E}{ba} al Se\Ch{F}{ñor}~\Ch{C/E}{~}~\Ch{Bb/D}{~}
+
+            y se \Ch{Bb}{go}za mi es\Ch{Dm7}{pí}ritu en \Ch{Eb}{Dios}~\Ch{Csus4}{~}~\Ch{C}{~}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBChorus}
+            Pues sus \Ch{Bb+7}{o}\Ch{F2/A}{bras} \Ch{Dm7}{son}
+
+            \Ch{Gm7}{po}de\Ch{C9}{ro}\Ch{F}{sas}
+
+            Con Su Es\Ch{Bb+7}{pí}\Ch{F2/A}{ri}\Ch{Dm7}{tu}
+
+            \Ch{Gm7}{Él} me \Ch{C9}{gui}a\Ch{F}{rá}
+
+            \Ch{Bb+7}{Bon}dadoso ha \Ch{F2/A}{si}do \Ch{A7sus4}{mi} \Ch{A7/C\#}{Se}\Ch{Dm}{ñor}
+
+            Gran\Ch{Gm7}{de} es \Ch{Am7}{el} Se\Ch{Dm}{ñor}
+
+            \Ch{Eb+7}{Gran}de es \Ch{Bb/C}{el} Se\Ch{F}{ñor}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
+            \upchord{\FAPiano\FA}{Fa} Mayor bajo A \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\CEPiano\CE}{\qquad Do} Mayor Bajo E  \hfill\null\break
+            \upchord{\BflatDPiano\BflatD}{\qquad Si bemol} Mayor \hfill
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\DmsevenPiano\Dmseven}{\qquad Re} menor s\'eptima \hfill\null\break
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill
+            \upchord{\CsusPiano\Csus}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\BflatMajPiano\BflatMaj}{Si bemol}+7 \hfill
+            \upchord{\FtwoAPiano\FtwoA}{\qquad Fa}+2 Mayor bajo A \hfill\null\break
+            \upchord{\GmsevenPiano\Gmseven}{Sol} Menor S\'eptima \hfill
+            \upchord{\CninePiano\Cnine}{\qquad Do} Novena \hfill\null\break
+            \upchord{\AsevenPiano\Aseven}{La} Mayor S\'eptima \hfill
+            \upchord{\AsevenCsPiano\AsevenCs}{La} Mayor S\'eptima bajo C\# \hfill\null\break
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\EflatMajPiano\EflatMaj}{\qquad Mi} bemol+7 \hfill
+            \upchord{\BflatCPiano\BflatC}{Si bemol} Mayor bajo C \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
 %MiUniverso
 
     \begin{song}{México Vamos a Cambiar}{G}
@@ -8213,9 +8291,6 @@
         \end{SBOpGroup}
         \fi
     \end{song}
-
-
-%NoMerecíaTantoAmor
 
     \begin{song}{Pan de Vida}{G}
     {} %copyright \SBPubDom
@@ -11846,7 +11921,7 @@ D. Cutoff: 64
 D. Reso: 64
 \vskip 25pt
 
-\textbf{Syno piano}
+\textbf{Dyno piano}
 \vskip 25pt
 
 

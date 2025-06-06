@@ -23,7 +23,7 @@
 %\usepackage[wordbk]{songbook}                 %% Words Only edition.
 %\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
 
-
+\newcommand\themarker[1]{\pdfbookmark[1]{#1}{\pdfmdfivesum{#1}}}
 % genera acordes de guitarra
 \newif\ifguitarra
 
@@ -506,6 +506,8 @@
 %%%
 % Songbook begins.
 %%%
+    \pdfbookmark[0]{Piezas~musicales}{piezas}
+    \themarker{A Cristo solo a Cristo}
     \begin{song}{A Cristo solo a Cristo}{G}
     {Proyecto AA} %copyright \SBPubDom
     {Marcos Witt}
@@ -547,6 +549,7 @@
         \fi
     \end{song}
 
+    \themarker{A Nuestro Padre Dios}
     \begin{song}{A Nuestro Padre Dios}{F}
     {} %copyright \SBPubDom
     {An\'onimo en Thesaurus Musicus 1744}
@@ -635,6 +638,7 @@
         \fi
     \end{song}
 
+    \themarker{Al estar aquí}
     \begin{song}{Al estar aquí}{A}
     {} %copyright \SBPubDom
     {Marcos Witt}
@@ -697,6 +701,7 @@
 
     \end{song}
 
+    \themarker{Al estar aquí - Danilo Montero}
     \begin{song}{Al estar aquí}{A}
     {} %copyright \SBPubDom
     {Danilo Montero}
@@ -763,6 +768,7 @@
 
     \end{song}
 
+    \themarker{Abba Padre}
     \begin{song}{Abba Padre}{D}
     {} %copyright \SBPubDom
     {Marco Barrientos}
@@ -826,6 +832,7 @@
 
     \end{song}
 
+    \themarker{Admirable}
     \begin{song}{Admirable}{Dm7}
     {} %copyright \SBPubDom
     {Danilo Montero}
@@ -863,6 +870,7 @@
         \fi
     \end{song}
 
+    \themarker{Aceite fresco}
     \begin{song}{Aceite fresco}{C\#m}
     {} %copyright \SBPubDom
     {New Wine}
@@ -917,6 +925,7 @@
         \fi
     \end{song}
 
+    \themarker{Adonai}
     \begin{song}{Adonai}{Em}
     {} %copyright \SBPubDom
     {Marcos Witt}
@@ -956,6 +965,7 @@
         \fi
     \end{song}
 
+    \themarker{Adoramos por siempre al Creador}
     \begin{song}{Adoramos por siempre al Creador}{C}
     {\SBPubDom} %copyright \SBPubDom
     {}
@@ -1006,6 +1016,7 @@
         \fi
     \end{song}
 
+    \themarker{Agnus Dei}
     \begin{song}{Agnus Dei}{A}
     {\SBPubDom} %copyright \SBPubDom
     {}
@@ -2763,6 +2774,41 @@
         \fi
     \end{song}
 
+    \begin{song}{Cristo rompe las cadenas}{E}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/5skmp0I9YdDMzQqhWQhf2C}{Escuchar}} %\NotCCLIed
+
+        \begin{SBChorus}
+            Cristo \Ch{E}{rom}pe las ca\Ch{F\#m}{de}nas
+
+            Cristo \Ch{B7}{rom}pe las ca\Ch{E}{de}nas del pe\Ch{B7}{ca}do
+
+            Cristo \Ch{E7}{rom}pe las ca\Ch{A}{de}nas y nos \Ch{B7}{da} su liber\Ch{E}{tad}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            ¿\Ch{E}{Có}mo es posible yo vivir sin mi Je\Ch{A}{sús},
+
+            si el funda\Ch{B7}{men}to de mi vida eres \Ch{E}{Tú}?
+
+            ¡Tú me li\Ch{E7}{bras}te del pecado y de la \Ch{A}{muer}te!
+
+            ¿Cómo es po\Ch{B7}{si}ble yo vivir sin mi Je\Ch{E}{sús}?
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Cristo tú me has amado}{G}
     {} %copyright \SBPubDom
     {Ingrid Rosario}
@@ -3734,6 +3780,100 @@
             \upchord{\DPiano\D}{Re} Mayor \hfill
             \upchord{\GsevenPiano\Gseven}{Sol} Mayor S\'eptima \hfill\null\break
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Dios Poderoso}{Gm}
+    {} %copyright \SBPubDom
+    {La IBI}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/46yyc0SDK2SN2V64Vj1ItY}{Escuchar}}
+
+        \SBIntro{Gm | Bb | Dm | F}
+
+        \SBMargNote{Piano:\break Bb AG G AF\#5 Bb C5A}
+
+        \begin{SBOpGroup}
+            ¿\Ch{Gm}{Quién} sino el Señor las estrellas \Ch{Bb}{creó}
+
+            Y su luz limitó?
+
+            ¿\Ch{Gm}{Quién} sino el Señor, sol y luna for\Ch{Bb}{mó}
+
+            Movimiento les dio?
+
+            ¿\Ch{F}{Quién} sino el Señor, hace la \Ch{Cm7}{llu}via venir
+
+
+            Truenos rugir?
+
+            \Ch{F}{Tus} obras grandes \Ch{Cm7}{son}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Dios Pode\Ch{Eb}{ro}so
+
+            Tú go\Ch{Bb}{bier}nas la crea\Ch{F}{ción}
+
+            Con Tu Pa\Ch{Gm}{la}bra, Se\Ch{Eb}{ñor}
+
+            Te e\Ch{Bb}{xal}ta\Ch{Dm}{re}mos\Ch{F}{~}
+
+            Dios Pode\Ch{Eb}{ro}so
+
+            De Ti \Ch{Bb}{can}ta la crea\Ch{F}{ción}
+
+            Llenas \Ch{Gm}{to}do Tú, Se\Ch{Eb}{ñor}
+
+            Te e\Ch{Bb}{xal}ta\Ch{Dm}{re}mos
+
+            Por \Ch{F}{siem}pre y siempre, oh Dios.
+        \end{SBChorus}
+
+        \SBBridge{Gm | Bb | Dm | F}
+
+        \begin{SBOpGroup}
+            ¿\Ch{Gm}{Quién} sino el Señor ha soñado en el \Ch{Bb}{plan}
+            Para al hombre salvar?
+
+            ¿\Ch{Gm}{Quién} sino el Señor limpiará al peca\Ch{Bb}{dor}
+
+
+            Con Su sangre y amor?
+
+            ¿\Ch{F}{Quién} sino el Señor puede dar \Ch{Cm7}{vi}da y salvar
+
+            Por una cruz?
+
+            \Ch{F}{Tus} planes grandes \Ch{Cm7}{son}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \SBBridge{Gm | Bb | Dm | F}
+
+        \begin{SBOpGroup}
+            \Ch{Eb}{To}das las \Ch{Gm}{co}sas
+
+            \Ch{F}{Vie}nen de \Ch{Bb}{Ti} y por \Ch{Eb}{Ti}
+
+            Oh \Ch{Gm}{gran} Yo \Ch{F}{Soy}
+
+            \Ch{Eb}{To}do es Tu\Ch{Gm}{yo}
+
+            \Ch{F}{Y} para \Ch{Bb}{Ti}, oh Se\Ch{Eb}{ñor}
+
+            Oh \Ch{Gm}{gran} Yo \Ch{F}{Soy}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\CmsevenPiano\Cmseven}{\qquad Do} Menor s\'eptima \hfill
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6117,6 +6257,67 @@
         \fi
     \end{song}
 
+    \begin{song}{Hay libertad}{G}
+    {} %copyright \SBPubDom
+    {La IBI}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/3twlf8a1oiZ8WZT8Hdkc0X}{Escuchar}}
+
+        \SBIntro{D |G | Bm |A}
+
+        \SBMargNote{Piano:\break DDA AAB DDA BB F\# E DDA AAB E}
+
+        \begin{SBOpGroup}
+            Las ca\Ch{G}{de}nas de la muerte \Ch{D}{me} quitó
+
+            Para \Ch{Bm}{mí} ya no hay condena\Ch{A}{ción}, hay liber\Ch{G}{tad}, \Ch{D}{li}ber\Ch{Bm}{tad}\Ch{A}{~}
+
+            Siendo es\Ch{G}{cla}vo del pecado \Ch{D}{me} libró
+
+            En la \Ch{Bm}{cruz} compró mi reden\Ch{A}{ción}, y liber\Ch{G}{tad}, \Ch{D}{li}ber\Ch{A}{tad}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Rompió mis ca\Ch{D}{de}nas, me dio vida \Ch{G}{nue}va
+
+            Y al fondo del \Ch{Bm}{mar} echó mi mal\Ch{A}{dad}
+
+            Lavó mis pe\Ch{D}{ca}dos y me ha perdo\Ch{G}{na}do
+
+            Solo en el \Ch{Bm}{nom}bre de Je\Ch{A}{sús} hay liber\Ch{D}{tad}\Ch{G}{~}~\Ch{Bm}{~}~\Ch{A}{~}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Yo pro\Ch{G}{cla}mo al que en la cruz por \Ch{D}{mí} murió
+
+            Y cam\Ch{Bm}{bió} mi duro cora\Ch{A}{zón} por liber\Ch{G}{tad},\Ch{D}{~} liber\Ch{Bm}{tad}~\Ch{A}{~}
+
+            El po\Ch{G}{der} de su evangelio \Ch{D}{me} salvó
+
+            Y no me a\Ch{Bm}{ver}güenzo del Se\Ch{A}{ñor} mi liber\Ch{G}{tad},\Ch{D}{~} liber\Ch{A}{tad}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Al que el \Ch{D}{Hi}jo, hace \Ch{A}{li}bre, es \Ch{Bm}{li}bre  \Ch{G}{en} \Ch{D}{ver}dad~\Ch{A}{~}
+
+            Al que el \Ch{D}{Hi}jo, hace \Ch{A}{li}bre, es \Ch{G}{li}bre en \Ch{D}{ver}dad~\Ch{A}{~}
+
+            Al que el \Ch{D}{Hi}jo, hace \Ch{A}{li}bre, es \Ch{Bm}{li}bre  \Ch{G}{en} \Ch{D}{ver}dad~\Ch{A}{~}
+
+            Al que el \Ch{D}{Hi}jo, hace \Ch{A}{li}bre, es \Ch{G}{li}bre en ver\Ch{D}{dad}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Hay Libertad}{Em}
     {} %copyright \SBPubDom
     {Art Aguilera}
@@ -6755,6 +6956,41 @@
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Jehová es mi guerrero}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {\href{https://open.spotify.com/intl-es/track/28ToGBqrF1KTv1rtXROK1T}{Escuchar}}
+
+        \begin{SBChorus}
+            ///Jeho\Ch{Em}{vá} es mi guerrero, (\Ch{C7}{o}  \Ch{D}{o}  \Ch{Em}{oooh})\Ch{D}{~}///
+
+            Jeho\Ch{Em}{vá} es mi guerrero, (\Ch{C7}{o}  \Ch{D}{o}  \Ch{E}{oooh})
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Y \Ch{Am7}{con} mi Alabanza Pelea\Ch{Em}{ré}, \Ch{D}{~} (pues no \Ch{C7}{es} mi \Ch{D}{gue}rra si\Ch{Em}{no} la de Dios)
+
+            con \Ch{Am7}{dan}za y pandero yo da\Ch{Em}{ré}, \Ch{D}{~} (pues no \Ch{C7}{es} mi \Ch{D}{gue}rra si\Ch{Em}{no} la de Dios)
+
+            \Ch{Am7}{cím}balo y trompeta sona\Ch{Em}{ré}, \Ch{D}{~} (pues no \Ch{C7}{es} mi \Ch{D}{gue}rra si\Ch{Em}{no} la de Dios)
+
+            con \Ch{Am7}{fuer}te y alta \Ch{Em}{voz} yo grita\Ch{B}{ré}-\Ch{C}{e}-\Ch{D}{e}-\Ch{Em}{e}\ldots ~\Ch{D}{~}~\Ch{Em}{~}~\Ch{D}{~}~\Ch{Em}{~}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\CsevenPiano\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
+            \upchord{\BPiano\B}{\qquad Si} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -11627,6 +11863,7 @@
         \fi
     \end{song}
 
+    \themarker{Yahweh}
     \begin{song}{Yahweh}{Em7}
     {} %copyright \SBPubDom
     {Oasis Ministry}
@@ -11669,6 +11906,7 @@
         \fi
     \end{song}
 
+    \themarker{Ya no soy esclavo}
     \begin{song}{Ya no soy esclavo}{A}
     {} %copyright \SBPubDom
     {Julio Melgar}
@@ -11747,6 +11985,7 @@
         \fi
     \end{song}
 
+    \themarker{Yo celebraré}
     \begin{song}{Yo celebraré}{Em}
     {} %copyright \SBPubDom
     {Luis Enrique}
@@ -11880,6 +12119,7 @@
         \fi
     \end{song}
 
+%\pdfbookmark[1]{Yo~tengo~un~amigo~que~me~ama}{yotengounamigoquemeama}
     \begin{song}{Yo tengo un amigo que me ama}{F}
     {} %copyright \SBPubDom
     {}
@@ -11918,7 +12158,9 @@
 
     \ifChordBk
 
-\section{Pads Para Yamaha E-473}
+
+\pdfbookmark[section]{Pads~Para~Yamaha}{pads}
+\section*{Pads Para Yamaha E-473}
 
 \textbf{Pad adoración 1}
 \vskip 25pt
@@ -12042,12 +12284,10 @@ M. Reso: 64
 
         \theendnotes
         \include{Acordes}
-%        \pdfbookmark[0]{Índice por artista}{artista}
         \include{EstribilleroAdx}
         \include{EstribilleroKdx}
     \fi
 
-%    \pdfbookmark[0]{Índice de primeras líneas y títulos}{primeraslineas}
     \include{EstribilleroTdx}
 \end{document}
 \bye

@@ -23,7 +23,19 @@
 %\usepackage[wordbk]{songbook}                 %% Words Only edition.
 %\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
 
-\newcommand\themarker[1]{\pdfbookmark[1]{#1}{\pdfmdfivesum{#1}}}
+%\newcommand\themarker[1]{\pdfbookmark[1]{#1}{\pdfmdfivesum{#1}}}
+
+% Paso 1: Guardar el entorno original
+\let\oldsong\song
+\let\endoldsong\endsong
+
+% Paso 2: Redefinir el entorno para insertar el pdfbookmark
+\RenewDocumentEnvironment{song}{m m m m m m m}{%
+    \pdfbookmark[1]{#1}{\pdfmdfivesum{#1}}% usar el primer argumento como título
+    \oldsong{#1}{#2}{#3}{#4}{#5}{#6}{#7}% llamar al entorno original con los mismos argumentos
+    }{%
+    \endoldsong
+}
 % genera acordes de guitarra
 \newif\ifguitarra
 
@@ -507,16 +519,16 @@
 % Songbook begins.
 %%%
     \pdfbookmark[0]{Piezas~musicales}{piezas}
-    \themarker{A Cristo solo a Cristo}
-    \begin{song}{A Cristo solo a Cristo}{G}
-    {Proyecto AA} %copyright \SBPubDom
-    {Marcos Witt}
-    {Hechos 4:12} %pasaje
-    {\href{https://open.spotify.com/track/31LsSTJ8P7HZWu6KVpY9Fz}{Escuchar}} %\NotCCLIed
-
-%  \renewcommand{\RevDate}{February~11,~1993}
+%    \themarker{A Cristo solo a Cristo}
+    \begin{song}{A~Cristo~solo~a~Cristo}{G}
+    {Proyecto~AA} %copyright \SBPubDom
+    {Marcos~Witt}
+    {Hechos~4:12} %pasaje
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/track/31LsSTJ8P7HZWu6KVpY9Fz}{Escuchar}\mbox{}\hfill}
+\fi
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
-
         \begin{SBOpGroup}
             \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{Cris}to~\Ch{Bm}{~}, \Ch{Am}{yo} exalta\Ch{D}{ré}
 
@@ -549,12 +561,15 @@
         \fi
     \end{song}
 
-    \themarker{A Nuestro Padre Dios}
+%    \themarker{A Nuestro Padre Dios}
     \begin{song}{A Nuestro Padre Dios}{F}
     {} %copyright \SBPubDom
     {An\'onimo en Thesaurus Musicus 1744}
     {Juan 3:16} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/177p7uNRVWE0seYFrv48ud}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/177p7uNRVWE0seYFrv48ud}{Escuchar}\mbox{}\hfill}
+\fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -638,12 +653,15 @@
         \fi
     \end{song}
 
-    \themarker{Al estar aquí}
+%    \themarker{Al estar aquí}
     \begin{song}{Al estar aquí}{A}
     {} %copyright \SBPubDom
     {Marcos Witt}
     {Salmo 63:1-2} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/72tVbvGWzJ92cfyXaFd7nw}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/72tVbvGWzJ92cfyXaFd7nw}{Escuchar}\mbox{}\hfill}
+\fi
         %1991
 
 %        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -701,12 +719,15 @@
 
     \end{song}
 
-    \themarker{Al estar aquí - Danilo Montero}
+%    \themarker{Al estar aquí - Danilo Montero}
     \begin{song}{Al estar aquí}{A}
     {} %copyright \SBPubDom
     {Danilo Montero}
     {Salmo 63:1-2} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0UG4ArCCfVi8HkhBJBV05x}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0UG4ArCCfVi8HkhBJBV05x}{Escuchar}\mbox{}\hfill}
+\fi
         %1999
 
 %        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -768,12 +789,15 @@
 
     \end{song}
 
-    \themarker{Abba Padre}
+%    \themarker{Abba Padre}
     \begin{song}{Abba Padre}{D}
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {Romanos 8:15} %pasaje
-    {\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}\mbox{}\hfill}
+\fi
 
 %        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
         \FLineIdx{Una Vez más}
@@ -832,12 +856,15 @@
 
     \end{song}
 
-    \themarker{Admirable}
+%    \themarker{Admirable}
     \begin{song}{Admirable}{Dm7}
     {} %copyright \SBPubDom
     {Danilo Montero}
     {Apocalipsis 1:18} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}\mbox{}\hfill}
+\fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -870,12 +897,15 @@
         \fi
     \end{song}
 
-    \themarker{Aceite fresco}
+%    \themarker{Aceite fresco}
     \begin{song}{Aceite fresco}{C\#m}
     {} %copyright \SBPubDom
     {New Wine}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2jIBt8XiJE8EZmVQzkxqOU}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2jIBt8XiJE8EZmVQzkxqOU}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{En mi corazón hay un clamor}
         \FLineIdx{Llena hoy mi lampara Señor}
@@ -925,12 +955,15 @@
         \fi
     \end{song}
 
-    \themarker{Adonai}
+%    \themarker{Adonai}
     \begin{song}{Adonai}{Em}
     {} %copyright \SBPubDom
     {Marcos Witt}
     {Salmo 19:1} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/30njp3rQZ90oJTPoQj4RLt}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/30njp3rQZ90oJTPoQj4RLt}{Escuchar}\mbox{}\hfill}
+\fi
 
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
 
@@ -965,12 +998,15 @@
         \fi
     \end{song}
 
-    \themarker{Adoramos por siempre al Creador}
+%    \themarker{Adoramos por siempre al Creador}
     \begin{song}{Adoramos por siempre al Creador}{C}
     {\SBPubDom} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6voTqFcZ1Bap3BTMo1SjkX}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6voTqFcZ1Bap3BTMo1SjkX}{Escuchar}\mbox{}\hfill}
+\fi
         %1992
 
         %La alabanza original está en inglés https://open.spotify.com/intl-es/track/79o8EHlOEKbABOFvQzEYCV de 1987
@@ -1016,12 +1052,15 @@
         \fi
     \end{song}
 
-    \themarker{Agnus Dei}
+%    \themarker{Agnus Dei}
     \begin{song}{Agnus Dei}{A}
     {\SBPubDom} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
+\fi
         \FLineIdx{Tu nombre Santo es}
 
         \begin{SBChorus}
@@ -1061,7 +1100,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBVerse}
             \Ch{A}{A}hora que estoy con\Ch{D}{ti}go en tus \Ch{A}{bra}zos de amor,
@@ -1096,7 +1138,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {Evan Craft}
     {Filipenses 4:6-7} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2zLgzu8nD1GLLFwuJxirRl}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2zLgzu8nD1GLLFwuJxirRl}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Te a\Ch{A}{la}bo en el valle, Te ala\Ch{Bm/A}{bo} en el mon\Ch{A}{te}
@@ -1291,7 +1336,10 @@
     {} %copyright \SBPubDom
     {Casa de Oración}
     {Salmo 18:32} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2rN79VScHGBTOW3wrMKWVL}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2rN79VScHGBTOW3wrMKWVL}{Escuchar}\mbox{}\hfill}
+\fi
 
         % 1993
         %https://open.spotify.com/intl-es/track/4e0xBYTOS0X0aGCzLM57sz 1996
@@ -1332,7 +1380,10 @@
     {} %copyright \SBPubDom
     {Aurelia \& Samuel Sebastian Wesley}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3JMkcZTcVrtVau3B4zKDgn}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3JMkcZTcVrtVau3B4zKDgn}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             \Ch{Eb}{Al} trono \Ch{Ab}{ma}\Ch{Eb}{jes}tuo\Ch{Bb7}{so}
@@ -1423,7 +1474,10 @@
     {} %copyright \SBPubDom
     {Chuy Garc\'ia}
     {Romanos 12:1} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/14YITNb5Ud0zsf3au1s5cR}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/14YITNb5Ud0zsf3au1s5cR}{Escuchar}\mbox{}\hfill}
+\fi
 
 
         \begin{SBOpGroup}
@@ -1463,7 +1517,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {Iglesia de Cristo Ebenezer}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}\mbox{}\hfill}
+\fi
 
 %  \SBRef{Nuestro legado}{2006}%fuente \#
 
@@ -1556,7 +1613,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0YwFMo2jsOKL1dWEYHKccl}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0YwFMo2jsOKL1dWEYHKccl}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Cuando el mundo te inunda}
 
@@ -1630,7 +1690,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3T0iYGSm7o5X9uVWNcDNz3}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3T0iYGSm7o5X9uVWNcDNz3}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Dios no nos trajo hasta aquí para volver atrás}
 
@@ -1735,7 +1798,10 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {Salmo 92:1} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6S90J1ENA9sgzfBDEHNyJ7}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6S90J1ENA9sgzfBDEHNyJ7}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Intro Flauta:\break GGGG ED CD E F\# G\break GGGG ED CD G B A}
 
@@ -1779,7 +1845,10 @@
     {} %copyright \SBPubDom
     {}
     {Isaías 26:3} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0EtXTYDHwK81dnsloMPNha}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0EtXTYDHwK81dnsloMPNha}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Ca}da día con Cristo me llena de perfecta \Ch{Em}{paz}
@@ -1809,7 +1878,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {salmo 92:1-2} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0AazdjQf5l6Wtih13ya0Se}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0AazdjQf5l6Wtih13ya0Se}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{D}{~}\Ch{G}{~}}
 
@@ -1848,7 +1920,10 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {Jeremías 10:23} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7kzqc0u8SNQAU5Wca0WNKo}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7kzqc0u8SNQAU5Wca0WNKo}{Escuchar}\mbox{}\hfill}
+\fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
 
@@ -1900,7 +1975,10 @@
     {} %copyright \SBPubDom
     {Miel San Marcos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5FXALCzOPuLhX07GRnrooO}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5FXALCzOPuLhX07GRnrooO}{Escuchar}\mbox{}\hfill}
+\fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
         \SBIntro{//\Ch{Cm}{~}~\Ch{Ab}{~}\Ch{Bb}{~}~\Ch{G}{~}~\Ch{Ab}{~}\Ch{Bb}{~}~\Ch{C}{~}//~\Ch{Bb}{~}~\Ch{C}{~}}
@@ -1958,7 +2036,10 @@
     {Vidal Music} %copyright \SBPubDom
     {Marcos Vidal}
     {Apocalipsis 22:4} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3AbYh5nP4NdvWUahFCU1Ys}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3AbYh5nP4NdvWUahFCU1Ys}{Escuchar}\mbox{}\hfill}
+\fi
 
 
         \begin{SBOpGroup}
@@ -2015,7 +2096,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Juan 6:68} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6waY2sAiBJzHdmXyKYmr1w}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6waY2sAiBJzHdmXyKYmr1w}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Si decidiera negar mi fe}
 
@@ -2073,7 +2157,10 @@
     {} %copyright \SBPubDom
     {}
     {Lucas 12:22} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1tCeL7KNEyPaTdow8kpHi0}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1tCeL7KNEyPaTdow8kpHi0}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             ¿\Ch{C}{Có}mo podré estar triste,
@@ -2159,7 +2246,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/75IhuMXXHxnSCnaWKwPjSQ}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/75IhuMXXHxnSCnaWKwPjSQ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Cm}{Co}mo hizo David \Ch{Gm}{de}lante de dios
@@ -2218,7 +2308,10 @@
     {} %copyright \SBPubDom
     {}
     {Salmos 69:30} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6N6loBqpYEfTL7OKZ3wWQB}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6N6loBqpYEfTL7OKZ3wWQB}{Escuchar}\mbox{}\hfill}
+\fi
 %        https://open.spotify.com/intl-es/track/20WfGgLcOYzd6CZCdbrIpv
 
         \begin{SBVerse}
@@ -2274,7 +2367,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Salmos 51} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2vAYYOwfKVR3cCqg1mI6No}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2vAYYOwfKVR3cCqg1mI6No}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{E}{Con} manos vacías \Ch{A}{ven}go a Tí
@@ -2369,7 +2465,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Salmos 18:29-35} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1icgG8eVsE9oTudn5XAeEE}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1icgG8eVsE9oTudn5XAeEE}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Bajo:\break EE D EE BD BDB DE E4}
         \SBIntro{\Ch{Em}{~} \Ch{D/E}{~}  \Ch{C/E}{~}  \Ch{D/E}{~} \Ch{Em}{~}}
@@ -2419,7 +2518,10 @@
     {} %copyright \SBPubDom
     {Eddie Espinosa}
     {Salmo 66:17-18} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC?si=2c4442fba5e5403c}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC?si=2c4442fba5e5403c}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Con} mis labios \Ch{G}{y} mi \Ch{D}{vi}da
@@ -2461,7 +2563,10 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {Salmo 141:2} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{G}{~} \Ch{D/F\#}{~} \Ch{F}{~} \Ch{C/E}{~} \Ch{G}{~} \Ch{D/F\#}{~} \Ch{Am}{~} \Ch{D}{~}}
 
@@ -2508,7 +2613,10 @@
     {} %copyright \SBPubDom
     {}
     {Lucas 24:19} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6eS6MBxWUEnRTE6lHJZMZ8}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6eS6MBxWUEnRTE6lHJZMZ8}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Co\Ch{Bb}{noz}co a un hombre de poder
@@ -2546,7 +2654,10 @@
     {} %copyright \SBPubDom
     {Julio Melgar}
     {Salmo 118:14-17} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4Y3DmWSsh6sKPlvhX8EvnJ}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4Y3DmWSsh6sKPlvhX8EvnJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         % 2010
         %https://open.spotify.com/intl-es/track/3bBms497j2AlIW07Kr38Hf 2011
@@ -2608,7 +2719,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3Ggsjz5pIJ5ThuDx7V6xYT}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3Ggsjz5pIJ5ThuDx7V6xYT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{F}{Cris}to me ayuda por \Ch{Bb}{Él} a vi\Ch{F}{vir}
@@ -2681,7 +2795,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/66fuI104YsTUxpk4tYiC2F}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/66fuI104YsTUxpk4tYiC2F}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1996
 
@@ -2743,7 +2860,10 @@
     {} %copyright \SBPubDom
     {Miel San Marcos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6bDHJjWEiWux7haSU8r4g5}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6bDHJjWEiWux7haSU8r4g5}{Escuchar}\mbox{}\hfill}
+\fi
 
         %2012
 
@@ -2778,7 +2898,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5skmp0I9YdDMzQqhWQhf2C}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5skmp0I9YdDMzQqhWQhf2C}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             Cristo \Ch{E}{rom}pe las ca\Ch{F\#m}{de}nas
@@ -2813,7 +2936,10 @@
     {} %copyright \SBPubDom
     {Ingrid Rosario}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1o9hP3pRhkJ1wtaL3YdKrH}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1o9hP3pRhkJ1wtaL3YdKrH}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{Cris}to \Ch{D/F\#}{Tú} me has amado
@@ -2849,7 +2975,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3iJcqcWzfTi5Pkp2or41d9}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3iJcqcWzfTi5Pkp2or41d9}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D+7}{Cuán} bello es el Se\Ch{Em}{ñor}
@@ -2896,7 +3025,10 @@
     {} %copyright \SBPubDom
     {En Espíritu y en Verdad}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0fpW2x6Cd3cBgTGaU8TZKE}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0fpW2x6Cd3cBgTGaU8TZKE}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             El \Ch{C}{es}plendor de un rey, \Ch{G}{~}ves\Ch{Am7}{ti}do en majestad
@@ -2955,7 +3087,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4LeTETSxqGtSsnZ0mlSJeE}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4LeTETSxqGtSsnZ0mlSJeE}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Dad a \Ch{D}{Dios} inmortal ala\Ch{G/D}{ban}\Ch{D}{za};
@@ -3029,7 +3164,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6o3ErDVIenw0j4ZrP7nJkC}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6o3ErDVIenw0j4ZrP7nJkC}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Intro Piano:\break MI: DEG\break\break MD:\break F\# G AF\# AD\break DEF\# GF\# G\break AF\#5 E5D5}
 
@@ -3071,7 +3209,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1vX9aWhoRlfvykVyKj9F26}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1vX9aWhoRlfvykVyKj9F26}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{E}{Da}mos honor a \Ch{G\#m7}{Tí}, \Ch{A\#13}{da}mos honor a Tí.
@@ -3108,7 +3249,10 @@
     {} %copyright \SBPubDom
     {Miguel Cassina}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0imd5ozg3GpCp8V4Emxdtt}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0imd5ozg3GpCp8V4Emxdtt}{Escuchar}\mbox{}\hfill}
+\fi
         %1989
 
         \FLineIdx{Vengo a Tí}
@@ -3153,7 +3297,10 @@
     {} %copyright \SBPubDom
     {Barak}
     {Juan 17:22} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{A danzar}
 
@@ -3299,7 +3446,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4hJRjBuejum1jizRt1q2bt}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4hJRjBuejum1jizRt1q2bt}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             De \Ch{D}{glo}ria en \Ch{A/C\#}{glo}ria te \Ch{Bm}{veo} \Ch{Am7}{~} \Ch{D7/F\#}{~}
@@ -3352,7 +3502,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3A4pZLhpwaA5qww6r1Li33}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3A4pZLhpwaA5qww6r1Li33}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1992
         \begin{SBOpGroup}
@@ -3391,7 +3544,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2ZcVBicMCi350sxdqR6jEq}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ZcVBicMCi350sxdqR6jEq}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Demos \Ch{C}{gra}cias al Señor, \Ch{F}{de}mos \Ch{C}{gra}cias,
@@ -3424,7 +3580,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4yleQmyBDmNBWTGAmWClPR}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4yleQmyBDmNBWTGAmWClPR}{Escuchar}\mbox{}\hfill}
+\fi
 
         % 250 HMVC
         \FLineIdx{Tengo paz en mi ser}
@@ -3500,7 +3659,10 @@
     {} %copyright \SBPubDom
     {Emannuel Espinosa, Jesús Adrián Romero, Juan Salinas}
     {Salmos 113:3} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7mcV2OhsG4VXxeaxEpl1iU}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7mcV2OhsG4VXxeaxEpl1iU}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Am}{Fue} hasta que te cono\Ch{F}{cí}
@@ -3575,7 +3737,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero \& Abel Zavala}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/16U7geOUCbpaVmQ9ILpyfa}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/16U7geOUCbpaVmQ9ILpyfa}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             De \Ch{C}{tal} manera me a\Ch{G}{m\'o}
@@ -3665,7 +3830,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             Dios de pactos, que guardas tus promesas
@@ -3701,7 +3869,10 @@
     {} %copyright \SBPubDom
     {Raúl Galeano}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3mGgd2UDopueiXxzPCxpgk}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3mGgd2UDopueiXxzPCxpgk}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             \Ch{D}{Dios} es\Ch{A7}{tá} a\Ch{Bm}{quí}\Ch{D7}{~}
@@ -3743,7 +3914,10 @@
     {} %copyright \SBPubDom
     {Ericson Alexander Molano}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6HHoCvGgwqWxvuFKz6jzY8}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6HHoCvGgwqWxvuFKz6jzY8}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{Dios} manda lluvia
@@ -3788,7 +3962,10 @@
     {} %copyright \SBPubDom
     {La IBI}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/46yyc0SDK2SN2V64Vj1ItY}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/46yyc0SDK2SN2V64Vj1ItY}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{Gm | Bb | Dm | F}
 
@@ -3882,7 +4059,10 @@
     {} %copyright \SBPubDom
     {}
     {2 Corintios 3:17} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3cWdcVBkdDAx4PAwiodx3P}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3cWdcVBkdDAx4PAwiodx3P}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Libertad, libertad}
 
@@ -3920,7 +4100,10 @@
     {} %copyright \SBPubDom
     {Thomas Ken, Genevan Psalter, 1551, atr. a Louis Bourgeois}
     {Juan 17:22} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/24I9oe6qBsY3JHvL6g4yTT}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/24I9oe6qBsY3JHvL6g4yTT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{A Dios el Padre Celestial}
 
@@ -3954,7 +4137,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7EwdiktzwNNAGuFbRtioCI}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7EwdiktzwNNAGuFbRtioCI}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBVerse}
             \Ch{Ab}{Dul}ces melo\Ch{Db}{dí}\Ch{Ab}{as} canta\Ch{Bb}{ré},
@@ -4022,7 +4208,10 @@
     {} %copyright \SBPubDom
     {Manuel Bonilla}
     {Romanos 8:35-38} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7FY2TKHkES18qJ55X84XOJ}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7FY2TKHkES18qJ55X84XOJ}{Escuchar}\mbox{}\hfill}
+\fi
         %1998
 
         \begin{SBOpGroup}
@@ -4059,7 +4248,10 @@
     {} %copyright \SBPubDom
     {Ruth Rios}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1dSyyG3Q85sW8gpJuQdDT8}{Escuchar}} %1986
+{} %1986
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1dSyyG3Q85sW8gpJuQdDT8}{Escuchar}\mbox{}\hfill}
+\fi
 % https://open.spotify.com/intl-es/track/6gErZj8H1WToiv8WXqtHQh        1994
 %        https://open.spotify.com/intl-es/track/3rajwLdWzFE5EFu0LuG7gx 1996
 
@@ -4115,7 +4307,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/19QBEOBEaia9CHiZawoKy6}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/19QBEOBEaia9CHiZawoKy6}{Escuchar}\mbox{}\hfill}
+\fi
         % 2000
 
         \begin{SBOpGroup}
@@ -4149,7 +4344,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4x1qjmnKSmIJma1DofbmhY}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4x1qjmnKSmIJma1DofbmhY}{Escuchar}\mbox{}\hfill}
+\fi
 % 2000
 
         \begin{SBOpGroup}
@@ -4202,7 +4400,10 @@
     {} %copyright \SBPubDom
     {Inspiraci\'on}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2uYUh6fNl30dQ9tQbSLuXJ}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2uYUh6fNl30dQ9tQbSLuXJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Él} me levanta\Ch{Em}{rá},
@@ -4241,7 +4442,10 @@
     {} %copyright \SBPubDom
     {Emmanuel Espinosa \& Jesús Adrian Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3mDfxXKhilk9iDxVxCMfi2}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3mDfxXKhilk9iDxVxCMfi2}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{G}{~}\Ch{G}{~}~\Ch{C}{~}\Ch{C}{~}~~\Ch{G}{~}\Ch{G}{~}~\Ch{D}{~}\Ch{D}{~}}
 
@@ -4302,7 +4506,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Y los \Ch{Cm}{o}jos de los ciegos se abrirán y ellos verán
@@ -4341,7 +4548,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6wL2yZjFtHkRsB84X49G84}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6wL2yZjFtHkRsB84X49G84}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             El Señor es mi fuerza, mi roca y salvación
@@ -4388,7 +4598,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0o1J7Cj00zwa9nsbSncObG}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0o1J7Cj00zwa9nsbSncObG}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             \Ch{A}{El} Señor es \Ch{A/Bb}{mi} pas\Ch{Bm}{tor};
@@ -4434,7 +4647,10 @@
     {} %copyright \SBPubDom
     {Inspiración}
     {Salmos 51:8-13} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             El Señor es mi \Ch{Bm}{Rey}, mi to\Ch{A}{do}
@@ -4467,7 +4683,10 @@
     {} %copyright \SBPubDom
     {Marcos Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/78Lu2qh66enla4hAv1T5ZW}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/78Lu2qh66enla4hAv1T5ZW}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             ////\Ch{Em}{El} Señor es\Ch{C}{tá} en este lu\Ch{D}{gar}////
@@ -4502,7 +4721,10 @@
     {} %copyright \SBPubDom
     {Miel San Marcos}
     {Salmos 51:8-13} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Gm}{~}\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Fm}{~}}
 
@@ -4541,7 +4763,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6Gmwr4U3AIYHKyUQfDHmuO}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6Gmwr4U3AIYHKyUQfDHmuO}{Escuchar}\mbox{}\hfill}
+\fi
 %        versión original
 %        https://open.spotify.com/intl-es/track/0VKhNgI7oy2yhFQAdqmNRo?si=643c8c78f166499d
 
@@ -4585,7 +4810,10 @@
     {} %copyright \SBPubDom
     {}
     {Romanos 8:11} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Ab}{Cua}n glorioso es el cambio operado en mi ser,
@@ -4643,7 +4871,10 @@
     {} %copyright \SBPubDom
     {Abel Zavala}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5kePPdU6VcqYa3yMVPr0qT}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5kePPdU6VcqYa3yMVPr0qT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{Quie}ro entre\Ch{C}{gar}te mis \Ch{D}{sue}ños,
@@ -4694,7 +4925,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4lTtpXPGs7NAqyQxgtDAct}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4lTtpXPGs7NAqyQxgtDAct}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             \Ch{D}{En}ciende una \Ch{G}{luz} y déjala bri\Ch{Am}{llar}
@@ -4775,7 +5009,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7EUjZLRFKP31lOpqpaokXY}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7EUjZLRFKP31lOpqpaokXY}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             \Ch{Bb/C}{En} la \Ch{F}{tie}rra ha\Ch{C/E}{brá} conoci\Ch{Bb/D}{mien}to
@@ -4823,7 +5060,10 @@
     {} %copyright \SBPubDom
     {Renan Carias}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4TM3PwAYVklTfobZGmjVly}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4TM3PwAYVklTfobZGmjVly}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             En mo\Ch{D}{men}tos así, le\Ch{G}{van}to mi \Ch{A}{voz},
@@ -4865,7 +5105,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0TnYy0RpI7ywWFKmK6oGoP}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0TnYy0RpI7ywWFKmK6oGoP}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             En \Ch{E}{Tí} confía mi \Ch{A}{co}razón,
@@ -4904,7 +5147,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2FF17M1eTlWMEWD7odigXh}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2FF17M1eTlWMEWD7odigXh}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{E}{La} mies es \Ch{B}{mu}cha, \Ch{A}{hay} gran necesi\Ch{C\#m}{dad}
@@ -4939,7 +5185,10 @@
     {} %copyright \SBPubDom
     {En Espiritu y en Verdad}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/33TOmRFdGrNCxdLxIefA1r}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/33TOmRFdGrNCxdLxIefA1r}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Piano:\break EEE BBB\break AAA G\#G\#G\#\break G\#AE x4 F\#F\#F\# EEE\break GGG D\#D\#D\# }
         \SBIntro{\Ch{E}{~}~\Ch{B}{~}~\Ch{A}{~}~\Ch{C\#m}{~}~\Ch{B}{~}~\Ch{E}{~}}
@@ -4996,7 +5245,10 @@
     {} %copyright \SBPubDom
     {Coalo Zamorano}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5xmaJCdZm0kzGa7wajm5Eu}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5xmaJCdZm0kzGa7wajm5Eu}{Escuchar}\mbox{}\hfill}
+\fi
 %        https://open.spotify.com/intl-es/track/2b7YBLRv13r2iS31yXBz7a
 
         \SBIntro{D A/D C/D G/D}
@@ -5044,7 +5296,10 @@
     {} %copyright \SBPubDom
     {Ingrid Rosario}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5RHBAg3cPHYOh6Fx2MUbYS}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5RHBAg3cPHYOh6Fx2MUbYS}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{E}res mi \Ch{C}{res}pirar
@@ -5087,7 +5342,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Am}{E}res señor vencedor el \Ch{G}{in}ven\Ch{F}{ci}ble
@@ -5133,7 +5391,10 @@
     {} %copyright \SBPubDom
     {Juan Salinas}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5WaVwloIYHm95mNQnrfyZT}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5WaVwloIYHm95mNQnrfyZT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             La \Ch{Bm}{ú}nica razón de mi a\Ch{G}{do}ración, \Ch{D}{e}res Tú mi Je\Ch{A}{sús}
@@ -5178,7 +5439,10 @@
     {} %copyright \SBPubDom
     {Rojo}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7r6AD8tFiPl4tHq20znjwg}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7r6AD8tFiPl4tHq20znjwg}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Intro Piano:\break MI:\break B C\# D G\break B A\break MD:\break D E F\# B\break D\#CA D\#CA }
 
@@ -5230,7 +5494,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3YkViDWlrUcCIafb1nXxjQ}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3YkViDWlrUcCIafb1nXxjQ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{Es}perar en Tí, di\Ch{Em}{fí}cil sé que es
@@ -5278,7 +5545,10 @@
     {} %copyright \SBPubDom
     {Jose Luis Reyes}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6XXn8f7bPRT2hP4j5nYbcJ}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6XXn8f7bPRT2hP4j5nYbcJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro[N]{\Ch{G}{~} \Ch{Em}{~} \Ch{C}{~} \Ch{D}{~}}
         \SBMargNote{Piano: G-F\#-D}
@@ -5327,7 +5597,10 @@
     {} %copyright \SBPubDom
     {Doris Machin}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6lssdt639iUODSvmnHLDz1}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6lssdt639iUODSvmnHLDz1}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Espíritu Santo lléname}
 
@@ -5372,7 +5645,10 @@
     {} %copyright \SBPubDom
     {}
     {2 corintios 4:5} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4EAn2z1oc7qnfuC4BqoQ1X}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4EAn2z1oc7qnfuC4BqoQ1X}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{E}{Es}te es el Cristo que yo predicó
@@ -5410,7 +5686,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2jbMpzd5ikmPdMNYDQVmfe}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2jbMpzd5ikmPdMNYDQVmfe}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{es}toy alegre,
@@ -5456,7 +5735,10 @@
     {} %copyright \SBPubDom
     {Samuel Luna E.}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1gkSSTrGjnwr904VOykCOj}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1gkSSTrGjnwr904VOykCOj}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Al borde de tu gran trono}
 
@@ -5496,7 +5778,10 @@
     {} %copyright \SBPubDom
     {Bily Bunster}
     {Malaquías 3:2} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3NlfXlQdsoJIAufkIMfDz8}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3NlfXlQdsoJIAufkIMfDz8}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Intro Metales:\break GA E\break E DCA EGAE CBG\break EGAE EGAE EGAB A}
         \SBIntro{\Ch{Am}{~}\Ch{F}{~}\Ch{Dm}{~}\Ch{E}{~}}
@@ -5550,7 +5835,10 @@
     {} %copyright \SBPubDom
     {En Espiritu y en Verdad}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4VVZMguosiqCkCLg3k5hjB}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4VVZMguosiqCkCLg3k5hjB}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Tu} Amor enseña a danzar\endnote{La biblia no menciona que el amor de Dios enseñe a danzar}
@@ -5609,7 +5897,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1Ju0r5RwVaubO9PGJMBPWF}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1Ju0r5RwVaubO9PGJMBPWF}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{DD E G E C D\break DDCD   DDCD}
 
@@ -5675,7 +5966,10 @@
     {} %copyright \SBPubDom
     {Inspiraci\'on}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4mM9MYayjcm3KibuCp2P72}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4mM9MYayjcm3KibuCp2P72}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Cm}{Gó}zate delante del Señor
@@ -5714,7 +6008,10 @@
     {} %copyright \SBPubDom
     {En Espiritu y en Verdad}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5fx0pSrRtDq2u7qlaly8fC}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5fx0pSrRtDq2u7qlaly8fC}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{B}{Quien} rompe \Ch{Bsus4}{el} po\Ch{B}{der}     del pecado
@@ -5859,7 +6156,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1jnUCPGWdEXtjTaviVG9E9}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1jnUCPGWdEXtjTaviVG9E9}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Me has to\Ch{F\#m}{ma}do en tus brazos y me has \Ch{E}{da}do salvación.
@@ -5903,7 +6203,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7uZ2Jy1jcKf1cZLxOrwZ6f}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7uZ2Jy1jcKf1cZLxOrwZ6f}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em}{Gran}de es el Señor, Creador del Universo,
@@ -5943,7 +6246,10 @@
     {} %copyright \SBPubDom
     {Jaime Murrell}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{C}{Te} alabaré oh Se\Ch{Am}{ñor}
@@ -5981,7 +6287,10 @@
     {} %copyright \SBPubDom
     {Miel San Marcos}
     {Deuteronomio 10:17-18} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{Am}{~} \Ch{Fmaj7}{~} \Ch{Em7}{~} \Ch{Am7}{~}}
 
@@ -6037,7 +6346,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {Restauraci\'on}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0d6JXGfRFaabGaPQCnZcXA}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0d6JXGfRFaabGaPQCnZcXA}{Escuchar}\mbox{}\hfill}
+\fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -6076,7 +6388,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6ErNkHvdWep9w5HABFooQW}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6ErNkHvdWep9w5HABFooQW}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em}{Ha}gamos guerra espiritual
@@ -6142,7 +6457,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {Salmo 30:12} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/31xfacYtNo5vMxk6CggXCQ}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/31xfacYtNo5vMxk6CggXCQ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Has cam\Ch{C}{bia}do mi \Ch{D}{la}mento en \Ch{Em}{bai}le,
@@ -6217,7 +6535,10 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {1 Corintios 15:57} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1994 https://open.spotify.com/intl-es/track/63iQevwEMdIdIREjXcv4IO
 
@@ -6261,7 +6582,10 @@
     {} %copyright \SBPubDom
     {La IBI}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3twlf8a1oiZ8WZT8Hdkc0X}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3twlf8a1oiZ8WZT8Hdkc0X}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{D |G | Bm |A}
 
@@ -6322,7 +6646,10 @@
     {} %copyright \SBPubDom
     {Art Aguilera}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4nxxZtSpkS3tEmuYxNMPmr}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4nxxZtSpkS3tEmuYxNMPmr}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em}{Hoy} puedo danzar con liber\Ch{C}{tad},
@@ -6549,7 +6876,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5QcC5tFnqsNOjxksGXZHCB}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5QcC5tFnqsNOjxksGXZHCB}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             Hay una \Ch{A}{fuen}te en \Ch{D}{mi}
@@ -6586,7 +6916,10 @@
     {} %copyright \SBPubDom
     {}
     {Juan 12:26} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7AFZgROuKik53o560tuwwq}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7AFZgROuKik53o560tuwwq}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             He deci\Ch{C}{di}do se\Ch{F}{guir} a \Ch{C}{Cris}to,
@@ -6644,7 +6977,10 @@
     {} %copyright \SBPubDom
     {}
     {Juan 12:26} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6xNBmT6PtVJJZxVBBqw9rT}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6xNBmT6PtVJJZxVBBqw9rT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{A}{He} de con\Ch{D}{fiar} en Jesús, en mi vida \Ch{A}{sí};
@@ -6685,7 +7021,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3TbInL4DEBxLRExpqtHDw8}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3TbInL4DEBxLRExpqtHDw8}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{En mi corazón hay una canción}
 
@@ -6777,7 +7116,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3EZMEVhLjWN6vEJeWyLw09}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3EZMEVhLjWN6vEJeWyLw09}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{Bm}{~} \Ch{A}{~} \Ch{F\#m}{~} \Ch{G}{~}}
 
@@ -6886,7 +7228,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3IfjNC2pFfp5okvoV8ez0t}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3IfjNC2pFfp5okvoV8ez0t}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Tiempo de vivir, tiempo de morir.
@@ -6917,7 +7262,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1syiUnSkF3ZiwJD5XnuTsJ}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1syiUnSkF3ZiwJD5XnuTsJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{I}glesia \Ch{D}{de} \Ch{G}{Cris}to, rea\Ch{C}{ni}ma tu a\Ch{D}{mor}
@@ -6964,7 +7312,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/28ToGBqrF1KTv1rtXROK1T}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/28ToGBqrF1KTv1rtXROK1T}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             ///Jeho\Ch{Em}{vá} es mi guerrero, (\Ch{C7}{o}  \Ch{D}{o}  \Ch{Em}{oooh})\Ch{D}{~}///
@@ -6999,7 +7350,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Filipenses 2:1-11} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/41ZI352fnbtGIpMKpkRxU4}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/41ZI352fnbtGIpMKpkRxU4}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Jes\'us, Señor de la creaci\'on}
 
@@ -7059,7 +7413,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2G8rT8LJJdx8tuTxPBDJIE}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2G8rT8LJJdx8tuTxPBDJIE}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{Ju}bilosos, \Ch{D}{te} adoramos,
@@ -7147,7 +7504,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5tKpXmVMPetlH4ONsBwSf8}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5tKpXmVMPetlH4ONsBwSf8}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Oh deja que el Señor te envuelva}
 
@@ -7186,7 +7546,10 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2i9QGQ8Bco7lnOMbRntjY6}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2i9QGQ8Bco7lnOMbRntjY6}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Mejor es un día en la casa de Dios}
         \SBIntro{\Ch{A}{~}\Ch{Bm}{~}\Ch{G}{~}\Ch{D}{~}\Ch{A}{~}\Ch{G}{~}}
@@ -7248,7 +7611,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://www.youtube.com/watch?v=udv5HEhaJRM}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://www.youtube.com/watch?v=udv5HEhaJRM}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Ab}{La} gloria de Cristo el Se\Ch{Bbm}{ñor} canta\Ch{Ab}{ré},
@@ -7316,7 +7682,10 @@
     {} %copyright \SBPubDom
     {Daniel Calvetti}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4B6Dq9yCXAyZUzGH8ULq1N}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4B6Dq9yCXAyZUzGH8ULq1N}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Me viste a mí}
 
@@ -7383,7 +7752,10 @@
     {} %copyright \SBPubDom
     {Montesanto}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5nmRDCoUya4XwQXCuQjzjm}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5nmRDCoUya4XwQXCuQjzjm}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{Ab}{~} \Ch{F}{~} \Ch{C}{~} \Ch{Ab}{~}}
 
@@ -7468,7 +7840,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0JDwqWpljdzyVcFGpr2fRX}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0JDwqWpljdzyVcFGpr2fRX}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             \Ch{Bm}{Le}vántate, le\Ch{A}{ván}tate Se\Ch{Bm}{ñor}.\Ch{G}{~}\Ch{A}{~}
@@ -7517,7 +7892,10 @@
     {} %copyright \SBPubDom
     {Samuel Hernández}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/79y4fe9RE0KtxXGj4WmRT5}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/79y4fe9RE0KtxXGj4WmRT5}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Le}vanto mis \Ch{G}{ma}nos
@@ -7599,7 +7977,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7qKZKJfitLRRA4O6ZBCTs7}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7qKZKJfitLRRA4O6ZBCTs7}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Como el ciervo busca por las aguas}
 
@@ -7637,7 +8018,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7L1wiIAKk62Tx3TQUoRViA}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7L1wiIAKk62Tx3TQUoRViA}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Me has dado libertad}
 
@@ -7686,7 +8070,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2ingUl2WYQjhm4JQCmVBLs}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ingUl2WYQjhm4JQCmVBLs}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Libre yo soy libre}
         \SBMargNote{Metales:\break B BB BAG AGEG\break G GG EGA BAGA}
@@ -7722,7 +8109,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6Oa2fcRuhb9MMg7aONE8SX}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6Oa2fcRuhb9MMg7aONE8SX}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em}{Los} muros caen
@@ -7763,7 +8153,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3e6ZHPRTo7IUtB2vonUeta}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3e6ZHPRTo7IUtB2vonUeta}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Ma}jes\Ch{A/D}{tuo}so, \Ch{G}{Po}de\Ch{D}{ro}so,
@@ -7806,7 +8199,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4GmhW5TDAwsACoLAUYMkfu}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4GmhW5TDAwsACoLAUYMkfu}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Mas el Dios de toda gracia que nos llamó a su gloria
@@ -7832,7 +8228,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5Q175erZOZJZHKaZzJFYDN}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5Q175erZOZJZHKaZzJFYDN}{Escuchar}\mbox{}\hfill}
+\fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
 
@@ -7880,7 +8279,10 @@
     {} %copyright \SBPubDom
     {Miguel Cassina}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6lefLtQ56C2P4pOT0QTm2p}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6lefLtQ56C2P4pOT0QTm2p}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em}{Me} \Ch{Am}{go}za\Ch{Em}{ré}\Ch{B7}{~}, \Ch{Em}{me} alegra\Ch{Em}{ré}\Ch{B7}{~}
@@ -7921,7 +8323,10 @@
     {} %copyright \SBPubDom
     {Robeto Orellana}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7C0h8Ix74TmDAWd2pO4MYT}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7C0h8Ix74TmDAWd2pO4MYT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Yo tengo un nuevo amor}
 
@@ -7982,7 +8387,10 @@
     {} %copyright \SBPubDom
     {Marcos Brunet}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1wGFaE9jsAhJb7b8WfNBkT}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1wGFaE9jsAhJb7b8WfNBkT}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Si te tengo a Ti}
 
@@ -8018,7 +8426,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3DeVx6gIrm1EbxmsoKy79W}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3DeVx6gIrm1EbxmsoKy79W}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{F}{Mi} \Ch{F/A}{ser} a\Ch{C}{la}\Ch{C/E}{ba} al Se\Ch{F}{ñor}~\Ch{C/E}{~}~\Ch{Bb/D}{~}
@@ -8079,7 +8490,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4JX4pvZ5Q2XUBGyM8vA9SH}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4JX4pvZ5Q2XUBGyM8vA9SH}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Hoy es tiempo de compartir}
 
@@ -8119,7 +8533,10 @@
     {} %copyright \SBPubDom
     {UPPERROOM}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1npfE6XYVD9lQKHobWkLrR}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1npfE6XYVD9lQKHobWkLrR}{Escuchar}\mbox{}\hfill}
+\fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
 
@@ -8185,7 +8602,10 @@
     {} %copyright \SBPubDom
     {}
     {Salmos 86:8} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/20kHKZQynOKbDwQXtdyhy9}{Escuchar}} %1995 aunque parece ser anterior a MArcos Witt
+{} %1995 aunque parece ser anterior a MArcos Witt
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/20kHKZQynOKbDwQXtdyhy9}{Escuchar}\mbox{}\hfill}
+\fi
 %        https://open.spotify.com/intl-es/track/1oGiCK1nJAxQ27OXrXqTxg 1996
         \begin{SBOpGroup}
             \Ch{E}{No} hay Dios tan grande como Tú,
@@ -8254,7 +8674,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1W1vJMrKPucMewFWZiBoeS}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1W1vJMrKPucMewFWZiBoeS}{Escuchar}\mbox{}\hfill}
+\fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
 
@@ -8390,7 +8813,10 @@
     {} %copyright \SBPubDom
     {Erick Linares}
     {Isaías 12:6} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6hsJSp5akl93y4cqI7wPqg}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6hsJSp5akl93y4cqI7wPqg}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1992
         \FLineIdx{Sobre los montes y collados}
@@ -8441,7 +8867,10 @@
     {} %copyright \SBPubDom
     {Aristides Mendez}
     {Hebreos 1:9} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1dh89sm1r18WIQGULi2oBs}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1dh89sm1r18WIQGULi2oBs}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1996
         \FLineIdx{Toda la noche sin parar}
@@ -8485,7 +8914,10 @@
     {} %copyright \SBPubDom
     {Miel San Marcos}
     {Hebreos 1:9} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/56W5sxRrdEjCgAO0ZrWWVK}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/56W5sxRrdEjCgAO0ZrWWVK}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1996
         \FLineIdx{Toda la noche sin parar}
@@ -8532,7 +8964,10 @@
     {} %copyright \SBPubDom
     {Daniel Fraire \& Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5Y5LY9fy1kFwl71QHw4UEe}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5Y5LY9fy1kFwl71QHw4UEe}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Cuando flaquea mi fe}
 
@@ -8591,7 +9026,10 @@
     {} %copyright \SBPubDom
     {Marcos Vidal}
     {Lucas 10:30} %pasaje
-    {\href{https://youtu.be/cxkfqxpuICM}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://youtu.be/cxkfqxpuICM}{Escuchar}\mbox{}\hfill}
+\fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -8677,7 +9115,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1snvuOpocJJRNXLVAR7QVI}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1snvuOpocJJRNXLVAR7QVI}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Por}que para \Ch{Em}{siem}pre \Ch{A}{Dios}
@@ -8727,7 +9168,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5ChFLnl5ZYGy7peefLf99Q}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5ChFLnl5ZYGy7peefLf99Q}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}, \Ch{G}{~}\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}}
 
@@ -8775,7 +9219,10 @@
     {} %copyright \SBPubDom
     {Jaime Murrell}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3qACviami2SMB7SuuMUtiE}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3qACviami2SMB7SuuMUtiE}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1994
 
@@ -8809,7 +9256,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5BrLQDeHMeNF6pScfXNXb1}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5BrLQDeHMeNF6pScfXNXb1}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1994
 
@@ -8837,7 +9287,10 @@
     {} %copyright \SBPubDom
     {Coalo Zamorano}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1VK9sZT2SNbz4UbDk9APAo}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1VK9sZT2SNbz4UbDk9APAo}{Escuchar}\mbox{}\hfill}
+\fi
         %2004
 
         \FLineIdx{Because of who You are}
@@ -8897,7 +9350,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Filipenses 1:21} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5VirPCg1ENrrd3g9lfTbcU}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5VirPCg1ENrrd3g9lfTbcU}{Escuchar}\mbox{}\hfill}
+\fi
         \FLineIdx{No busco una herencia ni cruzar el Jordán}
 
         \begin{SBOpGroup}
@@ -8947,7 +9403,10 @@
     {} %copyright \SBPubDom
     {Dailo Montero}
     {Filipenses 1:21} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0QOoX8FrCo3w85YES5pvCP}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0QOoX8FrCo3w85YES5pvCP}{Escuchar}\mbox{}\hfill}
+\fi
         \FLineIdx{Cantad a Dios, cantad}
 
         \begin{SBOpGroup}
@@ -8997,7 +9456,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4AmY6lIPICLIrFpAHERMNF}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4AmY6lIPICLIrFpAHERMNF}{Escuchar}\mbox{}\hfill}
+\fi
         \FLineIdx{Enséñame tu camino Señor}
 
         \begin{SBOpGroup}
@@ -9045,7 +9507,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6765SHKbINOPj3EJFnBGMs}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6765SHKbINOPj3EJFnBGMs}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             ¿\Ch{G}{Qué} sería de \Ch{D}{mí}?
@@ -9095,7 +9560,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1Or830MfybqrnIWGGz2xWa}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1Or830MfybqrnIWGGz2xWa}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Que \Ch{Em11}{to}dos los pueblos te a\Ch{Am7}{la}ben
@@ -9130,7 +9598,10 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1cJ31ZenICNnh523eHpEwa}{Escuchar}} %1988
+{} %1988
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1cJ31ZenICNnh523eHpEwa}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             ¿\Ch{Em}{Quien}, quien quien como Jehová,
@@ -9164,7 +9635,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0bTnnEglEgamzfRoKd7LRh}{Escuchar}} %2010
+{} %2010
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0bTnnEglEgamzfRoKd7LRh}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Quiero ala\Ch{D}{bar}te,
@@ -9217,7 +9691,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0k0u25TtOWTHYhnYXMdz7F}{Escuchar}} %2010
+{} %2010
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0k0u25TtOWTHYhnYXMdz7F}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{D C/D D/F\# }
 
@@ -9289,7 +9766,10 @@
     {} %copyright \SBPubDom
     {Fernel Monroy}
     {2 Samuel 6:22} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1NmECxDikubj4Hhu1dbrhl}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1NmECxDikubj4Hhu1dbrhl}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1996
         \FLineIdx{Hay muchas formas de alabar Tu nombre}
@@ -9340,7 +9820,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0XUwyz1NfrKue4iVrfm7aP}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0XUwyz1NfrKue4iVrfm7aP}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Re\Ch{D}{nué}va\Ch{G}{me} Se\Ch{A}{ñor} Je\Ch{Bm}{sús}
@@ -9381,7 +9864,10 @@
     {} %copyright \SBPubDom
     {Conquistando Fronteras}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1haGwJslzpsWdCV4tswXX3}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1haGwJslzpsWdCV4tswXX3}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{El sepulcro se selló}
 %        \SBIntro{Ebm C/E~\Ch{Bb}{~}}
@@ -9435,7 +9921,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/41L7qAYXn62qmbZhkFXabi}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/41L7qAYXn62qmbZhkFXabi}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Synth:\break DAF\# DAE\break DAF\# GF\#ED\break DGF\# GF\#ED}
         \SBIntro{\Ch{D}{~} \Ch{A}{~} \Ch{Em7}{~} \Ch{G}{~}}
@@ -9559,7 +10048,10 @@
     {} %copyright \SBPubDom
     {Lowell Mason}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{F}{Sa}grado es \Ch{C7}{el} a\Ch{F}{mor}
@@ -9618,7 +10110,10 @@
     {} %copyright \SBPubDom
     {Osdy Soriano Millán}
     {Salmo 150} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2KVovqNBIZ2b366IDtEHq0}{Escuchar}} %1978
+{} %1978
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2KVovqNBIZ2b366IDtEHq0}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Lo que respira alabe}
 
@@ -9677,7 +10172,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4OhyEUIpuxNwBhsmKJCPZU}{Escuchar}} %1978
+{} %1978
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4OhyEUIpuxNwBhsmKJCPZU}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{F}{San}to Espíritu descien\Ch{C}{de}
@@ -9740,7 +10238,10 @@
     {} %copyright \SBPubDom
     {}
     {Efesios 5:18} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5dPxFbvXtjdWmzgrhUq9j0}{Escuchar}} %1978
+{} %1978
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5dPxFbvXtjdWmzgrhUq9j0}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Santo Es\Ch{D}{pí}ritu \Ch{G}{lle}na mi \Ch{D}{vi}da
@@ -9797,7 +10298,10 @@
     {} %copyright \SBPubDom
     {Ericson Alexander Molano}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7fb0juH8O7ABLeS6aXSrMJ}{Escuchar}} %2008
+{} %2008
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7fb0juH8O7ABLeS6aXSrMJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{San}to, \Ch{A}{san}to, \Ch{Bm}{san}to~\Ch{D7}{~}
@@ -9826,7 +10330,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7DYbHdGgjF3XN66TJ65Ujp}{Escuchar}} %2008
+{} %2008
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7DYbHdGgjF3XN66TJ65Ujp}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Claman Ángeles}
 
@@ -9965,7 +10472,10 @@
     {} %copyright \SBPubDom
     {Regina Heber}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0AwD1ttPunQ8igtrUspp7G}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0AwD1ttPunQ8igtrUspp7G}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Santo, Santo, Santo}
 
@@ -10040,7 +10550,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Apocalipsis 4} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{G}{Sen}tado en su trono, rodeado de \Ch{Em}{luz}
@@ -10089,7 +10602,10 @@
     {} %copyright \SBPubDom
     {Dave Browning}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/68ejKEwjnLJrJgu2ozQdJQ?si=8c835a89f61e407f}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/68ejKEwjnLJrJgu2ozQdJQ?si=8c835a89f61e407f}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em}{Se}ñor llévame a tus atrios,
@@ -10140,7 +10656,10 @@
     {} %copyright \SBPubDom
     {Juan Salinas}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0UNe2yoagUBru92YuO4Bzb}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0UNe2yoagUBru92YuO4Bzb}{Escuchar}\mbox{}\hfill}
+\fi
         % 1992 aunque el disco lo subieron a potify con el año 2004
         %https://open.spotify.com/intl-es/track/123lQLH6YPEn9yW6zHpRZe 1998 instrumental
         %https://open.spotify.com/intl-es/track/6d6U1jtjUznMoD8QSOd11a 2004
@@ -10250,7 +10769,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {Mateo 9:37} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6vjNRJjuK5jGw37lBglbCK}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6vjNRJjuK5jGw37lBglbCK}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Alza tus ojos}
 
@@ -10296,7 +10818,10 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1991
 
@@ -10349,7 +10874,10 @@
     {} %copyright \SBPubDom
     {Lilly Goodman}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/03zBrLi4BWMlf09IoK9TIJ}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/03zBrLi4BWMlf09IoK9TIJ}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Sé que hay montañas tan altas}
 
@@ -10409,7 +10937,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0t95oHRKMBi5wxaD8RSXC7}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0t95oHRKMBi5wxaD8RSXC7}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Solo \Ch{C}{Dios} hace al hombre fe\Ch{G7}{liz}
@@ -10435,7 +10966,10 @@
     {} %copyright \SBPubDom
     {}
     {Apocalipsis 15:4} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4BifeMEA62jcJfd942xagM}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4BifeMEA62jcJfd942xagM}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             Sólo tú eres \Ch{Gm}{San}\Ch{C7}{to},
@@ -10486,7 +11020,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {1 Pedro 2:9} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3MF7cqKTCqQ6Xm8Pe2igJh}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3MF7cqKTCqQ6Xm8Pe2igJh}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Y llevaremos Su gloria}
 
@@ -10546,7 +11083,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1gIm472QLQmtVrY0n0479S}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1gIm472QLQmtVrY0n0479S}{Escuchar}\mbox{}\hfill}
+\fi
 % 2000
 
         \begin{SBOpGroup}
@@ -10590,7 +11130,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4vmPvQY7m6MC77mKDdJIkD}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4vmPvQY7m6MC77mKDdJIkD}{Escuchar}\mbox{}\hfill}
+\fi
 % 2003
 
         \FLineIdx{Cansado del camino}
@@ -10652,7 +11195,10 @@
     {} %copyright \SBPubDom
     {Emmanuel Espinosa}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7AyQEi7vGPBHyLwcLdtXxG}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7AyQEi7vGPBHyLwcLdtXxG}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{E}{E}res Tú la úni\Ch{B}{ca} razón de mi a\Ch{C\#m7}{do}ración ¡Oh Je\Ch{A}{sús}!
@@ -10715,7 +11261,10 @@
     {} %copyright \SBPubDom
     {Rojo}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2qQyA9SeWyCun6KYm7qnHF}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2qQyA9SeWyCun6KYm7qnHF}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBMargNote{Guitarra acc:\break E5~E(b5)~Esus4~E}
         \SBIntro{\Ch{E}{~}~\Ch{B}{~}~\Ch{A}{~}}
@@ -10794,7 +11343,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/34YoO3OXgRaei529O2KUlq}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/34YoO3OXgRaei529O2KUlq}{Escuchar}\mbox{}\hfill}
+\fi
 
         \SBIntro{\Ch{A}{~}\Ch{D}{~}\Ch{E}{~}\Ch{D}{~}\Ch{E}{~}\Ch{G}{~}}
 
@@ -10848,7 +11400,10 @@
     {} %copyright \SBPubDom
     {José Luis Torres}
     {Salmo 81:13-16} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3jxxDKltoHzvrePs9eA1tU}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3jxxDKltoHzvrePs9eA1tU}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Te da\Ch{C}{ré} lo me\Ch{D}{jor} del \Ch{Em}{tri}go
@@ -10882,7 +11437,10 @@
     {} %copyright \SBPubDom
     {En Espiritu y en Verdad}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2i4CXpjRlDuxAoUXajh2we}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2i4CXpjRlDuxAoUXajh2we}{Escuchar}\mbox{}\hfill}
+\fi
         %2008
         % https://open.spotify.com/intl-es/track/7G6kc971s9rYBDkLGjiDdg 2009
 
@@ -10947,7 +11505,10 @@
     {} %copyright \SBPubDom
     {Manuel Bonilla}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/62LUygH2lO3jERbY0i9xc0}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/62LUygH2lO3jERbY0i9xc0}{Escuchar}\mbox{}\hfill}
+\fi
         % 1971
         %https://open.spotify.com/intl-es/track/5lw4PpfAOVkRBSw734YVvC 1995
 
@@ -11030,7 +11591,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://www.youtube.com/watch?v=PIhIsopLWSE}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://www.youtube.com/watch?v=PIhIsopLWSE}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{C}{Tier}nas canciones alzad \Ch{Em}{al} Se\Ch{C}{ñor},
@@ -11099,7 +11663,10 @@
     {} %copyright \SBPubDom
     {Casa de Oración}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6MdZIr5LKHa5aeMwzXg92k}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6MdZIr5LKHa5aeMwzXg92k}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Te alabaré, te adoraré}
 
@@ -11151,7 +11718,10 @@
     {} %copyright \SBPubDom
     {Restauración}
     {Jeremías 31:3} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7I44iQLWTTp1Lcw1O9tIiY}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7I44iQLWTTp1Lcw1O9tIiY}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Yo te he amado con amor eterno}
         \FLineIdx{Cantare danzaré y me alegraré}
@@ -11206,7 +11776,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/3FANHwrwhGm9CWJ5cBZj7b}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3FANHwrwhGm9CWJ5cBZj7b}{Escuchar}\mbox{}\hfill}
+\fi
         % 1991
 
         \begin{SBOpGroup}
@@ -11247,7 +11820,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/2qQuuTgGcgtEf3FnqN6jye}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2qQuuTgGcgtEf3FnqN6jye}{Escuchar}\mbox{}\hfill}
+\fi
         % 1993
 
         \begin{SBOpGroup}
@@ -11303,7 +11879,10 @@
     {} %copyright \SBPubDom
     {Marco Barrientos}
     {Salmo 22:3} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/583hMDX7vZQSs0wRsJL3k4}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/583hMDX7vZQSs0wRsJL3k4}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1992
 
@@ -11349,7 +11928,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/659td3cm4QUQfC08Kmfbwu}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/659td3cm4QUQfC08Kmfbwu}{Escuchar}\mbox{}\hfill}
+\fi
 
         %2012
         % no queda claro hasta donde el original proviene de un canto más extenso: https://open.spotify.com/intl-es/track/4C3pXZL0RT6lmchZRqTVUk 1984
@@ -11380,7 +11962,10 @@
     {} %copyright \SBPubDom
     {Saul Morales}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5J0uf12z6hlORXOcuEGy8f}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5J0uf12z6hlORXOcuEGy8f}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1996
         \FLineIdx{Tus ojos revelan que yo}
@@ -11452,7 +12037,10 @@
     {} %copyright \SBPubDom
     {Proyecto JES}
     {Salmo 20:5} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/6NZaXsXxObjLnrUJqk2CRZ}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6NZaXsXxObjLnrUJqk2CRZ}{Escuchar}\mbox{}\hfill}
+\fi
 
         %1995
 
@@ -11492,7 +12080,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5fpBlGRTNJRgHgZIQzbNYy}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5fpBlGRTNJRgHgZIQzbNYy}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Tu \Ch{A}{nom}bre oh \Ch{E/A}{Dios} e\Ch{D/A}{xal}ta\Ch{E}{ré},
@@ -11534,7 +12125,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {Dalberto Gomez Perez}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0XgjeE9k0MrDisfz7PPtPf}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0XgjeE9k0MrDisfz7PPtPf}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{C}{U}na tortuguita saca la cabeza
@@ -11575,7 +12169,10 @@
     {} %copyright \SBPubDom
     {Generación de Jesús}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/7pqtm8Bpuvgn5cYOHTvmru}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7pqtm8Bpuvgn5cYOHTvmru}{Escuchar}\mbox{}\hfill}
+\fi
         %1975
 
         \begin{SBOpGroup}
@@ -11618,7 +12215,10 @@
     {} %copyright \SBPubDom
     {En Espiritu y en Verdad}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0VuwOyCJLj3T8F8cSyV7Yv}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0VuwOyCJLj3T8F8cSyV7Yv}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Eb}{A}mamos todo de ti
@@ -11678,7 +12278,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/10MsgqjfsUUpBl264o9V2K}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/10MsgqjfsUUpBl264o9V2K}{Escuchar}\mbox{}\hfill}
+\fi
 
         \FLineIdx{Apodérate}
 
@@ -11721,7 +12324,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {Salmos 37:4} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/5xj5no7AwtNMeBRY5bsVY9}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5xj5no7AwtNMeBRY5bsVY9}{Escuchar}\mbox{}\hfill}
+\fi
         %1991
 
         \FLineIdx{oh ven}
@@ -11756,7 +12362,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1COvySN3tofQI1zdAXtjOP}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1COvySN3tofQI1zdAXtjOP}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{D}{Mu}chas veces he pensado
@@ -11821,7 +12430,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/4WQMIAJ3EW3JtEsEu92Nek}{Escuchar}} %\NotCCLIed
+{} %\NotCCLIed
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4WQMIAJ3EW3JtEsEu92Nek}{Escuchar}\mbox{}\hfill}
+\fi
 
         % 1978
         %https://open.spotify.com/intl-es/track/0IPfhbgxdXUrxc1yV1ZKNE 1994
@@ -11863,12 +12475,15 @@
         \fi
     \end{song}
 
-    \themarker{Yahweh}
+%    \themarker{Yahweh}
     \begin{song}{Yahweh}{Em7}
     {} %copyright \SBPubDom
     {Oasis Ministry}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/04hV8gSYwrEmzwC05AQY4j}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/04hV8gSYwrEmzwC05AQY4j}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             \Ch{Em7}{Se} siente tu gloria en este \Ch{Bm7}{lu}gar
@@ -11906,12 +12521,15 @@
         \fi
     \end{song}
 
-    \themarker{Ya no soy esclavo}
+%    \themarker{Ya no soy esclavo}
     \begin{song}{Ya no soy esclavo}{A}
     {} %copyright \SBPubDom
     {Julio Melgar}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/0rehABFttACURgTK7kt3IC}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0rehABFttACURgTK7kt3IC}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Me en\Ch{A}{vuel}ves hoy con una \Ch{C\#}{can}ción
@@ -11985,12 +12603,15 @@
         \fi
     \end{song}
 
-    \themarker{Yo celebraré}
+%    \themarker{Yo celebraré}
     \begin{song}{Yo celebraré}{Em}
     {} %copyright \SBPubDom
     {Luis Enrique}
     {} %pasaje
-    {\href{https://www.youtube.com/watch?v=YugnfLA3CZ4}{Escuchar}} %1988
+{} %1988
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://www.youtube.com/watch?v=YugnfLA3CZ4}{Escuchar}\mbox{}\hfill}
+\fi
         % https://open.spotify.com/intl-es/track/1XqMWARIFnxZaI20aLW4Uy %1988
         % El original es más viejo, se encuentra en el himnario adventista con el número 231 se atribuye a Linda Duval en el año 1941 y el arreglo musical a Felipe W. Blycker en el año 1982
 
@@ -12022,7 +12643,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1wohJA29EsoRgndrml9EjF}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1wohJA29EsoRgndrml9EjF}{Escuchar}\mbox{}\hfill}
+\fi
 
         % 1996
         \FLineIdx{Todo a Cristo, yo me entrego}
@@ -12058,7 +12682,10 @@
     {} %copyright \SBPubDom
     {Marcos Witt}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/21TVjK4VtXogibW2ulnibS}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/21TVjK4VtXogibW2ulnibS}{Escuchar}\mbox{}\hfill}
+\fi
 
         %original 1991: https://open.spotify.com/intl-es/track/4AssDFEl5Kmr6u0qxf7teI?si=4efdac5a0a334d8c
         % 1992
@@ -12090,7 +12717,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/41bcpPTGfQx75KlSYlwCR6}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/41bcpPTGfQx75KlSYlwCR6}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBOpGroup}
             Yo tengo \Ch{A}{go}zo en mi alma,
@@ -12124,7 +12754,10 @@
     {} %copyright \SBPubDom
     {}
     {} %pasaje
-    {\href{https://open.spotify.com/intl-es/track/1hxUNYykzXr1awX0uqpqN1}{Escuchar}}
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1hxUNYykzXr1awX0uqpqN1}{Escuchar}\mbox{}\hfill}
+\fi
 
         \begin{SBChorus}
             Yo \Ch{F}{ten}go un amigo \Ch{Bb}{que} me \Ch{F}{a}ma
@@ -12159,7 +12792,7 @@
     \ifChordBk
 
 
-\pdfbookmark[section]{Pads~Para~Yamaha}{pads}
+\pdfbookmark[0]{Pads~Para~Yamaha}{pads}
 \section*{Pads Para Yamaha E-473}
 
 \textbf{Pad adoración 1}

@@ -29,9 +29,12 @@
 \let\oldsong\song
 \let\endoldsong\endsong
 
+
+\newcommand{\strconcat}[2]{#1 - #2}
+
 % Paso 2: Redefinir el entorno para insertar el pdfbookmark
 \RenewDocumentEnvironment{song}{m m m m m m m}{%
-    \pdfbookmark[1]{#1}{\pdfmdfivesum{#1}}% usar el primer argumento como título
+    \pdfbookmark[1]{\strconcat{#1}{#4}}{\pdfmdfivesum{\strconcat{#1}{#4}}}% usar el primer argumento como título
     \oldsong{#1}{#2}{#3}{#4}{#5}{#6}{#7}% llamar al entorno original con los mismos argumentos
     }{%
     \endoldsong
@@ -3969,7 +3972,7 @@
 
         \SBIntro{Gm | Bb | Dm | F}
 
-        \SBMargNote{Piano:\break Bb AG G AF\#5 Bb C5A}
+        \SBMargNote{Piano:\break Bb AG G AF5 Bb C5A}
 
         \begin{SBOpGroup}
             ¿\Ch{Gm}{Quién} sino el Señor las estrellas \Ch{Bb}{creó}
@@ -4007,6 +4010,8 @@
 
             Por \Ch{F}{siem}pre y siempre, oh Dios.
         \end{SBChorus}
+
+        \SBMargNote{Synth:\break GA Bb Bb C5A dobles:\break /// EG EG FA FA GBb Gb GC FA FA FA FA F-ABb ///}
 
         \SBBridge{Gm | Bb | Dm | F}
 

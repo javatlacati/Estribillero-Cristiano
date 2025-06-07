@@ -39,6 +39,7 @@
     }{%
     \endoldsong
 }
+\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
 % genera acordes de guitarra
 \newif\ifguitarra
 
@@ -512,8 +513,8 @@
 
     \end{titlepage}
 
-\hypersetup{pageanchor=true}
-
+    \hypersetup{pageanchor=true}
+    \pdfbookmark[0]{Piezas musicales}{piezas}
 %    \mainmatter
     \ifWordBk
     \twocolumn
@@ -521,16 +522,15 @@
 %%%
 % Songbook begins.
 %%%
-    \pdfbookmark[0]{Piezas~musicales}{piezas}
-%    \themarker{A Cristo solo a Cristo}
-    \begin{song}{A~Cristo~solo~a~Cristo}{G}
-    {Proyecto~AA} %copyright \SBPubDom
-    {Marcos~Witt}
-    {Hechos~4:12} %pasaje
-{} %\NotCCLIed
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/track/31LsSTJ8P7HZWu6KVpY9Fz}{Escuchar}\mbox{}\hfill}
-\fi
+
+    \begin{song}{A Cristo solo a Cristo}{G}
+    {Proyecto AA} %copyright \SBPubDom
+    {Marcos Witt}
+    {Hechos 4:12} %pasaje
+    {}%\NotCCLIed
+    \ifChordBk
+    \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/track/31LsSTJ8P7HZWu6KVpY9Fz}{Escuchar}\mbox{}\hfill}
+    \fi
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
         \begin{SBOpGroup}
             \Ch{G}{A} Cristo \Ch{G7}{so}lo a \Ch{C}{Cris}to~\Ch{Bm}{~}, \Ch{Am}{yo} exalta\Ch{D}{ré}
@@ -549,6 +549,7 @@
 
             a \Ch{C}{Cris}to he \Ch{Bm}{pro}cla\Ch{Am}{ma}\Ch{D}{do} \Ch{G}{Rey}
         \end{SBOpGroup}
+
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
@@ -571,7 +572,7 @@
     {Juan 3:16} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/177p7uNRVWE0seYFrv48ud}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/177p7uNRVWE0seYFrv48ud}{Escuchar}\mbox{}\hfill}
 \fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
@@ -663,7 +664,7 @@
     {Salmo 63:1-2} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/72tVbvGWzJ92cfyXaFd7nw}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/72tVbvGWzJ92cfyXaFd7nw}{Escuchar}\mbox{}\hfill}
 \fi
         %1991
 
@@ -729,7 +730,7 @@
     {Salmo 63:1-2} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0UG4ArCCfVi8HkhBJBV05x}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0UG4ArCCfVi8HkhBJBV05x}{Escuchar}\mbox{}\hfill}
 \fi
         %1999
 
@@ -799,7 +800,7 @@
     {Romanos 8:15} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/track/0yj0zBaa7Ckn6ZMQPmCmfF}{Escuchar}\mbox{}\hfill}
 \fi
 
 %        \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -866,7 +867,7 @@
     {Apocalipsis 1:18} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3EigVRcP0VQ5MhAUkCfZX8}{Escuchar}\mbox{}\hfill}
 \fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
@@ -907,7 +908,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2jIBt8XiJE8EZmVQzkxqOU}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2jIBt8XiJE8EZmVQzkxqOU}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{En mi corazón hay un clamor}
@@ -965,7 +966,7 @@
     {Salmo 19:1} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/30njp3rQZ90oJTPoQj4RLt}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/30njp3rQZ90oJTPoQj4RLt}{Escuchar}\mbox{}\hfill}
 \fi
 
 %  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
@@ -1008,7 +1009,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6voTqFcZ1Bap3BTMo1SjkX}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6voTqFcZ1Bap3BTMo1SjkX}{Escuchar}\mbox{}\hfill}
 \fi
         %1992
 
@@ -1062,7 +1063,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
 \fi
         \FLineIdx{Tu nombre Santo es}
 
@@ -1105,7 +1106,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBVerse}
@@ -1143,7 +1144,7 @@
     {Filipenses 4:6-7} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2zLgzu8nD1GLLFwuJxirRl}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2zLgzu8nD1GLLFwuJxirRl}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -1341,7 +1342,7 @@
     {Salmo 18:32} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2rN79VScHGBTOW3wrMKWVL}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2rN79VScHGBTOW3wrMKWVL}{Escuchar}\mbox{}\hfill}
 \fi
 
         % 1993
@@ -1385,7 +1386,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3JMkcZTcVrtVau3B4zKDgn}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3JMkcZTcVrtVau3B4zKDgn}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -1479,7 +1480,7 @@
     {Romanos 12:1} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/14YITNb5Ud0zsf3au1s5cR}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/14YITNb5Ud0zsf3au1s5cR}{Escuchar}\mbox{}\hfill}
 \fi
 
 
@@ -1522,7 +1523,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}\mbox{}\hfill}
 \fi
 
 %  \SBRef{Nuestro legado}{2006}%fuente \#
@@ -1618,7 +1619,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0YwFMo2jsOKL1dWEYHKccl}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0YwFMo2jsOKL1dWEYHKccl}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Cuando el mundo te inunda}
@@ -1695,7 +1696,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3T0iYGSm7o5X9uVWNcDNz3}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3T0iYGSm7o5X9uVWNcDNz3}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Dios no nos trajo hasta aquí para volver atrás}
@@ -1803,7 +1804,7 @@
     {Salmo 92:1} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6S90J1ENA9sgzfBDEHNyJ7}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6S90J1ENA9sgzfBDEHNyJ7}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Intro Flauta:\break GGGG ED CD E F\# G\break GGGG ED CD G B A}
@@ -1850,7 +1851,7 @@
     {Isaías 26:3} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0EtXTYDHwK81dnsloMPNha}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0EtXTYDHwK81dnsloMPNha}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -1883,7 +1884,7 @@
     {salmo 92:1-2} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0AazdjQf5l6Wtih13ya0Se}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0AazdjQf5l6Wtih13ya0Se}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{D}{~}\Ch{G}{~}}
@@ -1925,7 +1926,7 @@
     {Jeremías 10:23} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7kzqc0u8SNQAU5Wca0WNKo}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7kzqc0u8SNQAU5Wca0WNKo}{Escuchar}\mbox{}\hfill}
 \fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
@@ -1980,7 +1981,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5FXALCzOPuLhX07GRnrooO}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5FXALCzOPuLhX07GRnrooO}{Escuchar}\mbox{}\hfill}
 \fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
@@ -2041,7 +2042,7 @@
     {Apocalipsis 22:4} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3AbYh5nP4NdvWUahFCU1Ys}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3AbYh5nP4NdvWUahFCU1Ys}{Escuchar}\mbox{}\hfill}
 \fi
 
 
@@ -2101,7 +2102,7 @@
     {Juan 6:68} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6waY2sAiBJzHdmXyKYmr1w}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6waY2sAiBJzHdmXyKYmr1w}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Si decidiera negar mi fe}
@@ -2162,7 +2163,7 @@
     {Lucas 12:22} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1tCeL7KNEyPaTdow8kpHi0}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1tCeL7KNEyPaTdow8kpHi0}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2251,7 +2252,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/75IhuMXXHxnSCnaWKwPjSQ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/75IhuMXXHxnSCnaWKwPjSQ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2313,7 +2314,7 @@
     {Salmos 69:30} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6N6loBqpYEfTL7OKZ3wWQB}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6N6loBqpYEfTL7OKZ3wWQB}{Escuchar}\mbox{}\hfill}
 \fi
 %        https://open.spotify.com/intl-es/track/20WfGgLcOYzd6CZCdbrIpv
 
@@ -2372,7 +2373,7 @@
     {Salmos 51} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2vAYYOwfKVR3cCqg1mI6No}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2vAYYOwfKVR3cCqg1mI6No}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2470,7 +2471,7 @@
     {Salmos 18:29-35} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1icgG8eVsE9oTudn5XAeEE}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1icgG8eVsE9oTudn5XAeEE}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Bajo:\break EE D EE BD BDB DE E4}
@@ -2513,6 +2514,7 @@
             \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill
             \upchord{\BDsPiano\BDs}{\qquad Si} Mayor con bajo D\# \hfill\null\break
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2523,7 +2525,7 @@
     {Salmo 66:17-18} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC?si=2c4442fba5e5403c}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC?si=2c4442fba5e5403c}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2568,7 +2570,7 @@
     {Salmo 141:2} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{G}{~} \Ch{D/F\#}{~} \Ch{F}{~} \Ch{C/E}{~} \Ch{G}{~} \Ch{D/F\#}{~} \Ch{Am}{~} \Ch{D}{~}}
@@ -2618,7 +2620,7 @@
     {Lucas 24:19} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6eS6MBxWUEnRTE6lHJZMZ8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6eS6MBxWUEnRTE6lHJZMZ8}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2659,7 +2661,7 @@
     {Salmo 118:14-17} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4Y3DmWSsh6sKPlvhX8EvnJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4Y3DmWSsh6sKPlvhX8EvnJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         % 2010
@@ -2724,7 +2726,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3Ggsjz5pIJ5ThuDx7V6xYT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3Ggsjz5pIJ5ThuDx7V6xYT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2800,7 +2802,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/66fuI104YsTUxpk4tYiC2F}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/66fuI104YsTUxpk4tYiC2F}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1996
@@ -2865,7 +2867,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6bDHJjWEiWux7haSU8r4g5}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6bDHJjWEiWux7haSU8r4g5}{Escuchar}\mbox{}\hfill}
 \fi
 
         %2012
@@ -2903,7 +2905,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5skmp0I9YdDMzQqhWQhf2C}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5skmp0I9YdDMzQqhWQhf2C}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -2931,6 +2933,7 @@
             \upchord{\FsmPiano\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
             \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill
             \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\EsevenPiano\Eseven}{\qquad Mi} S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2941,7 +2944,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1o9hP3pRhkJ1wtaL3YdKrH}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1o9hP3pRhkJ1wtaL3YdKrH}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -2980,7 +2983,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3iJcqcWzfTi5Pkp2or41d9}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3iJcqcWzfTi5Pkp2or41d9}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3030,7 +3033,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0fpW2x6Cd3cBgTGaU8TZKE}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0fpW2x6Cd3cBgTGaU8TZKE}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3092,7 +3095,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4LeTETSxqGtSsnZ0mlSJeE}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4LeTETSxqGtSsnZ0mlSJeE}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3169,7 +3172,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6o3ErDVIenw0j4ZrP7nJkC}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6o3ErDVIenw0j4ZrP7nJkC}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Intro Piano:\break MI: DEG\break\break MD:\break F\# G AF\# AD\break DEF\# GF\# G\break AF\#5 E5D5}
@@ -3214,7 +3217,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1vX9aWhoRlfvykVyKj9F26}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1vX9aWhoRlfvykVyKj9F26}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3254,7 +3257,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0imd5ozg3GpCp8V4Emxdtt}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0imd5ozg3GpCp8V4Emxdtt}{Escuchar}\mbox{}\hfill}
 \fi
         %1989
 
@@ -3302,7 +3305,7 @@
     {Juan 17:22} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{A danzar}
@@ -3451,7 +3454,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4hJRjBuejum1jizRt1q2bt}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4hJRjBuejum1jizRt1q2bt}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3507,7 +3510,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3A4pZLhpwaA5qww6r1Li33}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3A4pZLhpwaA5qww6r1Li33}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1992
@@ -3549,7 +3552,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ZcVBicMCi350sxdqR6jEq}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2ZcVBicMCi350sxdqR6jEq}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3585,7 +3588,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4yleQmyBDmNBWTGAmWClPR}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4yleQmyBDmNBWTGAmWClPR}{Escuchar}\mbox{}\hfill}
 \fi
 
         % 250 HMVC
@@ -3664,7 +3667,7 @@
     {Salmos 113:3} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7mcV2OhsG4VXxeaxEpl1iU}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7mcV2OhsG4VXxeaxEpl1iU}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3742,7 +3745,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/16U7geOUCbpaVmQ9ILpyfa}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/16U7geOUCbpaVmQ9ILpyfa}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3835,7 +3838,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -3874,7 +3877,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3mGgd2UDopueiXxzPCxpgk}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3mGgd2UDopueiXxzPCxpgk}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -3919,7 +3922,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6HHoCvGgwqWxvuFKz6jzY8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6HHoCvGgwqWxvuFKz6jzY8}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -3965,14 +3968,13 @@
     {} %copyright \SBPubDom
     {La IBI}
     {} %pasaje
-{}
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/46yyc0SDK2SN2V64Vj1ItY}{Escuchar}\mbox{}\hfill}
-\fi
+    {}
+    \ifChordBk
+      \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/46yyc0SDK2SN2V64Vj1ItY}{Escuchar}\mbox{}\hfill}
+    \fi
 
-        \SBIntro{Gm | Bb | Dm | F}
-
-        \SBMargNote{Piano:\break Bb AG G AF5 Bb C5A}
+    \SBMargNote{Piano:\break Bb AG G AF5 Bb C5A}
+    \SBIntro{Gm | Bb | Dm | F}
 
         \begin{SBOpGroup}
             ¿\Ch{Gm}{Quién} sino el Señor las estrellas \Ch{Bb}{creó}
@@ -4011,12 +4013,12 @@
             Por \Ch{F}{siem}pre y siempre, oh Dios.
         \end{SBChorus}
 
-        \SBMargNote{Synth:\break GA Bb Bb C5A dobles:\break /// EG EG FA FA GBb Gb GC FA FA FA FA F-ABb ///}
-
         \SBBridge{Gm | Bb | Dm | F}
 
+        \SBMargNote{Synth:\break GA Bb Bb C5A dobles:\break /// EG EG FA FA GBb Gb GC FA FA FA FA F-ABb ///}
         \begin{SBOpGroup}
             ¿\Ch{Gm}{Quién} sino el Señor ha soñado en el \Ch{Bb}{plan}
+
             Para al hombre salvar?
 
             ¿\Ch{Gm}{Quién} sino el Señor limpiará al peca\Ch{Bb}{dor}
@@ -4066,7 +4068,7 @@
     {2 Corintios 3:17} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3cWdcVBkdDAx4PAwiodx3P}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3cWdcVBkdDAx4PAwiodx3P}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Libertad, libertad}
@@ -4107,7 +4109,7 @@
     {Juan 17:22} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/24I9oe6qBsY3JHvL6g4yTT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/24I9oe6qBsY3JHvL6g4yTT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{A Dios el Padre Celestial}
@@ -4144,7 +4146,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7EwdiktzwNNAGuFbRtioCI}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7EwdiktzwNNAGuFbRtioCI}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBVerse}
@@ -4215,7 +4217,7 @@
     {Romanos 8:35-38} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7FY2TKHkES18qJ55X84XOJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7FY2TKHkES18qJ55X84XOJ}{Escuchar}\mbox{}\hfill}
 \fi
         %1998
 
@@ -4255,7 +4257,7 @@
     {} %pasaje
 {} %1986
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1dSyyG3Q85sW8gpJuQdDT8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1dSyyG3Q85sW8gpJuQdDT8}{Escuchar}\mbox{}\hfill}
 \fi
 % https://open.spotify.com/intl-es/track/6gErZj8H1WToiv8WXqtHQh        1994
 %        https://open.spotify.com/intl-es/track/3rajwLdWzFE5EFu0LuG7gx 1996
@@ -4314,7 +4316,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/19QBEOBEaia9CHiZawoKy6}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/19QBEOBEaia9CHiZawoKy6}{Escuchar}\mbox{}\hfill}
 \fi
         % 2000
 
@@ -4351,7 +4353,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4x1qjmnKSmIJma1DofbmhY}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4x1qjmnKSmIJma1DofbmhY}{Escuchar}\mbox{}\hfill}
 \fi
 % 2000
 
@@ -4407,7 +4409,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2uYUh6fNl30dQ9tQbSLuXJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2uYUh6fNl30dQ9tQbSLuXJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -4449,7 +4451,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3mDfxXKhilk9iDxVxCMfi2}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3mDfxXKhilk9iDxVxCMfi2}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{G}{~}\Ch{G}{~}~\Ch{C}{~}\Ch{C}{~}~~\Ch{G}{~}\Ch{G}{~}~\Ch{D}{~}\Ch{D}{~}}
@@ -4513,7 +4515,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -4555,7 +4557,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6wL2yZjFtHkRsB84X49G84}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6wL2yZjFtHkRsB84X49G84}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -4605,7 +4607,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0o1J7Cj00zwa9nsbSncObG}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0o1J7Cj00zwa9nsbSncObG}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -4654,7 +4656,7 @@
     {Salmos 51:8-13} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -4690,7 +4692,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/78Lu2qh66enla4hAv1T5ZW}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/78Lu2qh66enla4hAv1T5ZW}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -4728,7 +4730,7 @@
     {Salmos 51:8-13} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7Azhuk7zD1duTn4VzjzbNO}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Gm}{~}\Ch{Cm}{~}~\Ch{Ab}{~}~\Ch{Bb}{~}~\Ch{Fm}{~}}
@@ -4770,7 +4772,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6Gmwr4U3AIYHKyUQfDHmuO}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6Gmwr4U3AIYHKyUQfDHmuO}{Escuchar}\mbox{}\hfill}
 \fi
 %        versión original
 %        https://open.spotify.com/intl-es/track/0VKhNgI7oy2yhFQAdqmNRo?si=643c8c78f166499d
@@ -4817,7 +4819,7 @@
     {Romanos 8:11} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -4878,7 +4880,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5kePPdU6VcqYa3yMVPr0qT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5kePPdU6VcqYa3yMVPr0qT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -4932,7 +4934,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4lTtpXPGs7NAqyQxgtDAct}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4lTtpXPGs7NAqyQxgtDAct}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -5016,7 +5018,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7EUjZLRFKP31lOpqpaokXY}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7EUjZLRFKP31lOpqpaokXY}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -5067,7 +5069,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4TM3PwAYVklTfobZGmjVly}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4TM3PwAYVklTfobZGmjVly}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5112,7 +5114,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0TnYy0RpI7ywWFKmK6oGoP}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0TnYy0RpI7ywWFKmK6oGoP}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5154,7 +5156,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2FF17M1eTlWMEWD7odigXh}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2FF17M1eTlWMEWD7odigXh}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5192,7 +5194,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/33TOmRFdGrNCxdLxIefA1r}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/33TOmRFdGrNCxdLxIefA1r}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Piano:\break EEE BBB\break AAA G\#G\#G\#\break G\#AE x4 F\#F\#F\# EEE\break GGG D\#D\#D\# }
@@ -5252,7 +5254,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5xmaJCdZm0kzGa7wajm5Eu}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5xmaJCdZm0kzGa7wajm5Eu}{Escuchar}\mbox{}\hfill}
 \fi
 %        https://open.spotify.com/intl-es/track/2b7YBLRv13r2iS31yXBz7a
 
@@ -5303,7 +5305,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5RHBAg3cPHYOh6Fx2MUbYS}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5RHBAg3cPHYOh6Fx2MUbYS}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5349,7 +5351,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5398,7 +5400,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5WaVwloIYHm95mNQnrfyZT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5WaVwloIYHm95mNQnrfyZT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5446,7 +5448,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7r6AD8tFiPl4tHq20znjwg}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7r6AD8tFiPl4tHq20znjwg}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Intro Piano:\break MI:\break B C\# D G\break B A\break MD:\break D E F\# B\break D\#CA D\#CA }
@@ -5501,7 +5503,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3YkViDWlrUcCIafb1nXxjQ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3YkViDWlrUcCIafb1nXxjQ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5552,7 +5554,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6XXn8f7bPRT2hP4j5nYbcJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6XXn8f7bPRT2hP4j5nYbcJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro[N]{\Ch{G}{~} \Ch{Em}{~} \Ch{C}{~} \Ch{D}{~}}
@@ -5604,7 +5606,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6lssdt639iUODSvmnHLDz1}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6lssdt639iUODSvmnHLDz1}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Espíritu Santo lléname}
@@ -5652,7 +5654,7 @@
     {2 corintios 4:5} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4EAn2z1oc7qnfuC4BqoQ1X}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4EAn2z1oc7qnfuC4BqoQ1X}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5693,7 +5695,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2jbMpzd5ikmPdMNYDQVmfe}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2jbMpzd5ikmPdMNYDQVmfe}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5742,7 +5744,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1gkSSTrGjnwr904VOykCOj}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1gkSSTrGjnwr904VOykCOj}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Al borde de tu gran trono}
@@ -5785,7 +5787,7 @@
     {Malaquías 3:2} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3NlfXlQdsoJIAufkIMfDz8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3NlfXlQdsoJIAufkIMfDz8}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Intro Metales:\break GA E\break E DCA EGAE CBG\break EGAE EGAE EGAB A}
@@ -5842,7 +5844,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4VVZMguosiqCkCLg3k5hjB}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4VVZMguosiqCkCLg3k5hjB}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -5904,7 +5906,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1Ju0r5RwVaubO9PGJMBPWF}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1Ju0r5RwVaubO9PGJMBPWF}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{DD E G E C D\break DDCD   DDCD}
@@ -5973,7 +5975,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4mM9MYayjcm3KibuCp2P72}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4mM9MYayjcm3KibuCp2P72}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6015,7 +6017,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5fx0pSrRtDq2u7qlaly8fC}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5fx0pSrRtDq2u7qlaly8fC}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6163,7 +6165,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1jnUCPGWdEXtjTaviVG9E9}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1jnUCPGWdEXtjTaviVG9E9}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6210,7 +6212,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7uZ2Jy1jcKf1cZLxOrwZ6f}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7uZ2Jy1jcKf1cZLxOrwZ6f}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6253,7 +6255,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6294,7 +6296,7 @@
     {Deuteronomio 10:17-18} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2ziu462xhKdGoI3FRRP6cs}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{Am}{~} \Ch{Fmaj7}{~} \Ch{Em7}{~} \Ch{Am7}{~}}
@@ -6353,7 +6355,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0d6JXGfRFaabGaPQCnZcXA}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0d6JXGfRFaabGaPQCnZcXA}{Escuchar}\mbox{}\hfill}
 \fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
@@ -6395,7 +6397,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6ErNkHvdWep9w5HABFooQW}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6ErNkHvdWep9w5HABFooQW}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6464,7 +6466,7 @@
     {Salmo 30:12} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/31xfacYtNo5vMxk6CggXCQ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/31xfacYtNo5vMxk6CggXCQ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6542,7 +6544,7 @@
     {1 Corintios 15:57} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1994 https://open.spotify.com/intl-es/track/63iQevwEMdIdIREjXcv4IO
@@ -6589,7 +6591,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3twlf8a1oiZ8WZT8Hdkc0X}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3twlf8a1oiZ8WZT8Hdkc0X}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{D |G | Bm |A}
@@ -6653,7 +6655,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4nxxZtSpkS3tEmuYxNMPmr}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4nxxZtSpkS3tEmuYxNMPmr}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -6883,7 +6885,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5QcC5tFnqsNOjxksGXZHCB}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5QcC5tFnqsNOjxksGXZHCB}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -6923,7 +6925,7 @@
     {Juan 12:26} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7AFZgROuKik53o560tuwwq}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7AFZgROuKik53o560tuwwq}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -6984,7 +6986,7 @@
     {Juan 12:26} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6xNBmT6PtVJJZxVBBqw9rT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6xNBmT6PtVJJZxVBBqw9rT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -7028,7 +7030,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3TbInL4DEBxLRExpqtHDw8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3TbInL4DEBxLRExpqtHDw8}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{En mi corazón hay una canción}
@@ -7123,7 +7125,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3EZMEVhLjWN6vEJeWyLw09}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3EZMEVhLjWN6vEJeWyLw09}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{Bm}{~} \Ch{A}{~} \Ch{F\#m}{~} \Ch{G}{~}}
@@ -7235,7 +7237,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3IfjNC2pFfp5okvoV8ez0t}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3IfjNC2pFfp5okvoV8ez0t}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -7269,7 +7271,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1syiUnSkF3ZiwJD5XnuTsJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1syiUnSkF3ZiwJD5XnuTsJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -7319,7 +7321,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/28ToGBqrF1KTv1rtXROK1T}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/28ToGBqrF1KTv1rtXROK1T}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -7357,7 +7359,7 @@
     {Filipenses 2:1-11} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/41ZI352fnbtGIpMKpkRxU4}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/41ZI352fnbtGIpMKpkRxU4}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Jes\'us, Señor de la creaci\'on}
@@ -7420,7 +7422,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2G8rT8LJJdx8tuTxPBDJIE}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2G8rT8LJJdx8tuTxPBDJIE}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -7511,7 +7513,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5tKpXmVMPetlH4ONsBwSf8}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5tKpXmVMPetlH4ONsBwSf8}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Oh deja que el Señor te envuelva}
@@ -7553,7 +7555,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2i9QGQ8Bco7lnOMbRntjY6}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2i9QGQ8Bco7lnOMbRntjY6}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Mejor es un día en la casa de Dios}
@@ -7618,7 +7620,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://www.youtube.com/watch?v=udv5HEhaJRM}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://www.youtube.com/watch?v=udv5HEhaJRM}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -7689,7 +7691,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4B6Dq9yCXAyZUzGH8ULq1N}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4B6Dq9yCXAyZUzGH8ULq1N}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Me viste a mí}
@@ -7759,7 +7761,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5nmRDCoUya4XwQXCuQjzjm}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5nmRDCoUya4XwQXCuQjzjm}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{Ab}{~} \Ch{F}{~} \Ch{C}{~} \Ch{Ab}{~}}
@@ -7847,7 +7849,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0JDwqWpljdzyVcFGpr2fRX}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0JDwqWpljdzyVcFGpr2fRX}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -7899,7 +7901,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/79y4fe9RE0KtxXGj4WmRT5}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/79y4fe9RE0KtxXGj4WmRT5}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -7984,7 +7986,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7qKZKJfitLRRA4O6ZBCTs7}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7qKZKJfitLRRA4O6ZBCTs7}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Como el ciervo busca por las aguas}
@@ -8025,7 +8027,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7L1wiIAKk62Tx3TQUoRViA}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7L1wiIAKk62Tx3TQUoRViA}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Me has dado libertad}
@@ -8077,7 +8079,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2ingUl2WYQjhm4JQCmVBLs}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2ingUl2WYQjhm4JQCmVBLs}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Libre yo soy libre}
@@ -8116,7 +8118,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6Oa2fcRuhb9MMg7aONE8SX}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6Oa2fcRuhb9MMg7aONE8SX}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -8160,7 +8162,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3e6ZHPRTo7IUtB2vonUeta}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3e6ZHPRTo7IUtB2vonUeta}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -8206,7 +8208,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4GmhW5TDAwsACoLAUYMkfu}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4GmhW5TDAwsACoLAUYMkfu}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -8235,7 +8237,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5Q175erZOZJZHKaZzJFYDN}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5Q175erZOZJZHKaZzJFYDN}{Escuchar}\mbox{}\hfill}
 \fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
@@ -8286,7 +8288,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6lefLtQ56C2P4pOT0QTm2p}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6lefLtQ56C2P4pOT0QTm2p}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -8330,7 +8332,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7C0h8Ix74TmDAWd2pO4MYT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7C0h8Ix74TmDAWd2pO4MYT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Yo tengo un nuevo amor}
@@ -8394,7 +8396,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1wGFaE9jsAhJb7b8WfNBkT}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1wGFaE9jsAhJb7b8WfNBkT}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Si te tengo a Ti}
@@ -8433,7 +8435,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3DeVx6gIrm1EbxmsoKy79W}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3DeVx6gIrm1EbxmsoKy79W}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -8497,7 +8499,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4JX4pvZ5Q2XUBGyM8vA9SH}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4JX4pvZ5Q2XUBGyM8vA9SH}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Hoy es tiempo de compartir}
@@ -8540,7 +8542,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1npfE6XYVD9lQKHobWkLrR}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1npfE6XYVD9lQKHobWkLrR}{Escuchar}\mbox{}\hfill}
 \fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
@@ -8609,7 +8611,7 @@
     {Salmos 86:8} %pasaje
 {} %1995 aunque parece ser anterior a MArcos Witt
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/20kHKZQynOKbDwQXtdyhy9}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/20kHKZQynOKbDwQXtdyhy9}{Escuchar}\mbox{}\hfill}
 \fi
 %        https://open.spotify.com/intl-es/track/1oGiCK1nJAxQ27OXrXqTxg 1996
         \begin{SBOpGroup}
@@ -8681,7 +8683,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1W1vJMrKPucMewFWZiBoeS}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1W1vJMrKPucMewFWZiBoeS}{Escuchar}\mbox{}\hfill}
 \fi
 
 %        \SBRef{El aire de tu casa}{2005}%fuente \#
@@ -8820,7 +8822,7 @@
     {Isaías 12:6} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6hsJSp5akl93y4cqI7wPqg}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6hsJSp5akl93y4cqI7wPqg}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1992
@@ -8874,7 +8876,7 @@
     {Hebreos 1:9} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1dh89sm1r18WIQGULi2oBs}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1dh89sm1r18WIQGULi2oBs}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1996
@@ -8921,7 +8923,7 @@
     {Hebreos 1:9} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/56W5sxRrdEjCgAO0ZrWWVK}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/56W5sxRrdEjCgAO0ZrWWVK}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1996
@@ -8971,7 +8973,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5Y5LY9fy1kFwl71QHw4UEe}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5Y5LY9fy1kFwl71QHw4UEe}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Cuando flaquea mi fe}
@@ -9033,7 +9035,7 @@
     {Lucas 10:30} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://youtu.be/cxkfqxpuICM}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://youtu.be/cxkfqxpuICM}{Escuchar}\mbox{}\hfill}
 \fi
 
 %  \renewcommand{\RevDate}{February~11,~1993}
@@ -9122,7 +9124,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1snvuOpocJJRNXLVAR7QVI}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1snvuOpocJJRNXLVAR7QVI}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -9175,7 +9177,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5ChFLnl5ZYGy7peefLf99Q}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5ChFLnl5ZYGy7peefLf99Q}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}, \Ch{G}{~}\Ch{Am}{Po}de\Ch{G}{ro}\Ch{Am}{so}}
@@ -9226,7 +9228,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3qACviami2SMB7SuuMUtiE}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3qACviami2SMB7SuuMUtiE}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1994
@@ -9263,7 +9265,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5BrLQDeHMeNF6pScfXNXb1}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5BrLQDeHMeNF6pScfXNXb1}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1994
@@ -9294,7 +9296,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1VK9sZT2SNbz4UbDk9APAo}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1VK9sZT2SNbz4UbDk9APAo}{Escuchar}\mbox{}\hfill}
 \fi
         %2004
 
@@ -9357,7 +9359,7 @@
     {Filipenses 1:21} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5VirPCg1ENrrd3g9lfTbcU}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5VirPCg1ENrrd3g9lfTbcU}{Escuchar}\mbox{}\hfill}
 \fi
         \FLineIdx{No busco una herencia ni cruzar el Jordán}
 
@@ -9410,7 +9412,7 @@
     {Filipenses 1:21} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0QOoX8FrCo3w85YES5pvCP}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0QOoX8FrCo3w85YES5pvCP}{Escuchar}\mbox{}\hfill}
 \fi
         \FLineIdx{Cantad a Dios, cantad}
 
@@ -9463,7 +9465,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4AmY6lIPICLIrFpAHERMNF}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4AmY6lIPICLIrFpAHERMNF}{Escuchar}\mbox{}\hfill}
 \fi
         \FLineIdx{Enséñame tu camino Señor}
 
@@ -9508,13 +9510,50 @@
         \fi
     \end{song}
 
+    \begin{song}{Que maravilla tener una familia}{Em}
+    {} %copyright \SBPubDom
+    {Espíritu Vente}
+    {} %pasaje
+{}
+\ifChordBk
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6dVkwsH1ZrHJdGsqArV8GO}{Escuchar}\mbox{}\hfill}
+\fi
+
+        %1995
+        \FLineIdx{Una familia unida}
+
+        \begin{SBOpGroup}
+            ¡\Ch{Em}{Qué}  maravilla es tener una fa\Ch{G}{mi}lia!
+
+            una fa\Ch{B7}{mi}lia en Cristo Je\Ch{Em}{sús}\Ch{E7}{~}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{E7}{U}na familia u\Ch{Am}{ni}da, \Ch{D}{u}na familia \Ch{G}{real}\Ch{Em}{~}
+
+            una familia que \Ch{B7}{a}ma, una familia celes\Ch{Em}{tial}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill
+            \upchord{\EsevenPiano\Eseven}{\qquad Mi} S\'eptima \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{¿Qué Sería de mí?}{G}
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6765SHKbINOPj3EJFnBGMs}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6765SHKbINOPj3EJFnBGMs}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -9567,7 +9606,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1Or830MfybqrnIWGGz2xWa}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1Or830MfybqrnIWGGz2xWa}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -9605,7 +9644,7 @@
     {} %pasaje
 {} %1988
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1cJ31ZenICNnh523eHpEwa}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1cJ31ZenICNnh523eHpEwa}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -9642,7 +9681,7 @@
     {} %pasaje
 {} %2010
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0bTnnEglEgamzfRoKd7LRh}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0bTnnEglEgamzfRoKd7LRh}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -9698,7 +9737,7 @@
     {} %pasaje
 {} %2010
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0k0u25TtOWTHYhnYXMdz7F}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0k0u25TtOWTHYhnYXMdz7F}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{D C/D D/F\# }
@@ -9773,7 +9812,7 @@
     {2 Samuel 6:22} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1NmECxDikubj4Hhu1dbrhl}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1NmECxDikubj4Hhu1dbrhl}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1996
@@ -9827,7 +9866,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0XUwyz1NfrKue4iVrfm7aP}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0XUwyz1NfrKue4iVrfm7aP}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -9871,7 +9910,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1haGwJslzpsWdCV4tswXX3}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1haGwJslzpsWdCV4tswXX3}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{El sepulcro se selló}
@@ -9928,7 +9967,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/41L7qAYXn62qmbZhkFXabi}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/41L7qAYXn62qmbZhkFXabi}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Synth:\break DAF\# DAE\break DAF\# GF\#ED\break DGF\# GF\#ED}
@@ -10055,7 +10094,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10117,7 +10156,7 @@
     {Salmo 150} %pasaje
 {} %1978
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2KVovqNBIZ2b366IDtEHq0}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2KVovqNBIZ2b366IDtEHq0}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Lo que respira alabe}
@@ -10179,7 +10218,7 @@
     {} %pasaje
 {} %1978
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4OhyEUIpuxNwBhsmKJCPZU}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4OhyEUIpuxNwBhsmKJCPZU}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10245,7 +10284,7 @@
     {Efesios 5:18} %pasaje
 {} %1978
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5dPxFbvXtjdWmzgrhUq9j0}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5dPxFbvXtjdWmzgrhUq9j0}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10305,7 +10344,7 @@
     {} %pasaje
 {} %2008
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7fb0juH8O7ABLeS6aXSrMJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7fb0juH8O7ABLeS6aXSrMJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10337,7 +10376,7 @@
     {} %pasaje
 {} %2008
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7DYbHdGgjF3XN66TJ65Ujp}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7DYbHdGgjF3XN66TJ65Ujp}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Claman Ángeles}
@@ -10479,7 +10518,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0AwD1ttPunQ8igtrUspp7G}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0AwD1ttPunQ8igtrUspp7G}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Santo, Santo, Santo}
@@ -10557,7 +10596,7 @@
     {Apocalipsis 4} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2pr8QSYZjjDvwRMA8qJaVg}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10609,7 +10648,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/68ejKEwjnLJrJgu2ozQdJQ?si=8c835a89f61e407f}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/68ejKEwjnLJrJgu2ozQdJQ?si=8c835a89f61e407f}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10663,7 +10702,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0UNe2yoagUBru92YuO4Bzb}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0UNe2yoagUBru92YuO4Bzb}{Escuchar}\mbox{}\hfill}
 \fi
         % 1992 aunque el disco lo subieron a potify con el año 2004
         %https://open.spotify.com/intl-es/track/123lQLH6YPEn9yW6zHpRZe 1998 instrumental
@@ -10776,7 +10815,7 @@
     {Mateo 9:37} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6vjNRJjuK5jGw37lBglbCK}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6vjNRJjuK5jGw37lBglbCK}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Alza tus ojos}
@@ -10825,7 +10864,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0Xx8W0qIS5Ok8fBgaRSUhm}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1991
@@ -10881,7 +10920,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/03zBrLi4BWMlf09IoK9TIJ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/03zBrLi4BWMlf09IoK9TIJ}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Sé que hay montañas tan altas}
@@ -10944,7 +10983,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0t95oHRKMBi5wxaD8RSXC7}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0t95oHRKMBi5wxaD8RSXC7}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -10973,7 +11012,7 @@
     {Apocalipsis 15:4} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4BifeMEA62jcJfd942xagM}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4BifeMEA62jcJfd942xagM}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -11027,7 +11066,7 @@
     {1 Pedro 2:9} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3MF7cqKTCqQ6Xm8Pe2igJh}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3MF7cqKTCqQ6Xm8Pe2igJh}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Y llevaremos Su gloria}
@@ -11090,7 +11129,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1gIm472QLQmtVrY0n0479S}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1gIm472QLQmtVrY0n0479S}{Escuchar}\mbox{}\hfill}
 \fi
 % 2000
 
@@ -11137,7 +11176,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4vmPvQY7m6MC77mKDdJIkD}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4vmPvQY7m6MC77mKDdJIkD}{Escuchar}\mbox{}\hfill}
 \fi
 % 2003
 
@@ -11202,7 +11241,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7AyQEi7vGPBHyLwcLdtXxG}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7AyQEi7vGPBHyLwcLdtXxG}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -11268,7 +11307,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2qQyA9SeWyCun6KYm7qnHF}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2qQyA9SeWyCun6KYm7qnHF}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBMargNote{Guitarra acc:\break E5~E(b5)~Esus4~E}
@@ -11350,7 +11389,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/34YoO3OXgRaei529O2KUlq}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/34YoO3OXgRaei529O2KUlq}{Escuchar}\mbox{}\hfill}
 \fi
 
         \SBIntro{\Ch{A}{~}\Ch{D}{~}\Ch{E}{~}\Ch{D}{~}\Ch{E}{~}\Ch{G}{~}}
@@ -11407,7 +11446,7 @@
     {Salmo 81:13-16} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3jxxDKltoHzvrePs9eA1tU}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3jxxDKltoHzvrePs9eA1tU}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -11444,7 +11483,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2i4CXpjRlDuxAoUXajh2we}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2i4CXpjRlDuxAoUXajh2we}{Escuchar}\mbox{}\hfill}
 \fi
         %2008
         % https://open.spotify.com/intl-es/track/7G6kc971s9rYBDkLGjiDdg 2009
@@ -11512,7 +11551,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/62LUygH2lO3jERbY0i9xc0}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/62LUygH2lO3jERbY0i9xc0}{Escuchar}\mbox{}\hfill}
 \fi
         % 1971
         %https://open.spotify.com/intl-es/track/5lw4PpfAOVkRBSw734YVvC 1995
@@ -11598,7 +11637,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://www.youtube.com/watch?v=PIhIsopLWSE}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://www.youtube.com/watch?v=PIhIsopLWSE}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -11670,7 +11709,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6MdZIr5LKHa5aeMwzXg92k}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6MdZIr5LKHa5aeMwzXg92k}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Te alabaré, te adoraré}
@@ -11725,7 +11764,7 @@
     {Jeremías 31:3} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7I44iQLWTTp1Lcw1O9tIiY}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7I44iQLWTTp1Lcw1O9tIiY}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Yo te he amado con amor eterno}
@@ -11783,7 +11822,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/3FANHwrwhGm9CWJ5cBZj7b}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3FANHwrwhGm9CWJ5cBZj7b}{Escuchar}\mbox{}\hfill}
 \fi
         % 1991
 
@@ -11827,7 +11866,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/2qQuuTgGcgtEf3FnqN6jye}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2qQuuTgGcgtEf3FnqN6jye}{Escuchar}\mbox{}\hfill}
 \fi
         % 1993
 
@@ -11886,7 +11925,7 @@
     {Salmo 22:3} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/583hMDX7vZQSs0wRsJL3k4}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/583hMDX7vZQSs0wRsJL3k4}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1992
@@ -11935,7 +11974,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/659td3cm4QUQfC08Kmfbwu}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/659td3cm4QUQfC08Kmfbwu}{Escuchar}\mbox{}\hfill}
 \fi
 
         %2012
@@ -11969,7 +12008,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5J0uf12z6hlORXOcuEGy8f}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5J0uf12z6hlORXOcuEGy8f}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1996
@@ -12044,7 +12083,7 @@
     {Salmo 20:5} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/6NZaXsXxObjLnrUJqk2CRZ}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6NZaXsXxObjLnrUJqk2CRZ}{Escuchar}\mbox{}\hfill}
 \fi
 
         %1995
@@ -12087,7 +12126,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5fpBlGRTNJRgHgZIQzbNYy}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5fpBlGRTNJRgHgZIQzbNYy}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12132,7 +12171,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0XgjeE9k0MrDisfz7PPtPf}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0XgjeE9k0MrDisfz7PPtPf}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12176,7 +12215,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/7pqtm8Bpuvgn5cYOHTvmru}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7pqtm8Bpuvgn5cYOHTvmru}{Escuchar}\mbox{}\hfill}
 \fi
         %1975
 
@@ -12222,7 +12261,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0VuwOyCJLj3T8F8cSyV7Yv}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0VuwOyCJLj3T8F8cSyV7Yv}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12285,7 +12324,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/10MsgqjfsUUpBl264o9V2K}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/10MsgqjfsUUpBl264o9V2K}{Escuchar}\mbox{}\hfill}
 \fi
 
         \FLineIdx{Apodérate}
@@ -12331,7 +12370,7 @@
     {Salmos 37:4} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/5xj5no7AwtNMeBRY5bsVY9}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5xj5no7AwtNMeBRY5bsVY9}{Escuchar}\mbox{}\hfill}
 \fi
         %1991
 
@@ -12369,7 +12408,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1COvySN3tofQI1zdAXtjOP}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1COvySN3tofQI1zdAXtjOP}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12437,7 +12476,7 @@
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/4WQMIAJ3EW3JtEsEu92Nek}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4WQMIAJ3EW3JtEsEu92Nek}{Escuchar}\mbox{}\hfill}
 \fi
 
         % 1978
@@ -12487,7 +12526,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/04hV8gSYwrEmzwC05AQY4j}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/04hV8gSYwrEmzwC05AQY4j}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12533,7 +12572,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/0rehABFttACURgTK7kt3IC}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0rehABFttACURgTK7kt3IC}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12615,7 +12654,7 @@
     {} %pasaje
 {} %1988
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://www.youtube.com/watch?v=YugnfLA3CZ4}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://www.youtube.com/watch?v=YugnfLA3CZ4}{Escuchar}\mbox{}\hfill}
 \fi
         % https://open.spotify.com/intl-es/track/1XqMWARIFnxZaI20aLW4Uy %1988
         % El original es más viejo, se encuentra en el himnario adventista con el número 231 se atribuye a Linda Duval en el año 1941 y el arreglo musical a Felipe W. Blycker en el año 1982
@@ -12650,7 +12689,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1wohJA29EsoRgndrml9EjF}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1wohJA29EsoRgndrml9EjF}{Escuchar}\mbox{}\hfill}
 \fi
 
         % 1996
@@ -12689,7 +12728,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/21TVjK4VtXogibW2ulnibS}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/21TVjK4VtXogibW2ulnibS}{Escuchar}\mbox{}\hfill}
 \fi
 
         %original 1991: https://open.spotify.com/intl-es/track/4AssDFEl5Kmr6u0qxf7teI?si=4efdac5a0a334d8c
@@ -12724,7 +12763,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/41bcpPTGfQx75KlSYlwCR6}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/41bcpPTGfQx75KlSYlwCR6}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBOpGroup}
@@ -12761,7 +12800,7 @@
     {} %pasaje
 {}
 \ifChordBk
-  \paragraph{\mbox{}\hfill\protect\protect\href{https://open.spotify.com/intl-es/track/1hxUNYykzXr1awX0uqpqN1}{Escuchar}\mbox{}\hfill}
+  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1hxUNYykzXr1awX0uqpqN1}{Escuchar}\mbox{}\hfill}
 \fi
 
         \begin{SBChorus}
@@ -12800,11 +12839,29 @@
 \pdfbookmark[0]{Pads~Para~Yamaha}{pads}
 \section*{Pads Para Yamaha E-473}
 
+Estos pads son compatibles con varios teclados de Yamaha, por ejemplo el E-463
+
+Para guardar una configuración en el registration memory.
+
+Apretamos la tecla bank hasta que aparezca en pantalla el número de banco en que lo queramos guardar, normalmente hay 8.
+
+Si hay que guardar más de uno, tenemos que tener cuidado porque por defecto guarda el último que hemos guardado.
+Observe que en registration tiene algún candadito, debemos desactivarla para poder guardar los cambios.
+
+Buscamos la función VoiceFrz y lo modificamos con la rueda a off para poder guardar los sonidos.
+apretar la tecla voice para configurar la voz principal M.Voice.
+para cambiar los parámetros oprima la tecla function, busque la configuración a modificar, oprima enter, modifique el valor mediante la rueda que se ubica a la derecha
+y oprima la tecla enter para guardar los cambios.
+Finalmente oprima al mismo tiempo la tecla bank y una de las 4 teclas numeradas que están a su derecha. Deberá aparecer la leyenda Memory OK en el visor.
+Acabando de modificar y guardar las voces debe volver a ponerlo en On.
+
+Para cargar la voz basta con oprimir la técla del número a la derecha de la tecla bank para que esta se cargue.
+
 \textbf{Pad adoración 1}
 \vskip 25pt
 
 Touch res: Medium
-M. Voice: 002 GandPno
+M. Voice: 002 GrandPno
 M. Volume: 115
 M. Octave: 0
 M.Pan: R30
@@ -12881,7 +12938,6 @@ D. Reso: 64
 \textbf{Dyno piano}
 \vskip 25pt
 
-
 Touch res: Medium
 M. Voice: 389 DXPhase
 M. Volume: 100
@@ -12905,6 +12961,23 @@ D. Cutoff: 64
 D. Reso: 104
 \vskip 25pt
 
+\textbf{Modificaciones simples a instrumentos}
+
+\textbf{Saxofón}
+\vskip 25pt
+
+Touch res: Medium
+M. Voice: 159 S!Soprn
+M. Volume: 96
+M. Octave: 0
+M. Pan: C
+M. Reverb: 90
+M. Chorus: 0
+M. Attack: 64
+M. Release: 64
+M. Cutoff: 64
+M. Reso: 100
+
 \textbf{Synthetizador electrónica}
 \vskip 25pt
 
@@ -12917,6 +12990,21 @@ M. Reverb: 100
 M. Chorus: 127
 M. Attack: 64
 M. Release: 105
+M. Cutoff: 64
+M. Reso: 64
+
+\textbf{Piano bolero sudam}
+\vskip 25pt
+
+Touch res: Medium
+M. Voice: 241 Bright
+M. Volume: 100
+M. Octave: -1
+M. Pan: C
+M. Reverb: 100
+M. Chorus: 64
+M. Attack: 64
+M. Release: 64
 M. Cutoff: 64
 M. Reso: 64
 

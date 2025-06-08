@@ -5,7 +5,7 @@
 %%                                                      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt, spanish]{book}
+\documentclass[12pt, spanish, letter]{book}
 
 \usepackage[T1]{fontenc} %pdflatex
 %\usepackage{fontspec} %xelatex
@@ -33,9 +33,10 @@
 \newcommand{\strconcat}[2]{#1 - #2}
 
 % Paso 2: Redefinir el entorno para insertar el pdfbookmark
-\RenewDocumentEnvironment{song}{m m m m m m m}{%
+%\renewenvironment{song}[7][YF]{%
+\RenewDocumentEnvironment{song}{m m m m m m}{%
     \pdfbookmark[1]{\strconcat{#1}{#4}}{\pdfmdfivesum{\strconcat{#1}{#4}}}% usar el primer argumento como título
-    \oldsong{#1}{#2}{#3}{#4}{#5}{#6}{#7}% llamar al entorno original con los mismos argumentos
+    \oldsong{#1}{#2}{#3}{#4}{#5}{#6}% llamar al entorno original con los mismos argumentos
     }{%
     \endoldsong
 }
@@ -429,6 +430,10 @@
 
 \ifChordBk
 % It's a words & chords songbook...
+\headsep=7mm
+\oddsidemargin=1in
+\evensidemargin=1.2in
+\footskip=0.2in
 \addtolength{\headwidth}{\marginparsep}
 \addtolength{\headwidth}{\marginparwidth}
 \renewcommand{\headrulewidth}{0.4pt}
@@ -1059,9 +1064,9 @@
 %    \themarker{Agnus Dei}
     \begin{song}{Agnus Dei}{A}
     {\SBPubDom} %copyright \SBPubDom
-    {}
+    { }
     {} %pasaje
-{} %\NotCCLIed
+    {} %\NotCCLIed
 \ifChordBk
   \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/6LqNz2egKdkGwKDvul2aPn}{Escuchar}\mbox{}\hfill}
 \fi
@@ -1288,6 +1293,9 @@
     {Jesús Adrián Romero}
     {} %pasaje
     {} %\NotCCLIed
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/487Xyq9O8GD8NH5uNLWfHX}{Escuchar}\mbox{}\hfill}
+        \fi
 
         \SBIntro[N]{\Ch{G}{~} \Ch{C2}{~} \Ch{G}{~}}
         \SBBridge{LA-SI-DO-SI-LA-SOL}
@@ -1309,7 +1317,7 @@
 
             Te procla\Ch{C2}{ma}\Ch{D}{mos} Se\Ch{G}{ñor}.
         \end{SBOpGroup}
-
+        \vskip 20pt
         \begin{SBOpGroup}
             \Ch{G}{En} la cruz por mí te \Ch{D}{dis}te para \Ch{C}{dar}me liber\Ch{G}{tad}.
 
@@ -1324,7 +1332,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\CtwoPiano\Ctwo}{\qquad Do} Aumentada 2 \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
@@ -1463,7 +1471,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill
             \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill\null\break
             \upchord{\BflatsevenPiano\Bflatseven}{\quad Si} bemol Mayor S\'eptima \hfill
@@ -2116,7 +2124,7 @@
 
             no tengo a \Ch{Dsus4}{don}de \Ch{D}{ir}
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             Si despre\Ch{G}{cia}re en mi corazón
 
@@ -2126,7 +2134,7 @@
 
             no tengo a \Ch{Dsus4}{don}de \Ch{D}{ir}
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             Conven\Ch{Em7}{ci}do estoy que sin tu a\Ch{C}{mor}
 
@@ -2136,7 +2144,7 @@
 
             se muere, se \Ch{D}{se}ca \Ch{G}{~}
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             \Ch{G}{Cer}ca de \Ch{D}{Tí},\Ch{Am7}{~} yo quiero es\Ch{Em7}{tar}
 
@@ -2145,7 +2153,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
             \upchord{\CMajPiano\CMaj}{\qquad Do} +7 \hfill
@@ -2689,7 +2697,7 @@
 
             A los que es\Ch{G}{ta}mos aquí
         \end{SBOpGroup}
-
+        \vskip 20pt
 %        \SBBridge{}
 
         \begin{SBOpGroup}
@@ -3625,7 +3633,7 @@
 
             y su sangre obrará en mi favor
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             \Ch{C}{Fe}líz yo me \Ch{C/G}{sien}\Ch{G7}{to} al \Ch{C/E}{sa}ber \Ch{G}{que} \Ch{G7}{Je}\Ch{C}{sús}
 
@@ -3635,7 +3643,7 @@
 
             ¡Gloria demos al buen Salvador!
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             \Ch{C}{La} fe torna\Ch{C/G}{rá}\Ch{G7}{se} \Ch{C/E}{en} gran re\Ch{G}{a}li\Ch{C}{dad}
 
@@ -5548,9 +5556,9 @@
         \fi
     \end{song}
 
-    \begin{song}{Está cayendo aquí}{G}
+    \begin{song}{Está cayendo}{G}
     {} %copyright \SBPubDom
-    {Jose Luis Reyes}
+    {José Luis Reyes}
     {} %pasaje
 {} %\NotCCLIed
 \ifChordBk
@@ -5558,12 +5566,12 @@
 \fi
 
         \SBIntro[N]{\Ch{G}{~} \Ch{Em}{~} \Ch{C}{~} \Ch{D}{~}}
-        \SBMargNote{Piano: G-F\#-D}
+        \SBMargNote{Piano: /// G F\# D /// G F\# A}
 
         \FLineIdx{Algo está cayendo aquí}
 
         \begin{SBOpGroup}
-            \Ch{G}{al}go está cayendo a\Ch{Am}{quí}\Ch{D}{~}
+            \Ch{G}{Al}go está cayendo a\Ch{Am}{quí}\Ch{D}{~}
 
             es tan fuerte sobre \Ch{G}{mí}\Ch{Em}{~}
 
@@ -5573,13 +5581,13 @@
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            esta ca\Ch{G}{yen}do
+            Está ca\Ch{G}{yen}do
 
             su gloria sobre \Ch{D}{mí}
 
             sanando he\Ch{Am}{ri}das
 
-            levantando al ca\Ch{C}{í}do
+            levantando al \Ch{C}{caí}do
 
             su gloria está a\Ch{D}{quí}
 
@@ -6237,7 +6245,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
             \upchord{\BsusPiano\Bsus}{\qquad Si} Suspendida 4 \hfill

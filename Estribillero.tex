@@ -248,6 +248,7 @@
 \newcommand{\GE}{\chord{t}{x,p2,p2,n,p3,p3}{G/E}}
 \newcommand{\GF}{\chord{t}{p1,p2,n,n,p3,p3}{G/F}}
 \newcommand{\GnineD}{\chord{t}{n,n,o,n,n,p1}{G9/D}}
+\newcommand{\Gtwo}{\chord{t}{p3,n,n,n,n,p3}{G2}}
 \newcommand{\Gm}{\chord{t}{f1p3,f3p5,f4p5,f1p3,f1p3,f1p3,}{Gm}}
 \newcommand{\Gmseven}{\chord{t}{f1p3,f3p5,f1p3,f1p3,f1p3,f1p3,}{Gm7}}
 
@@ -390,6 +391,7 @@
 \newcommand{\GEPiano}{\keyboardtwooctaves[Eo][Go][Bo][Dt]}
 \newcommand{\GFPiano}{\keyboardf[Fo][Go][Bo][Do]}
 \newcommand{\GDPiano}{\keyboard[Do][Go][Bo]}
+\newcommand{\GtwoPiano}{\keyboardf[Go][Ao][Bo][Do]}
 \newcommand{\GnineDPiano}{\keyboard[Do][Fo][Go][Ao][Bo]}
 \newcommand{\GmPiano}{\keyboard[Do][Go][Aso]}
 \newcommand{\GmsevenPiano}{\keyboard[Do][Go][Aso][Fo]}
@@ -1529,10 +1531,10 @@
     {\SBPubDom} %copyright \SBPubDom
     {Iglesia de Cristo Ebenezer}
     {} %pasaje
-{} %\NotCCLIed
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}\mbox{}\hfill}
-\fi
+    {} %\NotCCLIed
+    \ifChordBk
+      \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4WgTEN3UvmfjDGTyazGf7m}{Escuchar}\mbox{}\hfill}
+    \fi
 
 %  \SBRef{Nuestro legado}{2006}%fuente \#
 
@@ -2576,12 +2578,14 @@
     {} %copyright \SBPubDom
     {Danilo Montero}
     {Salmo 141:2} %pasaje
-{} %\NotCCLIed
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}\mbox{}\hfill}
-\fi
+    {} %\NotCCLIed
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4nPQP5H4KSFIELbzj3SEQC}{Escuchar}\mbox{}\hfill}
+        \fi
 
         \SBIntro{\Ch{G}{~} \Ch{D/F\#}{~} \Ch{F}{~} \Ch{C/E}{~} \Ch{G}{~} \Ch{D/F\#}{~} \Ch{Am}{~} \Ch{D}{~}}
+
+        \SBMargNote{Piano:\break GD5 C5 BA GD5 F CBA GD D5 C/E}
 
         \begin{SBOpGroup}
             Con mis \Ch{G}{ma}nos levantadas hacia el \Ch{C}{cie}lo
@@ -4521,10 +4525,13 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-{}
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}\mbox{}\hfill}
-\fi
+    {}
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/45P2LAIOap6HSduukxfiVc}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \SBIntro{Cm-Bb-Cm Bb-Cm Cm-Cmsus4-Cm-Cm-Dm-G}
+        \SBBridge{Cm CmBbm-Bbsus2 Ebm-Gbm-G-Bb-Cm}%Gm-Am-A#-C-Dm
 
         \begin{SBOpGroup}
             Y los \Ch{Cm}{o}jos de los ciegos se abrirán y ellos verán
@@ -5357,10 +5364,12 @@
     {} %copyright \SBPubDom
     {Juan Carlos Alvarado}
     {} %pasaje
-{}
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}\mbox{}\hfill}
-\fi
+    {}
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3T56QpufAmXo4Y29o8Bsgw}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \SBMargNote{Brass:\break AGA AGA AGACB\break AGA AGA AGADE\break EGAG AGA}
 
         \begin{SBOpGroup}
             \Ch{Am}{E}res señor vencedor el \Ch{G}{in}ven\Ch{F}{ci}ble
@@ -5373,18 +5382,18 @@
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Por \Ch{C}{e}so yo te \Ch{Bm7(b5)}{can}to y \Ch{E7}{te} a\Ch{Am7}{la}bo
+            Por \Ch{C}{e}so yo te \Ch{Dm/Bm7(b5)}{can}to y \Ch{E7}{te} a\Ch{Am7}{la}bo
 
             por\Ch{Gm7}{que} sé  \Ch{C13sus4}{que} me \Ch{Fmaj7}{pro}teges por\Ch{Dm7}{que} estoy \Ch{Gsus}{de} tu lado\Ch{G}{~}
 
-            Por \Ch{C}{e}so yo te \Ch{Bm7(b5)}{can}to y \Ch{E7}{te} a\Ch{Am7}{do}ro
+            Por \Ch{C}{e}so yo te \Ch{Dm/Bm7(b5)}{can}to y \Ch{E7}{te} a\Ch{Am7}{do}ro
 
             por\Ch{Gm7}{que} sé  \Ch{C13sus4}{que} nunca \Ch{Fmaj7}{ja}más me de\Ch{Dm7}{ja}ras de\Ch{Gsus}{sam}parado.\Ch{E}{~}
         \end{SBChorus}
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
@@ -5412,15 +5421,23 @@
 \fi
 
         \begin{SBOpGroup}
-            La \Ch{Bm}{ú}nica razón de mi a\Ch{G}{do}ración, \Ch{D}{e}res Tú mi Je\Ch{A}{sús}
+            La \Ch{Bm}{ú}nica razón de mi a\Ch{G}{do}ración,
 
-            Mi \Ch{Bm}{ú}nico motivo pa\Ch{G}{ra} vivir, \Ch{D}{e}res Tú mi Se\Ch{A}{ñor}
+            \Ch{D}{e}res Tú mi Je\Ch{A}{sús}
+
+            mi \Ch{Bm}{ú}nico motivo pa\Ch{G}{ra} vivir,
+
+            \Ch{D}{e}res Tú mi Se\Ch{A}{ñor}
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
-            Mi úni\Ch{Bm}{ca} verdad es\Ch{G}{tá} en tí, eres mi \Ch{D}{luz} y mi salva\Ch{A}{ción}
+            Mi úni\Ch{Bm}{ca} verdad es\Ch{G}{tá} en tí,
 
-            Mi úni\Ch{Bm}{co} amor eres \Ch{G}{Tú} Señor, y por \Ch{D}{siem}pre te alaba\Ch{A}{ré}
+            eres mi \Ch{D}{luz} y mi salva\Ch{A}{ción}
+
+            mi úni\Ch{Bm}{co} amor eres \Ch{G}{Tú} Señor,
+
+            y por \Ch{D}{siem}pre te alaba\Ch{A}{ré}
         \end{SBOpGroup}
 
         \begin{SBChorus}
@@ -5437,7 +5454,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
@@ -12474,6 +12491,58 @@
             \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
             \upchord{\EmsevenPiano\Emseven}{\qquad Mi} Menor S\'eptima \hfill
             \upchord{\AsevenPiano\Aseven}{\qquad La} Mayor S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Ven y llena esta casa}{D}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+        \ifChordBk
+
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2jDtBEyDiVdp7iGeu1N2QR}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \SBIntro{| G - Bm  | C | G - Bm  | C |}
+
+        \begin{SBOpGroup}
+            \Ch{C/D}{~}     Al mi\Ch{G}{rar} a tu santi\Ch{C}{dad}
+
+            \Ch{G/B}{~} So\Ch{Am}{mos} transformados a tu i\Ch{D}{má}gen
+
+            Al mi\Ch{G}{rar} tu majes\Ch{C}{tad}
+
+            \Ch{G/B}{~} De \Ch{Am}{glo}ria en gloria cam\Ch{D}{bia}nos Señor
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{C}{~} \Ch{D}{~} Ven y \Ch{G}{lle}na esta   \Ch{D/B}{ca}sa con tu \Ch{C}{glo}ria
+
+            \Ch{C}{~} \Ch{D}{~} Ven y \Ch{G}{lle}na esta   \Ch{D/B}{ca}sa con tu \Ch{C}{glo}ria
+
+            \Ch{G/B}{~} La \Ch{Am}{glo}ria pos\Ch{D}{tre}ra sera ma\Ch{G2}{yor} que   \Ch{D/F\#}{la}   pri\Ch{Em}{me}ra\Ch{E/A}{a}
+
+            Au\Ch{Am}{men}ta en mi tu \Ch{C}{glo}ria oh Je\Ch{D}{sús}
+
+            Au\Ch{C}{men}ta en mi tu \Ch{D}{glo}ria oh Je\Ch{G}{sús}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\CDPiano\CD}{\qquad Do} Mayor bajo D \hfill\null\break
+            \upchord{\GBPiano\GB}{\qquad Sol} con bajo B \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\GtwoPiano\Gtwo}{\qquad Sol} Aumentada 2 \hfill\null\break
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}

@@ -5,7 +5,7 @@
 %%                                                      %%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\documentclass[12pt, spanish, letter]{book}
+\documentclass[12pt, spanish]{book}
 
 \usepackage[T1]{fontenc} %pdflatex
 %\usepackage{fontspec} %xelatex
@@ -120,6 +120,7 @@
 
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
 \newcommand{\Amseven}{\chord{t}{x,n,p2,n,p1,n}{Am7}}
+\newcommand{\AmC}{\chord{t}{x,p3,p2,p2,p1,x}{Am/C}}
 \newcommand{\AmCs}{\chord{t}{x,p4,p2,p2,p1,x}{Am/C$\#$}}
 \newcommand{\AmF}{\chord{t}{p1,n,p2,p2,p1,x}{Am/F}}
 \newcommand{\AmFs}{\chord{t}{p2,n,p2,p2,p1,x}{Am/F$\#$}}
@@ -183,6 +184,7 @@
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
 \newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+7}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
+\newcommand{\DmC}{\chord{t}{x,p3,n,p2,p1,p1}{Dm/C}}
 \newcommand{\DmF}{\chord{t}{p1,n,n,p2,p3,x}{Dm/F}}
 \newcommand{\Dtwo}{\chord{t}{n,n,p2,p2,p3,p2}{D2}}
 \newcommand{\Dsix}{\chord{t}{x,x,n,p2,n,p2}{D6}}
@@ -251,6 +253,7 @@
 \newcommand{\Gtwo}{\chord{t}{p3,n,n,n,n,p3}{G2}}
 \newcommand{\Gm}{\chord{t}{f1p3,f3p5,f4p5,f1p3,f1p3,f1p3,}{Gm}}
 \newcommand{\Gmseven}{\chord{t}{f1p3,f3p5,f1p3,f1p3,f1p3,f1p3,}{Gm7}}
+\newcommand{\GmBflat}{\chord{t}{x,p1,n,n,p3,p3}{Gm/Bb}}
 
 \newcommand{\Gs}{\chord{3}{x,x,p4,p3,p2,p2}{G\#}}
 \newcommand{\Aflat}{\chord{3}{x,x,p4,p3,p2,p2}{A$\flat$}}
@@ -269,6 +272,7 @@
 \newcommand{\AMajPiano}{\keyboardf[Ao][Cso][Eo][Gso]}
 \newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
+\newcommand{\AmCPiano}{\keyboard[Co][Eo][Ao]}
 \newcommand{\AmCsPiano}{\keyboardtwooctaves[Cso][Ao][Eo][Ct]}
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
 \newcommand{\AmFsPiano}{\keyboardf[Fso][Ao][Co][Eo]}
@@ -333,6 +337,7 @@
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
 \newcommand{\DsevenPiano}{\keyboard[Do][Fso][Ao][Co]}
 \newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
+\newcommand{\DmCPiano}{\keyboard[Co][Do][Fo][Ao]}
 \newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DmsevenGPiano}{\keyboardf[Go][Do][Fo][Ao][Co]}
@@ -395,6 +400,7 @@
 \newcommand{\GnineDPiano}{\keyboard[Do][Fo][Go][Ao][Bo]}
 \newcommand{\GmPiano}{\keyboard[Do][Go][Aso]}
 \newcommand{\GmsevenPiano}{\keyboard[Do][Go][Aso][Fo]}
+\newcommand{\GmBflatPiano}{\keyboardf[Aso][Go][Do]}
 
 \newcommand{\GsPiano}{\keyboard[Dso][Gso][Co]}
 \newcommand{\GsmPiano}{\keyboardf[Gso][Bo][Dso]}
@@ -4576,20 +4582,25 @@
 \fi
 
         \begin{SBChorus}
-            El Señor es mi fuerza, mi roca y salvación
-            El Señor es mi fuerza, mi roca y salvación
+            \Ch{Dm}{El} \Ch{Am/C}{Se}\Ch{Gm/Bb}{ñor} \Ch{Dm/A}{es} mi \Ch{Gm7}{fuer}za,
+
+            mi \Ch{Am/C}{ro}ca y \Ch{Am}{sal}va\Ch{Dm}{ción}\Ch{Dm/C}{~}\Ch{Bb+}{~}
+
+            \Ch{Dm}{El} \Ch{Am/C}{Se}\Ch{Gm/Bb}{ñor} \Ch{Dm/A}{es} mi \Ch{Gm7}{fuer}za,
+
+            mi \Ch{Am/C}{ro}ca y \Ch{Am}{sal}va\Ch{Dm}{ción}
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Él me guía por sendas de justicia, me enseña la
-            verdad.
-            Él me da el valor para la lucha, sin miedo
-            avanzaré.
+            \Ch{F}{Él} me \Ch{Bb}{guía} por sendas de jus\Ch{Gm}{ti}cia, me en\Ch{C7}{se}ña la ver\Ch{F}{dad}.
+
+            Él me \Ch{Bb}{da} el valor para la \Ch{Gm}{lu}cha, sin \Ch{C7}{mie}do avanza\Ch{F}{ré}.
         \end{SBOpGroup}
 
         \begin{SBOpGroup}
             Ilumina las sombras de mi vida, al mundo da la
             luz;
+
             aunque pase por valles de tinieblas yo nunca
             temeré.
         \end{SBOpGroup}
@@ -4597,6 +4608,7 @@
         \begin{SBOpGroup}
             Yo confío el destino de mi vida, al Dios de mi
             salud;
+
             a los pobres enseña el camino, su escudo sólo es
             Él.
         \end{SBOpGroup}
@@ -4604,14 +4616,24 @@
         \begin{SBOpGroup}
             El Señor es la fuerza de su pueblo, su gran
             libertador;
+
             Él le hace vivir en la confianza, seguro en su
             poder.
         \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\DmPiano\Dm}{\qquad Re} menor  \hfill
+            \upchord{\AmCPiano\AmC}{\qquad La} Menor bajo C \hfill\null\break
+            \upchord{\GmBflatPiano\GmBflat}{\qquad Sol} Menor \hfill
+            \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill\null\break
+            \upchord{\DmCPiano\DmC}{\qquad Re} Menor bajo C \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\GmPiano\Gm}{\qquad Sol} Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -8133,6 +8155,49 @@
             \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Los que esperan en Jehová}{Em}
+    {} %copyright \SBPubDom
+    {Juan Carlos Alvarado}
+    {} %pasaje
+    {}
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2UfCP5nIomndfh65Mrw2zu}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            Los que es\Ch{Em7}{pe}ran, los que esperan en Jeho\Ch{B7}{vá}
+
+            los que es\Ch{Am7}{pe}ran, los que es\Ch{B7}{pe}ran en Je\Ch{Em}{ho}vá\Ch{E}{~}
+
+            // como las \Ch{Am7}{á}guilas \Ch{D}{~} como las \Ch{G}{á}guilas\Ch{C}{~}
+
+            sus a\Ch{Am7}{las} \Ch{B7}{~}     levanta\Ch{Em}{rán} //
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Corre\Ch{D}{rán} y no se cansa\Ch{G}{rán}
+
+            camina\Ch{D}{rán}, no se fatiga\Ch{G}{rán}
+
+            // nuevas fuer\Ch{Am7}{zas} tendrán,\Ch{D}{~}  nuevas fuer\Ch{G}{zas} tendrán\Ch{C}{~}
+
+            los que es\Ch{Am7}{pe}ran, los que es\Ch{B7}{pe}ran en Jeho\Ch{Em}{vá} //
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\BsevenPiano\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}

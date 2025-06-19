@@ -19,6 +19,7 @@
     breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
 \usepackage[chordbk]{songbook} %% Words & Chords edition.
 \usepackage{endnotes}
+\usepackage{biblatex}
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
 %\usepackage[wordbk]{songbook}                 %% Words Only edition.
 %\usepackage[overhead]{songbook}               %% Overhead Transparency edition.
@@ -229,6 +230,7 @@
 \newcommand{\FtwoA}{\chord{t}{x,o,p3,n,p1,p1}{F2/A}}
 \newcommand{\FMaj}{\chord{t}{x,x,p3,p2,p1,n}{FMaj7}}
 \newcommand{\Fseven}{\chord{t}{p1,p3,p1,p2,p1,p1}{F7}}
+\newcommand{\Fnine}{\chord{t}{p1,n,p1,n,p1,p3}{F9}}
 \newcommand{\Fm}{\chord{t}{p1,p3,p3,p1,p1,p1}{Fm}}
 \newcommand{\Fmseven}{\chord{t}{p1,p3,p1,p1,p1,p1}{Fm7}}
 
@@ -375,6 +377,7 @@
 
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
+\newcommand{\FninePiano}{\keyboardf[Fo][Go][Ao][Co][Dso]}
 \newcommand{\FAPiano}{\keyboardf[Ao][Co][Ft]}
 \newcommand{\FtwoAPiano}{\keyboardtwooctaves[Ao][Ct][Ft][Gt]}
 \newcommand{\FsusPiano}{\keyboardf[Aso][Co][Fo]}
@@ -693,7 +696,7 @@
 
             \Ch{Bm}{te} adoro a Tí, te \Ch{Esus4}{a}doro a \Ch{E}{ti}
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             \Ch{A}{Cuan}do veo la gran\Ch{E}{de}za de tu \Ch{F\#m7}{dul}ce a\Ch{A7}{mor}
 
@@ -759,7 +762,7 @@
 
             \Ch{Bm7}{te} adoro a \Ch{D/A}{Tí}, te \Ch{Esus4}{a}doro a \Ch{E}{ti}
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             \Ch{A2}{Cuan}do veo la \Ch{E/G\#}{gran}deza de tu \Ch{F\#m7}{dul}ce a\Ch{Em7}{mor}
 
@@ -828,7 +831,7 @@
 
             \Ch{G}{en} adora\Ch{A}{ci\'o}n
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             T\'u e\Ch{D}{res} mi Dios
 
@@ -891,8 +894,11 @@
             muerte
 
             \Ch{Dm7}{So}bre el trono \Ch{Bb}{ce}lestial \Ch{Am7}{siem}pre reina\Ch{Dm7}{r\'a}.
-
+        \end{SBOpGroup}
+\vskip 20pt
+        \begin{SBOpGroup}
             \Ch{Bb}{Sen}tado en \Ch{C}{ma}jestad \Ch{Bb}{su}yo es el reino por los
+
             \Ch{F}{Si}\Ch{C}{glos} \Ch{Bb}{y} por la \Ch{C}{e}ternidad \Ch{Bb}{su} luz de \Ch{Gm7}{glo}ria brilla\Ch{Am7}{r\'a}.
         \end{SBOpGroup}
 
@@ -903,7 +909,7 @@
         \end{SBChorus}
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\DmsevenPiano\Dmseven}{Re} menor s\'eptima \hfill
             \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill
@@ -1037,7 +1043,7 @@
 
             \Ch{Dm}{Tu} nombre \Ch{G}{San}to \Ch{C}{es}.
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
                 Cuan \Ch{C+7}{San}to eres Tu,
 
@@ -1271,7 +1277,7 @@
 
                 a\Ch{D/G}{la}bo a aquel que la \Ch{C/G}{tum}ba venció.
 
-                Ala\Ch{g}{b}o al que es bueno, A\Ch{C/G}{la}bo al que es fiel,
+                Ala\Ch{G}{b}o al que es bueno, A\Ch{C/G}{la}bo al que es fiel,
 
                 Le a\Ch{D/G}{la}bo porque no \Ch{C/G}{hay} otro como Él.
 
@@ -1288,6 +1294,8 @@
             \begin{SBOpGroup}
                 Acordes:
                 \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+                \upchord{\CtwoPiano\Ctwo}{\qquad Do} Aumentada 2 \hfill\null\break
+                \upchord{\CGPiano\CG}{\qquad Do} Mayor Bajo G \hfill
                 \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
                 \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
                 \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
@@ -1543,13 +1551,14 @@
     \fi
 
 %  \SBRef{Nuestro legado}{2006}%fuente \#
+    \FLineIdx{Me gozaré}
 
         \begin{SBOpGroup}
             \Ch{Am}{Cuan}do el Señor hiciere volver la cautivi\Ch{G}{dad}
 
             seremos \Ch{Dm}{co}mo los que sue\Ch{E}{ñan}
         \end{SBOpGroup}
-
+    \vskip 20pt
         \begin{SBOpGroup}
 
             \Ch{Am}{Mi} boca llenará de risa, \Ch{G}{mis} labios de alabanza,
@@ -1560,20 +1569,29 @@
         \end{SBOpGroup}
 
         \SBMargNote{metales:\break EEE\break EDC D EGE\break EED\break DCDCB\break DF DCBD\break DFE}
-
+    \vskip 20pt
         \begin{SBOpGroup}
             Me goza\Ch{Am}{ré}, me gozaré, me gozaré,
 
-            me gozaré en Jeho\Ch{G}{vá}.~[¡Gózate!]
+            me gozaré en Jeho\Ch{G}{vá}.~(¡Gózate!)
 
             Pues ha lle\Ch{Dm}{va}do todo dolor, me ha hecho \Ch{E}{li}bre
         \end{SBOpGroup}
-
+    \vskip 20pt
         \begin{SBChorus}
             \Ch{Am}{A}sí como David cantaba, \Ch{G}{a}sí como David danzaba,
 
             \Ch{Dm}{a}sí como David fluía en su pre\Ch{E}{sen}cia
         \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Yo Canta\Ch{Am}{ré}(Yo Cantaré),  Yo Danzaré(Yo Danzaré)
+
+            En tu pre\Ch{G}{sen}cia me gozaré
+
+            Y le Da\Ch{Dm}{ré}(Y le Dare)  toda la \Ch{E}{Glo}ria , ante su trono yo me gozaré
+        \end{SBOpGroup}
+
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
@@ -1592,7 +1610,7 @@
 
                 seremos \Ch{Em}{co}mo los que sue\Ch{F\#}{ñan}
             \end{SBOpGroup}
-
+            \vskip 20pt
             \begin{SBOpGroup}
 
                 \Ch{Bm}{Mi} boca llenará de risa, \Ch{A}{mis} labios de alabanza,
@@ -1603,7 +1621,7 @@
             \end{SBOpGroup}
 
             \SBMargNote{metales:\break F\#F\#F\#\break F\#ED E F\#GF\#\break F\#F\#E\break EDEDC\#\break EG EDC\#E\break EGF\#}
-
+            \vskip 20pt
             \begin{SBOpGroup}
                 Me goza\Ch{Bm}{ré}, me gozaré, me gozaré,
 
@@ -1619,7 +1637,7 @@
             \end{SBChorus}
             \ifChordBk
             \begin{SBOpGroup}
-                Acordes:
+                Acordes:\break
                 \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
                 \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
                 \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
@@ -2107,6 +2125,7 @@
             Acordes:
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\BmsevenPiano\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2193,33 +2212,33 @@
 
             si Cristo es mi consuelo,
 
-            mi amigo siempre \Ch{F}{fi}el,
+            mi amigo siempre \Ch{F}{fi}el,\Ch{A7}{~}\Ch{Dm}{~}
 
-            si \Ch{G}{aún} las aves tienen
+            si \Ch{G}{aún} las aves \Ch{C}{tie}nen
 
-            Seguro asilo en Él
+            Se\Ch{G7}{gu}ro asilo en \Ch{C}{Él}
 
-            si \Ch{C7}{aún} las aves tienen
+            si \Ch{C7}{aún} las aves \Ch{F}{tie}nen\Ch{Fm}{~}
 
-            Seguro asilo en \Ch{C}{Él}
+            Se\Ch{G7}{gu}ro asilo en \Ch{C}{Él}
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Fe\Ch{G7}{liz} cantando alegre
+            Fe\Ch{G7}{liz} cantando a\Ch{C}{le}gre
 
-            yo vivo siempre a\Ch{C}{quí};
+            yo \Ch{G7}{vi}vo siempre a\Ch{C}{quí};\Ch{C7}{~}
 
-            si El cuida de las aves
+            si El cuida de las \Ch{F}{a}ves\Ch{Fm}{~}
 
-            cuidará también de \Ch{C}{mí}.
+            cuida\Ch{C}{rá} tam\Ch{G7}{bién} de \Ch{C}{mí}.
         \end{SBChorus}
 
         \begin{SBOpGroup}
-            Nunca te desalientes,
+            \Ch{C}{Nun}ca te desalientes,
 
             oigo al Señor decir,
 
-            y en su Palabra ado
+            y en su Palabra fiado
 
             hago al dolor huir.
 
@@ -2387,10 +2406,10 @@
     {} %copyright \SBPubDom
     {Jesús Adrián Romero}
     {Salmos 51} %pasaje
-{} %\NotCCLIed
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2vAYYOwfKVR3cCqg1mI6No}{Escuchar}\mbox{}\hfill}
-\fi
+    {} %\NotCCLIed
+    \ifChordBk
+      \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2vAYYOwfKVR3cCqg1mI6No}{Escuchar}\mbox{}\hfill}
+    \fi
 
         \begin{SBOpGroup}
             \Ch{E}{Con} manos vacías \Ch{A}{ven}go a Tí
@@ -2401,7 +2420,7 @@
 
             \Ch{A}{no} puedo im\Ch{F\#m}{pre}sio\Ch{B}{nar}te
         \end{SBOpGroup}
-
+    \vskip 20pt
         \begin{SBOpGroup}
             \Ch{E}{Te} puedo entregar mi \Ch{A}{co}razón,
 
@@ -2411,7 +2430,6 @@
 
             \Ch{A}{Tu} puedes \Ch{F\#m}{res}tau\Ch{B}{rar}lo
         \end{SBOpGroup}
-
 
         \begin{SBChorus}
             \Ch{A}{Pon}go mi \Ch{B}{vi}da a tu servicio Se\Ch{C\#m}{ñor}
@@ -2427,7 +2445,7 @@
 
         \ifChordBk
         \begin{SBOpGroup}
-            Acordes:
+            Acordes:\break
             \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
             \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
             \upchord{\BPiano\B}{\qquad Si} Mayor \hfill
@@ -2447,7 +2465,7 @@
 
                 no hay nada de valor en mí \Ch{Bb}{no} puedo impresio\Ch{C}{nar}te
             \end{SBOpGroup}
-
+            \vskip 20pt
             \begin{SBOpGroup}
                 \Ch{F}{Te} puedo entregar mi \Ch{Bb}{co}razón,
 
@@ -3273,10 +3291,10 @@
     {} %copyright \SBPubDom
     {Miguel Cassina}
     {} %pasaje
-{}
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0imd5ozg3GpCp8V4Emxdtt}{Escuchar}\mbox{}\hfill}
-\fi
+    {}
+    \ifChordBk
+      \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0imd5ozg3GpCp8V4Emxdtt}{Escuchar}\mbox{}\hfill}
+    \fi
         %1989
 
         \FLineIdx{Vengo a Tí}
@@ -3287,7 +3305,7 @@
 
             \Ch{Em}{Quie}ro más de \Ch{A}{Tí}
         \end{SBOpGroup}
-
+    \vskip 20pt
         \begin{SBOpGroup}
             \Ch{D}{To}ma mi ne\Ch{A}{ce}sidad,
 
@@ -3850,62 +3868,142 @@
         \fi
     \end{song}
 
-    \begin{song}{Dios de Pactos}{A}
+    \begin{song}{Día feliz}{C}
     {} %copyright \SBPubDom
-    {Marcos Witt}
+    {}
     {} %pasaje
-{}
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}\mbox{}\hfill}
-\fi
+    {}
+    \ifChordBk
+      \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}\mbox{}\hfill}
+    \fi
 
-        \begin{SBChorus}
-            Dios de \Ch{A}{pac}tos, que guardas tus pro\Ch{D}{me}sas
+    \begin{SBOpGroup}
+        \Ch{C}{El} día más grande de la historia
 
-            que cumples \Ch{A}{tu} pa\Ch{Bm}{la}bra, que guías mi des\Ch{A}{ti}\Ch{E}{no}
+        \Ch{F}{Me} rescató, la muerte derro\Ch{Am}{tó}
 
-            Dios de \Ch{A}{pac}tos,confío en tus pro\Ch{D}{me}sas
-
-            descanso en \Ch{A}{tu} pa\Ch{Bm}{la}bra, por tu gracia es\Ch{A}{toy} \Ch{E}{a}\Ch{A}{quí}
-        \end{SBChorus}
-
-        \begin{SBOpGroup}
-            \Ch{F}{En} la intimidad, al a\Ch{G}{bri}go de tu gloria puedo es\Ch{C}{tar}
-            \Ch{G/B}{jun}to a \Ch{Am}{Tí}\Ch{Em}{~}
-
-            al \Ch{F}{ver} tu santidad es\Ch{G}{toy} maravillado ante \Ch{C}{Tí} y \Ch{G/B}{tu} \Ch{Am}{a}mor\Ch{Em}{~}
-
-            nunca \Ch{F}{más} seré igual al sa\Ch{Dm}{lir} de este santísimo lu\Ch{E}{gar}
-        \end{SBOpGroup}
+        Cántenlo que Cristo vive \Ch{F}{hoy}
+    \end{SBOpGroup}
 \vskip 20pt
-        \begin{SBOpGroup}
-            \Ch{F}{Ten}go redención por la \Ch{G}{san}gre que descansa en tu
-            al\Ch{C}{tar} \Ch{G/B}{pa}ra \Ch{Am}{mí}
+    \begin{SBOpGroup}
+        \Ch{C}{Va}cía la cruz y la tumba
 
-            la gracia y el per\Ch{G}{dón} son los frutos de vi\Ch{C}{vir} en
-            comu\Ch{G/B}{nión} y adora\Ch{Am}{ción}\Ch{Em}{~}
+        \Ch{F}{Vi}da eterna Tu ganaste \Ch{Am}{Dios}
 
-            nunca \Ch{F}{más} seré igual al sa\Ch{Dm}{lir} de este santísimo lu\Ch{E}{gar}
-        \end{SBOpGroup}
+        Grítenlo que Cristo vive \Ch{F}{hoy}
+
+        Vive \Ch{G}{hoy}¡
+    \end{SBOpGroup}
+
+    \begin{SBChorus}
+        \Ch{C5}{Oh} día fe\Ch{F5}{liz}, día fe\Ch{Am5}{liz}
+
+        \Ch{G5}{la}vaste mi maldad
+
+        \Ch{C5}{Oh} día fe\Ch{F5}{liz}, día fe\Ch{Am5}{liz}
+
+        \Ch{G5}{ja}más seré i\Ch{C5}{gual}~\Ch{F5}{~}~\Ch{Am5}{~}
+
+        \Ch{G5}{por} siempre me cam\Ch{C5}{bió}~\Ch{F5}{~}~\Ch{Am5}{~}~\Ch{G5}{~}
+    \end{SBChorus}
+
+    \begin{SBOpGroup}
+        \Ch{C}{Cuan}do esté en Ese Lugar
+
+        \Ch{F}{li}bre al fin de cara frente a \Ch{Am}{Tí}
+
+        Tuyo soy, mío Eres Je\Ch{F}{sús}
+    \end{SBOpGroup}
+    \vskip 20pt
+    \begin{SBOpGroup}
+        \Ch{C}{Go}zo y paz ahí habrá
+
+        \Ch{F}{el} dolor por fin termina\Ch{Am}{rá}
+
+        Al celebrar que Cristo vive \Ch{F}{hoy}\Ch{(G)}{~}
+
+
+        \Ch{Am/G}{Y} oh, qué glorioso \Ch{Em/G}{día}
+
+        qué gloriosa mane\Ch{F9}{ra}
+
+        en que \Ch{C}{me} salvaste
+
+        \Ch{Am/G}{oh}, qué glorioso \Ch{Em/G}{día}
+
+        Qué Glorioso \Ch{F}{Nom}bre, Je\Ch{C}{sús}
+    \end{SBOpGroup}
 
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\APiano\A}{\qquad La} Mayor \hfill
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
-            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
             \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
-            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\GBPiano\GB}{\qquad Sol} Mayor Bajo B \hfill\qquad\qquad\qquad
-            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
-            \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
-            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AmGPiano\AmG}{\qquad La} Menor bajo G \hfill
+            \upchord{\EmGPiano\EmG}{\qquad Mi} Menor Bajo G \hfill\null\break
+            \upchord{\FninePiano\Fnine}{Fa} Novena \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
+
+\begin{song}{Dios de Pactos}{A}
+{} %copyright \SBPubDom
+{Marcos Witt}
+{} %pasaje
+{}
+    \ifChordBk
+    \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4wFBzIA7HuaaGz89DQnWyo}{Escuchar}\mbox{}\hfill}
+    \fi
+
+    \begin{SBChorus}
+        Dios de \Ch{A}{pac}tos, que guardas tus pro\Ch{D}{me}sas
+
+        que cumples \Ch{A}{tu} pa\Ch{Bm}{la}bra, que guías mi des\Ch{A}{ti}\Ch{E}{no}
+
+        Dios de \Ch{A}{pac}tos,confío en tus pro\Ch{D}{me}sas
+
+        descanso en \Ch{A}{tu} pa\Ch{Bm}{la}bra, por tu gracia es\Ch{A}{toy} \Ch{E}{a}\Ch{A}{quí}
+    \end{SBChorus}
+
+    \begin{SBOpGroup}
+        \Ch{F}{En} la intimidad, al a\Ch{G}{bri}go de tu gloria puedo es\Ch{C}{tar}
+        \Ch{G/B}{jun}to a \Ch{Am}{Tí}\Ch{Em}{~}
+
+        al \Ch{F}{ver} tu santidad es\Ch{G}{toy} maravillado ante \Ch{C}{Tí} y \Ch{G/B}{tu} \Ch{Am}{a}mor\Ch{Em}{~}
+
+        nunca \Ch{F}{más} seré igual al sa\Ch{Dm}{lir} de este santísimo lu\Ch{E}{gar}
+    \end{SBOpGroup}
+    \vskip 20pt
+    \begin{SBOpGroup}
+        \Ch{F}{Ten}go redención por la \Ch{G}{san}gre que descansa en tu
+        al\Ch{C}{tar} \Ch{G/B}{pa}ra \Ch{Am}{mí}
+
+        la gracia y el per\Ch{G}{dón} son los frutos de vi\Ch{C}{vir} en
+        comu\Ch{G/B}{nión} y adora\Ch{Am}{ción}\Ch{Em}{~}
+
+        nunca \Ch{F}{más} seré igual al sa\Ch{Dm}{lir} de este santísimo lu\Ch{E}{gar}
+    \end{SBOpGroup}
+
+    \ifChordBk
+    \begin{SBOpGroup}
+        Acordes:\break
+        \upchord{\APiano\A}{\qquad La} Mayor \hfill
+        \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+        \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill
+        \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill
+        \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+        \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+        \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+        \upchord{\GBPiano\GB}{\qquad Sol} Mayor Bajo B \hfill\qquad\qquad\qquad
+        \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+        \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+        \upchord{\DmPiano\Dm}{\qquad Re} Menor \hfill
+        \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+    \end{SBOpGroup}
+    \fi
+\end{song}
 
     \begin{song}{Dios esta aquí}{D}
     {} %copyright \SBPubDom
@@ -8901,7 +8999,7 @@
 
             Pre\Ch{D}{cio}so y glorioso, \Ch{A/C\#}{~}   tan \Ch{Bm}{be}llo y tan \Ch{Esus4}{her}moso,\Ch{E}{~}
 
-            //Je\Ch{A}{sús}, \Ch{E/G\#}{~}   Je\Ch{F\#m}{sús}, pre\Ch{E/F\#}{cio}so Je\Ch{D}{sús},//\Ch{A/C#}{~}\Ch{Bm}{~}\Ch{E}{~}
+            //Je\Ch{A}{sús}, \Ch{E/G\#}{~}   Je\Ch{F\#m}{sús}, pre\Ch{E/F\#}{cio}so Je\Ch{D}{sús},//\Ch{A/C#}{~}~\Ch{Bm}{~}~\Ch{E}{~}
         \end{SBChorus}
 
         \ifChordBk
@@ -9653,7 +9751,7 @@
         \begin{SBOpGroup}
             \Ch{C}{En}séña\Ch{Am}{me} tu ca\Ch{Dm}{mi}no Se\Ch{G}{ñor}
 
-            \Ch{Dm}{y} anda\Ch{G}{ré} en tu \Ch{C}{luz},\Ch{Am/F}{~}\Ch{G}{~}
+            \Ch{Dm}{y} anda\Ch{G}{ré} en tu \Ch{C}{luz},\Ch{Am/F}{~}~\Ch{G}{~}
 
             \Ch{Am}{da}me un \Ch{Am/G\#}{co}razón \Ch{Am/G}{en}tregado a \Ch{Am/F\#}{Tí},
 
@@ -9706,7 +9804,7 @@
         \begin{SBOpGroup}
             ¡\Ch{Em}{Qué}  maravilla es tener una fa\Ch{G}{mi}lia!
 
-            una fa\Ch{B7}{mi}lia en Cristo Je\Ch{Em}{sús}\Ch{E7}{~}
+            una fa\Ch{B7}{mi}lia en Cristo Je\Ch{Em}{sús}~\Ch{E7}{~}
         \end{SBOpGroup}
 
         \begin{SBChorus}
@@ -9874,7 +9972,7 @@
 
             más y más aún
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             Bus\Ch{G}{car} tu voluntad,
 
@@ -9882,7 +9980,7 @@
 
             quiero ala\Ch{A}{bar}te
         \end{SBOpGroup}
-
+\vskip 20pt
         \begin{SBOpGroup}
             Las \Ch{D}{a}ves del cielo
 
@@ -9898,7 +9996,6 @@
 
             mis manos a \Ch{A}{Tí}
         \end{SBOpGroup}
-
 
         \ifChordBk
         \begin{SBOpGroup}
@@ -13012,6 +13109,10 @@
         \ifChordBk
           \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/41n1eoj7BnCs2mHc7UvGqz}{Escuchar}\mbox{}\hfill}
         \fi
+
+        \SBMargNote{Piano MI:|ED\#|DC\#|CA|G AB}
+        \SBMargNote{Piano MD:EF\#GAB B C5B AB B E5A AG B}
+        \SBMargNote{Brass:\break E F\#G F\# EE E F\#G F\# EE E F\# EE D E | C D E}
 
         \begin{SBOpGroup}
             Pre\Ch{Em}{pa}ren los instrumentos que la \Ch{C}{fies}ta \Ch{D}{va} a comen\Ch{Em}{zar}

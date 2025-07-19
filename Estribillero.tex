@@ -118,7 +118,8 @@
 \newcommand{\AG}{\chord{t}{p3,n,p2,n,p2,n}{A/G}}
 \newcommand{\AAs}{\chord{t}{x,p1,p2,p2,p2,n}{A/Bb}}
 \newcommand{\AsevenCs}{\chord{t}{x,p3,p2,n,p2,n}{A7/C\#}}
-\newcommand{\Atwo}{\chord{t}{x,n,p2,p2,n,n}{A2}}
+\newcommand{\Atwo}{\chord{t}{x,n,p2,p4,p2,n}{A2}}
+\newcommand{\Asustwo}{\chord{t}{x,n,p2,p2,n,n}{Asus2}}
 \newcommand{\Anine}{\chord{t}{x,n,p2,p4,p2,p3}{A9}}
 
 \newcommand{\Am}{\chord{t}{x,n,p2,p2,p1,n}{Am}}
@@ -188,6 +189,7 @@
 \newcommand{\Dmseven}{\chord{t}{n,n,n,p2,p1,p1}{Dm7}}
 \newcommand{\DMaj}{\chord{t}{x,x,n,p2,p2,p2}{D+7}}
 \newcommand{\Dsus}{\chord{t}{x,x,n,p2,p3,p3}{Dsus4}}
+\newcommand{\Dsusnine}{\chord{t}{x,x,n,p2,p3,n}{Dsus9}}
 \newcommand{\DmC}{\chord{t}{x,p3,n,p2,p1,p1}{Dm/C}}
 \newcommand{\DmF}{\chord{t}{p1,n,n,p2,p3,x}{Dm/F}}
 \newcommand{\Dtwo}{\chord{t}{n,n,p2,p2,p3,p2}{D2}}
@@ -296,6 +298,7 @@
 \newcommand{\AGPiano}{\keyboardf[Go][Ao][Cso][Eo]}
 \newcommand{\AsusPiano}{\keyboardf[Ao][Do][Eo]}
 \newcommand{\AtwoPiano}{\keyboardf[Ao][Bo][Cso][Eo]}
+\newcommand{\AsustwoPiano}{\keyboardf[Ao][Bo][Eo]}
 \newcommand{\AninePiano}{\keyboardf[Ao][Bo][Cso][Eo][Go]}
 
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
@@ -361,6 +364,7 @@
 \newcommand{\DFsPiano}{\keyboardf[Fso][Ao][Do]}
 \newcommand{\DsevenFsPiano}{\keyboardf[Fso][Ao][Co][Do]}
 \newcommand{\DsusPiano}{\keyboard[Do][Go][Ao]}
+\newcommand{\DsusninePiano}{\keyboard[Do][Go][Ao][Eo]}
 \newcommand{\DsusFsPiano}{\keyboardf[Fo][Go][Ao][Do]}
 
 \newcommand{\DsPiano}{\keyboard[Dso][Go][Aso]}
@@ -3628,10 +3632,10 @@
     {} %copyright \SBPubDom
     {Barak}
     {Juan 17:22} %pasaje
-{} %\NotCCLIed
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}\mbox{}\hfill}
-\fi
+    {} %\NotCCLIed
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}\mbox{}\hfill}
+        \fi
 
         \FLineIdx{A danzar}
 
@@ -13737,6 +13741,74 @@
             \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
             \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
             \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Tú mereces gloria}{D}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4csvN5sgs7zBHvDHPpzuZl}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Grande es Dios}
+        \SBIntro{Dsus9 - D - F\#m7 - G -  Asus2 - A}
+
+        \begin{SBOpGroup}
+            Tú mereces \Ch{Dsus9}{glo}ria  \Ch{D}{y} \Ch{F\#m7}{hon}ra
+
+            Señor levan\Ch{G}{ta}mos nuestras \Ch{Em}{ma}nos
+
+            y exal\Ch{Asus4}{ta}mos tu santo \Ch{A}{nom}bre
+
+            Tú mereces \Ch{Dsus9}{glo}ria \Ch{G+}{y} \Ch{F\#m7}{hon}ra
+
+
+            Señor levan\Ch{G}{ta}mos nuestras \Ch{Em}{ma}nos
+
+            y exal\Ch{Asus4}{ta}mos tu santo \Ch{A}{nom}bre
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Grande es \Ch{Dsus9}{Dios}
+
+            hace\Ch{C\#m7b5}{dor} de \Ch{F\#m7}{ma}ra\Ch{Bm7}{vi}llas
+
+            y no hay \Ch{Am7}{ot}ro \Ch{D}{co}mo \Ch{G}{Tú}\Ch{Em}{~}
+
+            no hay \Ch{Asus4}{o}tro como \Ch{A}{Tú}
+
+            Grande es \Ch{Dsus9}{Dios}
+
+            hace\Ch{C\#m7b5}{dor} de \Ch{F\#m7}{ma}ra\Ch{Bm7}{vi}llas
+
+            y no hay \Ch{Am7}{ot}ro \Ch{D}{co}mo \Ch{G}{Tú}\Ch{Em}{~}
+
+            no hay \Ch{Asus4}{o}\Ch{A}{tro} \Ch{Asus2}{co}\Ch{A}{mo} \Ch{Dsus9}{Tú}\Ch{D}{~}~\Ch{Bm7}{~}~\Ch{Am7}{~}\Ch{G}{~}
+        \end{SBChorus}
+
+        \SBBridge{Bm7 - Bb  - D/A - D - G
+
+        Em - Asus2 - C\#m7b5 - F\#7
+
+        Bm7 - E - Asus2 - Asus4 - A}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\DsusninePiano\Dsusnine}{Re} Suspendida novena \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\FsmsevenPiano\Fsmseven}{\qquad Fa sostenido} Menor S\'eptima \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\AsustwoPiano\Asustwo}{\qquad La} Suspendida 2 \hfill
+            \upchord{\APiano\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\DsusninePiano\Dsusnine}{Re} Suspendida novena \hfill
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\AsusPiano\Asus}{La} Suspendida 4 \hfill
+            \upchord{\GMajPiano\GMaj}{Sol} Maj \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}

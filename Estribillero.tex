@@ -142,6 +142,7 @@
 \newcommand{\BflatMaj}{\chord{t}{p1,p1,p3,p2,p3,p1}{Bb+7}}
 \newcommand{\BflatC}{\chord{t}{x,p3,n,p3,p1,p1}{Bb/C}}
 \newcommand{\BflatD}{\chord{t}{p1,p1,p3,p3,p3,p1}{Bb/D}}
+\newcommand{\BflatF}{\chord{t}{p1,p1,p3,p3,p3,p1}{Bb/F}}
 \newcommand{\BflatG}{\chord{t}{p3,p1,n,n,p3,p3}{Bb/G}}
 
 \newcommand{\B}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p4,f1p2}{B}}
@@ -307,6 +308,7 @@
 \newcommand{\BflatMajPiano}{\keyboard[Do][Fo][Ao][Aso]}
 \newcommand{\BflatCPiano}{\keyboard[Co][Do][Fo][Aso]}
 \newcommand{\BflatDPiano}{\keyboard[Do][Fo][Aso]}
+\newcommand{\BflatFPiano}{\keyboardf[Fo][Aso][Do]}
 \newcommand{\BflatGPiano}{\keyboardf[Go][Aso][Do][Fo]}
 
 \newcommand{\BPiano}{\keyboard[Dso][Fso][Bo]}
@@ -961,7 +963,6 @@
 
     \end{song}
 
-
     \begin{song}{Admirable}{Dm7}
     {} %copyright \SBPubDom
     {Danilo Montero}
@@ -1583,6 +1584,38 @@
         \fi
     \end{song}
 
+    \begin{song}{Allá en el cielo}{G}
+    {} %copyright \SBPubDom
+    {}
+    {Apocalipsis 21:4} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5W1WHWNKQzPYZXit9tR5Pg}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        %1997
+
+        \begin{SBOpGroup}
+            ///A\Ch{G}{llá} en el cielo///
+
+            No habrá más llanto Ni más tristeza Ni más do\Ch{D}{lor}
+
+            Y cuando \Ch{Am}{es}temos los redimidos allá en el cie\Ch{D}{lo}
+
+            Ala\Ch{C}{ba}remos \Ch{D}{al} Se\Ch{G}{ñor}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Aquí estoy}{A}
     {} %copyright \SBPubDom
     {Chuy Garc\'ia}
@@ -1842,6 +1875,72 @@
             \upchord{\BflatmPiano\Bflatm}{\qquad Si bemol} Menor \hfill\null\break
             \upchord{\EflatsevenPiano\Eflatseven}{\qquad Mi} Mayor bemol s\'eptima \hfill
             \upchord{\AflatPiano\Aflat}{\qquad La} bemol Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Bajo la sombra de Pedro}{Am}
+    {} %copyright \SBPubDom
+    {}
+    {Hechos 5:15} %pasaje
+    {}
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7mTMuEmJySBs1xTBSLYR26}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        %2010
+
+        \FLineIdx{Espíritu Santo lléname}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{Ba}jo la sombra de \Ch{E7}{Pe}dro
+
+            sanaban los en\Ch{Am}{fer}mos
+
+            \Ch{Am}{no} era la sombra, \Ch{E7}{ni}
+
+            tampoco pedro\Ch{Am}{~}
+
+            \Ch{Am}{er}a que pedro tenía\Ch{E7}{~}
+
+            el espíritu del \Ch{Am}{na}zareno
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{Am}{na}zareno, nazareno\Ch{E7}{~}
+
+            el espíritu del \Ch{Am}{na}zareno
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{a}noche estuve de \Ch{E7}{fies}ta
+
+            y esta noche \Ch{Am}{tam}bién
+
+            \Ch{Am}{yo} sentía que baja\Ch{E7}{ba} el
+
+            Espíritu Santo\Ch{Am}{~}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{Es}píritu Santo\Ch{E7}{~}
+
+            lléname\Ch{Am}{~}
+
+            \Ch{Am}{Es}píritu Santo llé\Ch{E7}{na}me
+
+            de tu amor\Ch{Am}{~}
+
+            \Ch{Am}{ba}jaba y me tocaba\Ch{E7}{~}
+
+            el Espíritu San\Ch{Am}{to}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\EsevenPiano\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2346,7 +2445,7 @@
 
     \begin{song}{¿Cómo Podré Estar Triste?}{C}
     {} %copyright \SBPubDom
-    {}
+    {Charles H. Gabriel}
     {Lucas 12:22} %pasaje
     {} %\NotCCLIed
         \ifChordBk
@@ -5247,12 +5346,12 @@
 
     \begin{song}{Él vino a mi corazón}{Ab}
     {} %copyright \SBPubDom
-    {}
+    {Charles H. Gabriel}
     {Romanos 8:11} %pasaje
-{}
-\ifChordBk
-  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}\mbox{}\hfill}
-\fi
+    {}
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/08JD56QI2q0ccYvZjm55eJ}{Escuchar}\mbox{}\hfill}
+        \fi
 
         \begin{SBOpGroup}
             \Ch{Ab}{Cua}n glorioso es el cambio operado en mi ser,
@@ -5517,10 +5616,11 @@
             \upchord{\FAPiano\FA}{Fa} Mayor bajo A \hfill
             \upchord{\DmsevenPiano\Dmseven}{\qquad Re} menor s\'eptima \hfill\null\break
             \upchord{\GmsevenPiano\Gmseven}{\qquad Sol} Menor S\'eptima \hfill
-            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
-            \upchord{\CPiano\C}{\qquad C} Mayor \hfill
-            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill
+            \upchord{\BflatFPiano\BflatF}{Si bemol} Mayor bajo F \hfill\null\break
+            \upchord{\AmsevenPiano\Amseven}{\qquad La} Menor S\'eptima \hfill
+            \upchord{\CPiano\C}{\qquad C} Mayor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\DFsPiano\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
             \upchord{\BflatCPiano\BflatC}{Si bemol} Mayor bajo C \hfill\null\break
         \end{SBOpGroup}
         \fi
@@ -5887,6 +5987,98 @@
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
+    \end{song}
+
+    \begin{song}{Cien ovejas}{A}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+        %2014
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3OKCoXKuwfH89G2vnumqFL}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Eran cien ovejas}
+
+        \begin{SBOpGroup}
+            \Ch{A}{e}ran cien ovejas~\Ch{Bm}{~}~\Ch{Cm}{~}
+
+            que ha\Ch{Cm}{bía} en el re\Ch{Bm}{ba}ño
+
+            eran cien o\Ch{E}{ve}jas
+
+            que amante cui\Ch{A}{dó}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            pero un dia \Ch{A}{cuan}do
+
+            al contarlas to\Ch{D}{das}
+
+            le faltaba \Ch{A}{u}na \Ch{F\#m}{le} faltaba \Ch{Bm}{u}na
+
+            \Ch{E}{y} triste llo\Ch{A}{ró}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            las noventa y \Ch{E}{nue}ve
+
+            dejo en el a\Ch{A}{pris}co
+
+            y por las mon\Ch{E}{ta}ñas
+
+            a buscarlas \Ch{A}{fué}
+
+            la encontró \Ch{A}{llo}rando \Ch{A7}{~}
+
+            temblando de \Ch{D}{frío}
+
+            curo sus he\Ch{A}{r}idas~\Ch{F\#m}{~}
+
+            la tomo en sus \Ch{Bm}{bra}zos \Ch{E}{~}
+
+            y al redil vol\Ch{A}{vió}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Yo era esa oveja que andaba perdida,
+            lejos de mi Cristo, lejos de Jesús,
+            pero un día el Maestro me tendió su mano,
+            me tomó en sus brazos, ungió mis heridas
+            y al redil volví.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            esa misma historia vuelve
+            a repetirse, todavía ha ovejas
+            que vagando van, vagan por el
+            mundo.
+            //sin Dios y sin consuelo,
+            sin fe y sin consuelo//
+            y sin su perdón.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Tú eres esa oveja que sin darte cuenta
+            vas por este mundo sin Dios y sin fe,
+            tu Pastor amante llamando te espera,
+            sufrió sus heridas, sufrió sus heridas
+            por salvarte a tí.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill
+            \upchord{\FPiano\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor  \hfill
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+            \upchord{\DmPiano\Dm}{\qquad Re} menor  \hfill\null\break
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\EPiano\E}{\qquad Mi} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
     \end{song}
 
     \begin{song}{Eres fiel}{A}
@@ -7950,7 +8142,7 @@
 
     \begin{song}{¡Hosanna! ¡Hosanna! ¡Hosanna!}{Bb}
     {} %copyright \SBPubDom
-    {}
+    {William B. Bradbury}
     {} %pasaje
     {}
 
@@ -12110,6 +12302,86 @@
         \fi
     \end{song}
 
+    \begin{song}{Señor mi Dios}{Bb}
+    {1953} %copyright \SBPubDom
+    {Stuart K. Hine}
+    {Salmo 48:1} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0toP2MAmhOQ34fIcyL9i2j}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Cuán grande es Él}
+
+        \begin{SBOpGroup}
+            \Ch{Bb}{Se}ñor mi Dios
+
+            Al contem\Ch{Eb}{plar} los cielos
+
+            El firma\Ch{Bb/F}{men}to y \Ch{F7}{las} estrellas \Ch{Bb}{mil}
+
+            Al oír tu voz
+
+            En los po\Ch{Eb}{ten}tes truenos
+
+            Y ver bri\Ch{Bb/F}{llar} el \Ch{F7}{sol} en su ce\Ch{Bb}{nit}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Mi corazón en\Ch{Eb}{to}na la can\Ch{Bb}{ción} \endnote{En otras versiones dice ``Mi corazón se llena de emoción''}
+
+            cuán grande \Ch{F}{e}res oh Se\Ch{Bb}{ñor}
+
+            Mi corazón en\Ch{Eb}{to}na la can\Ch{Bb}{ción}
+
+            cuán grande es \Ch{Cm/Eb}{el} \Ch{G7/D}{cuán} \Ch{Cm}{gran}de \Ch{F7}{es} \Ch{Bb}{Él}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Al recorrer los montes \Ch{Eb}{y} los valles
+
+            y ver las \Ch{Bb/F}{be}llas \Ch{F7}{flo}res al pa\Ch{Bb}{sar},
+
+            al escuchar el canto \Ch{Eb}{de} las aves
+
+            y el murmu\Ch{Bb/F}{rar} del \Ch{F7}{cla}ro manan\Ch{Bb}{tial}.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Cuando recuerdo
+
+            del a\Ch{Eb}{mor} divino
+
+            Que desde el \Ch{Bb/F}{cie}lo al \Ch{F7}{Sal}vador envió
+
+            Aquel Jesús
+
+            Que por sal\Ch{Eb}{var}nos vino
+
+            Y en una \Ch{Bb/F}{cruz} su\Ch{F7}{frió} por mi y mu\Ch{Bb}{rió}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Cuando el Señor me llame a \Ch{Eb}{su} presencia
+
+            Al dulce ho\Ch{Bb/F}{gar}, al \Ch{F7}{cie}lo de esplen\Ch{Bb}{dor}
+
+            Le adoraré cantando \Ch{Eb}{la} grandeza
+
+            De su Po\Ch{Bb/F}{der}, y su infinito a\Ch{Bb}{mor}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\BflatPiano\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\EflatPiano\Eflat}{\qquad Mi} bemol Mayor \hfill\null\break
+            \upchord{\BflatFPiano\BflatF}{Si bemol} Mayor bajo F \hfill
+            \upchord{\FsevenPiano\Fseven}{\qquad Fa} Mayor s\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Señor Venimos Ante Tí}{Am}
     {} %copyright \SBPubDom
     {Danilo Montero}
@@ -12264,10 +12536,59 @@
         \fi
     \end{song}
 
+    \begin{song}{Si tu presencia conmigo no va}{Em}
+    {} %copyright \SBPubDom
+    {Oasis Ministry}
+    {Éxodo 33:15} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/33vHnFGCEQc5460uRFRl3l}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Quiero habitar en tu intimidad}
+
+        \begin{SBOpGroup}
+            Quiero habi\Ch{Em}{tar} en \Ch{D}{tu} intimi\Ch{A}{dad}
+
+            \Ch{D}{Don}de sé que te \Ch{A}{voy} a encon\Ch{Bm7}{trar}
+
+            Quiero habi\Ch{Em7}{tar} en \Ch{D}{tu} intimi\Ch{A}{dad}
+
+            \Ch{D}{Don}de sé \Ch{A}{que} te voy a encon\Ch{Bm7}{trar}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Si tu \Ch{Em7}{pre}sencia conmigo no va
+
+            \Ch{G}{Yo} no voy a ningún lugar
+
+            No quiero lle\Ch{D}{gar}, no \Ch{A}{voy} a lle\Ch{Bm7}{gar}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Y no me \Ch{Em}{voy} hasta que suce\Ch{G}{da}
+
+            Hasta que tu glo\Ch{D}{ria} inun\Ch{A}{de} mi inte\Ch{Bm7}{rior}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\EmPiano\Em}{\qquad Mi} Menor \hfill
+            \upchord{\BmPiano\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\CPiano\C}{\qquad Do} Mayor \hfill
+            \upchord{\AmPiano\Am}{\qquad La} Menor \hfill\null\break
+            \upchord{\DPiano\D}{\qquad Re} Mayor \hfill
+            \upchord{\DsevenPiano\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\GPiano\G}{\qquad Sol} Mayor \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Solamente alábale}{F}
     {} %copyright \SBPubDom
     {}
-    {} %pasaje
+    {Salmos 34:1} %pasaje
     {} %\NotCCLIed
     %        \ifChordBk
     %          \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/03zBrLi4BWMlf09IoK9TIJ}{Escuchar}\mbox{}\hfill}

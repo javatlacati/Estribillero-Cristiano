@@ -1,0 +1,32 @@
+\documentclass{standalone}
+\usepackage{tikz}
+
+\begin{document}
+
+    \definecolor{tempcolor}{RGB}{208,158,32}
+    \begin{tikzpicture}[scale=2]
+
+        % Draw circle
+        \draw (0,0) circle (2);
+
+        \draw [red,thick,domain=0:120,<-] plot ({2.4*cos(\x)}, {2.4*sin(\x)});
+        \draw [blue,thick,domain=150:270,->] plot ({2.4*cos(\x)}, {2.4*sin(\x)});
+
+
+        \foreach \x/\tone in {90/0, 60/1\#, 30/2\#, 0/3\#, 330/4\#, 300/5\#, 270/6b, 240/5b, 210/4b, 180/3b, 150/2b, 120/1b} {
+            \draw[-, dashed, color=tempcolor] (0,0) -- (\x:2);
+            \node at (\x:1.75) {\tone};
+        }
+        % Draw tones (Major)
+        \foreach \x/\tone in {90/C, 60/G, 30/D, 0/A, 330/E, 300/B, 270/Gb, 240/Db, 210/Ab, 180/Eb, 150/Bb, 120/F} {
+            \node at (\x:2.2) {\tone};
+        }
+
+        % Draw tones (Minor)
+        \draw (0,0) circle (1.5);
+        \foreach \x/\tone in {90/Am, 60/Em, 30/Bm, 0/F\#m, 330/C\#m, 300/G\#m, 270/Ebm, 230/Bbm, 210/Fm, 180/Cm, 150/Gm, 120/Dm} {
+            \node at (\x:1.2) {\tone};
+        }
+    \end{tikzpicture}
+
+\end{document}

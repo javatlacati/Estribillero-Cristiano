@@ -51,7 +51,7 @@
 \newcommand{\BsusGuitar}{\chord{t}{x,bf1p2,f2p4,f3p4,f4p5,f1p2}{Bsus4}}
 \newcommand{\BsevenGuitar}{\chord{t}{x,f1p2,f3p4,f1p2,f4p4,f1p2}{B7}}
 \newcommand{\BsevenFsGuitar}{\chord{t}{f2p2,n,f1p1,f3p2,n,f4p2}{B7/F$\#$}}
-\newcommand{\BsevenBasDsGuitar}{\chord{t}{x,x,p1,p2,n,p2}{B7/D$\#$}}
+\newcommand{\BsevenDsGuitar}{\chord{t}{x,x,p1,p2,n,p2}{B7/D$\#$}}
 \newcommand{\BDsGuitar}{\chord{2}{x,bf4p4,f1p2,f2p2,n,x}{B/D$\#$}}
 \newcommand{\BEflatGuitar}{\chord{2}{x,bf4p4,f1p2,f2p2,n,x}{B/Eb}}
 \newcommand{\BmGuitar}{\chord{t}{x,bf1p2,f3p4,f4p4,f2p3,f1p2}{Bm}}
@@ -127,6 +127,7 @@
 \newcommand{\EmseventrGuitar}{\chord{t}{o,f1p2,f2p2,n,f3p3,f4p3}{Em7}}
 \newcommand{\EmelevenGuitar}{\chord{t}{b,n,n,n,n,n}{Em11}}
 \newcommand{\EmGGuitar}{\chord{t}{bf3p3,f1p2,f2p2,n,n,n}{Em/G}}
+\newcommand{\EmDGuitar}{\chord{t}{x,x,o,n,n,n}{Em/D}}
 \newcommand{\EsevenFourGuitar}{\chord{t}{n,p2,p2,p4,p3,p5}{E7,11}}
 \newcommand{\EseveNNineGuitar}{\chord{t}{n,f1p2,f1p2,p4,p3,f1p2,}{E79}}
 \newcommand{\EDGuitar}{\chord{t}{x,x,o,f1p1,n,n}{E/D}}
@@ -198,6 +199,7 @@
 \newcommand{\AmGsPiano}{\keyboardf[Gso][Ao][Co][Eo]}
 \newcommand{\AsevenCsPiano}{\keyboard[Cso][Eo][Ao][Go]}
 \newcommand{\AmsevenFPiano}{\keyboardf[Fo][Go][Ao][Co][Eo]}
+\newcommand{\AAsPiano}{\keyboard[Aso][Cso][Eo][Ao]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\ADPiano}{\keyboardtwooctaves[Do][Eo][Ao][Cst]}
 \newcommand{\AEPiano}{\keyboardtwooctaves[Eo][Ao][Cst]}
@@ -210,6 +212,7 @@
 \newcommand{\AsPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\AsMajPiano}{\keyboard[Do][Fo][Ao][Aso]}
 \newcommand{\AsmPiano}{\keyboard[Cso][Fo][Aso]}
+\newcommand{\AsthirteenPiano}{\keyboard[Aso][Do][Fo][Gso][Co][Dso]}
 \newcommand{\BflatPiano}{\keyboard[Do][Fo][Aso]}
 \newcommand{\BflatsevenPiano}{\keyboard[Do][Fo][Aso][Gso]}
 \newcommand{\BflatmPiano}{\keyboard[Cso][Fo][Aso]}
@@ -226,6 +229,7 @@
 \newcommand{\BEflatPiano}{\keyboard[Dso][Fso][Bo]}
 \newcommand{\BsevenPiano}{\keyboard[Dso][Fso][Bo][Ao]}
 \newcommand{\BsevenFsPiano}{\keyboardf[Fso][Ao][Bo][Dso]}
+\newcommand{\BsevenDsPiano}{\keyboard[Dso][Fso][Ao][Bo]}
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
@@ -293,6 +297,7 @@
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
 \newcommand{\EmelevenPiano}{\keyboard[Eo][Fso][Go][Ao][Bo][Do]}
 \newcommand{\EmGPiano}{\keyboardf[Go][Bo][Eo]}
+\newcommand{\EmDPiano}{\keyboard[Do][Eo][Go][Bo]}
 \newcommand{\EDPiano}{\keyboard[Do][Eo][Gso][Bo]}
 \newcommand{\EFsPiano}{\keyboardf[Fso][Eo][Gso][Bo]}
 \newcommand{\EGPiano}{\keyboardf[Go][Eo][Bo]}
@@ -342,6 +347,8 @@
 \newcommand{\GsdimPiano}{\keyboardf[Gso][Bo][Do]}
 \newcommand{\AflatPiano}{\keyboard[Dso][Gso][Co]}
 \newcommand{\AflatMajPiano}{\keyboardf[Gso][Dso][Co][Go]}
+\newcommand{\AflatCPiano}{\keyboard[Co][Dso][Gso]}
+\newcommand{\AflatEflatPiano}{\keyboardtwooctaves[Dso][Gso][Ct]}
 \newcommand{\AflatFPiano}{\keyboardf[Fo][Gso][Co][Dso]}
 
 %% impresión de nombres de acordes
@@ -387,6 +394,7 @@
 \newcommand{\Bsus}{\ifguitarra\BsusGuitar\fi\ifpiano\BsusPiano\fi}
 \newcommand{\Bseven}{\ifguitarra\BsevenGuitar\fi\ifpiano\BsevenPiano\fi}
 \newcommand{\BsevenFs}{\ifguitarra\BsevenFsGuitar\fi\ifpiano\BsevenFsPiano\fi}
+\newcommand{\BsevenDs}{\ifguitarra\BsevenDsGuitar\fi\ifpiano\BsevenDsPiano\fi}
 \newcommand{\BsevenBasDs}{\ifguitarra\BsevenBasDsGuitar\fi\ifpiano\BsevenBasDsPiano\fi}
 \newcommand{\BDs}{\ifguitarra\BDsGuitar\fi\ifpiano\BDsPiano\fi}
 \newcommand{\BEflat}{\ifguitarra\BEflatGuitar\fi\ifpiano\BEflatPiano\fi}
@@ -461,7 +469,8 @@
 \newcommand{\Emseven}{\ifguitarra\EsevenGuitar\fi\ifpiano\EsevenPiano\fi}
 \newcommand{\Emseventr}{\ifguitarra\EmseventrGuitar\fi\ifpiano\EmsevenPiano\fi}
 \newcommand{\Emeleven}{\ifguitarra\EmelevenGuitar\fi\ifpiano\EmelevenPiano\fi}
-\newcommand{\EmG}{\ifguitarra\EMGuitar\fi\ifpiano\EMGPiano\fi}
+\newcommand{\EmG}{\ifguitarra\EmGGuitar\fi\ifpiano\EmGPiano\fi}
+\newcommand{\EmD}{\ifguitarra\EmDGuitar\fi\ifpiano\EmDPiano\fi}
 \newcommand{\EsevenFour}{\ifguitarra\EsevenFourGuitar\fi\ifpiano\EsevenFourPiano\fi}
 \newcommand{\EseveNNine}{\ifguitarra\EsevenNNineGuitar\fi\ifpiano\EsevenNNinePiano\fi}
 \newcommand{\ED}{\ifguitarra\EDGuitar\fi\ifpiano\EDPiano\fi}

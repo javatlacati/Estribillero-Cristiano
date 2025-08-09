@@ -83,6 +83,7 @@
 \newcommand{\CssevenGuitar}{\chord{t}{x,p4,p3,p4,p2,x}{C$\#$7}}
 
 \newcommand{\DflatGuitar}{\chord{4}{n,o,f2p2,f3p2,f4p2,n}{Db}}
+\newcommand{\DflatmGuitar}{\chord{2}{x,bf1p2,f3p4,f4p4,f2p3,f1p2}{Dbm}}
 \newcommand{\DflatFGuitar}{\chord{t}{x,x,p3,p5,p4,p4}{Db/F}}
 
 \newcommand{\DGuitar}{\chord{t}{x,x,o,f1p2,f3p3,f2p2}{D}}
@@ -175,6 +176,7 @@
 
 \newcommand{\GsGuitar}{\chord{3}{x,x,f3p4,f2p3,f1p2,f1p2}{G\#}}
 \newcommand{\AflatGuitar}{\chord{3}{x,x,f3p4,f2p3,f1p2,f1p2}{A$\flat$}}
+\newcommand{\AflatsevenGuitar}{\chord{4}{bf1p1,f3p3,f1p1,f2p2,f1p1,f1p1}{A$\flat$7}}
 \newcommand{\AflatmGuitar}{\chord{t}{p4,p2,p1,p1,n,x}{A$\flat$m}}
 \newcommand{\AflatEflatGuitar}{\chord{3}{x,bf3p4,f4p4,f2p3,f1p2,f1p2}{A$\flat$/E$\flat$}}
 \newcommand{\AflatFGuitar}{\chord{t}{bf1p1,f3p3,f1p1,f1p1,f1p1,f1p1}{A$\flat$/F}}
@@ -258,6 +260,7 @@
 \newcommand{\CsFPiano}{\keyboardf[Fo][Gso][Cso]}
 
 \newcommand{\DflatPiano}{\CsPiano}
+\newcommand{\DflatmPiano}{\CsmPiano}
 \newcommand{\DflatFPiano}{\CsFPiano}
 
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
@@ -346,6 +349,7 @@
 \newcommand{\AflatmPiano}{\keyboardf[Gso][Bo][Dso]}
 \newcommand{\GsdimPiano}{\keyboardf[Gso][Bo][Do]}
 \newcommand{\AflatPiano}{\keyboard[Dso][Gso][Co]}
+\newcommand{\AflatsevenPiano}{\GssevenPiano}
 \newcommand{\AflatMajPiano}{\keyboardf[Gso][Dso][Co][Go]}
 \newcommand{\AflatCPiano}{\keyboard[Co][Dso][Gso]}
 \newcommand{\AflatEflatPiano}{\keyboardtwooctaves[Dso][Gso][Ct]}
@@ -426,6 +430,7 @@
 \newcommand{\Csmseven}{\ifguitarra\CsmsevenGuitar\fi\ifpiano\CsmsevenPiano\fi}
 \newcommand{\Csseven}{\ifguitarra\CsmsevenGuitar\fi\ifpiano\CsmsevenPiano\fi}
 \newcommand{\Dflat}{\ifguitarra\DflatGuitar\fi\ifpiano\DflatPiano\fi}
+\newcommand{\Dflatm}{\ifguitarra\DflatmGuitar\fi\ifpiano\DflatmPiano\fi}
 \newcommand{\DflatF}{\ifguitarra\DflatFGuitar\fi\ifpiano\DflatFPiano\fi}
 
 \newcommand{\D}{\ifguitarra\DGuitar\fi\ifpiano\DPiano\fi}
@@ -466,7 +471,7 @@
 \newcommand{\Eseven}{\ifguitarra\EsevenGuitar\fi\ifpiano\EsevenPiano\fi}
 \newcommand{\EseveN}{\ifguitarra\EseveNineGuitar\fi\ifpiano\EseveNinePiano\fi}
 \newcommand{\Em}{\ifguitarra\EmGuitar\fi\ifpiano\EmPiano\fi}
-\newcommand{\Emseven}{\ifguitarra\EsevenGuitar\fi\ifpiano\EsevenPiano\fi}
+\newcommand{\Emseven}{\ifguitarra\EmsevenGuitar\fi\ifpiano\EmsevenPiano\fi}
 \newcommand{\Emseventr}{\ifguitarra\EmseventrGuitar\fi\ifpiano\EmsevenPiano\fi}
 \newcommand{\Emeleven}{\ifguitarra\EmelevenGuitar\fi\ifpiano\EmelevenPiano\fi}
 \newcommand{\EmG}{\ifguitarra\EmGGuitar\fi\ifpiano\EmGPiano\fi}
@@ -515,6 +520,7 @@
 
 \newcommand{\Gs}{\ifguitarra\GsGuitar\fi\ifpiano\GsPiano\fi}
 \newcommand{\Aflat}{\ifguitarra\AflatGuitar\fi\ifpiano\AflatPiano\fi}
+\newcommand{\Aflatseven}{\ifguitarra\AflatsevenGuitar\fi\ifpiano\AflatsevenPiano\fi}
 \newcommand{\Aflatm}{\ifguitarra\AflatmGuitar\fi\ifpiano\AflatmPiano\fi}
 \newcommand{\AflatEflat}{\ifguitarra\AflatEflatGuitar\fi\ifpiano\AflatEflatPiano\fi}
 \newcommand{\AflatF}{\ifguitarra\AflatFGuitar\fi\ifpiano\AflatFPiano\fi}

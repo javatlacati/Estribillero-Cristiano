@@ -60,6 +60,7 @@
 \newcommand{\BmsevenAGuitar}{\chord{t}{x,n,p4,p4,p3,n}{Bm7/A}}
 \newcommand{\BmsevenbfiveGuitar}{\chord{t}{x,bf1p2,f3p3,f2p2,f4p3,n}{Bm7(b5)}} %si semidisminuido
 \newcommand{\BmajsevenGGuitar}{\chord{t}{p3,x,p1,p3,n,p2}{B+7/G}}
+\newcommand{\BdimDGuitar}{\chord{t}{x,x,o,p4,n,p1}{Bdim/D}}
 
 \newcommand{\CGuitar}{\chord{t}{x,bf3p3,n,f2p2,f1p1,n}{C}}
 \newcommand{\CsusGuitar}{\chord{t}{x,bf3p3,f4p3,n,f1p1,f2p1}{Csus4}}
@@ -236,6 +237,7 @@
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
 \newcommand{\BmajsevenGPiano}{\keyboardf[Go][Bo][Dso][Fso]}
+\newcommand{\BdimDPiano}{\keyboard[Do][Fo][Bo]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
 \newcommand{\CsusPiano}{\keyboard[Co][Fo][Go]}
@@ -407,7 +409,8 @@
 \newcommand{\BmseveN}{\ifguitarra\BmseveNGuitar\fi\ifpiano\BmseveNPiano\fi}
 \newcommand{\BmsevenA}{\ifguitarra\BmsevenAGuitar\fi\ifpiano\BmsevenAPiano\fi}
 \newcommand{\Bmsevenbfive}{\ifguitarra\BmsevenbfiveGuitar\fi\ifpiano\BmsevenbfivePiano\fi} %si semidisminuido
-\newcommand{\BmajsevenG}{\ifguitarra\BmajsevenGuitar\fi\ifpiano\BmajsevenGPiano\fi}
+\newcommand{\BmajsevenG}{\ifguitarra\BmajsevenGGuitar\fi\ifpiano\BmajsevenGPiano\fi}
+\newcommand{\BdimD}{\ifguitarra\BdimDGuitar\fi\ifpiano\BdimDPiano\fi}
 
 \newcommand{\C}{\ifguitarra\CGuitar\fi\ifpiano\CPiano\fi}
 \newcommand{\Csus}{\ifguitarra\CsusGuitar\fi\ifpiano\CsusPiano\fi}

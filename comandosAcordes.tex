@@ -65,6 +65,7 @@
 \newcommand{\CGuitar}{\chord{t}{x,bf3p3,n,f2p2,f1p1,n}{C}}
 \newcommand{\CsusGuitar}{\chord{t}{x,bf3p3,f4p3,n,f1p1,f2p1}{Csus4}}
 \newcommand{\CsevenGuitar}{\chord{t}{x,bf3p3,f2p2,f4p3,f1p1,n}{C7}}
+\newcommand{\CsevenBflatGuitar}{\chord{t}{x,bf1p1,f3p2,n,f2p1,n}{C7/Bb}}
 \newcommand{\CmGuitar}{\chord{t}{x,bf3p3,f1p1,n,f2p1,f4p3}{Cm}}
 \newcommand{\CmsevenGuitar}{\chord{2}{x,bf1p1,f3p3,f1p1,f2p2,f1p1}{Cm7}}
 \newcommand{\CmAflatGuitar}{\chord{3}{x,x,p4,p3,p2,p1}{Cm/Ab}}
@@ -247,6 +248,7 @@
 \newcommand{\CEPiano}{\keyboardtwooctaves[Eo][Go][Ct]}
 \newcommand{\CGPiano}{\keyboardf[Go][Co][Eo]}
 \newcommand{\CsevenPiano}{\keyboard[Co][Eo][Go][Aso]}
+\newcommand{\CsevenBflatPiano}{\keyboardtwooctaves[Aso][Ct][Et][Gt]}
 \newcommand{\CmPiano}{\keyboard[Co][Dso][Go]}
 \newcommand{\CmsevenPiano}{\keyboard[Co][Dso][Go][Aso]}
 \newcommand{\CmAflatPiano}{\keyboardtwooctaves[Gso][Ct][Dst][Gt]}
@@ -419,6 +421,7 @@
 \newcommand{\C}{\ifguitarra\CGuitar\fi\ifpiano\CPiano\fi}
 \newcommand{\Csus}{\ifguitarra\CsusGuitar\fi\ifpiano\CsusPiano\fi}
 \newcommand{\Cseven}{\ifguitarra\CsevenGuitar\fi\ifpiano\CsevenPiano\fi}
+\newcommand{\CsevenBflat}{\ifguitarra\CsevenBflatGuitar\fi\ifpiano\CsevenBflatPiano\fi}
 \newcommand{\Cm}{\ifguitarra\CmGuitar\fi\ifpiano\CmPiano\fi}
 \newcommand{\Cmseven}{\ifguitarra\CmsevenGuitar\fi\ifpiano\CmsevenPiano\fi}
 \newcommand{\CmAflat}{\ifguitarra\CmAflatGuitar\fi\ifpiano\CmAflatPiano\fi}

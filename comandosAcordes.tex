@@ -96,6 +96,7 @@
 \newcommand{\DMajGuitar}{\chord{t}{x,x,o,f1p2,f1p2,f1p2}{D+7}}
 \newcommand{\DsusGuitar}{\chord{t}{x,x,o,f1p2,f3p3,f4p3}{Dsus4}}
 \newcommand{\DsusnineGuitar}{\chord{t}{x,x,o,f2p2,f3p3,n}{Dsus9}}
+\newcommand{\DmBGuitar}{\chord{t}{x,bf2p2,n,f3p2,f4p3,f1p1}{Dm/B}}
 \newcommand{\DmCGuitar}{\chord{t}{x,bf3p3,n,f2p2,f4p3,f1p1}{Dm/C}}
 \newcommand{\DmFGuitar}{\chord{t}{bf1p1,n,n,f2p2,f3p3,x}{Dm/F}}
 \newcommand{\DtwoGuitar}{\chord{t}{n,bf4p5,f1p2,f1p2,f2p3,f1p2}{D2}}
@@ -151,6 +152,7 @@
 \newcommand{\FnineGuitar}{\chord{t}{bf1p1,n,f2p1,n,f3p1,f4p3}{F9}}
 \newcommand{\FmGuitar}{\chord{t}{bf1p1,f3p3,f4p3,f1p1,f1p1,f1p1}{Fm}}
 \newcommand{\FmsevenGuitar}{\chord{t}{bf1p1,f3p3,f1p1,f1p1,f1p1,f1p1}{Fm7}}
+\newcommand{\FmsixGuitar}{\chord{t}{bf1p1,f2p3,f3p3,f1p1,f4p3,f1p1}{Fm6}}
 
 \newcommand{\FsGuitar}{\chord{t}{bf1p2,f3p4,f4p4,f2p3,f1p2,f1p2}{F\#}}
 \newcommand{\FssevenGuitar}{\chord{t}{bf1p2,f3p4,f1p2,f2p3,f1p2,f1p2}{F\#7}}
@@ -274,6 +276,7 @@
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
 \newcommand{\DsevenPiano}{\keyboard[Do][Fso][Ao][Co]}
 \newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
+\newcommand{\DmBPiano}{\keyboard[Bo][Do][Fo][Ao]}
 \newcommand{\DmCPiano}{\keyboard[Co][Do][Fo][Ao]}
 \newcommand{\DmFPiano}{\keyboardf[Do][Fo][Ao]}
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
@@ -326,6 +329,7 @@
 \newcommand{\FMajPiano}{\keyboardf[Co][Fo][Ao][Eo]}
 \newcommand{\FmPiano}{\keyboardf[Fo][Aso][Co]}
 \newcommand{\FmsevenPiano}{\keyboard[Co][Fo][Aso][Dso]}
+\newcommand{\FmsixPiano}{\keyboardf[Fo][Gso][Co][Do]}
 
 \newcommand{\FsPiano}{\keyboard[Cso][Fso][Aso]}
 \newcommand{\FssevenPiano}{\keyboardf[Fso][Aso][Cso][Eo]}
@@ -453,6 +457,7 @@
 \newcommand{\DMaj}{\ifguitarra\DMajGuitar\fi\ifpiano\DMajPiano\fi}
 \newcommand{\Dsus}{\ifguitarra\DsusGuitar\fi\ifpiano\DsusPiano\fi}
 \newcommand{\Dsusnine}{\ifguitarra\DsusnineGuitar\fi\ifpiano\DsusninePiano\fi}
+\newcommand{\DmB}{\ifguitarra\DmBGuitar\fi\ifpiano\DmBPiano\fi}
 \newcommand{\DmC}{\ifguitarra\DmCGuitar\fi\ifpiano\DmCPiano\fi}
 \newcommand{\DmF}{\ifguitarra\DmFGuitar\fi\ifpiano\DmFPiano\fi}
 \newcommand{\Dtwo}{\ifguitarra\DtwoGuitar\fi\ifpiano\DtwoPiano\fi}
@@ -507,6 +512,7 @@
 \newcommand{\Fnine}{\ifguitarra\FnineGuitar\fi\ifpiano\FninePiano\fi}
 \newcommand{\Fm}{\ifguitarra\FMajGuitar\fi\ifpiano\FMajPiano\fi}
 \newcommand{\Fmseven}{\ifguitarra\FsevenGuitar\fi\ifpiano\FsevenPiano\fi}
+\newcommand{\Fmsix}{\ifguitarra\FmsixGuitar\fi\ifpiano\FmsixPiano\fi}
 
 \newcommand{\Fs}{\ifguitarra\FsGuitar\fi\ifpiano\FsPiano\fi}
 \newcommand{\Fsseven}{\ifguitarra\FssevenGuitar\fi\ifpiano\FssevenPiano\fi}

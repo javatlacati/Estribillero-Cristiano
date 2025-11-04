@@ -53,6 +53,8 @@
 \newcommand{\BsevenGuitar}{\chord{t}{x,f1p2,f3p4,f1p2,f4p4,f1p2}{B7}}
 \newcommand{\BsevenFsGuitar}{\chord{t}{f2p2,n,f1p1,f3p2,n,f4p2}{B7/F$\#$}}
 \newcommand{\BsevenDsGuitar}{\chord{t}{x,x,p1,p2,n,p2}{B7/D$\#$}}
+\newcommand{\BCsGuitar}{\chord{t}{x,bf2p4,f3p4,f4p4,n,f1p2}{B/C$\#$}}
+\newcommand{\BDflatGuitar}{\chord{t}{x,bf2p4,f3p4,f4p4,n,f1p2}{B/Db}}
 \newcommand{\BDsGuitar}{\chord{2}{x,bf4p4,f1p2,f2p2,n,x}{B/D$\#$}}
 \newcommand{\BEflatGuitar}{\chord{2}{x,bf4p4,f1p2,f2p2,n,x}{B/Eb}}
 \newcommand{\BmGuitar}{\chord{t}{x,bf1p2,f3p4,f4p4,f2p3,f1p2}{Bm}}
@@ -62,6 +64,7 @@
 \newcommand{\BmsevenbfiveGuitar}{\chord{t}{x,bf1p2,f3p3,f2p2,f4p3,n}{Bm7(b5)}} %si semidisminuido
 \newcommand{\BmajsevenGGuitar}{\chord{t}{p3,x,p1,p3,n,p2}{B+7/G}}
 \newcommand{\BdimDGuitar}{\chord{t}{x,x,o,p4,n,p1}{Bdim/D}}
+\newcommand{\BtwoGuitar}{\chord{t}{x,bf1p2,f2p4,f3p4,f1p2,f1p2}{B2}}
 
 \newcommand{\CGuitar}{\chord{t}{x,bf3p3,n,f2p2,f1p1,n}{C}}
 \newcommand{\CsusGuitar}{\chord{t}{x,bf3p3,f4p3,n,f1p1,f2p1}{Csus4}}
@@ -111,6 +114,7 @@
 \newcommand{\DsusFsGuitar}{\chord{t}{bf1p2,x,n,f2p2,f3p3,f4p3}{Dsus/F\#}}
 
 \newcommand{\DsGuitar}{\chord{t}{n,n,bf1p1,f2p3,f4p4,f3p3}{D$\#$}}
+\newcommand{\DssusGuitar}{\chord{t}{o,x,f1p2,f2p3,f3p4,f4p4}{D$\#$sus4}}
 \newcommand{\DssevenGuitar}{\chord{t}{n,n,bf1p1,f3p3,f1p4,f4p3}{D\#7}}
 \newcommand{\DsmGuitar}{\chord{t}{x,x,bf1p1,f3p3,f4p4,f1p2}{D\#m}}
 \newcommand{\DsmsevenGuitar}{\chord{t}{x,x,bf1p1,f4p3,f2p2,f3p2}{D\#m7}}
@@ -128,6 +132,7 @@
 \newcommand{\EdimfiveGuitar}{\chord{t}{o,f1p1,f2p2,f3p3,n,n}{E(b5)}}
 \newcommand{\EsevenGuitar}{\chord{t}{o,f2p2,f3p2,f1p1,f4p3,n}{E7}}
 \newcommand{\EseveNGuitar}{\chord{t}{o,p2,p2,p4,p3,p4}{E7}}
+\newcommand{\EMajGuitar}{\chord{t}{o,x,f1p2,f2p4,f3p4,f4p4}{E+7}}
 \newcommand{\EmGuitar}{\chord{t}{o,f1p2,f2p2,n,n,n}{Em}}
 \newcommand{\EmsevenGuitar}{\chord{t}{o,f1p2,f2p2,n,f4p3,n}{Em7}}
 \newcommand{\EmseventrGuitar}{\chord{t}{o,f1p2,f2p2,n,f3p3,f4p3}{Em7}}
@@ -242,11 +247,14 @@
 \newcommand{\BsevenPiano}{\keyboard[Dso][Fso][Bo][Ao]}
 \newcommand{\BsevenFsPiano}{\keyboardf[Fso][Ao][Bo][Dso]}
 \newcommand{\BsevenDsPiano}{\keyboard[Dso][Fso][Ao][Bo]}
+\newcommand{\BCsPiano}{\keyboard[Cso][Dso][Fso][Bo]}
+\newcommand{\BDflatPiano}{\BCsPiano}
 \newcommand{\BmPiano}{\keyboard[Do][Fso][Bo]}
 \newcommand{\BmsevenPiano}{\keyboard[Do][Fso][Bo][Ao]}
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
 \newcommand{\BmajsevenGPiano}{\keyboardf[Go][Bo][Dso][Fso]}
 \newcommand{\BdimDPiano}{\keyboard[Do][Fo][Bo]}
+\newcommand{\BtwoPiano}{\keyboard[Bo][Cso][Dso][Fso]}
 
 \newcommand{\CPiano}{\keyboard[Co][Eo][Go]}
 \newcommand{\CsusPiano}{\keyboard[Co][Fo][Go]}
@@ -295,6 +303,7 @@
 \newcommand{\DsusFsPiano}{\keyboardf[Fo][Go][Ao][Do]}
 
 \newcommand{\DsPiano}{\keyboard[Dso][Go][Aso]}
+\newcommand{\DssusPiano}{\keyboard[Dso][Gso][Aso]}
 \newcommand{\DsmPiano}{\keyboard[Dso][Fso][Aso]}
 \newcommand{\DsmsevenPiano}{\keyboard[Dso][Fso][Aso][Cso]}
 \newcommand{\EflatPiano}{\keyboard[Dso][Go][Aso]}
@@ -310,6 +319,7 @@
 \newcommand{\EfivePiano}{\keyboard[Eo][Bo]}
 \newcommand{\EdimfivePiano}{\keyboard[Eo][Aso][Bo]}
 \newcommand{\EsevenPiano}{\keyboard[Eo][Gso][Bo][Do]}
+\newcommand{\EMajPiano}{\keyboard[Eo][Gso][Bo][Dso]}
 \newcommand{\EmPiano}{\keyboard[Eo][Go][Bo]}
 \newcommand{\EmsevenPiano}{\keyboard[Eo][Go][Bo][Do]}
 \newcommand{\EmelevenPiano}{\keyboard[Eo][Fso][Go][Ao][Bo][Do]}
@@ -418,6 +428,8 @@
 \newcommand{\Bseven}{\ifguitarra\BsevenGuitar\fi\ifpiano\BsevenPiano\fi}
 \newcommand{\BsevenFs}{\ifguitarra\BsevenFsGuitar\fi\ifpiano\BsevenFsPiano\fi}
 \newcommand{\BsevenDs}{\ifguitarra\BsevenDsGuitar\fi\ifpiano\BsevenDsPiano\fi}
+\newcommand{\BCs}{\ifguitarra\BCsGuitar\fi\ifpiano\BDflatPiano\fi}
+\newcommand{\BDflat}{\ifguitarra\BDflatGuitar\fi\ifpiano\BDflatPiano\fi}
 \newcommand{\BsevenBasDs}{\ifguitarra\BsevenBasDsGuitar\fi\ifpiano\BsevenBasDsPiano\fi}
 \newcommand{\BDs}{\ifguitarra\BDsGuitar\fi\ifpiano\BDsPiano\fi}
 \newcommand{\BEflat}{\ifguitarra\BEflatGuitar\fi\ifpiano\BEflatPiano\fi}
@@ -428,6 +440,7 @@
 \newcommand{\Bmsevenbfive}{\ifguitarra\BmsevenbfiveGuitar\fi\ifpiano\BmsevenbfivePiano\fi} %si semidisminuido
 \newcommand{\BmajsevenG}{\ifguitarra\BmajsevenGGuitar\fi\ifpiano\BmajsevenGPiano\fi}
 \newcommand{\BdimD}{\ifguitarra\BdimDGuitar\fi\ifpiano\BdimDPiano\fi}
+\newcommand{\Btwo}{\ifguitarra\BtwoGuitar\fi\ifpiano\BtwoPiano\fi}
 
 \newcommand{\C}{\ifguitarra\CGuitar\fi\ifpiano\CPiano\fi}
 \newcommand{\Csus}{\ifguitarra\CsusGuitar\fi\ifpiano\CsusPiano\fi}
@@ -477,6 +490,7 @@
 
 \newcommand{\Ds}{\ifguitarra\DsGuitar\fi\ifpiano\DsPiano\fi}
 \newcommand{\Dsseven}{\ifguitarra\DsevenGuitar\fi\ifpiano\DsevenPiano\fi}
+\newcommand{\Dssus}{\ifguitarra\DssusGuitar\fi\ifpiano\DssusPiano\fi}
 \newcommand{\Dsm}{\ifguitarra\DsmGuitar\fi\ifpiano\DsmPiano\fi}
 \newcommand{\Dsmseven}{\ifguitarra\DsmsevenGuitar\fi\ifpiano\DsmsevenPiano\fi}
 \newcommand{\Eflat}{\ifguitarra\EflatGuitar\fi\ifpiano\EflatPiano\fi}
@@ -492,6 +506,7 @@
 \newcommand{\Efive}{\ifguitarra\EfiveGuitar\fi\ifpiano\EfivePiano\fi}
 \newcommand{\Edimfive}{\ifguitarra\EdimfiveGuitar\fi\ifpiano\EdimfivePiano\fi}
 \newcommand{\Eseven}{\ifguitarra\EsevenGuitar\fi\ifpiano\EsevenPiano\fi}
+\newcommand{\EMaj}{\ifguitarra\EMajGuitar\fi\ifpiano\EMajPiano\fi}
 \newcommand{\EseveN}{\ifguitarra\EseveNineGuitar\fi\ifpiano\EseveNinePiano\fi}
 \newcommand{\Em}{\ifguitarra\EmGuitar\fi\ifpiano\EmPiano\fi}
 \newcommand{\Emseven}{\ifguitarra\EmsevenGuitar\fi\ifpiano\EmsevenPiano\fi}

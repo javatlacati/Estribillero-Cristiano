@@ -1,0 +1,1088 @@
+%! Author = Ruslan López
+%! Date = 19/08/2025
+
+% Preamble
+\input{comandosAcordes}
+\documentclass[12pt, spanish]{book}
+
+% Packages
+\usepackage[T1]{fontenc} %pdflatex
+%\usepackage{fontspec} %xelatex
+\usepackage[utf8]{inputenc}
+\usepackage{babel}
+\usepackage{mypiano}
+\usepackage{gchords}
+\usepackage{latexsym,fancyhdr}
+\usepackage{imakeidx}
+\usepackage[pdfpagelabels,hyperindex,unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
+    breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
+\usepackage[chordbk]{songbook} %% Words & Chords edition. Estribillero Musicos
+\usepackage{endnotes}
+%\usepackage{biblatex}
+\usepackage{tikz}
+%%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
+%\usepackage[wordbk]{songbook}                 %% Words Only edition. Estribillero publicable
+%\usepackage[overhead]{songbook}               %% Overhead Transparency edition. Estribillero Letras
+
+%\newcommand\themarker[1]{\pdfbookmark[1]{#1}{\pdfmdfivesum{#1}}}
+
+
+% Paso 1: Guardar el entorno original
+\let\oldsong\song
+\let\endoldsong\endsong
+
+
+\newcommand{\strconcat}[2]{#1 - #2}
+
+% Paso 2: Redefinir el entorno para insertar el pdfbookmark
+%\renewenvironment{song}[7][YF]{%
+\RenewDocumentEnvironment{song}{m m m m m m}{%
+    \pdfbookmark[1]{\strconcat{#1}{#4}}{\pdfmdfivesum{\strconcat{#1}{#4}}}% usar el primer argumento como título
+    \oldsong{#1}{#2}{#3}{#4}{#5}{#6}% llamar al entorno original con los mismos argumentos
+    }{%
+    \endoldsong
+}
+\renewcommand*{\UrlFont}{\ttfamily\smaller\relax}
+
+\renewcommand{\SBChorusTag}{Coro:}
+\renewcommand{\SBBridgeTag}{Puente:}
+\renewcommand{\SBEndTag}{Fin:}
+%\newcommand{\myTitleFont}{\Huge\myHugeSF}
+\newcommand{\mySubTitleFont}{\large\sf}
+
+
+%%%
+% Turn on/off index-file generation.  Uncomment the \makeindex line to
+% turn index generation on;  comment it out to turn index generation
+% off.
+%%%
+\makeTitleIndex         %% Title and First Line Index.
+\makeTitleContents      %% Table of Contents.
+\makeKeyIndex           %% Index of song by key.
+\makeArtistIndex        %% Index of song by artist.
+\makeindex
+
+\renewcommand{\notesname}{Notas}
+
+%%%
+% Revision Date and Release Date definitions.
+%
+%       \RelDate - The last time this songbook was released.  Set this
+%                  date each time a new release/update of the songbook
+%                  is generated.
+%       \RevDate - The last time a particular song was revised in any
+%                  way.  This command will be renewed inside every
+%                  song.
+%%%
+\newcommand{\RelDate}{\today}
+\newcommand{\RevDate}{\today}
+
+%%%
+% C.C.L.I. license number definition; for copyright licensing info.
+% One of these macros will be manually inserted into the {CpyRt}
+% parameter of the {song} environment.
+%
+%       \CCLInumber - The actual copyright license number.  Don't
+%               insert this command in the {CpyRt} parameter, use one
+%               of the others.
+%       \CCLIed - Indicates a song falls under our CCLI license.
+%       \NotCCLIed - Indicates a song doesn't fall under our CCLI
+%               license.  Public Domain songs fall into this category.
+%       \PGranted - We have received specific permission from the
+%               copyright holder to use this song.
+%       \PPending - We are in the process of obtaining permission to
+%               use this song.
+%%%
+\newcommand{\CCLInumber}{Your CCLI Number}
+\newcommand{\CCLIed}{{\CpyRtInfoFont (CCLI \CCLInumber)}}
+\newcommand{\NotCCLIed}{\relax}
+\newcommand{\PGranted}{\relax}
+\newcommand{\PPending}{{\CpyRtInfoFont (Permission Pending)}}
+
+%%%
+% Title page information.
+%%%
+\title{Cuaderno de Cantos de Invitaci\'on}
+\author{Ruslan L\'opez}
+\date{\'Ultima Revisi\'on:  \RevDate}
+
+%%%
+% Redefine fonts from SongBook style that I don't like.
+%%%
+\font\myTinySF=cmss8 at 8pt
+\renewcommand{\CpyRtInfoFont}{\tiny\myTinySF}
+
+%%%
+% Define fonts to use in the headers and footers of the songbook.
+%%%
+\newcommand{\LHeadFont}{\normalsize}            % = cmr12  at 12pt
+\newcommand{\CHeadFont}{\normalsize\rm}         % = cmr12  at 12pt
+\newcommand{\RHeadFont}{\normalsize}            % = cmr12  at 12pt
+\newcommand{\LFootFont}{\scriptsize}            % = cmr8   at  8pt
+\newcommand{\CFootFont}{\tiny\myTinySF}         % = cmss8  at  8pt
+\newcommand{\RFootFont}{\scriptsize}            % = cmr8   at  8pt
+
+%%%
+% Turn on and define fancy page heading/footing definition.
+%%%
+\pagestyle{fancy}
+
+\ifChordBk
+% It's a words & chords songbook...
+\headsep=7mm
+\oddsidemargin=1in
+\evensidemargin=1.2in
+\footskip=0.2in
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[LE,RO]{\LHeadFont\emph{\leftmark\/}\SBContinueMark}
+\fancyhead[CE,CO]{\CHeadFont\thepage}
+\fancyhead[RE,LO]{\RHeadFont\RelDate}
+\else\ifOverhead
+% It's an overhead...
+\renewcommand{\footrulewidth}{0pt}
+\renewcommand{\headrulewidth}{0pt}
+\fancyhead[LE,RO]{}
+\fancyhead[CE,CO]{}
+\fancyhead[RE,LO]{}
+\else\ifWordBk
+% It's a words only songbook...
+\addtolength{\headwidth}{\marginparsep}
+\addtolength{\headwidth}{\marginparwidth}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\fancyhead[LE,RO]{\LHeadFont Estribillero}
+\fancyhead[CE,CO]{\CHeadFont\thepage}
+\fancyhead[RE,LO]{\RHeadFont\RelDate}
+\fi\fi\fi
+
+\fancyfoot[LE,RO]{\LFootFont Transcripciones}
+\ifSongEject
+\fancyfoot[CE,CO]{\CFootFont \RevDate}
+\else
+\fancyfoot[CE,CO]{\CFootFont}
+\fi
+\fancyfoot[RE,LO]{\RFootFont Todo el material son transcripciones personales.}
+
+
+% Document
+\begin{document}
+    \hypersetup{pageanchor=false}
+
+%%%
+% Custom titlepage for Christian church songbook
+%%%
+    \begin{titlepage}
+        \thispdfpagelabel{Portada}
+        \centering
+
+        \vspace*{1cm}
+
+        {\Huge\bfseries\sffamily{$\dagger$}\par}
+
+        \vspace{1.5cm}
+
+        {\Huge\bfseries\sffamily Cuaderno de\par}
+        \vspace{0.5cm}
+        {\Huge\bfseries\sffamily Cantos de Invitaci\'on\par}
+
+        \vspace{2cm}
+
+        \begin{center}
+            \Large\itshape ``Cantad alegres a Dios, habitantes de toda la tierra.\\
+            Servid a Jehov\'a con alegr\'ia;\\
+            Venid ante su presencia con regocijo.''\\
+            \vspace{0.3cm}
+            --- Salmos 100:1-2
+        \end{center}
+
+        \vspace{2cm}
+
+        {\Large\bfseries Compilado por:\par}
+        \vspace{0.5cm}
+        {\Large Ruslan L\'opez\par}
+
+        \vfill
+
+        {\large \'Ultima Revisi\'on: \RevDate\par}
+
+        \vspace{1cm}
+
+    \end{titlepage}
+
+    \hypersetup{pageanchor=true}
+    \pdfbookmark[0]{Piezas musicales}{piezas}
+%    \mainmatter
+    \ifWordBk
+    \twocolumn
+    \fi
+%%%
+% Songbook begins.
+%%%
+
+    \begin{song}{A Nuestro Padre Dios}{F}
+    {1744} %copyright \SBPubDom
+    {An\'onimo en Thesaurus Musicus}
+    {Juan 3:16} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/177p7uNRVWE0seYFrv48ud}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBVerse}
+            \Ch{F}{A} \Ch{Dm}{nues}\Ch{Gm}{tro} \Ch{C}{Pa}\Ch{Dm7}{dre} \Ch{C}{Dios}
+
+            \Ch{F}{Al}\Ch{Dm}{ce}\Ch{Gm}{mos} \Ch{F}{nues}\Ch{C7}{tra} \Ch{Dm}{voz}
+
+            ¡\Ch{Gm}{Glo}\Ch{F}{ria} \Ch{C}{a} \Ch{F}{\'El}!
+
+            Tal \Ch{Am}{fué} su a\Ch{F}{mor} que di\'o
+
+            \Ch{C7}{Al} hijo que \Ch{F}{mu}\Ch{C}{ri\'o,}
+
+            \Ch{F}{En} \Ch{Bb}{quien} con\Ch{F}{fío} yo;
+
+            ¡\Ch{Bb}{Glo}\Ch{F}{ria} \Ch{C7}{a} \Ch{F}{\'El}!
+        \end{SBVerse}
+
+        \begin{SBVerse}
+            \Ch{F}{A} \Ch{Dm}{nues}\Ch{Gm}{tro} \Ch{C}{Sal}\Ch{Dm}{va}\Ch{C}{dor}
+
+            \Ch{F}{De}\Ch{Dm}{mos} \Ch{Gm}{con} \Ch{F}{fe} \Ch{C7}{lo}\Ch{Dm}{or}
+
+            ¡\Ch{Gm}{Glo}ria \Ch{C}{a} \Ch{F}{\'El}!
+
+            Su \Ch{Am}{san}gre \Ch{F}{de}rram\'o
+
+            \Ch{C7}{Con} ella me \Ch{F}{la}\Ch{C}{v\'o,}
+
+            \Ch{F}{Y} el \Ch{Bb}{cie}lo \Ch{F}{me} abri\'o
+
+            ¡\Ch{Bb}{Glo}\Ch{F}{ria} \Ch{C7}{a} \Ch{F}{\'El}!
+        \end{SBVerse}
+
+        \begin{SBVerse}
+            \Ch{F}{Es}\Ch{Dm}{pí}\Ch{Gm}{ri}\Ch{C}{tu} \Ch{Dm7}{de} \Ch{C}{Dios},
+
+            \Ch{F}{E}\Ch{Dm}{le}\Ch{Gm}{vo} a Ti \Ch{C7}{mi} \Ch{Dm}{voz};
+
+            ¡\Ch{Gm}{Glo}\Ch{F}{ria} \Ch{C}{a} \Ch{F}{Ti}!
+
+            Con \Ch{Am}{ce}les\Ch{F}{tial} fulgor
+
+            \Ch{C7}{Me} muestras el \Ch{F}{a}\Ch{C}{mor}
+
+            \Ch{F}{De} \Ch{Bb}{Cris}to \Ch{F}{mi} Señor
+
+            ¡\Ch{Bb}{Glo}\Ch{F}{ria} \Ch{C7}{a} \Ch{F}{Ti}!
+        \end{SBVerse}
+
+        \begin{SBVerse}
+            \Ch{F}{Con} \Ch{Dm}{go}\Ch{Gm}{zo} y \Ch{Dm}{a}\Ch{C}{mor},
+
+            \Ch{F}{Can}\Ch{Dm}{te}\Ch{Gm}{mos} con \Ch{C7}{fer}\Ch{Dm}{vor}
+
+            \Ch{Gm}{Al} \Ch{F}{Tri}\Ch{C}{no} \Ch{F}{Dios}.
+
+            En \Ch{Am}{la} e\Ch{F}{ter}nidad
+
+            \Ch{C7}{Mo}ra la Tri\Ch{F}{ni}\Ch{C}{dad};
+
+            ¡\Ch{F}{Por} \Ch{Bb}{siem}pre \Ch{F}{a}labad
+
+            \Ch{Bb}{Al} \Ch{F}{Tri}\Ch{C7}{no} \Ch{F}{Dios}!
+        \end{SBVerse}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\F}{\qquad Fa} Mayor \hfill
+            \upchord{\Dm}{\qquad Re} menor  \hfill\null\break
+            \upchord{\Gm}{\qquad Sol} Menor \hfill
+            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\Dmseven}{\qquad Re} menor s\'eptima \hfill
+            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\Am}{\qquad La} Menor \hfill
+            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Dad a Dios Inmortal alabanza}{D}
+    {} %copyright \SBPubDom
+    {Colección española}
+    {} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4LeTETSxqGtSsnZ0mlSJeE}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            Dad a \Ch{D}{Dios} inmortal ala\Ch{G/D}{ban}\Ch{D}{za};
+
+            Su merced, su verdad \Ch{G}{nos} i\Ch{A}{nun}da;
+
+            \Ch{D}{Es} su gracia en prodigios fe\Ch{G/D}{cun}\Ch{D}{da},
+
+            Sus mer\Ch{C\#}{ce}des, humildes can\Ch{F\#m}{tad}
+
+            ¡\Ch{D}{Al} Se\Ch{A7}{ñor} de señores dad \Ch{D}{glo}ria,
+
+            Rey de reyes, poder \Ch{A}{sin} se\Ch{D}{gun}do!
+
+            Mori\Ch{A}{rán} los señores del \Ch{D}{mun}do,
+
+            mas su reino no a\Ch{A7}{ca}ba Ja\Ch{D}{más}.
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            Las na\Ch{D}{cio}nes vió en vicios su\Ch{G/D}{mi}\Ch{D}{das}
+
+            Y sintió compasión \Ch{G}{en} su \Ch{A}{se}no;
+
+            \Ch{D}{De} prodigios de gracia está \Ch{G/D}{lle}\Ch{D}{no};
+
+            Sus mer\Ch{C\#}{ce}des, humildes can\Ch{F\#m}{tad}
+
+            \Ch{D}{A} su \Ch{A7}{pue}blo llevó por la \Ch{D}{ma}no
+
+            A la tierra por él \Ch{A}{pro}me\Ch{D}{ti}da
+
+            Por los \Ch{A}{si}glos sin fin le da \Ch{D}{vi}da
+
+            y el pecado y la muerte cae\Ch{D}{rán}.
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            A su \Ch{D}{Hi}jo envió por sal\Ch{G/D}{var}\Ch{D}{nos}
+
+            Del pecado y la muer\Ch{G}{te} inhe\Ch{A}{ren}te:
+
+            \Ch{D}{De} prodigios de gracia es to\Ch{G/D}{rren}\Ch{D}{te},
+
+            Sus mer\Ch{C\#}{ce}des, humildes can\Ch{F\#m}{tad}
+
+            \Ch{D}{Por} el \Ch{A7}{mun}do su mano nos \Ch{D}{lle}va
+
+            Y al celeste descan\Ch{A}{so} nos \Ch{D}{guí}a;
+
+            Su bon\Ch{A}{dad} vivirá eterno \Ch{D}{día},
+
+            Cuando el mundo no exista ya \Ch{D}{más}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\D}{\qquad Re} Mayor \hfill
+            \upchord{\GD}{\qquad Sol} Mayor Bajo D \hfill\null\break
+            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\Cs}{\qquad Do sostenido} Mayor \hfill
+            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
+            \upchord{\Aseven}{\qquad La} Mayor S\'eptima \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Danzar}{C\#m}
+    {} %copyright \SBPubDom
+    {Barak}
+    {Juan 17:22} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3Y14MbxBGJ7nnA0DVTDlQd}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{A danzar}
+
+        \SBMargNote{Notas del piano (figura)\vskip 10pt
+
+        E E E D\# E F\# E
+        \vskip 10pt
+
+        //E E D\# E F# E//
+        \vskip 10pt
+
+        E D\# E D\# C\# B
+        \vskip 10pt
+
+        G\# A G\# F\# G\# F\#}
+
+        \begin{SBChorus}
+            A Dan\Ch{C#m}{zar} de\Ch{A}{lan}te de su pre\Ch{E}{sen}cia
+
+            Su a\Ch{B}{mor} es quien nos sus\Ch{C#m}{ten}ta
+
+            El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
+        \end{SBChorus}
+
+        \SBBridge{ \Ch{C\#m}{}  \Ch{A}{}  \Ch{E}{}  \Ch{B}{} }
+
+        \begin{SBOpGroup}
+            Da un paso al frente\Ch{C\#m}{}
+
+            Has algo diferente\Ch{C\#m}{}
+
+            Demos toda gloria a Jesús\Ch{A}{}
+
+
+            Levanta tus manos\Ch{C\#m}{}
+
+            Grita que el es Santo\Ch{C\#m}{}
+
+            es El gran yo soy murió en la \Ch{A}{cruz}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{B}{Si} tu respiras tienes que adorar
+
+            \Ch{A}{Que} nada te impida danzar
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
+
+            A dan\Ch{C\#m}{zar} a \Ch{A}{Dios} vamos ado\Ch{E}{rar}
+
+            Su a\Ch{B}{mor} hay que cele\Ch{C\#m}{brar}
+
+            El es \Ch{A}{Dios} El es \Ch{E}{quien} resuci\Ch{B}{tó}
+
+            //A danzar//\Ch{C\#m}{}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill
+            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\E}{\qquad Mi} Mayor \hfill
+            \upchord{\B}{\qquad Si} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+
+        \begin{SBExtraKeys}{
+            \STitle{Danzar}{Em}
+
+%            \SBMargNote{Notas del piano (figura)\vskip 10pt
+%
+%            E E E D\# E F\# E
+%            \vskip 10pt
+%
+%            //E E D\# E F# E//
+%            \vskip 10pt
+%
+%            E D\# E D\# C\# B
+%            \vskip 10pt
+%
+%            G\# A G\# F\# G\# F\#}
+
+            \begin{SBChorus}
+                A Dan\Ch{Em}{zar} de\Ch{C}{lan}te de su pre\Ch{G}{sen}cia
+
+                Su a\Ch{D}{mor} es quien nos sus\Ch{Em}{ten}ta
+
+                El es \Ch{C}{Dios} El es \Ch{G}{quien} resuci\Ch{D}{tó}
+            \end{SBChorus}
+
+            \SBBridge{ \Ch{Em}{}  \Ch{C}{}  \Ch{G}{}  \Ch{D}{} }
+
+            \begin{SBOpGroup}
+                Da un paso al frente\Ch{Em}{}
+
+                Has algo diferente\Ch{Em}{}
+
+                Demos toda gloria a Jesús\Ch{C}{}
+
+
+                Levanta tus manos\Ch{Em}{}
+
+                Grita que el es Santo\Ch{Em}{}
+
+                es El gran yo soy murió en la \Ch{C}{cruz}
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                \Ch{D}{Si} tu respiras tienes que adorar
+
+                \Ch{C}{Que} nada te impida danzar
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                El es \Ch{C}{Dios} El es \Ch{G}{quien} resuci\Ch{D}{t\'o}
+
+                A dan\Ch{Em}{zar} a \Ch{C}{Dios} vamos ado\Ch{G}{rar}
+
+                Su a\Ch{D}{mor} hay que cele\Ch{Em}{brar}
+
+                El es \Ch{C}{Dios} El es \Ch{G}{quien} resuci\Ch{D}{t\'o}
+
+                //A danzar//\Ch{Em}{}
+            \end{SBOpGroup}
+
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\Em}{\qquad Mi} Menor \hfill
+                \upchord{\C}{\qquad C} Mayor \hfill\null\break
+                \upchord{\G}{\qquad Sol} Mayor \hfill
+                \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \end{SBOpGroup}
+            \fi
+
+        }\end{SBExtraKeys}
+
+        \begin{SBExtraKeys}{
+            \STitle{Danzar}{Bm}
+
+            \SBMargNote{Notas del piano (figura)\vskip 10pt
+
+            D D D C\# D E D
+            \vskip 10pt
+
+            //D D C\# D E D//
+            \vskip 10pt
+
+            D C\# D C\# B A
+            \vskip 10pt
+
+            F\# G F\# E F\# E}
+
+            \begin{SBChorus}
+                A Dan\Ch{Bm}{zar} de\Ch{G}{lan}te de su pre\Ch{D}{sen}cia
+
+                Su a\Ch{A}{mor} es quien nos sus\Ch{Bm}{ten}ta
+
+                El es \Ch{G}{Dios} El es \Ch{D}{quien} resuci\Ch{A}{tó}
+            \end{SBChorus}
+
+            \SBBridge{ \Ch{Bm}{}  \Ch{G}{}  \Ch{D}{}  \Ch{A}{} }
+
+            \begin{SBOpGroup}
+                Da un paso al frente\Ch{Bm}{}
+
+                Has algo diferente\Ch{Bm}{}
+
+                Demos toda gloria a Jesús\Ch{G}{}
+
+                Levanta tus manos\Ch{Bm}{}
+
+                Grita que el es Santo\Ch{Bm}{}
+
+                es El gran yo soy murió en la \Ch{G}{cruz}
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                \Ch{A}{Si} tu respiras tienes que adorar
+
+                \Ch{G}{Que} nada te impida danzar
+            \end{SBOpGroup}
+
+            \begin{SBOpGroup}
+                El es \Ch{G}{Dios} El es \Ch{D}{quien} resuci\Ch{A}{tó}
+
+                A dan\Ch{Bm}{zar} a \Ch{G}{Dios} vamos ado\Ch{D}{rar}
+
+                Su a\Ch{A}{mor} hay que cele\Ch{Bm}{brar}
+
+                El es \Ch{G}{Dios} El es \Ch{D}{quien} resuci\Ch{A}{tó}
+
+                //A danzar//\Ch{Bm}{}
+            \end{SBOpGroup}
+
+            \ifChordBk
+            \begin{SBOpGroup}
+                Acordes:
+                \upchord{\Bm}{\qquad Si} Menor \hfill
+                \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
+                \upchord{\D}{\qquad Re} Mayor \hfill
+                \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \end{SBOpGroup}
+            \fi
+
+        }\end{SBExtraKeys}
+    \end{song}
+
+%    \begin{song}{México Vamos a Cambiar}{G}
+%    {} %copyright \SBPubDom
+%    {Marcos Witt}
+%    {} %pasaje
+%{}
+%\ifChordBk
+%  \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4JX4pvZ5Q2XUBGyM8vA9SH}{Escuchar}\mbox{}\hfill}
+%\fi
+%
+%        \FLineIdx{Hoy es tiempo de compartir}
+%
+%        \begin{SBOpGroup}
+%            \Ch{G}{Hoy} es tiempo de compartir
+%
+%            es el día no hay que esperar.
+%
+%            \Ch{G}{Tú} yo yo debemos hablar
+%
+%            es tiempo de actuar.
+%
+%            A Cristo debemos levantar,
+%
+%            a Cristo debemos exaltar.
+%        \end{SBOpGroup}
+%
+%        \begin{SBOpGroup}
+%            En \Ch{G}{Mé}xico todos tienen que saber
+%
+%            que \Ch{G}{Je}sucristo es Dios y El es Rey.
+%
+%            Lo vamos a predicar, lo vamos a proclamar.
+%
+%            ¡México vamos a cam\Ch{G}{biar}!
+%        \end{SBOpGroup}
+%
+%        \ifChordBk
+%        \begin{SBOpGroup}
+%            Acordes:
+%            \upchord{\G}{\qquad Sol} Mayor \hfill
+%        \end{SBOpGroup}
+%        \fi
+%    \end{song}
+
+    \begin{song}{Hoy es Tiempo}{Bm}
+    {1991} %copyright \SBPubDom
+    {Marcos Witt}
+    {} %pasaje
+    {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3IfjNC2pFfp5okvoV8ez0t}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            \Ch{Bm}{Tiem}po de vivir, tiempo de morir.
+
+            \Ch{Em}{Tiem}po de llorar, tiempo de reír.
+
+            \Ch{Bm}{Tiem}po de animar y redargüir hoy es \Ch{F\#}{tiem}po
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{Bm}{Tiem}po de aprender, tiempo de enseñar.
+
+            \Ch{Em}{Tiem}po de hablar, tiempo de callar.
+
+            \Ch{Bm}{Tiem}po de sembrar y de cosechar hoy es \Ch{F\#}{tiem}po
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Hoy es \Ch{Bm}{tiem}po que seamos\Ch{A}{}\Ch{G}{}
+
+            ese pueblo glo\Ch{Em}{rio}so fiel y \Ch{F\#}{vic}torioso de \Ch{Bm}{Dios}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\Bm}{\qquad Si} Menor \hfill
+            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\Fs}{\qquad Fa sostenido} Mayor \hfill
+            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Iglesia de Cristo}{G}
+    {1806} %copyright \SBPubDom
+    {William Gardiner}
+    {} %pasaje
+    {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1syiUnSkF3ZiwJD5XnuTsJ}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            \Ch{G}{I}glesia \Ch{D}{de} \Ch{G}{Cris}to, rea\Ch{C}{ni}ma tu a\Ch{D}{mor}
+
+            y es\Ch{G}{pe}ra, \Ch{D}{ve}\Ch{G}{lan}do, a tu a\Ch{C}{ma}do \Ch{D7}{Se}\Ch{G}{ñor}.
+
+            \Ch{D}{Je}sús el esposo, vestido de ho\Ch{D7}{nor},
+
+            vi\Ch{G}{nien}do \Ch{D}{se} a\Ch{G}{nun}cia con \Ch{C}{fuer}te \Ch{D7}{cla}\Ch{G}{mor}.
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{G}{Si} falta en \Ch{D}{al}\Ch{G}{gu}nos el \Ch{C}{san}to fer\Ch{D}{vor},
+
+            le \Ch{G}{fe} sea \Ch{D}{de} \Ch{G}{to}dos el \Ch{C}{des}per\Ch{D7}{ta}\Ch{G}{dor}.
+
+            \Ch{D}{ve}lad compañeros velad sin te\Ch{D7}{mor},
+
+            que es\Ch{G}{tá} con \Ch{D}{no}\Ch{G}{so}tros el \Ch{C}{Con}so\Ch{D7}{la}\Ch{G}{dor}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{G}{Quien} sigue \Ch{D}{la} \Ch{G}{sen}da del \Ch{C}{vil} peca\Ch{D}{dor}
+
+            se en\Ch{G}{tre}ga en \Ch{D}{los} \Ch{G}{bra}zos de un \Ch{C}{sue}ño \Ch{D7}{trai}\Ch{G}{dor};
+
+            \Ch{D}{mas} para los siervos del buen Salva\Ch{D7}{dor},
+
+            ve\Ch{G}{lar}, es\Ch{D}{pe}\Ch{G}{ran}do, es su an\Ch{C}{he}lo \Ch{D7}{me}\Ch{G}{jor}.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\C}{\qquad Do} Mayor \hfill
+            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Jubilosos Te Adoramos}{G}
+    {} %copyright \SBPubDom
+    {Bethoven}
+    {} %pasaje
+    {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2G8rT8LJJdx8tuTxPBDJIE}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            \Ch{G}{Ju}bilosos, \Ch{D}{te} adoramos,
+
+            \Ch{G/B}{Dios} de gloria y Sal\Ch{D}{va}dor;
+
+            \Ch{G}{nues}tras vidas te entregamos
+
+            como se abre al sol \Ch{G}{la} flor.
+
+            \Ch{D}{A}huyenta nuestros males
+
+            y tristezas, oh Je\Ch{D}{sús}.
+
+            \Ch{G}{Da}nos bienes celestiales.
+
+            Llénanos de go\Ch{G}{zo} y luz.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Tie}rra y cielo están gozosos,
+
+            reflejando así tu amor;
+
+            ángeles y estrellas todos
+
+            cantan siempre tu loor.
+
+            Monte, valle, río y fuente,
+
+            campo. selva y ancho mar
+
+            nos recuerdan que constante
+
+            te debemos alabar.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{G}{Tú}, que siempre nos perdonas,
+
+            danos hoy tu bendición;
+
+            Tú, que todo proporcionas,
+
+            da tu paz al corazón.
+
+            Padre, y Cristo nuestro hermano,
+
+            para siempre tuyos son
+
+            los que en todo trato humano
+
+            buscan tu alta aprobación.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            ¡\Ch{G}{Oh}, mortales, hoy cantemos
+
+            con el coro celestial!;
+
+            como hermanos habitemos
+
+            en amor santo y real.
+
+            Alabando siempre vamos
+
+            en la vida a conquistar;
+
+            si gozosos caminamos
+
+            fácil nos será triunfar.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\GB}{\qquad Sol} con bajo B \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{La Casa De Dios}{D}
+    {} %copyright \SBPubDom
+    {Danilo Montero}
+    {} %pasaje
+    {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/2i9QGQ8Bco7lnOMbRntjY6}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Mejor es un día en la casa de Dios}
+        \SBIntro{\Ch{A}{}\Ch{Bm}{}\Ch{G}{}\Ch{D}{}\Ch{A}{}\Ch{G}{}}
+
+        \begin{SBOpGroup}
+            Me\Ch{D}{jor} es un \Ch{A}{día} en la \Ch{Bm}{ca}sa de \Ch{G}{Dios}
+
+            que \Ch{D}{mil} años \Ch{A}{le}jos de \Ch{Bm}{Él}\Ch{G}{}
+
+            pre\Ch{D}{fie}ro un rin\Ch{A}{cón} en la \Ch{Bm}{ca}sa de \Ch{G}{Dios}
+
+            que \Ch{D}{to}do el pa\Ch{A}{la}cio de un \Ch{Bm}{rey}
+
+            que \Ch{D}{to}do el pa\Ch{A}{la}cio de un \Ch{G}{rey}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Ven con\Ch{D}{mi}go a la casa de \Ch{A}{Dios},
+
+            celebra\Ch{Bm}{re}mos juntos su a\Ch{G}{mor}
+
+            haremos \Ch{D}{fies}ta en honor de a\Ch{A}{quél} que nos \Ch{G}{amó}
+
+            Estando a\Ch{D}{quí} en la casa de \Ch{A}{Dios}
+
+            alegra\Ch{Bm}{re}mos su cora\Ch{G}{zón},
+
+            le brinda\Ch{D}{re}mos ofrendas de \Ch{A}{o}bediencia y a\Ch{G}{mor}
+
+            ¡en la casa de \Ch{D}{Dios}!
+        \end{SBChorus}
+
+        \SBBridge{\Ch{A}{}\Ch{Bm}{}\Ch{G}{}\Ch{D}{}\Ch{A}{}\Ch{G}{}}
+
+        \begin{SBOpGroup}
+            \Ch{D}{Ar}de mi \Ch{A}{al}ma, \Ch{Bm}{ar}de de a\Ch{G}{mor}
+
+            por \Ch{D}{el} que me \Ch{A}{dió} la \Ch{Bm}{vi}\Ch{G}{da},
+
+            por \Ch{D}{e}so le an\Ch{A}{he}la \Ch{Bm}{mi} cora\Ch{G}{zón},
+
+            an\Ch{D}{he}la de \Ch{A}{su} compa\Ch{Bm}{ñía}
+
+            an\Ch{D}{he}la de \Ch{A}{su} compa\Ch{G}{ñía}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\D}{\qquad Re} Mayor \hfill
+            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\Bm}{\qquad Si} Menor \hfill
+            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Tiernas Canciones Alzad al Señor}{C}
+    {} %copyright \SBPubDom
+    {Adam Geibel}
+    {} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://www.youtube.com/watch?v=PIhIsopLWSE}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            \Ch{C}{Tier}nas canciones alzad \Ch{Em}{al} Se\Ch{C}{ñor},
+
+            Himnos que lleven del al\Ch{G7}{ma} la \Ch{C}{fé},
+
+            Y hablen muy alto del fér\Ch{Em}{vi}do a\Ch{Am}{mor}
+
+            \Ch{D7}{Que} hay en el \Ch{G}{pe}cho del hom\Ch{D7}{bre} que \Ch{G}{cree},
+
+            \Ch{G7}{Ven}gan tra\Ch{C}{yen}do fer\Ch{G7}{vien}te can\Ch{C}{ción}
+
+            \Ch{E7}{Ni}ños y an\Ch{Am}{cia}nos, de \Ch{D7}{Dios} al al\Ch{G}{tar}.
+
+            \Ch{C}{Trai}gan a \Ch{Am}{Él} \Ch{C7}{su} cora\Ch{F}{zón},
+
+            \Ch{Dm}{Ú}nico \Ch{C}{don} que podrá a\Ch{G7}{cep}\Ch{C}{tar}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            ¡Cielo y tierra canten al Señor de las na\Ch{G7}{cio}nes!
+
+            ¡Cielo y tierra canten al Se\Ch{G}{ñor} de las na\Ch{C}{cio}nes!
+
+            Y los hombres todos con alegres cora\Ch{F}{zo}nes,
+
+            Sirvan al Se\Ch{C/G}{ñor} que vida y paz siem\Ch{G}{pre} les \Ch{C}{dá}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{C}{Él} es la fuente de toda \Ch{Em}{bon}\Ch{C}{dad},
+
+            Él es la vida, la luz \Ch{G7}{y} el ca\Ch{C}{lor},
+
+            Sólo el nos libra de cruel \Ch{Em}{an}sie\Ch{Am}{dad},
+
+            \Ch{D7}{Só}lo Él a\Ch{G}{le}ja del al\Ch{D7}{ma} el do\Ch{G}{lor};
+
+            \Ch{G7}{Dig}no es por \Ch{C}{tan}to que el \Ch{G7}{hom}bre le \Ch{C}{dé}
+
+            \Ch{E7}{Glo}ria y ho\Ch{Am}{nor} que re\Ch{D7}{sue}nen do\Ch{G}{quier}.
+
+            \Ch{C}{Va}mos a \Ch{Am}{Él} \Ch{C7}{lle}nos de \Ch{F}{fé},
+
+            \Ch{Dm}{Nos} salva\Ch{C}{rá} con su gran \Ch{G7}{po}\Ch{C}{der}.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\C}{\qquad Do} Mayor \hfill
+            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\Gseven}{\qquad Sol} Mayor S\'eptima \hfill
+            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
+            \upchord{\Am}{\qquad La} Menor \hfill
+            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\Dm}{\qquad Re} menor  \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Vamos a cantar}{Eb}
+    {} %copyright \SBPubDom
+    {En Espiritu y en Verdad}
+    {} %pasaje
+    {} %\NotCCLIed
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/0VuwOyCJLj3T8F8cSyV7Yv}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            \Ch{Eb}{A}mamos todo de ti
+
+            Cielo y tierra te adoran
+
+            \Ch{Cm}{Los} reinos se rinden
+
+            Hijo de Dios
+
+            Tú eres por \Ch{Bb}{quien}
+
+            Tú eres por \Ch{Ab}{quien}
+
+            Vivimos \Ch{Eb}{hoy}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Eb}{Tú} eres quien nos liberta
+
+            Tú eres la Luz que guía
+
+            \Ch{Cm}{Co}mo un fuego ardiente
+
+            Hijo de Dios
+
+            Tú eres por \Ch{Bb}{quien}
+
+            Tú eres por \Ch{Ab}{quien}
+
+            Vivimos \Ch{Eb}{hoy}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Vamos \Ch{Eb}{a} cantar con la música del cielo\endnote{La biblia no habla de la música del cielo}
+
+            Vamos \Ch{Cm}{a} cantar alegres porque escuchas
+
+            Cuando \Ch{Bb}{can}tamos pa\Ch{Ab}{ra} exaltar tu \Ch{Eb}{nom}bre
+        \end{SBChorus}
+
+        \SBBridge{\Ch{Eb}{}~\Ch{Db}{}~\Ch{Cm}{}~\Ch{Eb}{}~\Ch{Eb}{}}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:
+            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
+            \upchord{\Cm}{Do} menor \hfill\null\break
+            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
+            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill\null\break
+            \upchord{\Dflat}{\qquad Re bemol} Mayor  \hfill
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Ven, es hora de Adorarle}{D}
+    {2006} %copyright \SBPubDom
+    {Marco Barrientos}
+    {} %pasaje
+    {}
+        \ifChordBk
+            \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/5svALLo67XRjP5lGozAmQq}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            \Ch{D}{Ven}, es hora de Ado\Ch{G/D}{rar}\Ch{D}{le}
+
+            \Ch{A}{Ven}, abre tu cora\Ch{Em7}{zón} a \Ch{G}{Él}
+
+            \Ch{D}{Ven}, ante su trono es\Ch{G/D}{ta}\Ch{D}{mos}
+
+            \Ch{A}{Ven}, ante la majes\Ch{Em7}{tad} de \Ch{G}{Dios},\Ch{D}{Ven}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{G}{To}da lengua confesa\Ch{D}{rá} que Él es Dios
+
+            \Ch{G}{Las} rodillas se dobla\Ch{D}{rán},
+
+            Y \Ch{G}{un} tesoro ten\Ch{Bm}{drás} en Él
+
+            Si es\Ch{G}{co}ges su a\Ch{A}{mor}
+        \end{SBChorus}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\D}{\qquad Re} Mayor \hfill
+            \upchord{\GD}{\qquad Sol} Mayor Bajo D \hfill\null\break
+            \upchord{\A}{\qquad La} Mayor \hfill
+            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
+            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\Em}{\qquad Mi} Menor \hfill
+            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \ifChordBk
+        \include{Pads}
+        \theendnotes
+        \include{Acordes}
+        \include{invitacionAdx}
+        \include{invitacionKdx}
+    \fi
+
+    \include{invitacionTdx}
+\end{document}

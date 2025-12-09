@@ -1,26 +1,26 @@
-%%%%%% rcsid = @(#)$Id: sampleKdx.tex,v 1.16 2010-04-12 18:04:30 rathc Exp $
+%%%%%% rcsid = @(#)$Id: sampleTdx.tex,v 1.18 2010-04-12 18:04:31 rathc Exp $
 %%%%%%
 %%
-%%      ================================
-%%      Sample Key Index (sampleKdx.tex)
-%%      ================================
+%%      ===============================================
+%%      Sample Title & First Line Index (sampleTdx.tex)
+%%      ===============================================
 %%
 %%      Version 4.5, 30 April, 2010
 %%
 %%      Copyright 1992--2010 Christopher Rath <christopher@rath.ca>
 %%
-%%	This package is free software; you can redistribute it and/or
-%%	modify it under the terms of version 2.1 of the GNU Lesser 
-%%	General Public License as published by the Free Software
+%%      This package is free software; you can redistribute it and/or
+%%      modify it under the terms of version 2.1 of the GNU Lesser 
+%%	General Public License as published by the Free Software 
 %%	Foundation.
 %%
-%%	This package is distributed in the hope that it will be
-%%	useful, but WITHOUT ANY WARRANTY; without even the implied
-%%	warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
-%%	PURPOSE.  See the GNU Lesser General Public License for more
-%%	details.
+%%      This package is distributed in the hope that it will be
+%%      useful, but WITHOUT ANY WARRANTY; without even the implied
+%%      warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
+%%      PURPOSE.  See the GNU Lesser General Public License for more
+%%      details.
 %%
-%%      This file is provided as a template for Song Key
+%%      This file is provided as a template for Title and First Line
 %%      Index generation.
 %%
 %%%%%%
@@ -34,11 +34,10 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-%\documentclass[12pt,twocolumn]{book}
+%\documentclass[12pt,twocolumn,spanish]{book}
 %\usepackage{latexsym,fancyhdr}
 %\usepackage[wordbk]{songbook}
 
-%\usepackage{tikz}
 
 %%%
 % Revision Date and Release Date definitions.
@@ -46,8 +45,8 @@
 %       \RelDate - The last time this songbook was released.
 %       \RevDate - The last time this file was revised in any way.
 %%%
-%\newcommand{\RelDate}{30~May'96}
-%\newcommand{\RevDate}{\RelDate}
+%\newcommand{\RelDate}{30 May'96}
+%\newcommand{\RevDate}{\today}
 
 %%%
 % Redefine fonts from SongBook style that I don't like, and define
@@ -73,11 +72,11 @@
 % Turn on and define fancy page heading/footing definition.
 %%%
 \pagestyle{fancy}
-\pdfbookmark[0]{\'Indice~Tonal}{tonal}
+\pdfbookmark[0]{\'Indice~de~primeras~l\'ineas~y~t\'itulos}{primeraslineas}
 %\addtolength{\headwidth}{\marginparsep}
 %\addtolength{\headwidth}{\marginparwidth}
 %\renewcommand{\footrulewidth}{0.4pt}
-\lhead{\LHeadFont \'Indice~Tonal}
+\lhead{\LHeadFont T\'itulos}
        \chead{\CHeadFont ({\rm\thepage})}
        \rhead{\RHeadFont\RelDate}
 
@@ -85,13 +84,12 @@
 %       \cfoot{\CFootFont Last Revised:  \RevDate}
 %       \rfoot{\RFootFont Material used by permission.}
 
-
 %%%
 % Index entries command definition.
 %%%
-\renewcommand{\item}{\par\hangindent=40pt}
-\renewcommand{\subitem}{\par\hangindent=40pt \hspace*{20pt}}
-\renewcommand{\subsubitem}{\par\hangindent=40pt \hspace*{30pt}}
+%\renewcommand{\item}{\par\hangindent=40pt}
+%\renewcommand{\subitem}{\par\hangindent=40pt \hspace*{20pt}}
+%\renewcommand{\subsubitem}{\par\hangindent=40pt \hspace*{30pt}}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -104,39 +102,20 @@
 %\begin{document}
 
 %%%
-% Index begins.
+% Begin the Index.
 %%%
 {\parindent 8pt
-  {\myTitleFont --- INDICE TONAL ---}}\par
+  {\myTitleFont --- INDICE DE TITULOS ---}}\par
+\vskip 5pt
+{\parindent 20pt
+  {\mySubTitleFont --- con primeras l\'ineas en it\'alica ---}}
 \vskip 20pt
 
-Con base en el c\'irculo de quintas, el modo mayor y el modo menor usar\'an las mismas notas si est\'an alineadas en la l\'{\i}nea dorada que va del centro hacia afuera.\hfill\null\break
-Para facilitar al cantante la interpretaci\'on, se pueden elegir canciones en la misma escala o en su defecto hacia la derecha o izquierda ligeramente y as\'{\i} evitar que se desafine.
+\input{infantiles.tdx}
 
-\begin{figure}[h]
-    \centering
-    \includegraphics[width=0.5\textwidth]{circulo_de_quintas}
-    \caption{C\'irculo de quintas.\label{fig:circulo_de_quintas}}
-\end{figure}
-
-Para saber que nota lleva la alteraci\'on, si son bemoles, la secuencia va siguiendo la l\'{\i}nea azul, si son sostenidos, la secuencia va siguiendo la l\'{\i}nea roja.\hfill\null\break
-%Para realizar la modulación, podemos usar un acorde pivote, que es cuando se comparten acordes entre las escalas.
-%Un círculo armónico, consiste en una progresión de acordes formada por los grados I, VI, II, V, con la particularidad de que el VI y el II son menores, y el V es séptima.
-%Para ello usaremos la secuencia ii-V-I, es decir los últimos dos acordes del círculo armónico, y pasaremos al primer acorde del círculo.
-
-\input{Estribillero.kdx}
-%
 %\end{document}
 %\bye
 %
 %%%
 % Document ends.
 %%%
-
-% Local Variables:
-%   LaTeX-item-indent:     -1
-%   LaTeX-indent-level:     2
-%   TeX-brace-indent-level: 2
-%   TeX-auto-untabify:      nil
-%   TeX-style-local:        style/
-% End:

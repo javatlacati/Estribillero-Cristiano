@@ -151,6 +151,7 @@
 \newcommand{\EFsGuitar}{\chord{t}{bf2p2,n,f3p2,f1p1,n,n}{E/F\#}}
 \newcommand{\EGGuitar}{\chord{t}{bf3p3,n,f2p2,f1p1,n,n}{E/G}}
 \newcommand{\EGsGuitar}{\chord{t}{bf4p4,n,f2p2,f1p1,n,n}{E/G\#}}
+\newcommand{\EAflatGuitar}{\chord{t}{bf3p4,f1p2,f2p2,f4p4,n,n}{E/Ab}}
 
 \newcommand{\FGuitar}{\chord{t}{bf1p1,f3p3,f4p3,f2p2,f1p1,f1p1}{F}}
 \newcommand{\FsusGuitar}{\chord{t}{bf1p1,f3p3,f4p3,f2p3,f1p1,f1p1}{Fsus4}}
@@ -339,6 +340,7 @@
 \newcommand{\EFsPiano}{\keyboardf[Fso][Eo][Gso][Bo]}
 \newcommand{\EGPiano}{\keyboardf[Go][Eo][Bo]}
 \newcommand{\EGsPiano}{\keyboardf[Gso][Eo][Bo]}
+\newcommand{\EAflatPiano}{\EGsPiano}
 
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboard[Co][Fo][Ao][Dso]}
@@ -534,6 +536,7 @@
 \newcommand{\EFs}{\ifguitarra\EFsGuitar\fi\ifpiano\EFsPiano\fi}
 \newcommand{\EG}{\ifguitarra\EGuitar\fi\ifpiano\EPiano\fi}
 \newcommand{\EGs}{\ifguitarra\EGsGuitar\fi\ifpiano\EGsPiano\fi}
+\newcommand{\EAflat}{\ifguitarra\EAflatGuitar\fi\ifpiano\EAflatPiano\fi}
 
 \newcommand{\F}{\ifguitarra\FGuitar\fi\ifpiano\FPiano\fi}
 \newcommand{\FA}{\ifguitarra\FGuitar\fi\ifpiano\FPiano\fi}

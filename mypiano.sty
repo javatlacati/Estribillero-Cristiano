@@ -282,6 +282,242 @@
 \end{picture}
 }
 
+\newcommandx*{\keyboardftwooctaves}[7][1=0, 2=0, 3=0, 4=0, 5=0, 6=0, 7=0]{
+
+%% Clavier 2 octaves
+\setlength{\unitlength}{0.5cm}
+\begin{picture}(15,4.5)
+%Touches blanches
+\multiput(0,0)(1,0){14}%
+{\line(0,1){4}}
+
+%Contour
+\put(0,0){\line(0,1){4}}
+\put(0,0){\line(1,0){14}}
+\put(14,0){\line(0,1){4}}
+\put(0,4){\line(1,0){14}}
+
+%Touches noires
+\linethickness{3mm}
+\multiput(1,4)(1,0){3}%
+{\line(0,-1){3}}
+
+\multiput(5,4)(1,0){2}%
+{\line(0,-1){3}}
+
+\linethickness{3mm}
+\multiput(8,4)(1,0){3}%
+{\line(0,-1){3}}
+
+\multiput(12,4)(1,0){2}%
+{\line(0,-1){3}}
+
+%Rond de note
+{\color{orange}
+
+\begin{switch}{#1}
+    \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+    \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+    \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+    \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+    \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+    \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+    \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+    \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+    \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+    \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+    \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+    \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+    \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+    \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+    \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+    \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+    \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+    \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+    \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+    \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+    \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+    \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+    \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+    \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+    \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+\end{switch}
+
+ \begin{switch}{#2}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#3}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#4}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#5}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+
+ \begin{switch}{#6}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+ \begin{switch}{#7}
+  \case{Fo}{\put(0.5,0.5){\circle*{0.5}}}
+  \case{Go}{\put(1.5,0.5){\circle*{0.5}}}
+  \case{Ao}{\put(2.5,0.5){\circle*{0.5}}}
+  \case{Bo}{\put(3.5,0.5){\circle*{0.5}}}
+  \case{Co}{\put(4.5,0.5){\circle*{0.5}}}
+  \case{Do}{\put(5.5,0.5){\circle*{0.5}}}
+  \case{Eo}{\put(6.5,0.5){\circle*{0.5}}}
+  \case{Ft}{\put(7.5,0.5){\circle*{0.5}}}
+  \case{Gt}{\put(8.5,0.5){\circle*{0.5}}}
+  \case{At}{\put(9.5,0.5){\circle*{0.5}}}
+  \case{Bt}{\put(10.5,0.5){\circle*{0.5}}}
+  \case{Ct}{\put(11.5,0.5){\circle*{0.5}}}
+  \case{Dt}{\put(12.5,0.5){\circle*{0.5}}}
+  \case{Et}{\put(13.5,0.5){\circle*{0.5}}}
+  \case{Fso}{\put(1,1.5){\circle*{0.5}}}
+  \case{Gso}{\put(2,1.5){\circle*{0.5}}}
+  \case{Aso}{\put(3,1.5){\circle*{0.5}}}
+  \case{Bso}{\put(4,1.5){\circle*{0.5}}}
+  \case{Cso}{\put(5,1.5){\circle*{0.5}}}
+  \case{Dso}{\put(6,1.5){\circle*{0.5}}}
+  \case{Fst}{\put(8,1.5){\circle*{0.5}}}
+  \case{Gst}{\put(9,1.5){\circle*{0.5}}}
+  \case{Ast}{\put(10,1.5){\circle*{0.5}}}
+  \case{Cst}{\put(12,1.5){\circle*{0.5}}}
+  \case{Dst}{\put(13,1.5){\circle*{0.5}}}
+ \end{switch}
+
+}
+
+
+\end{picture}
+}
+
 
 \newcommandx*{\keyboard}[7][1=0, 2=0, 3=0, 4=0, 5=0, 6=0, 7=0]{
 

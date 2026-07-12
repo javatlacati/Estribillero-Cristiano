@@ -197,6 +197,7 @@
 \newcommand{\GmBflatGuitar}{\chord{t}{x,bf1p1,n,n,f3p3,f4p3}{Gm/Bb}}
 
 \newcommand{\GsGuitar}{\chord{3}{x,x,f3p4,f2p3,f1p2,f1p2}{G\#}}
+\newcommand{\GssevenGuitar}{\chord{4}{bf1p1,f3p3,f1p1,f2p2,f1p1,f1p1}{G\#7}}
 \newcommand{\AflatGuitar}{\chord{3}{x,x,f3p4,f2p3,f1p2,f1p2}{A$\flat$}}
 \newcommand{\AflatsevenGuitar}{\chord{4}{bf1p1,f3p3,f1p1,f2p2,f1p1,f1p1}{A$\flat$7}}
 \newcommand{\AflatmGuitar}{\chord{t}{p4,p2,p1,p1,n,x}{A$\flat$m}}
@@ -219,7 +220,7 @@
 \newcommand{\AmPiano}{\keyboardf[Ao][Co][Eo]}
 \newcommand{\AmsevenPiano}{\keyboardf[Ao][Co][Eo][Go]}
 \newcommand{\AmCPiano}{\keyboard[Co][Eo][Ao]}
-\newcommand{\AmCsPiano}{\keyboardtwooctaves[Cso][Ao][Eo][Ct]}
+\newcommand{\AmCsPiano}{\keyboardoneandahalfoctaves[Cso][Ao][Eo][Ct]}
 \newcommand{\AmFPiano}{\keyboardf[Fo][Ao][Co][Eo]}
 \newcommand{\AmFsPiano}{\keyboardf[Fso][Ao][Co][Eo]}
 \newcommand{\AmGPiano}{\keyboardf[Go][Ao][Co][Eo]}
@@ -227,10 +228,10 @@
 \newcommand{\AsevenCsPiano}{\keyboard[Cso][Eo][Ao][Go]}
 \newcommand{\AmsevenFPiano}{\keyboardf[Fo][Go][Ao][Co][Eo]}
 \newcommand{\AAsPiano}{\keyboard[Aso][Cso][Eo][Ao]}
-\newcommand{\ABPiano}{\keyboardtwooctaves[Bo][Cst][Et][At]}
+\newcommand{\ABPiano}{\keyboardoneandahalfoctavesf[Bo][Cso][Eo][At]}
 \newcommand{\ACsPiano}{\keyboard[Cso][Eo][Ao]}
 \newcommand{\ADPiano}{\keyboardoneandahalfoctaves[Do][Eo][Ao][Cst]}
-\newcommand{\AEPiano}{\keyboardoneandahalfoctavesf[Eo][Ao][Cst]}
+\newcommand{\AEPiano}{\keyboardoneandahalfoctaves[Eo][Cst][Ao]}
 \newcommand{\AGPiano}{\keyboardf[Go][Ao][Cso][Eo]}
 \newcommand{\AsusPiano}{\keyboardf[Ao][Do][Eo]}
 \newcommand{\AtwoPiano}{\keyboardf[Ao][Bo][Cso][Eo]}
@@ -588,6 +589,7 @@
 \newcommand{\GmBflat}{\ifguitarra\GmBflatGuitar\fi\ifpiano\GmBflatPiano\fi}
 
 \newcommand{\Gs}{\ifguitarra\GsGuitar\fi\ifpiano\GsPiano\fi}
+\newcommand{\Gsseven}{\ifguitarra\GssevenGuitar\fi\ifpiano\GssevenPiano\fi}
 \newcommand{\Aflat}{\ifguitarra\AflatGuitar\fi\ifpiano\AflatPiano\fi}
 \newcommand{\Aflatseven}{\ifguitarra\AflatsevenGuitar\fi\ifpiano\AflatsevenPiano\fi}
 \newcommand{\Aflatm}{\ifguitarra\AflatmGuitar\fi\ifpiano\AflatmPiano\fi}

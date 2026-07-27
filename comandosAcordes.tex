@@ -97,6 +97,7 @@
 
 \newcommand{\DGuitar}{\chord{t}{x,x,o,f1p2,f3p3,f2p2}{D}}
 \newcommand{\DsevenGuitar}{\chord{t}{x,x,o,f2p2,f1p1,f3p2}{D7}}
+\newcommand{\DnineGuitar}{\chord{t}{x,x,o,f1p2,f3p3,n}{D9}}
 \newcommand{\DmGuitar}{\chord{t}{x,x,o,f2p2,f3p3,f1p1}{Dm}}
 \newcommand{\DmsevenGuitar}{\chord{t}{n,n,o,f2p2,f1p1,f1p1}{Dm7}}
 \newcommand{\DMajGuitar}{\chord{t}{x,x,o,f1p2,f1p2,f1p2}{D+7}}
@@ -300,6 +301,7 @@
 
 \newcommand{\DPiano}{\keyboard[Do][Fso][Ao]}
 \newcommand{\DsevenPiano}{\keyboard[Do][Fso][Ao][Co]}
+\newcommand{\DninePiano}{\keyboard[Do][Eo][Fso][Ao][Co]}
 \newcommand{\DmPiano}{\keyboard[Do][Fo][Ao]}
 \newcommand{\DmBflatPiano}{\keyboard[Aso][Do][Fo][Ao]}
 \newcommand{\DmBPiano}{\keyboard[Bo][Do][Fo][Ao]}
@@ -371,7 +373,7 @@
 \newcommand{\FssusPiano}{\keyboard[Cso][Fso][Bo]}
 \newcommand{\FsmPiano}{\keyboardf[Cso][Fso][Ao]}
 \newcommand{\FsmEPiano}{\keyboardoneandahalfoctaves[Eo][Fso][Ao][Cst]}
-\newcommand{\FsmsevenPiano}{\keyboardoneandahalfoctavesf[Cso][Fso][Ao][Eo]}
+\newcommand{\FsmsevenPiano}{\keyboardf[Cso][Fso][Ao][Eo]}
 \newcommand{\GflatPiano}{\keyboard[Cso][Fso][Aso]}
 \newcommand{\GflatmPiano}{\keyboardf[Cso][Fso][Ao]}
 \newcommand{\GflatBflatPiano}{\keyboardf[Aso][Cso][Fso]}
@@ -495,6 +497,7 @@
 
 \newcommand{\D}{\ifguitarra\DGuitar\fi\ifpiano\DPiano\fi}
 \newcommand{\Dseven}{\ifguitarra\DsevenGuitar\fi\ifpiano\DsevenPiano\fi}
+\newcommand{\Dnine}{\ifguitarra\DnineGuitar\fi\ifpiano\DninePiano\fi}
 \newcommand{\Dm}{\ifguitarra\DmGuitar\fi\ifpiano\DmPiano\fi}
 \newcommand{\Dmseven}{\ifguitarra\DmsevenGuitar\fi\ifpiano\DmsevenPiano\fi}
 \newcommand{\DMaj}{\ifguitarra\DMajGuitar\fi\ifpiano\DMajPiano\fi}

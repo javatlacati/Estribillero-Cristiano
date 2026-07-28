@@ -78,6 +78,7 @@
 \newcommand{\CAGuitar}{\chord{t}{x,o,f2p2,n,f1p1,n}{C/A}}
 \newcommand{\CDGuitar}{\chord{t}{n,n,o,n,f1p1,n}{C/D}}
 \newcommand{\CEGuitar}{\chord{t}{o,bf3p3,n,f2p2,f1p1,n}{C/E}}
+\newcommand{\CFGuitar}{\chord{t}{bf1p1,bf4p3,f3p2,n,f2p1,n}{C/F}}
 \newcommand{\CGGuitar}{\chord{t}{bf3p3,n,f2p2,n,f1p1,n}{C/G}}
 \newcommand{\CMajGuitar}{\chord{t}{f2p3,bf3p3,f1p2,n,n,n}{C+7}}
 \newcommand{\CMajtwoDGuitar}{\chord{t}{x,x,o,p4,p1,n}{C+7+2/D}}
@@ -276,6 +277,7 @@
 \newcommand{\CAPiano}{\keyboardtwooctaves[Ao][Go][Ct][Et]}
 \newcommand{\CDPiano}{\keyboardoneandahalfoctaves[Do][Eo][Go][Ct]}
 \newcommand{\CEPiano}{\keyboardoneandahalfoctaves[Eo][Go][Ct]}
+\newcommand{\CFPiano}{\keyboardf[Fo][Eo][Go][Co]}
 \newcommand{\CGPiano}{\keyboardf[Go][Co][Eo]}
 \newcommand{\CsevenPiano}{\keyboard[Co][Eo][Go][Aso]}
 \newcommand{\CsevenBflatPiano}{\keyboardoneandahalfoctavesf[Aso][Co][Eo][Gt]}
@@ -357,7 +359,7 @@
 \newcommand{\FPiano}{\keyboardf[Co][Fo][Ao]}
 \newcommand{\FsevenPiano}{\keyboardf[Co][Fo][Ao][Dso]}
 \newcommand{\FninePiano}{\keyboardf[Fo][Go][Ao][Co][Dso]}
-\newcommand{\FAPiano}{\keyboardf[Ao][Co][Ft]}
+\newcommand{\FAPiano}{\keyboardoneandahalfoctavesf[Ao][Co][Ft]}
 \newcommand{\FDPiano}{\keyboardoneandahalfoctaves[Do][Ao][Ct][Fo]}
 \newcommand{\FtwoPiano}{\keyboardf[Fo][Go][Ao][Co]}
 \newcommand{\FtwoAPiano}{\keyboardoneandahalfoctavesf[Ao][Co][Ft][Gt]}
@@ -479,6 +481,7 @@
 \newcommand{\CA}{\ifguitarra\CAGuitar\fi\ifpiano\CAPiano\fi}
 \newcommand{\CD}{\ifguitarra\CDGuitar\fi\ifpiano\CDPiano\fi}
 \newcommand{\CE}{\ifguitarra\CEGuitar\fi\ifpiano\CEPiano\fi}
+\newcommand{\CF}{\ifguitarra\CFGuitar\fi\ifpiano\CFPiano\fi}
 \newcommand{\CG}{\ifguitarra\CGuitar\fi\ifpiano\CGPiano\fi}
 \newcommand{\CMaj}{\ifguitarra\CMajGuitar\fi\ifpiano\CMajPiano\fi}
 \newcommand{\CMajtwoD}{\ifguitarra\CMajtwoDGuitar\fi\ifpiano\CMajtwoDPiano\fi}
@@ -558,7 +561,7 @@
 \newcommand{\EAflat}{\ifguitarra\EAflatGuitar\fi\ifpiano\EAflatPiano\fi}
 
 \newcommand{\F}{\ifguitarra\FGuitar\fi\ifpiano\FPiano\fi}
-\newcommand{\FA}{\ifguitarra\FAGuitar\fi\ifpiano\FPiano\fi}
+\newcommand{\FA}{\ifguitarra\FAGuitar\fi\ifpiano\FAPiano\fi}
 \newcommand{\FD}{\ifguitarra\FDGuitar\fi\ifpiano\FDPiano\fi}
 \newcommand{\Ftwo}{\ifguitarra\FtwoGuitar\fi\ifpiano\FtwoPiano\fi}
 \newcommand{\FtwoA}{\ifguitarra\FtwoAGuitar\fi\ifpiano\FtwoAPiano\fi}

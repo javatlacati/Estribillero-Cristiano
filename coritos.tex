@@ -18,7 +18,6 @@
     breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
 \usepackage[chordbk]{songbook} %% Words & Chords edition. Estribillero Musicos
 \usepackage{endnotes}
-%\usepackage{biblatex}
 \usepackage{tikz}
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
 %\usepackage[wordbk]{songbook}                 %% Words Only edition. Estribillero publicable
@@ -223,7 +222,7 @@
 %%%
 
     \begin{song}{Adonai}{Em}
-    {} %copyright \SBPubDom
+    {1991} %copyright \SBPubDom
     {Marcos Witt}
     {Salmo 19:1} %pasaje
     {} %\NotCCLIed
@@ -231,7 +230,7 @@
         \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/30njp3rQZ90oJTPoQj4RLt}{Escuchar}\mbox{}\hfill}
         \fi
 
-%  \SBRef{No puedo parar de alabarte}{2006}%fuente \#
+        \SBRef{Tu y Yo}{1991}%fuente
 
         \begin{SBChorus}
             \Ch{Em}{Oh} Adonai
@@ -4020,7 +4019,7 @@
 
     \ifChordBk
         \include{Pads}
-        \theendnotes
+        \pdfbookmark[0]{Notas}{notas}\theendnotes
         \include{Acordes}
         \include{coritosAdx}
         \include{coritosKdx}

@@ -6,3 +6,8 @@
 *.out
 *.adx
 *.log
+*.ent
+*.idx
+*.toc
+*.tdx
+*.kdx

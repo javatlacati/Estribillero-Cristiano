@@ -59,6 +59,7 @@
 \newcommand{\BDflatGuitar}{\chord{t}{x,bf2p4,f3p4,f4p4,n,f1p2}{B/Db}}
 \newcommand{\BDsGuitar}{\chord{2}{x,bf4p4,f1p2,f2p2,n,x}{B/D$\#$}}
 \newcommand{\BEflatGuitar}{\chord{2}{x,bf4p4,f1p2,f2p2,n,x}{B/Eb}}
+\newcommand{\BGsGuitar}{\chord{4}{bf1p1,f2p3,f3p3,f1p1,f4p4,f1p1}{B/G$\#$}}
 \newcommand{\BmGuitar}{\chord{t}{x,bf1p2,f3p4,f4p4,f2p3,f1p2}{Bm}}
 \newcommand{\BmsevenGuitar}{\chord{t}{x,bf1p2,f3p4,f1p2,f2p3,f1p2}{Bm7}}
 \newcommand{\BmseveNGuitar}{\chord{t}{x,p2,p4,p3,p3,p2}{Bm7+}}
@@ -265,6 +266,7 @@
 \newcommand{\BsevenDsPiano}{\keyboard[Dso][Fso][Ao][Bo]}
 \newcommand{\BCsPiano}{\keyboard[Cso][Dso][Fso][Bo]}
 \newcommand{\BDflatPiano}{\BCsPiano}
+\newcommand{\BGsPiano}{\keyboardoneandahalfoctavesf[Gso][Bo][Dso][Fst]}
 \newcommand{\BmPiano}{\keyboardoneandahalfoctavesf[Bo][Do][Fst]}
 \newcommand{\BmsevenPiano}{\keyboardoneandahalfoctavesf[Ao][Bo][Do][Fst]}
 \newcommand{\BmsevenbfivePiano}{\keyboard[Bo][Do][Fo][Ao]}
@@ -459,6 +461,7 @@
 \newcommand{\BsevenDs}{\ifguitarra\BsevenDsGuitar\fi\ifpiano\BsevenDsPiano\fi}
 \newcommand{\BCs}{\ifguitarra\BCsGuitar\fi\ifpiano\BDflatPiano\fi}
 \newcommand{\BDflat}{\ifguitarra\BDflatGuitar\fi\ifpiano\BDflatPiano\fi}
+\newcommand{\BGs}{\ifguitarra\BGsGuitar\fi\ifpiano\BGsPiano\fi}
 \newcommand{\BsevenBasDs}{\ifguitarra\BsevenBasDsGuitar\fi\ifpiano\BsevenBasDsPiano\fi}
 \newcommand{\BDs}{\ifguitarra\BDsGuitar\fi\ifpiano\BDsPiano\fi}
 \newcommand{\BEflat}{\ifguitarra\BEflatGuitar\fi\ifpiano\BEflatPiano\fi}

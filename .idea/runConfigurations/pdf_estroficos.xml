@@ -1,0 +1,18 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="pdf estroficos" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
+    <option name="auxilPath" value="C:\Estribillero\auxil" />
+    <option name="latexDistribution" value="MiKTeX" />
+    <option name="mainFilePath" value="$PROJECT_DIR$/estroficos.tex" />
+    <option name="outputPath" value="C:\Estribillero\out" />
+    <steps>
+      <latexCompile id="a1cf7fa3-b435-4154-ac99-3bcb7366a514" />
+      <latexCompile id="0b43b291-dac9-4776-8430-7f9ac11de227" />
+      <pdfViewer id="6358a6da-7f50-4748-bbd9-afb264fc7301" />
+    </steps>
+    <method v="2">
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_estroficos key index" />
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_estroficos author index " />
+      <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_estroficos title index" />
+    </method>
+  </configuration>
+</component>

@@ -14,12 +14,25 @@
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
 \usepackage{imakeidx}
-\usepackage[pdfpagelabels,hyperindex,unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
-    breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
-\usepackage[chordbk]{songbook} %% Words & Chords edition. Estribillero Musicos
+\usepackage{hyperref}
+\hypersetup{
+    pdfpagelabels,
+    hyperindex,
+    unicode=true,
+    pdfusetitle,
+    bookmarks=true,
+    bookmarksnumbered=false,
+    bookmarksopen=true,
+    breaklinks=false,
+    pdfborder={0 0 1},
+    backref=false,
+    colorlinks=true
+}
+\usepackage[chordbk]{songbook} % Words & Chords edition. Estribillero Musicos
 \usepackage{endnotes}
 %\usepackage{biblatex}
 \usepackage{tikz}
+\usepackage{textcomp}
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
 %\usepackage[wordbk]{songbook}                 %% Words Only edition. Estribillero publicable
 %\usepackage[overhead]{songbook}               %% Overhead Transparency edition. Estribillero Letras
@@ -297,15 +310,15 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\CF}{\qquad Do} Bajo F \hfill\null\break
-            \upchord{\CE}{\qquad Do} Bajo E \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\GE}{\qquad Sol} Bajo E \hfill
-            \upchord{\GD}{\qquad Sol} Bajo D \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\Dm}{\qquad Re} Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\CF}\qquad Do Bajo F \hfill\null\break
+            \upchord{\CE}\qquad Do Bajo E \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\GE}\qquad Sol Bajo E \hfill
+            \upchord{\GD}\qquad Sol Bajo D \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\Dm}\qquad Re Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -348,12 +361,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\Csm}{Do sostenido} Menor \hfill\null\break
-            \upchord{\EGs}{\qquad Mi} Mayor bajo G\# \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\Csm}Do sostenido Menor \hfill\null\break
+            \upchord{\EGs}\qquad Mi Mayor bajo G\# \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -420,17 +433,17 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\ACs}{\qquad La} Mayor con bajo C\# \hfill\null\break
-            \upchord{\Dm}{\qquad Re} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\GB}{\qquad\qquad Sol} con bajo B\qquad \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\EGs}{\qquad Mi} Mayor con bajo G\# \hfill\null\break
-            \upchord{\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\ACs}\qquad La Mayor con bajo C\# \hfill\null\break
+            \upchord{\Dm}\qquad Re Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\GB}\qquad\qquad Sol con bajo B\qquad \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\EGs}\qquad Mi Mayor con bajo G\# \hfill\null\break
+            \upchord{\Bseven}\qquad Si S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -491,17 +504,17 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\Gsus}{\qquad Sol} Mayor sus4 \hfill\null\break
-            \upchord{\Amseven}{\qquad La} Menor S\'eptima \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Dsus}{Re} Mayor suspendida cuarta \hfill
-            \upchord{\AmG}{\qquad La} Menor bajo G \hfill\null\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-            \upchord{\CE}{\qquad Do} Mayor Bajo E  \hfill\null\break
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\Gsus}\qquad Sol Mayor sus4 \hfill\null\break
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Dsus}Re Mayor suspendida cuarta \hfill
+            \upchord{\AmG}\qquad La Menor bajo G \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+            \upchord{\CE}\qquad Do Mayor Bajo E  \hfill\null\break
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -567,13 +580,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\Bseven}{\qquad\qquad\qquad Si} S\'eptima \qquad\hfill
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
-            \upchord{\Fsseven}{\qquad Fa} sostenido Mayor s\'eptima \hfill
-            \upchord{\Fsm}{\qquad Fa} sostenido Menor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\Bseven}\qquad\qquad\qquad Si S\'eptima \qquad\hfill
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill\null\break
+            \upchord{\Fsseven}\qquad Fa sostenido Mayor s\'eptima \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -605,13 +618,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa\#} Menor \hfill
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
-            \upchord{\Dmseven}{Re} menor s\'eptima \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa\# Menor \hfill
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill\null\break
+            \upchord{\Dmseven}Re menor s\'eptima \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -700,12 +713,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
-            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill\null\break
-            \upchord{\Bflatseven}{\quad Si} bemol Mayor S\'eptima \hfill
-            \upchord{\Gm}{Sol} menor \hfill\null\break
-            \upchord{\Cm}{Do} menor \hfill
-            \upchord{\Fm}{\quad Fa} menor \hfill\null\break
+            \upchord{\Eflat}\qquad Mi bemol Mayor \hfill
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill\null\break
+            \upchord{\Bflatseven}\quad Si bemol Mayor S\'eptima \hfill
+            \upchord{\Gm}Sol menor \hfill\null\break
+            \upchord{\Cm}Do menor \hfill
+            \upchord{\Fm}\quad Fa menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -776,13 +789,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa\#} Menor \hfill
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
-            \upchord{\Dmseven}{Re} menor s\'eptima \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa\# Menor \hfill
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill\null\break
+            \upchord{\Dmseven}Re menor s\'eptima \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
         \end{SBOpGroup}
         \fi
 
@@ -846,13 +859,13 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:
-                \upchord{\G}{\qquad Sol} Mayor \hfill
-                \upchord{\Ctwo}{\qquad Do} Aumentada 2 \hfill\null\break
-                \upchord{\CG}{\qquad Do} Mayor Bajo G \hfill
-                \upchord{\DG}{\qquad Re} Mayor Bajo G \hfill\null\break
-                \upchord{\Am}{\qquad La} Menor \hfill
-                \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-                \upchord{\AmG}{\qquad La} Menor bajo G \hfill
+                \upchord{\G}\qquad Sol Mayor \hfill
+                \upchord{\Ctwo}\qquad Do Aumentada 2 \hfill\null\break
+                \upchord{\CG}\qquad Do Mayor Bajo G \hfill
+                \upchord{\DG}\qquad Re Mayor Bajo G \hfill\null\break
+                \upchord{\Am}\qquad La Menor \hfill
+                \upchord{\Em}\qquad Mi Menor \hfill\null\break
+                \upchord{\AmG}\qquad La Menor bajo G \hfill
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -915,10 +928,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -949,12 +962,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Fm}{\qquad Fa} Menor \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
-            \upchord{\Fseven}{\qquad Fa} Mayor s\'eptima \hfill
-            \upchord{\Bflatm}{\qquad Si bemol} Menor \hfill\null\break
-            \upchord{\Eflatseven}{\qquad Mi} Mayor bemol s\'eptima \hfill
-            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill\null\break
+            \upchord{\Fm}\qquad Fa Menor \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
+            \upchord{\Fseven}\qquad Fa Mayor s\'eptima \hfill
+            \upchord{\Bflatm}\qquad Si bemol Menor \hfill\null\break
+            \upchord{\Eflatseven}\qquad Mi Mayor bemol s\'eptima \hfill
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1014,10 +1027,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill
-            \upchord{\Dflat}{\qquad Re bemol} Mayor  \hfill\null\break
-            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
-            \upchord{\Fm}{\qquad Fa} Menor \hfill\null\break
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill
+            \upchord{\Dflat}\qquad Re bemol Mayor  \hfill\null\break
+            \upchord{\Eflat}\qquad Mi bemol Mayor \hfill
+            \upchord{\Fm}\qquad Fa Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1054,12 +1067,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1106,11 +1119,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\Gtwo}{\qquad Sol} Aumentada 2 \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\Gtwo}\qquad Sol Aumentada 2 \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1158,13 +1171,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\CE}{\qquad Do} Mayor Bajo E  \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill\qquad\qquad\qquad
-            \upchord{\Dm}{\qquad Re} Menor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\CE}\qquad Do Mayor Bajo E  \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill\null\break
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill\qquad\qquad\qquad
+            \upchord{\Dm}\qquad Re Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
         \end{SBOpGroup}
 
         \fi
@@ -1220,13 +1233,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Cm}{\qquad Do} Menor \hfill
-            \upchord{\Aflat}{\qquad La bemol} Mayor \hfill\null\break
-            \upchord{\Bflat}{\qquad\qquad Si bemol} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\Fm}{\qquad Fa} Menor \hfill\null\break
-            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
+            \upchord{\Cm}\qquad Do Menor \hfill
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill\null\break
+            \upchord{\Bflat}\qquad\qquad Si bemol Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\Fm}\qquad Fa Menor \hfill\null\break
+            \upchord{\Eflat}\qquad Mi bemol Mayor \hfill
         \end{SBOpGroup}
         \fi
         \begin{SBExtraKeys}{
@@ -1272,14 +1285,14 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\Am}{\qquad La} Menor \hfill
-                \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-                \upchord{\F}{\qquad Fa} Mayor \hfill
-                \upchord{\Fsm}{\qquad Fa} Sostenido Menor \hfill\null\break
-                \upchord{\B}{\qquad\qquad\qquad Si} Mayor \hfill
-                \upchord{\Em}{Mi} Menor \hfill\null\break
-                \upchord{\Dm}{\qquad Re} menor  \hfill
-                \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+                \upchord{\Am}\qquad La Menor \hfill
+                \upchord{\G}\qquad Sol Mayor \hfill\null\break
+                \upchord{\F}\qquad Fa Mayor \hfill
+                \upchord{\Fsm}\qquad Fa Sostenido Menor \hfill\null\break
+                \upchord{\B}\qquad\qquad\qquad Si Mayor \hfill
+                \upchord{\Em}Mi Menor \hfill\null\break
+                \upchord{\Dm}\qquad Re menor  \hfill
+                \upchord{\E}\qquad Mi Mayor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -1337,12 +1350,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\AD}{\qquad La} Mayor con bajo D \hfill\null\break
-            \upchord{\Bmseven}{\qquad\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\AB}{La} Mayor bajo B \hfill\null\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\AD}\qquad La Mayor con bajo D \hfill\null\break
+            \upchord{\Bmseven}\qquad\qquad Si Menor S\'eptima \hfill\null\break
+            \upchord{\AB}La Mayor bajo B \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1397,13 +1410,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
-            \upchord{\CMaj}{\qquad Do} +7 \hfill
-            \upchord{\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
-            \upchord{\Dsus}{\qquad Re} Mayor suspendida cuarta \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill\null\break
+            \upchord{\CMaj}\qquad Do +7 \hfill
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill\null\break
+            \upchord{\Dsus}\qquad Re Mayor suspendida cuarta \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1488,13 +1501,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor  \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Dm}{\qquad Re} menor  \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor  \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Dm}\qquad Re menor  \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1553,14 +1566,14 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Eflatmseven}{Mi} Bemol Menor s\'eptima  \hfill
-            \upchord{\DflatF}{\qquad Re bemol} Mayor bajo F  \hfill\null\break
-            \upchord{\Gflat}{\qquad Sol bemol} Mayor \hfill
-            \upchord{\Aflatm}{\qquad La bemol} Menor \hfill\null\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\Dflat}{\qquad Re bemol} Mayor  \hfill\null\break
-            \upchord{ \GflatBflat}{Sol bemol} Bajo Si bemol \hfill
-            \upchord{\Gflatm}{\qquad Sol bemol} Menor \hfill\null\break
+            \upchord{\Eflatmseven}Mi Bemol Menor s\'eptima  \hfill
+            \upchord{\DflatF}\qquad Re bemol Mayor bajo F  \hfill\null\break
+            \upchord{\Gflat}\qquad Sol bemol Mayor \hfill
+            \upchord{\Aflatm}\qquad La bemol Menor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\Dflat}\qquad Re bemol Mayor  \hfill\null\break
+            \upchord{ \GflatBflat}Sol bemol Bajo Si bemol \hfill
+            \upchord{\Gflatm}\qquad Sol bemol Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1617,11 +1630,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1700,10 +1713,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1757,12 +1770,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Aseven}{\qquad La} Mayor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Aseven}\qquad La Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1799,9 +1812,9 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1838,11 +1851,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1881,13 +1894,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Fsm}{Fa sostenido} Menor \hfill\null\break
-            \upchord{\Bm}{\qquad\qquad Si} Menor \hfill
-            \upchord{\Dseven}{Re} Mayor S\'eptima \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Fsm}Fa sostenido Menor \hfill\null\break
+            \upchord{\Bm}\qquad\qquad Si Menor \hfill
+            \upchord{\Dseven}Re Mayor S\'eptima \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1955,12 +1968,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Fsmseven}{\qquad Fa sostenido} Menor S\'eptima \hfill
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Fsmseven}\qquad Fa sostenido Menor S\'eptima \hfill
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -1998,11 +2011,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2073,14 +2086,14 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2135,15 +2148,15 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\ED}{\qquad Mi} Mayor con bajo D \hfill\null\break
-            \upchord{\ACs}{\qquad La} Mayor con bajo C\# \hfill
-            \upchord{\E}{Mi} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Fsmseven}{Fa sostenido} Menor S\'eptima \hfill\null\break
-            \upchord{\Bm}{\qquad\qquad Si} Menor \hfill
-            \upchord{\EAflat}{\qquad Mi} Mayor bajo Ab \hfill\null\break
-            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\ED}\qquad Mi Mayor con bajo D \hfill\null\break
+            \upchord{\ACs}\qquad La Mayor con bajo C\# \hfill
+            \upchord{\E}Mi Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Fsmseven}Fa sostenido Menor S\'eptima \hfill\null\break
+            \upchord{\Bm}\qquad\qquad Si Menor \hfill
+            \upchord{\EAflat}\qquad Mi Mayor bajo Ab \hfill\null\break
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \clearpage
         \fi
@@ -2192,12 +2205,12 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\G}{\qquad Sol} Mayor \hfill
-                \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-                \upchord{\D}{\qquad Re} Mayor \hfill
-                \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-                \upchord{\Am}{\qquad La} Menor \hfill
-                \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+                \upchord{\G}\qquad Sol Mayor \hfill
+                \upchord{\C}\qquad Do Mayor \hfill\null\break
+                \upchord{\D}\qquad Re Mayor \hfill
+                \upchord{\Em}\qquad Mi Menor \hfill\null\break
+                \upchord{\Am}\qquad La Menor \hfill
+                \upchord{\Bm}\qquad Si Menor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -2244,18 +2257,18 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\Dm}{\qquad Re} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\Dm}\qquad Re Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2300,12 +2313,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2346,11 +2359,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\GB}{Sol} Mayor Bajo B \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\GB}Sol Mayor Bajo B \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2423,9 +2436,9 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2476,11 +2489,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Fsm}{Fa sostenido} Menor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Fsm}Fa sostenido Menor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2525,15 +2538,15 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Gs}{\qquad Sol} Sostenido Mayor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill
-            \upchord{\Dm}{\qquad Re} menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Gs}\qquad Sol Sostenido Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill
+            \upchord{\Dm}\qquad Re menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2558,7 +2571,7 @@
         \end{SBOpGroup}
 
         \begin{SBChorus}
-            Oh yo \Ch{D7}{siem}pre amare a Je\Ch{G}{sús}
+            Oh yo \Ch{D7}{siem}pre amare a Je\Ch{G}{sús}\endnote{¡Oh!, yo siempre amaré esa cruz}
 
             En sus \Ch{C}{triun}fos mi gloria se\Ch{G}{rá}
 
@@ -2580,11 +2593,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Aseven}{\qquad La} S\'eptima \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{Sol} Mayor\hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Aseven}\qquad La S\'eptima \hfill
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}Sol Mayor\hfill\null\break
         \end{SBOpGroup}
         \fi
         \begin{SBExtraKeys}{
@@ -2623,13 +2636,97 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\E}{\qquad Mi} Mayor \hfill
-                \upchord{\A}{\qquad La} Mayor \hfill\null\break
-                \upchord{\Fsseven}{Fa} sostenido Mayor s\'eptima \hfill
-                \upchord{\B}{Si} Mayor \hfill\null\break
+                \upchord{\E}\qquad Mi Mayor \hfill
+                \upchord{\A}\qquad La Mayor \hfill\null\break
+                \upchord{\Fsseven}Fa sostenido Mayor s\'eptima \hfill
+                \upchord{\B}Si Mayor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
+    \end{song}
+
+    \begin{song}{En el monte calvario}{G}
+    {} %copyright \SBPubDom
+    {}
+    {} %pasaje
+    {}
+        \ifChordBk
+            \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/02phGrhU7mmWjtPaOKLHN6}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{The Old Rugged Cross}
+        \SBRef{Mil Voces para Celebrar N\textdegree 142}
+
+        \SBRef{Himnario Bautista N\textdegree 100}
+
+        \begin{SBOpGroup}
+            En el \Ch{G2}{mon}te calvario
+
+            es\Ch{C2}{ta}ba una \Ch{Am7}{cruz},
+
+            em\Ch{Dsus2}{ble}ma de a\Ch{D2}{fren}ta y do\Ch{G2}{lor}.\Ch{C}{}\Ch{G}{}
+
+Y yo a\Ch{Dm7}{mo} a Jesús
+
+quien mu\Ch{C2}{rió} en la \Ch{Am7}{cruz}
+
+por sal\Ch{Dsus2}{var} al más \Ch{C2}{vil} peca\Ch{G2}{dor}\Ch{C}{}\Ch{G}{}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            ¡Oh!, yo \Ch{D2}{siem}pre amaré esa \Ch{G2}{cruz},\Ch{C}{}\Ch{G}{}
+
+en sus \Ch{C2}{triun}fos mi \Ch{C}{glo}\Ch{G/B}{ria} \Ch{Am7}{se}\Ch{G2}{rá};\Ch{C}{}\Ch{G}{}
+
+Y algún \Ch{G2}{día} en \Ch{Dm7}{vez} \Ch{G/B}{de} una \Ch{C2}{cruz},\Ch{Cm/Eb}{}
+
+mi co\Ch{G2}{ro}na, Je\Ch{Am7}{sús}, \Ch{Cm/D}{me} da\Ch{G2}{rá}.\Ch{C}{}\Ch{G}{}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            En la cruz do su sangre
+
+            Jesús derramó,
+
+            hermosura contemplo en visión;
+
+            Pues en ella el Cordero
+
+            inmolado murió,
+
+            para darme pureza y perdón.
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Yo seré siempre fiel
+
+            a la cruz de Jesús,
+
+            sus desprecios con Él sufriré;
+
+            Y algún día feliz
+
+            con los santos en luz,
+
+            para siempre su gloria tendré.
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\Gtwo}\qquad Sol Aumentada 2 \hfill
+            \upchord{\Ctwo}\qquad Do Aumentada 2 \hfill\null\break
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill
+            \upchord{\Dsustwo}Do Suspendida 2 \hfill
+            \upchord{\Dtwo}\qquad Re Aumentada 2 \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\GB}Sol Mayor Bajo B \hfill
+            \upchord{\Dmseven}Re menor s\'eptima \hfill\null\break
+            \upchord{\CmEflat}Do Menor bajo Eb \hfill
+            \upchord{\G}Sol Mayor\hfill\null\break
+        \end{SBOpGroup}
+        \fi
     \end{song}
 
     \begin{song}{En Momentos Así}{D}
@@ -2668,11 +2765,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Aseven}{La} Mayor S\'eptima \hfill
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Aseven}La Mayor S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2729,16 +2826,16 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
-            \upchord{\Dmseven}{\qquad Re} menor s\'eptima \hfill
-            \upchord{\Gmseven}{\qquad Sol} Menor S\'eptima \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
+            \upchord{\Dmseven}\qquad Re menor s\'eptima \hfill
+            \upchord{\Gmseven}\qquad Sol Menor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2794,11 +2891,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\BDs}{\qquad Si} Mayor con bajo D\# \hfill\null\break
-            \upchord{\B}{\qquad Si} Mayor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\BDs}\qquad Si Mayor con bajo D\# \hfill\null\break
+            \upchord{\B}\qquad Si Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2833,10 +2930,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\B}{\qquad Si} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\B}\qquad Si Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2879,10 +2976,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2929,11 +3026,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -2970,10 +3067,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3034,15 +3131,15 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
-            \upchord{\EB}{\qquad\qquad Mi} Mayor Bajo B \hfill
-            \upchord{\EGs}{\qquad Mi} Mayor con bajo G\# \hfill\null\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\AEg}{\qquad La} Mayor Bajo Mi \hfill\null\break
-            \upchord{\BDs}{\qquad Si} Mayor con bajo D\# \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
+            \upchord{\EB}\qquad\qquad Mi Mayor Bajo B \hfill
+            \upchord{\EGs}\qquad Mi Mayor con bajo G\# \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\AEg}\qquad La Mayor Bajo Mi \hfill\null\break
+            \upchord{\BDs}\qquad Si Mayor con bajo D\# \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3090,11 +3187,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3155,12 +3252,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
-            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill\null\break
-            \upchord{\Bflatseven}{\quad Si} bemol Mayor S\'eptima \hfill
-            \upchord{\Gm}{Sol} menor \hfill\null\break
-            \upchord{\Cm}{Do} menor \hfill
-            \upchord{\Fm}{\quad Fa} menor \hfill\null\break
+            \upchord{\Eflat}\qquad Mi bemol Mayor \hfill
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill\null\break
+            \upchord{\Bflatseven}\quad Si bemol Mayor S\'eptima \hfill
+            \upchord{\Gm}Sol menor \hfill\null\break
+            \upchord{\Cm}Do menor \hfill
+            \upchord{\Fm}\quad Fa menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3218,12 +3315,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            %\upchord{\BmD}{\qquad Si} Menor bajo D \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            %\upchord{\BmD}\qquad Si Menor bajo D \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3290,11 +3387,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3351,12 +3448,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa\#} Menor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa\# Menor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3424,10 +3521,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\Gtwo}{\qquad Sol} Aumentada 2 \hfill
-            \upchord{\Asustwo}{\qquad La} Suspendida 2 \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
+            \upchord{\Gtwo}\qquad Sol Aumentada 2 \hfill
+            \upchord{\Asustwo}\qquad La Suspendida 2 \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3470,11 +3567,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3554,10 +3651,10 @@
 %        \ifChordBk
 %        \begin{SBOpGroup}
 %            Acordes:\break
-%            \upchord{\D}{\qquad Re} Mayor \hfill
-%            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-%            \upchord{\Gtwo}{\qquad Sol} Aumentada 2 \hfill
-%            \upchord{\Asustwo}{\qquad La} Suspendida 2 \hfill\null\break
+%            \upchord{\D}\qquad Re Mayor \hfill
+%            \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
+%            \upchord{\Gtwo}\qquad Sol Aumentada 2 \hfill
+%            \upchord{\Asustwo}\qquad La Suspendida 2 \hfill\null\break
 %        \end{SBOpGroup}
 %        \fi
 %    \end{song}
@@ -3646,12 +3743,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill\null\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\BGs}{\qquad\qquad Si} Mayor bajo G\# \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\BGs}\qquad\qquad Si Mayor bajo G\# \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3712,10 +3809,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -3791,12 +3888,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -3866,12 +3963,12 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:
-                \upchord{\Dm}{\qquad Re} Menor \hfill
-                \upchord{\Bflat}{\qquad Bb} Mayor \hfill\null\break
-                \upchord{\F}{\qquad Fa} Mayor \hfill
-                \upchord{\D}{\qquad Re} Mayor \hfill\null\break %???
-                \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill %???
-                \upchord{\Dmseven}{\qquad Re} Menor S\'eptima \hfill\null\break
+                \upchord{\Dm}\qquad Re Menor \hfill
+                \upchord{\Bflat}\qquad Bb Mayor \hfill\null\break
+                \upchord{\F}\qquad Fa Mayor \hfill
+                \upchord{\D}\qquad Re Mayor \hfill\null\break %???
+                \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill %???
+                \upchord{\Dmseven}\qquad Re Menor S\'eptima \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -3941,10 +4038,10 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\Bm}{\qquad Si} Menor \hfill
-                \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-                \upchord{\D}{\qquad Re} Mayor \hfill
-                \upchord{\A}{\qquad La} Mayor \hfill\null\break
+                \upchord{\Bm}\qquad Si Menor \hfill
+                \upchord{\G}\qquad Sol Mayor \hfill\null\break
+                \upchord{\D}\qquad Re Mayor \hfill
+                \upchord{\A}\qquad La Mayor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -3982,10 +4079,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4016,11 +4113,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\CE}{\qquad Do} Mayor Bajo E \hfill\null\break
-            \upchord{\Ftwo}{Fa} Aumentada 2 \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\CE}\qquad Do Mayor Bajo E \hfill\null\break
+            \upchord{\Ftwo}Fa Aumentada 2 \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4114,12 +4211,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4174,11 +4271,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4223,14 +4320,14 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Fsm}{Fa sostenido} Menor \hfill\null\break
-            \upchord{\Bm}{\qquad\qquad Si} Menor \hfill\null\break
-            \upchord{\Csmseven}{Do Sostenido} Menor S\'eptima \hfill
-            \upchord{\DMaj}{\qquad Re} Maj S\'eptima Aumentada \hfill\null\break
-            \upchord{\ACs}{\qquad La} Mayor con bajo C\# \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Fsm}Fa sostenido Menor \hfill\null\break
+            \upchord{\Bm}\qquad\qquad Si Menor \hfill\null\break
+            \upchord{\Csmseven}Do Sostenido Menor S\'eptima \hfill
+            \upchord{\DMaj}\qquad Re Maj S\'eptima Aumentada \hfill\null\break
+            \upchord{\ACs}\qquad La Mayor con bajo C\# \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -4266,13 +4363,13 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:
-                \upchord{\G}{\qquad Sol} Mayor \hfill
-                \upchord{\CMaj}{\qquad Do} +7 \hfill\null\break
-                \upchord{\D}{\qquad Re} Mayor \hfill
-                \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-                \upchord{\C}{\qquad Do} Mayor  \hfill
-                \upchord{\Am}{\qquad La} Menor \hfill\null\break
-                \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
+                \upchord{\G}\qquad Sol Mayor \hfill
+                \upchord{\CMaj}\qquad Do +7 \hfill\null\break
+                \upchord{\D}\qquad Re Mayor \hfill
+                \upchord{\Em}\qquad Mi Menor \hfill\null\break
+                \upchord{\C}\qquad Do Mayor  \hfill
+                \upchord{\Am}\qquad La Menor \hfill\null\break
+                \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -4330,13 +4427,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa\#} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa\# Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4408,10 +4505,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4448,10 +4545,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Dm}{\qquad Re} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Gm}{Sol} menor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\Dm}\qquad Re Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Gm}Sol menor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4527,14 +4624,14 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+            \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4601,10 +4698,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4657,11 +4754,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\Fs}{Fa sostenido} Mayor \hfill\null\break
-            \upchord{\Gsm}{\qquad Sol sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\Fs}Fa sostenido Mayor \hfill\null\break
+            \upchord{\Gsm}\qquad Sol sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -4707,11 +4804,11 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\G}{\qquad Sol} \hfill
-                \upchord{\D}{Re} Mayor \hfill\null\break
-                \upchord{\Em}{\qquad Mi} Menor \hfill
-                \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-                \upchord{\Am}{\qquad La} Menor \hfill\null\break
+                \upchord{\G}\qquad Sol \hfill
+                \upchord{\D}Re Mayor \hfill\null\break
+                \upchord{\Em}\qquad Mi Menor \hfill
+                \upchord{\C}\qquad Do Mayor \hfill\null\break
+                \upchord{\Am}\qquad La Menor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -4789,18 +4886,18 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\DflatF}{\qquad Re bemol} Mayor bajo F  \hfill\null\break
-            \upchord{\AflatEflat}{\qquad La} bemol Mayor bajo Eb \hfill\null\break
-            \upchord{\Dflat}{\qquad Re bemol} Mayor  \hfill
-            \upchord{\Fmseven}{\quad Fa} menor S\'eptima \hfill\null\break
-            \upchord{\AflatC}{\qquad La} bemol Mayor bajo C \hfill
-            \upchord{\Bflatmseven}{Si Bemol} menor S\'eptima \hfill\null\break
-            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
-            \upchord{\AflatF}{\qquad La bemol} Mayor bajo F \hfill\null\break
-            \upchord{\Cmseven}{\qquad Do} Menor s\'eptima \hfill\null\break
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\DflatF}\qquad Re bemol Mayor bajo F  \hfill\null\break
+            \upchord{\AflatEflat}\qquad La bemol Mayor bajo Eb \hfill\null\break
+            \upchord{\Dflat}\qquad Re bemol Mayor  \hfill
+            \upchord{\Fmseven}\quad Fa menor S\'eptima \hfill\null\break
+            \upchord{\AflatC}\qquad La bemol Mayor bajo C \hfill
+            \upchord{\Bflatmseven}Si Bemol menor S\'eptima \hfill\null\break
+            \upchord{\Eflat}\qquad Mi bemol Mayor \hfill
+            \upchord{\AflatF}\qquad La bemol Mayor bajo F \hfill\null\break
+            \upchord{\Cmseven}\qquad Do Menor s\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4877,15 +4974,15 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill
-            \upchord{\B}{\qquad Si} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill
+            \upchord{\B}\qquad Si Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -4949,10 +5046,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Am}{La} menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\F}{\qquad Fa bemol} Mayor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\Am}La menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\F}\qquad Fa bemol Mayor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5033,11 +5130,11 @@
     \ifChordBk
     \begin{SBOpGroup}
         Acordes:
-        \upchord{\Cnine}{\qquad Do} Novena \hfill
-        \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-        \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-        \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
-        \upchord{\GB}{Sol} Mayor Bajo B \hfill\null\break
+        \upchord{\Cnine}\qquad Do Novena \hfill
+        \upchord{\G}\qquad Sol Mayor \hfill\null\break
+        \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+        \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill\null\break
+        \upchord{\GB}Sol Mayor Bajo B \hfill\null\break
     \end{SBOpGroup}
     \fi
 \end{song}
@@ -5122,16 +5219,16 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill
-            \upchord{\B}{\qquad Si} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill
-            \upchord{\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill
+            \upchord{\B}\qquad Si Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill
+            \upchord{\Fsm}Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5181,11 +5278,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
         \end{SBOpGroup}
 
         \fi
@@ -5251,10 +5348,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\B}{\qquad Si} \hfill\null\break
-            \upchord{\Cs}{\qquad Do} Sostenido Mayor \hfill\null\break
-            \upchord{\Fs}{Fa sostenido} Mayor \hfill
-            \upchord{\Dsm}{\qquad Re} Sostenido Menor \hfill\null\break
+            \upchord{\B}\qquad Si \hfill\null\break
+            \upchord{\Cs}\qquad Do Sostenido Mayor \hfill\null\break
+            \upchord{\Fs}Fa sostenido Mayor \hfill
+            \upchord{\Dsm}\qquad Re Sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -5316,10 +5413,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5364,12 +5461,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\Em}{Mi} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\Em}Mi Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5435,10 +5532,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
         \end{SBOpGroup}
 
         \fi
@@ -5520,10 +5617,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\EMaj}{\qquad Mi} Maj \hfill\null\break
-            \upchord{\Gsm}{\qquad Sol sostenido} Menor \hfill
-            \upchord{\Fs}{Fa sostenido} Mayor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\EMaj}\qquad Mi Maj \hfill\null\break
+            \upchord{\Gsm}\qquad Sol sostenido Menor \hfill
+            \upchord{\Fs}Fa sostenido Mayor \hfill\null\break
             \clearpage
         \end{SBOpGroup}
         \fi
@@ -5596,10 +5693,10 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\E}{\qquad Mi} Mayor \hfill
-                \upchord{\AMaj}{\qquad La} Maj \hfill\null\break
-                \upchord{\Csm}{Do} Sostenido Menor \hfill
-                \upchord{\B}{\qquad Si} Mayor \hfill\null\break
+                \upchord{\E}\qquad Mi Mayor \hfill
+                \upchord{\AMaj}\qquad La Maj \hfill\null\break
+                \upchord{\Csm}Do Sostenido Menor \hfill
+                \upchord{\B}\qquad Si Mayor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -5650,10 +5747,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Dflat}{\qquad Re bemol} Mayor  \hfill
-            \upchord{\Eflatm}{Mi} Bemol Menor \hfill\null\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\Gflat}{\qquad Sol bemol} Mayor \hfill\null\break
+            \upchord{\Dflat}\qquad Re bemol Mayor  \hfill
+            \upchord{\Eflatm}Mi Bemol Menor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\Gflat}\qquad Sol bemol Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -5697,10 +5794,10 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\D}{\qquad Re } Mayor  \hfill
-                \upchord{\Em}{Mi} Menor \hfill\null\break
-                \upchord{\C}{\qquad Do} Mayor \hfill
-                \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
+                \upchord{\D}\qquad Re  Mayor  \hfill
+                \upchord{\Em}Mi Menor \hfill\null\break
+                \upchord{\C}\qquad Do Mayor \hfill
+                \upchord{\G}\qquad Sol Mayor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -5754,16 +5851,16 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill\qquad\qquad\qquad\break
-            \upchord{\Bseven}{\qquad\qquad Si} Mayor S\'eptima \hfill
-            \upchord{\Aseven}{\qquad La} Mayor S\'eptima \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill\qquad\qquad\qquad\break
+            \upchord{\Bseven}\qquad\qquad Si Mayor S\'eptima \hfill
+            \upchord{\Aseven}\qquad La Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5851,11 +5948,11 @@
         \begin{SBOpGroup}
             Acordes:
 
-            \upchord{\Gsseven}{Sol} sostenido Mayor S\'eptima \hfill
-            \upchord{\Cm}{\qquad Do} Menor \hfill\null\break
-            \upchord{\Gm}{\qquad Sol} Menor \hfill
-            \upchord{\Fm}{\quad Fa} menor \hfill\null\break
-            \upchord{\B}{\qquad Si} Mayor \hfill\null\break
+            \upchord{\Gsseven}Sol sostenido Mayor S\'eptima \hfill
+            \upchord{\Cm}\qquad Do Menor \hfill\null\break
+            \upchord{\Gm}\qquad Sol Menor \hfill
+            \upchord{\Fm}\quad Fa menor \hfill\null\break
+            \upchord{\B}\qquad Si Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5895,13 +5992,13 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\ED}{\qquad Mi} Mayor con bajo D \hfill\null\break
-            \upchord{\Csm}{Do} Sostenido Menor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\ED}\qquad Mi Mayor con bajo D \hfill\null\break
+            \upchord{\Csm}Do Sostenido Menor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Fsm}Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -5949,11 +6046,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
 
         \fi
@@ -6010,10 +6107,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\ACs}{\qquad La} Mayor con bajo C\# \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\ACs}\qquad La Mayor con bajo C\# \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6057,8 +6154,8 @@
 %        \ifChordBk
 %        \begin{SBOpGroup}
 %            Acordes:\break
-%            \upchord{\F}{\qquad Fa} Mayor \hfill
-%            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
+%            \upchord{\F}\qquad Fa Mayor \hfill
+%            \upchord{\C}\qquad Do Mayor \hfill\null\break
 %        \end{SBOpGroup}
 %        \fi
 %    \end{song}
@@ -6106,10 +6203,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6156,10 +6253,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\B}{\qquad Si} \hfill\null\break
-            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\B}\qquad Si \hfill\null\break
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -6198,10 +6295,10 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:
-                \upchord{\G}{\qquad Sol} Mayor \hfill
-                \upchord{\D}{\qquad Re} \hfill\null\break
-                \upchord{\Em}{\qquad Mi} Menor \hfill
-                \upchord{\C}{\qquad Do} Mayor \hfill\null\break
+                \upchord{\G}\qquad Sol Mayor \hfill
+                \upchord{\D}\qquad Re \hfill\null\break
+                \upchord{\Em}\qquad Mi Menor \hfill
+                \upchord{\C}\qquad Do Mayor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -6253,11 +6350,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Emseven}{Mi} Menor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Emseven}Mi Menor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6317,9 +6414,9 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\B}{\qquad Si} Mayor \hfill\null\break
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\B}\qquad Si Mayor \hfill\null\break
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
 
@@ -6340,10 +6437,10 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:
-                \upchord{\C}{\qquad Do} Mayor \hfill
-                \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-                \upchord{\D}{\qquad Re} Mayor \hfill
-                \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
+                \upchord{\C}\qquad Do Mayor \hfill
+                \upchord{\Em}\qquad Mi Menor \hfill\null\break
+                \upchord{\D}\qquad Re Mayor \hfill
+                \upchord{\Bm}\qquad Si Menor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -6390,15 +6487,15 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Csm}{\qquad Do sostenido} Menor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Fs}{\qquad Fa sostenido} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
-            \upchord{\DmF}{\qquad Re} menor con bajo F \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Csm}\qquad Do sostenido Menor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Fs}\qquad Fa sostenido Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
+            \upchord{\DmF}\qquad Re menor con bajo F \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6425,10 +6522,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor  \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor  \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
         \begin{SBExtraKeys}{
@@ -6447,10 +6544,10 @@
             \ifChordBk
             \begin{SBOpGroup}
                 Acordes:\break
-                \upchord{\E}{\qquad Mi} Mayor \hfill
-                \upchord{\A}{\qquad La} Mayor \hfill\null\break
-                \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-                \upchord{\Csm}{Do} Sostenido Menor \hfill\null\break
+                \upchord{\E}\qquad Mi Mayor \hfill
+                \upchord{\A}\qquad La Mayor \hfill\null\break
+                \upchord{\B}\qquad\qquad Si Mayor \hfill
+                \upchord{\Csm}Do Sostenido Menor \hfill\null\break
             \end{SBOpGroup}
             \fi
         }\end{SBExtraKeys}
@@ -6490,12 +6587,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-            \upchord{\Fsm}{\qquad Fa\#} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+            \upchord{\Fsm}\qquad Fa\# Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6522,12 +6619,12 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Bm}{\qquad Si} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6566,11 +6663,11 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6634,10 +6731,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6705,15 +6802,15 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Dmseven}{\qquad Re} Menor S\'eptima \hfill\null\break
-            \upchord{\Eflattwo}{Re bemol} Aumentada 2 \hfill
-            \upchord{\Gm}{Sol} menor \hfill\null\break
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\Eflat}{Re bemol} Mayor \hfill\null\break
-            \upchord{\BflatD}{\qquad Si bemol} Mayor bajo D \hfill
-            \upchord{\Cmseven}{Do} menor s\'eptima \hfill\null\break
-            \upchord{\FA}{Fa} Mayor bajo A \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Dmseven}\qquad Re Menor S\'eptima \hfill\null\break
+            \upchord{\Eflattwo}Re bemol Aumentada 2 \hfill
+            \upchord{\Gm}Sol menor \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\Eflat}Re bemol Mayor \hfill\null\break
+            \upchord{\BflatD}\qquad Si bemol Mayor bajo D \hfill
+            \upchord{\Cmseven}Do menor s\'eptima \hfill\null\break
+            \upchord{\FA}Fa Mayor bajo A \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6760,14 +6857,14 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\CMaj}{\qquad Do} +7 \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\CD}{\qquad Do} Mayor bajo D \hfill
-            \upchord{\DE}{\qquad Re} Mayor bajo E \hfill\null\break
-            \upchord{\Amseven}{\qquad La} Menor S\'eptima \hfill
-            \upchord{\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\CMaj}\qquad Do +7 \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\CD}\qquad Do Mayor bajo D \hfill
+            \upchord{\DE}\qquad Re Mayor bajo E \hfill\null\break
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill
+            \upchord{\Bseven}\qquad Si S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6824,13 +6921,13 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6887,12 +6984,12 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Dm}{\qquad Re} Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Dm}\qquad Re Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -6941,21 +7038,21 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill\null\break
-            \upchord{\FMaj}{\qquad Fa} Maj 7 \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\Dm}{\qquad Re} menor \hfill
-            \upchord{\CE}{\qquad Do} Mayor Bajo E \hfill\null\break
-            \upchord{\DmC}{\qquad Re} menor bajo C \hfill
-            \upchord{\Gsus}{\qquad Sol} Mayor sus4 \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\GF}{\qquad Sol} Mayor Bajo F \hfill\null\break
-            \upchord{\Dmseven}{\qquad Re} menor s\'eptima \hfill
-            \upchord{\Amseven}{\qquad La} Menor S\'eptima \hfill\null\break
-            \upchord{\GmBflat}{\qquad Sol} Menor bajo Bb \hfill
-            \upchord{\Eseven}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\AmG}{\qquad La} Menor bajo G \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill\null\break
+            \upchord{\FMaj}\qquad Fa Maj 7 \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\Dm}\qquad Re menor \hfill
+            \upchord{\CE}\qquad Do Mayor Bajo E \hfill\null\break
+            \upchord{\DmC}\qquad Re menor bajo C \hfill
+            \upchord{\Gsus}\qquad Sol Mayor sus4 \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\GF}\qquad Sol Mayor Bajo F \hfill\null\break
+            \upchord{\Dmseven}\qquad Re menor s\'eptima \hfill
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill\null\break
+            \upchord{\GmBflat}\qquad Sol Menor bajo Bb \hfill
+            \upchord{\Eseven}\qquad Mi Mayor \hfill\null\break
+            \upchord{\AmG}\qquad La Menor bajo G \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7008,21 +7105,21 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill\null\break
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\Fm}{\qquad Fa} Menor \hfill\null\break
-            \upchord{\GmBflat}{\qquad Sol} Menor bajo Bb \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\Fmsix}{\qquad Fa} Menor Sexta \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\Dm}{\qquad Re} menor  \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\DmB}{\qquad Re} menor bajo B \hfill
-            \upchord{\Eseven}{\qquad Mi} S\'eptima \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\AmG}{\qquad La} Menor bajo G \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\Fm}\qquad Fa Menor \hfill\null\break
+            \upchord{\GmBflat}\qquad Sol Menor bajo Bb \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\Fmsix}\qquad Fa Menor Sexta \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\Dm}\qquad Re menor  \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\DmB}\qquad Re menor bajo B \hfill
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\AmG}\qquad La Menor bajo G \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7103,10 +7200,10 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7197,11 +7294,11 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\Fs}{Fa sostenido} Mayor \hfill\null\break
-            \upchord{\Gsm}{\qquad Sol sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\Csm}{\qquad Do} Sostenido Menor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\Fs}Fa sostenido Mayor \hfill\null\break
+            \upchord{\Gsm}\qquad Sol sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7263,11 +7360,11 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Dm}{\qquad Re} menor  \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Dm}\qquad Re menor  \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7333,16 +7430,16 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\CMaj}{\qquad Do} +7 \hfill
-            \upchord{\CD}{\qquad Do} Mayor bajo D \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\GB}{\qquad Sol} con bajo B \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-            \upchord{\Cnine}{\qquad Do} Novena \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\CMaj}\qquad Do +7 \hfill
+            \upchord{\CD}\qquad Do Mayor bajo D \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\GB}\qquad Sol con bajo B \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+            \upchord{\Cnine}\qquad Do Novena \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7393,12 +7490,12 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Fsm}{Fa sostenido} Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Fsm}Fa sostenido Menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7435,11 +7532,11 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Cm}{\qquad Do} Menor \hfill
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
-            \upchord{\Fm}{\qquad Fa} Menor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\AflatMaj}{\qquad La} bemol Maj \hfill\null\break
+            \upchord{\Cm}\qquad Do Menor \hfill
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill\null\break
+            \upchord{\Fm}\qquad Fa Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\AflatMaj}\qquad La bemol Maj \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7488,12 +7585,12 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\A}\qquad La Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7535,17 +7632,17 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\CD}{\qquad Do} Mayor bajo D \hfill\null\break
-            \upchord{\GB}{\qquad\qquad Sol} con bajo B \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Gtwo}{\qquad Sol} Aumentada 2 \hfill\null\break
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\E}{\qquad Mi} Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\CD}\qquad Do Mayor bajo D \hfill\null\break
+            \upchord{\GB}\qquad\qquad Sol con bajo B \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Gtwo}\qquad Sol Aumentada 2 \hfill\null\break
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7634,10 +7731,10 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\B}{\qquad\qquad Si} Mayor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
-            \upchord{\Gsm}{\qquad Sol sostenido} Menor \hfill
-            \upchord{\Fs}{Fa sostenido} Mayor \hfill\null\break
+            \upchord{\B}\qquad\qquad Si Mayor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+            \upchord{\Gsm}\qquad Sol sostenido Menor \hfill
+            \upchord{\Fs}Fa sostenido Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7678,11 +7775,11 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Emseven}{\qquad Mi} Menor S\'eptima \hfill
-            \upchord{\Bmseven}{\qquad Si} Menor S\'eptima \hfill\null\break
-            \upchord{\CMaj}{\qquad Do} +7 \hfill
-            \upchord{\Dsus}{Re} Mayor suspendida cuarta \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
+            \upchord{\Emseven}\qquad Mi Menor S\'eptima \hfill
+            \upchord{\Bmseven}\qquad Si Menor S\'eptima \hfill\null\break
+            \upchord{\CMaj}\qquad Do +7 \hfill
+            \upchord{\Dsus}Re Mayor suspendida cuarta \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7739,14 +7836,14 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\GB}{\qquad Sol} Mayor Bajo B \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Em}{\qquad Mi} Menor \hfill\null\break
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill
-            \upchord{\Eflat}{Re bemol} Mayor \hfill\null\break
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\GB}\qquad Sol Mayor Bajo B \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Em}\qquad Mi Menor \hfill\null\break
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill
+            \upchord{\Eflat}Re bemol Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7839,11 +7936,11 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
-            \upchord{\Aseven}{\qquad La} Mayor S\'eptima \hfill
-            \upchord{\Dm}{\qquad Re} menor  \hfill\null\break
-            \upchord{\Gseven}{Sol} Mayor S\'eptima \hfill
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\Aseven}\qquad La Mayor S\'eptima \hfill
+            \upchord{\Dm}\qquad Re menor  \hfill\null\break
+            \upchord{\Gseven}Sol Mayor S\'eptima \hfill
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -7890,13 +7987,13 @@ Bb-Dm7-Eb2-Bb}
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\G}{\qquad Sol} Mayor \hfill
-            \upchord{\D}{\qquad Re} Mayor \hfill\null\break
-            \upchord{\C}{\qquad Do} Mayor \hfill
-            \upchord{\DFs}{\qquad Re} Mayor con bajo F\# \hfill\null\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\GB}{\qquad Sol} con bajo B \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\DFs}\qquad Re Mayor con bajo F\# \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\GB}\qquad Sol con bajo B \hfill
         \end{SBOpGroup}
         \fi
     \end{song}

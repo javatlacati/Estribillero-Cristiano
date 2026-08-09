@@ -76,6 +76,7 @@
 \newcommand{\CmGuitar}{\chord{t}{x,bf3p3,f1p1,n,f2p1,f4p3}{Cm}}
 \newcommand{\CmsevenGuitar}{\chord{2}{x,bf1p1,f3p3,f1p1,f2p2,f1p1}{Cm7}}
 \newcommand{\CmAflatGuitar}{\chord{3}{x,x,p4,p3,p2,p1}{Cm/Ab}}
+\newcommand{\CmEflatGuitar}{\chord{t}{x,x,bf1p1,n,f2p1,f3p3}{Cm/Eb}}
 \newcommand{\CAGuitar}{\chord{t}{x,o,f2p2,n,f1p1,n}{C/A}}
 \newcommand{\CDGuitar}{\chord{t}{n,n,o,n,f1p1,n}{C/D}}
 \newcommand{\CEGuitar}{\chord{t}{o,bf3p3,n,f2p2,f1p1,n}{C/E}}
@@ -110,6 +111,7 @@
 \newcommand{\DmCGuitar}{\chord{t}{x,bf3p3,n,f2p2,f4p3,f1p1}{Dm/C}}
 \newcommand{\DmFGuitar}{\chord{t}{bf1p1,n,n,f2p2,f3p3,x}{Dm/F}}
 \newcommand{\DtwoGuitar}{\chord{t}{n,bf4p5,f1p2,f1p2,f2p3,f1p2}{D2}}
+\newcommand{\DsustwoGuitar}{\chord{t}{x,x,o,f1p2,f3p3,n}{D2}}
 \newcommand{\DsixGuitar}{\chord{t}{x,x,n,p2,n,p2}{D6}}
 \newcommand{\DmBasBGuitar}{\chord{t}{x,p2,p3,p2,p3,x}{Dm/B}}
 \newcommand{\DAGuitar}{\chord{t}{x,o,n,f1p2,f3p3,f2p2}{D/A}}
@@ -287,6 +289,7 @@
 \newcommand{\CmPiano}{\keyboard[Co][Dso][Go]}
 \newcommand{\CmsevenPiano}{\keyboard[Co][Dso][Go][Aso]}
 \newcommand{\CmAflatPiano}{\keyboardoneandahalfoctavesf[Gso][Co][Dso][Gt]}
+\newcommand{\CmEflatPiano}{\keyboardoneandahalfoctaves[Dso][Go][Ct]}
 \newcommand{\CtwoPiano}{\keyboard[Co][Do][Eo][Go]}
 \newcommand{\CsustwoPiano}{\keyboard[Co][Do][Go]}
 \newcommand{\CninePiano}{\keyboard[Co][Do][Eo][Go][Aso]}
@@ -315,6 +318,7 @@
 \newcommand{\DmsevenPiano}{\keyboard[Do][Fo][Ao][Co]}
 \newcommand{\DmsevenGPiano}{\keyboardf[Go][Do][Fo][Ao][Co]}
 \newcommand{\DtwoPiano}{\keyboard[Do][Eo][Fso][Ao]}
+\newcommand{\DsustwoPiano}{\keyboard[Do][Eo][Ao]}
 \newcommand{\DMajPiano}{\keyboard[Do][Fso][Ao][Cso]}
 \newcommand{\DCPiano}{\keyboard[Co][Do][Fso][Ao]}
 \newcommand{\DAPiano}{\keyboardf[Ao][Do][Fso]}
@@ -483,6 +487,7 @@
 \newcommand{\Cm}{\ifguitarra\CmGuitar\fi\ifpiano\CmPiano\fi}
 \newcommand{\Cmseven}{\ifguitarra\CmsevenGuitar\fi\ifpiano\CmsevenPiano\fi}
 \newcommand{\CmAflat}{\ifguitarra\CmAflatGuitar\fi\ifpiano\CmAflatPiano\fi}
+\newcommand{\CmEflat}{\ifguitarra\CmEflatGuitar\fi\ifpiano\CmEflatPiano\fi}
 \newcommand{\CA}{\ifguitarra\CAGuitar\fi\ifpiano\CAPiano\fi}
 \newcommand{\CD}{\ifguitarra\CDGuitar\fi\ifpiano\CDPiano\fi}
 \newcommand{\CE}{\ifguitarra\CEGuitar\fi\ifpiano\CEPiano\fi}
@@ -516,6 +521,7 @@
 \newcommand{\DmC}{\ifguitarra\DmCGuitar\fi\ifpiano\DmCPiano\fi}
 \newcommand{\DmF}{\ifguitarra\DmFGuitar\fi\ifpiano\DmFPiano\fi}
 \newcommand{\Dtwo}{\ifguitarra\DtwoGuitar\fi\ifpiano\DtwoPiano\fi}
+\newcommand{\Dsustwo}{\ifguitarra\DsustwoGuitar\fi\ifpiano\DsustwoPiano\fi}
 \newcommand{\Dsix}{\ifguitarra\DsixGuitar\fi\ifpiano\DsixPiano\fi}
 \newcommand{\DmBasB}{\ifguitarra\DmBasBGuitar\fi\ifpiano\DmBasBPiano\fi}
 \newcommand{\DA}{\ifguitarra\DAGuitar\fi\ifpiano\DAPiano\fi}

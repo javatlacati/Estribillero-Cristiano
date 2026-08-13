@@ -1,3 +1,13 @@
 *.pdf
 /out
 .idea
+*.aux
+*.ant
+*.out
+*.adx
+*.log
+*.ent
+*.idx
+*.toc
+*.tdx
+*.kdx

@@ -10,12 +10,24 @@
 %\usepackage{fontspec} %xelatex
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
-\usepackage{mypiano}
+\usepackage{piano}
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
 \usepackage{imakeidx}
-\usepackage[pdfpagelabels,hyperindex,unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
-    breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    pdfpagelabels,
+    hyperindex,
+    unicode=true,
+    pdfusetitle,
+    bookmarks=true,
+    bookmarksnumbered=false,
+    bookmarksopen=true,
+    breaklinks=false,
+    pdfborder={0 0 1},
+    backref=false,
+    colorlinks=true
+}
 \usepackage[chordbk]{songbook} %% Words & Chords edition. Estribillero Musicos
 \usepackage{endnotes}
 %\usepackage{biblatex}
@@ -264,16 +276,16 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\Dm}{\qquad Re} menor  \hfill\null\break
-            \upchord{\Gm}{\qquad Sol} Menor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Dmseven}{\qquad Re} menor s\'eptima \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
-            \upchord{\Am}{\qquad La} Menor \hfill
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\Dm}\qquad Re menor  \hfill\null\break
+            \upchord{\Gm}\qquad Sol Menor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Dmseven}\qquad Re menor s\'eptima \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -328,10 +340,10 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -408,14 +420,14 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Em}{\qquad Mi} Menor \hfill
-            \upchord{\CMaj}{\qquad Do} +7 \hfill\null\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\Am}{\qquad La} Menor \hfill\null\break
-            \upchord{\CD}{\qquad Do} Mayor bajo D \hfill\null\break
-            \upchord{\DE}{\qquad Re} Mayor bajo E \hfill\null\break
-            \upchord{\Amseven}{\qquad La} Menor S\'eptima \hfill
-            \upchord{\Bseven}{\qquad Si} S\'eptima \hfill\null\break
+            \upchord{\Em}\qquad Mi Menor \hfill
+            \upchord{\CMaj}\qquad Do +7 \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+            \upchord{\CD}\qquad Do Mayor bajo D \hfill\null\break
+            \upchord{\DE}\qquad Re Mayor bajo E \hfill\null\break
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill
+            \upchord{\Bseven}\qquad Si S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -475,10 +487,10 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Fseven}{\qquad Fa} Mayor S\'eptima \hfill\null\break
-            \upchord{\Eflat}{Re bemol} Mayor \hfill
-            \upchord{\BflatF}{\qquad Si bemol} Mayor bajo F \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Fseven}\qquad Fa Mayor S\'eptima \hfill\null\break
+            \upchord{\Eflat}Re bemol Mayor \hfill
+            \upchord{\BflatF}\qquad Si bemol Mayor bajo F \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -531,15 +543,15 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\Eflat}{\qquad Mi} bemol Mayor \hfill
-            \upchord{\Aflat}{\qquad La} bemol Mayor \hfill\null\break
-            \upchord{\Bflat}{\quad\quad Si} bemol Mayor \hfill
-            \upchord{\BflatD}{Si} bemol Mayor bajo D \hfill\null\break
-            \upchord{\Fseven}{\quad Fa} S\'eptima \hfill
-            \upchord{\BflatF}{\quad Si} bemol Mayor bajo F \hfill\null\break
-            \upchord{\Bflatseven}{\quad\quad Si} bemol Mayor S\'eptima \hfill\null\break
-            \upchord{\AflatEflat}{\qquad La} bemol Mayor bajo Eb \hfill
-            \upchord{\Fm}{\quad Fa} menor \hfill\null\break
+            \upchord{\Eflat}\qquad Mi bemol Mayor \hfill
+            \upchord{\Aflat}\qquad La bemol Mayor \hfill\null\break
+            \upchord{\Bflat}\quad\quad Si bemol Mayor \hfill
+            \upchord{\BflatD}Si bemol Mayor bajo D \hfill\null\break
+            \upchord{\Fseven}\quad Fa S\'eptima \hfill
+            \upchord{\BflatF}\quad Si bemol Mayor bajo F \hfill\null\break
+            \upchord{\Bflatseven}\quad\quad Si bemol Mayor S\'eptima \hfill\null\break
+            \upchord{\AflatEflat}\qquad La bemol Mayor bajo Eb \hfill
+            \upchord{\Fm}\quad Fa menor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -587,10 +599,10 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\F}{\qquad Fa} Mayor \hfill
-            \upchord{\C}{\qquad Do} Mayor \hfill\null\break
-            \upchord{\Bflat}{\qquad Si bemol} Mayor \hfill
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bflat}\qquad Si bemol Mayor \hfill
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -648,13 +660,13 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\Aseven}{\qquad La} Mayor S\'eptima \hfill
-            \upchord{\Bm}{\qquad Si} Menor \hfill\null\break
-            \upchord{\Fsm}{\qquad Fa sostenido} Menor \hfill
-            \upchord{\E}{\qquad Mi} Mayor \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Aseven}\qquad La Mayor S\'eptima \hfill
+            \upchord{\Bm}\qquad Si Menor \hfill\null\break
+            \upchord{\Fsm}\qquad Fa sostenido Menor \hfill
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -732,19 +744,19 @@ al recién nacido Rey
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:\break
-            \upchord{\D}{\qquad Re} Mayor \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill
-            \upchord{\GD}{\qquad Sol} Mayor bajo D \hfill\null\break
-            \upchord{\DA}{\qquad Re} Mayor bajo A \hfill
-            \upchord{\Dseven}{\qquad Re} Mayor S\'eptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\GD}\qquad Sol Mayor bajo D \hfill\null\break
+            \upchord{\DA}\qquad Re Mayor bajo A \hfill
+            \upchord{\Dseven}\qquad Re Mayor S\'eptima \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
 
     \ifChordBk
         \include{Pads}
-        \theendnotes
+        \pdfbookmark[0]{Notas}{notas}\theendnotes
         \include{Acordes}
         \include{navidadAdx}
         \include{navidadKdx}

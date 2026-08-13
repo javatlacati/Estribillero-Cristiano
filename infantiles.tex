@@ -10,12 +10,24 @@
 %\usepackage{fontspec} %xelatex
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
-\usepackage{mypiano}
+\usepackage{piano}
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
 \usepackage{imakeidx}
-\usepackage[pdfpagelabels,hyperindex,unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
-    breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    pdfpagelabels,
+    hyperindex,
+    unicode=true,
+    pdfusetitle,
+    bookmarks=true,
+    bookmarksnumbered=false,
+    bookmarksopen=true,
+    breaklinks=false,
+    pdfborder={0 0 1},
+    backref=false,
+    colorlinks=true
+}
 \usepackage[chordbk]{songbook} %% Words & Chords edition. Estribillero Musicos
 \usepackage{endnotes}
 %\usepackage{biblatex}
@@ -250,10 +262,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\C}{\qquad Do} Mayor  \hfill
-            \upchord{\Gseven}{\qquad Sol} Mayor S\'eptima \hfill\null\break
-            \upchord{\Cseven}{\qquad Do} Mayor s\'eptima \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor  \hfill
+            \upchord{\Gseven}\qquad Sol Mayor S\'eptima \hfill\null\break
+            \upchord{\Cseven}\qquad Do Mayor s\'eptima \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -294,10 +306,10 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\C}{\qquad Do} Mayor  \hfill
-            \upchord{\G}{\qquad Sol} Mayor \hfill\null\break
-            \upchord{\Csmseven}{Do Sostenido} Menor S\'eptima \hfill
-            \upchord{\F}{\qquad Fa} Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor  \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\Csmseven}Do Sostenido Menor S\'eptima \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
@@ -360,16 +372,16 @@
         \ifChordBk
         \begin{SBOpGroup}
             Acordes:
-            \upchord{\E}{\qquad Mi} Mayor \hfill
-            \upchord{\Bseven}{\qquad Si} S\'eptima \hfill\null\break
-            \upchord{\A}{\qquad La} Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill
+            \upchord{\Bseven}\qquad Si S\'eptima \hfill\null\break
+            \upchord{\A}\qquad La Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}
 
     \ifChordBk
         \include{Pads}
-        \theendnotes
+        \pdfbookmark[0]{Notas}{notas}\theendnotes
         \include{Acordes}
         \include{infantilesAdx}
         \include{infantilesKdx}

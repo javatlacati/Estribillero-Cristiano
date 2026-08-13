@@ -10,15 +10,26 @@
 %\usepackage{fontspec} %xelatex
 \usepackage[utf8]{inputenc}
 \usepackage{babel}
-\usepackage{mypiano}
+\usepackage{piano}
 \usepackage{gchords}
 \usepackage{latexsym,fancyhdr}
 \usepackage{imakeidx}
-\usepackage[pdfpagelabels,hyperindex,unicode=true,pdfusetitle, bookmarks=true,bookmarksnumbered=false,bookmarksopen=true,
-    breaklinks=false,pdfborder={0 0 1},backref=false,colorlinks=true]{hyperref}
+\usepackage{hyperref}
+\hypersetup{
+    pdfpagelabels,
+    hyperindex,
+    unicode=true,
+    pdfusetitle,
+    bookmarks=true,
+    bookmarksnumbered=false,
+    bookmarksopen=true,
+    breaklinks=false,
+    pdfborder={0 0 1},
+    backref=false,
+    colorlinks=true
+}
 \usepackage[chordbk]{songbook} %% Words & Chords edition. Estribillero Musicos
 \usepackage{endnotes}
-%\usepackage{biblatex}
 \usepackage{tikz}
 %%\usepackage[compactallsongs,chordbk]{songbook}    %% Words & Chords edition.
 %\usepackage[wordbk]{songbook}                 %% Words Only edition. Estribillero publicable
@@ -1509,7 +1520,7 @@
 
                 todo da\Ch{E}{ría} no importa\Ch{B}{ría}
 
-                lo que \Ch{F\##m}{ten}ga que pasar
+                lo que \Ch{F\#m}{ten}ga que pasar
 
                 lo que \Ch{B}{ten}ga que espe\Ch{A}{rar}
             \end{SBOpGroup}
@@ -1568,7 +1579,7 @@
     \end{song}
 
     \begin{song}{Yo Me Rindo a Él}{D}
-        {} %copyright \SBPubDom
+        {1996} %copyright \SBPubDom
         {Winfield S. Weeden}
         {} %pasaje
         {}
@@ -1576,7 +1587,6 @@
         \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1wohJA29EsoRgndrml9EjF}{Escuchar}\mbox{}\hfill}
         \fi
 
-        % 1996
         \FLineIdx{Todo a Cristo, yo me entrego}
         \FLineIdx{Salvador a Tí me rindo}
 
@@ -1674,7 +1684,7 @@
 
     \ifChordBk
         \include{Pads}
-        \theendnotes
+        \pdfbookmark[0]{Notas}{notas}\theendnotes
         \include{Acordes}
         \include{consagracionAdx}
         \include{consagracionKdx}

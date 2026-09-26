@@ -1,0 +1,198 @@
+<toolSet name="External Tools">
+  <tool name="key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o Estribillero.kdx ./auxil/Estribillero.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="author index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o Estribillero.adx ./auxil/Estribillero.aIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o Estribillero.tdx ./auxil/Estribillero.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="coritos key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o coritos.kdx ./auxil/coritos.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="coritos author index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o coritos.adx ./auxil/coritos.aIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="coritos title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o coritos.tdx ./auxil/coritos.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="poeticos key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o poeticos.kdx ./auxil/poeticos.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="poeticos author index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o poeticos.adx ./auxil/poeticos.aIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="poeticos title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o poeticos.tdx ./auxil/poeticos.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="invitacion key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o invitacion.kdx ./auxil/invitacion.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="invitacion author index " showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o invitacion.adx ./auxil/invitacion.aIdx " />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero " />
+    </exec>
+  </tool>
+  <tool name="invitacion title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o invitacion.tdx ./auxil/invitacion.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="navidad key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o navidad.kdx ./auxil/navidad.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="navidad author index " showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o navidad.adx ./auxil/navidad.aIdx " />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero " />
+    </exec>
+  </tool>
+  <tool name="navidad title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o navidad.tdx ./auxil/navidad.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="infantiles key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o infantiles.kdx ./auxil/infantiles.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="infantiles author index " showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o infantiles.adx ./auxil/infantiles.aIdx " />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero " />
+    </exec>
+  </tool>
+  <tool name="infantiles title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o infantiles.tdx ./auxil/infantiles.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="consagracion key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o consagracion.kdx ./auxil/consagracion.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="consagracion author index " showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o consagracion.adx ./auxil/consagracion.aIdx " />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero " />
+    </exec>
+  </tool>
+  <tool name="consagracion title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o consagracion.tdx ./auxil/consagracion.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="coritosmayores key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o coritosmayores.kdx ./auxil/coritosmayores.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="coritosmayores author index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o coritosmayores.adx ./auxil/coritosmayores.aIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="coritosmayores title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o coritosmayores.tdx ./auxil/coritosmayores.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="estroficos key index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o estroficos.kdx ./auxil/estroficos.kIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="estroficos author index " showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o estroficos.adx ./auxil/estroficos.aIdx " />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero " />
+    </exec>
+  </tool>
+  <tool name="estroficos title index" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="makeindex" />
+      <option name="PARAMETERS" value="-s songbook.ist -o estroficos.tdx ./auxil/estroficos.tIdx" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+  <tool name="lillypond book coritos" description="lilypond-book --pdf coritos.pdftex" showInMainMenu="false" showInEditor="false" showInProject="false" showInSearchPopup="false" disabled="false" useConsole="true" showConsoleOnStdOut="false" showConsoleOnStdErr="false" synchronizeAfterRun="true">
+    <exec>
+      <option name="COMMAND" value="C:\lilypond-2.26.0\bin\python.exe" />
+      <option name="PARAMETERS" value="C:/lilypond-2.26.0/bin/lilypond-book.py --format=latex --pdf coritos.pdftex" />
+      <option name="WORKING_DIRECTORY" value="C:/Estribillero" />
+    </exec>
+  </tool>
+</toolSet>

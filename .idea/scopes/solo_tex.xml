@@ -1,0 +1,3 @@
+<component name="DependencyValidationManager">
+  <scope name="solo tex" pattern="file:*.pdftex||file:*.tex||file:*.ly" />
+</component>

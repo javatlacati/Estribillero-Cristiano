@@ -392,33 +392,8 @@
         \ifChordBk
         \begin{lilypond}
             \include "solos/asi-como-David-danzaba.ly"
-
-            \score {
-            <<
-              \chords{\acor}
-              \mus
-              \new NoteNames {
-                    \set printNotesLanguage = "english"
-                    \mus
-              }
-              \new TabStaff \mus
-              \new Staff{\acor}
-            >>
-              \layout {
-                \context {
-                  \NoteNames
-
-                  % Capitalize the note name strings automatically
-                  noteNameFunction = #(lambda args
-                    #{
-                      \markup \with-string-transformer
-                        #(lambda (layout props str) (string-upcase str))
-                        #(apply note-name-markup args)
-                    #})
-                }
-              }
-              \midi {}
-            }
+            \include "solos/score-template.ly"
+            \scor
         \end{lilypond}
         \fi
 
@@ -1374,8 +1349,13 @@
         \begin{SBExtraKeys}{
             \STitle{El Señor es mi Rey}{Am}
 
-            \SBMargNote{Brass:\break E E EDB C| CD ED C| E C B| D| CD ED C| E| F G| CC CB A| C| BA G| E4}
-            \SBIntro{\Ch{Am}{}~\Ch{F}{}~\Ch{G}{}~\Ch{Em}{}\Ch{Am}{}~\Ch{F}{}~\Ch{G}{}~\Ch{Dm}{}}
+            \ifChordBk
+            \begin{lilypond}
+                \include "solos/el-senior-es-mi-rey.ly"
+                \include "solos/score-template.ly"
+                \scor
+            \end{lilypond}
+            \fi
 
             \begin{SBOpGroup}
                 El Señor es mi \Ch{F/D}{Rey},\Ch{G/E}{} \Ch{F}{mi} to\Ch{G}{do}\Ch{G\#+7/E}{}

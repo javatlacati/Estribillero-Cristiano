@@ -385,8 +385,41 @@
         %  c'4 d' e' f' g'2 g'
         %\end{lilypond}
 
+        %\ifChordBk
+        %\lilypondfile[noindent,quote]{solos/asi-como-David-danzaba.ly}
+        %\fi
+
         \ifChordBk
-        \lilypondfile[noindent,quote]{solos/asi-como-David-danzaba.ly}
+        \begin{lilypond}
+            \include "solos/asi-como-David-danzaba.ly"
+
+            \score {
+            <<
+              \chords{\acor}
+              \mus
+              \new NoteNames {
+                    \set printNotesLanguage = "english"
+                    \mus
+              }
+              \new TabStaff \mus
+              \new Staff{\acor}
+            >>
+              \layout {
+                \context {
+                  \NoteNames
+
+                  % Capitalize the note name strings automatically
+                  noteNameFunction = #(lambda args
+                    #{
+                      \markup \with-string-transformer
+                        #(lambda (layout props str) (string-upcase str))
+                        #(apply note-name-markup args)
+                    #})
+                }
+              }
+              \midi {}
+            }
+        \end{lilypond}
         \fi
 
         \vskip 20pt
@@ -440,7 +473,50 @@
                 \Ch{F\#}{Gran}des cosas ha hecho el Señor
             \end{SBOpGroup}
 
-            \SBMargNote{metales:\break F\#F\#F\#\break F\#ED E F\#GF\#\break F\#F\#E\break EDEDC\#\break EG EDC\#E\break EGF\#}
+            \ifChordBk
+            \begin{lilypond}
+                \include "solos/asi-como-David-danzaba.ly"
+
+                \score {
+            <<
+                  \chords{\transpose a b {\acor}}
+                  \new Staff {
+                    \transpose a b {
+                      \key b \minor
+                      \mus
+                    }
+                  }
+                  \new NoteNames {
+                      \set printNotesLanguage = "english"
+                      \transpose a b {
+                        \mus
+                      }
+                  }
+                  \new TabStaff {
+                    \transpose a b {
+                      \mus
+                    }
+                  }
+
+            >>
+                  \layout {
+                        \context {
+                        \NoteNames
+
+                        % Capitalize the note name strings automatically
+                        noteNameFunction = #(lambda args
+                          #{
+                            \markup \with-string-transformer
+                              #(lambda (layout props str) (string-upcase str))
+                              #(apply note-name-markup args)
+                          #})
+                      }
+                  }
+                  \midi {}
+                }
+            \end{lilypond}
+            \fi
+
             \vskip 20pt
             \begin{SBOpGroup}
                 Me goza\Ch{Bm}{ré}, me gozaré, me gozaré,

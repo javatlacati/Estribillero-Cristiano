@@ -11,3 +11,5 @@
 *.toc
 *.tdx
 *.kdx
+tmp*
+snippet-*

@@ -381,7 +381,14 @@
             \Ch{E}{Gran}des cosas ha hecho el Señor
         \end{SBOpGroup}
 
-        \SBMargNote{metales:\break EEE\break EDC D EGE\break EED\break DCDCB\break DF DCBD\break DFE}
+        %\begin{lilypond}[quote,fragment,staffsize=20]
+        %  c'4 d' e' f' g'2 g'
+        %\end{lilypond}
+
+        \ifChordBk
+        \lilypondfile[noindent,quote]{solos/asi-como-David-danzaba.ly}
+        \fi
+
         \vskip 20pt
         \begin{SBOpGroup}
             Me goza\Ch{Am}{ré}, me gozaré, me gozaré,
@@ -520,6 +527,87 @@
             Acordes:\break
             \upchord{\Am}\qquad La Menor \hfill
             \upchord{\Eseven}\qquad Mi S\'eptima \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Como David}{Am}
+        {2025} %copyright \SBPubDom
+        {Montesanto}
+        {} %pasaje
+        {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4f7OAbmlCzlJjCXALIg9Uh}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBOpGroup}
+            Alza\Ch{Am}{ré} mis ojos a los \Ch{Em}{mon}tes
+
+            ¿De \Ch{E}{dón}de vendrá mi so\Ch{F}{co}rro?
+
+            Mi so\Ch{Am}{co}rro viene de Jeho\Ch{Em}{vá}
+
+            Que \Ch{E}{hi}zo los cielos y la \Ch{F}{tie}rra
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            No se dormi\Ch{F}{rá}
+
+            El que \Ch{G}{guar}da mi alma
+
+            Por \Ch{E}{siem}pre me defende\Ch{Am}{rá}\Ch{G}{}
+
+            No se cansa\Ch{F}{rá}
+
+            El que \Ch{G}{guar}da mi alma
+
+            De \Ch{E}{día} y de noche
+
+            Desde ahora y para \Ch{F}{siem}\Ch{E7}{pre}
+
+            A\Ch{Am}{mén}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Haré a\Ch{Am}{sí}, como Da\Ch{C}{vid}
+
+            Me rei\Ch{Dm}{ré} del gigante que \Ch{E}{ven}ga contra mí
+
+            Mi ala\Ch{Am}{ban}za será mi \Ch{C}{ar}ma
+
+            Cuando le\Ch{Dm}{van}to mis manos Él \Ch{E}{ga}na mis batallas
+
+            Y \Ch{F}{co}mo David escri\Ch{E}{bió} este salmo
+
+            A\Ch{F}{ho}ra lo tomo y lo \Ch{E}{vuel}vo mi \Ch{F}{can}to\Ch{E}{}
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Mientras yo a\Ch{Am}{la}bo, Él pe\Ch{Am}{lea} mis ba\Ch{Am}{ta}llas
+
+            Mientras yo a\Ch{Am}{la}bo, Él pe\Ch{Am}{lea} mis ba\Ch{Am}{ta}llas
+
+            No es con mis \Ch{Am}{fuer}zas que \Ch{Am}{yo} vence\Ch{Am}{ré}
+
+            Es por Su Es\Ch{F}{pí}ritu que \Ch{E}{tie}ne Po\Ch{Am}{der}.///
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\Dm}\qquad Re Menor \hfill\null\break
+            \upchord{\Eseven}\qquad Mi S\'eptima \hfill
+            \upchord{\C}\qquad Do Mayor \hfill\null\break
+            \upchord{\Bmsevenbfive}\qquad Si Menor semidisminuido \hfill
+            \upchord{\Amseven}\qquad La Menor S\'eptima \hfill\null\break
+            \upchord{\Gmseven}\qquad Sol Menor S\'eptima \hfill
+            \upchord{\Csusthirteen}\qquad Do 13 suspendida cuarta \hfill\null\break
+            \upchord{\FMaj}\qquad Fa Maj 7 \hfill
+            \upchord{\Dmseven}Re menor s\'eptima \hfill\null\break
+            \upchord{\Gsus}\qquad Sol Mayor sus4 \hfill
         \end{SBOpGroup}
         \fi
     \end{song}

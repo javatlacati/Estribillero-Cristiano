@@ -1,25 +1,19 @@
 <component name="ProjectRunConfigurationManager">
   <configuration default="false" name="pdf poeticos" type="LATEX_RUN_CONFIGURATION" factoryName="LaTeX configuration factory">
-    <texify>
-      <compiler>PDFLATEX</compiler>
-      <compiler-path />
-      <pdf-viewer>none</pdf-viewer>
-      <require-focus>true</require-focus>
-      <viewer-command />
-      <compiler-arguments />
-      <envs />
-      <expand-macros-in-environment-variables>false</expand-macros-in-environment-variables>
-      <before-run-command />
-      <main-file>$PROJECT_DIR$/poeticos.tex</main-file>
-      <output-path>$PROJECT_DIR$/out</output-path>
-      <auxil-path>$PROJECT_DIR$/auxil</auxil-path>
-      <compile-twice>false</compile-twice>
-      <output-format>PDF</output-format>
-      <latex-distribution>MIKTEX</latex-distribution>
-      <has-been-run>true</has-been-run>
-      <bib-run-config>[]</bib-run-config>
-      <makeindex-run-config>[]</makeindex-run-config>
-    </texify>
+    <option name="auxilPath" value="C:\Estribillero\auxil" />
+    <option name="beforeRunCode" />
+    <option name="latexDistribution" value="MiKTeX" />
+    <option name="mainFilePath" value="$PROJECT_DIR$/poeticos.tex" />
+    <option name="outputPath" value="C:\Estribillero\out" />
+    <steps>
+      <latexCompile id="9687ed55-f50e-4c56-9f69-80dfd0e0fa66" />
+      <latexCompile id="887640b8-284c-42a6-b379-0cacae4a5537" />
+      <pdfViewer id="1478480c-519a-4e66-ba2c-0248788b0059">
+        <selectedOptions>
+          <option name="viewer.requireFocus" />
+        </selectedOptions>
+      </pdfViewer>
+    </steps>
     <method v="2">
       <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_poeticos key index" />
       <option name="ToolBeforeRunTask" enabled="true" actionId="Tool_External Tools_poeticos author index" />

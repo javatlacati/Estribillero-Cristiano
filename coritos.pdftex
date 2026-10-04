@@ -3759,7 +3759,7 @@
     \end{song}
 
     \begin{song}{Remolineando}{Cm}
-    {} %copyright \SBPubDom
+    {1996} %copyright \SBPubDom
     {Fernel Monroy}
     {2 Samuel 6:22} %pasaje
     {}
@@ -3767,14 +3767,15 @@
         \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1NmECxDikubj4Hhu1dbrhl}{Escuchar}\mbox{}\hfill}
         \fi
 
-        %1996
         \FLineIdx{Hay muchas formas de alabar Tu nombre}
 
+        \ifChordBk
         \begin{lilypond}
             \include "solos/remolineando.ly"
             \include "solos/score-template.ly"
             \scor
         \end{lilypond}
+        \fi
 
         \begin{SBOpGroup}
             \Ch{Cm}{Hay} muchas formas de alabar Tu nombre
@@ -4306,7 +4307,7 @@
     \end{song}
 
     \begin{song}{Voy a perder la compostura}{Am}
-        {} %copyright \SBPubDom
+        {2023} %copyright \SBPubDom
         {Billy Bunster}
         {} %pasaje
         {} %\NotCCLIed
@@ -4314,13 +4315,49 @@
         \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/3ehjdUSI5cKr2gsEbhrj2M}{Escuchar}\mbox{}\hfill}
         \fi
 
-        %2023
         %2017 https://open.spotify.com/intl-es/track/68hiAfKaEa45wtTiH3Bmcf?si=1093c0ca0a0f441c
 
         \SBIntro{Am G F E}
-        \SBMargNote{Violín:\break |E|G\#A B|C BA|G\#FE|E5|C BA B|CBA D| }
-        \SBMargNote{Brass:\break |CB C DCB|F EDE FED|E5 F5D5 E5 F5D5 E5| }
-        \SBMargNote{Violín:\break |Ab AAbA BAB|C D5 CBA BAAb |}
+
+        \ifChordBk
+        \begin{lilypond}
+            \include "solos/voy-a-perder-la-compostura.ly"
+            \score {
+              <<
+
+                \chords{\acor}
+                \new Staff \with { instrumentName = "Violin" }{\set Staff.midiInstrument = #"violin" \mus }
+                \new NoteNames {
+                      \set printNotesLanguage = "english"
+                      \mus
+                }
+                \new TabStaff{
+                 % Forzar que el traste mínimo sea el 5
+                 \set TabStaff.minimumFret = #5
+                 % Restringir la búsqueda a las primeras cuerdas si es necesario (opcional)
+                 \set TabStaff.restrainOpenStrings = ##t
+                 \mus
+                }
+                \new Staff{\acor}
+                \new TabStaff \transpose c c, {\acor}
+              >>
+              \layout {
+                \context {
+                  \NoteNames
+
+                  % Capitalize the note name strings automatically
+                  noteNameFunction = #(lambda args
+                    #{
+                      \markup \with-string-transformer
+                        #(lambda (layout props str) (string-upcase str))
+                        #(apply note-name-markup args)
+                    #})
+                }
+              }
+              \midi {}
+            }
+        \end{lilypond}
+        \fi
 
         \begin{SBOpGroup}
             \Ch{Am}{Quién} lo di\Ch{G}{ría} que \Ch{F}{yo} danza\Ch{E}{ría} en tu casa Señor

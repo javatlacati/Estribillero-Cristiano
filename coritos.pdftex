@@ -4394,11 +4394,45 @@
         \begin{SBExtraKeys}{
             \STitle{Voy a perder la compostura}{Cm}
 
-            \SBMargNote{Violín:\break |G|B C D|D\# DC|BAbG|G5|D\#5 D5C5 D|D\#DC F|}
-            \SBMargNote{Brass:\break |D\#D D\# FD\#D|Ab GFG AbGF|G5 Ab5F5 G5 Ab5F5 G5| }
-            \SBMargNote{Violín:\break |B CBC DCD|D\# F5 D\#DC DCB |}
+            \ifChordBk
+                    \begin{lilypond}
+                        \include "solos/voy-a-perder-la-compostura.ly"
+                        \score {
+                          <<
 
-            \SBIntro{Cm Bb Ab G}
+                            \chords{\transpose a c {\acor}}
+                            \new Staff \with { instrumentName = "Violin" }{\set Staff.midiInstrument = #"violin" \transpose a c {\mus} }
+                            \new NoteNames {
+                                  \set printNotesLanguage = "english"
+                                  \mus
+                            }
+                            \new TabStaff{
+                             % Forzar que el traste mínimo sea el 5
+                             \set TabStaff.minimumFret = #5
+                             % Restringir la búsqueda a las primeras cuerdas si es necesario (opcional)
+                             \set TabStaff.restrainOpenStrings = ##t
+                             \transpose a c {\mus}
+                            }
+                            \new Staff{\transpose a c {\acor}}
+                            \new TabStaff \transpose a c, {\acor}
+                          >>
+                          \layout {
+                            \context {
+                              \NoteNames
+
+                              % Capitalize the note name strings automatically
+                              noteNameFunction = #(lambda args
+                                #{
+                                  \markup \with-string-transformer
+                                    #(lambda (layout props str) (string-upcase str))
+                                    #(apply note-name-markup args)
+                                #})
+                            }
+                          }
+                          \midi {}
+                        }
+                    \end{lilypond}
+                    \fi
 
             \begin{SBOpGroup}
                 \Ch{Cm}{Quién} lo di\Ch{Bb}{ría} que \Ch{Ab}{yo} danza\Ch{G}{ría} en tu casa Señor

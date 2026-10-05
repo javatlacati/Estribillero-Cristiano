@@ -1500,11 +1500,11 @@
     \end{song}
 
     \begin{song}{Enemigos de la fe}{Am}
-        {} %copyright \SBPubDom
+        {2014} %copyright \SBPubDom
         {Mario Rivera III}
         {Salmo 73:17-26} %pasaje
         {}
-        %2014
+
         \ifChordBk
         \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4QI0nTdHILexHJBnbq4wMI}{Escuchar}\mbox{}\hfill}
         \fi

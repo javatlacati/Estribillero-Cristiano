@@ -2738,7 +2738,7 @@
         \fi
     \end{song}
 
-    \begin{song}{Lev\'antateSe\~nor}{Am}
+    \begin{song}{Lev\'antate Se\~nor}{Am}
         {} %copyright \SBPubDom
         {Juan Carlos Alvarado}
         {Salmo 68:3} %pasaje
@@ -2827,6 +2827,82 @@
             \upchord{\E}\qquad Mi Mayor \hfill
             \upchord{\Bm}\qquad Si Menor \hfill\null\break
             \upchord{\A}\qquad La Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
+    \begin{song}{Lev\'antate y Sálvame}{Am}
+        {} %copyright \SBPubDom
+        {Marcos Witt}
+        {Salmo 3} %pasaje
+        {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7t5Fm2tzWPuoeofQLXZqW3}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Aunque un ejercito acampe contra mi}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{Aun}que un e\Ch{F}{jér}cito
+
+            acampe contra \Ch{C}{mí} no teme\Ch{G}{ré}
+
+            \Ch{Am}{Aun}que haya guerra \Ch{F}{hoy}
+
+            alrededor de \Ch{C}{mí}, en Ti comfia\Ch{G}{ré}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            No teme\Ch{F}{ré} a \Ch{G}{diez} mil \Ch{Am}{gen}tes
+
+            que hagan \Ch{F}{si}tio contra \Ch{C}{mí}\Ch{G}{}
+
+            aunque la \Ch{F}{tie}rra \Ch{G}{se} estre\Ch{G}{mez}ca
+
+            mi salva\Ch{F}{ción} esta en \Ch{G}{Ti}
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            Porque \Ch{F}{Tu} e\Ch{G}{res} mis es\Ch{Am}{cu}do
+
+            \Ch{F}{Tu} mi \Ch{G}{for}ta\Ch{Am}{le}za
+
+            \Ch{F}{Tu} e\Ch{G}{res} mi \Ch{Am}{glo}ria
+
+            quien le\Ch{F}{van}ta \Ch{C}{mi} ca\Ch{G}{be}za
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{Aun}que aflijido es\Ch{F}{té}
+
+            Tu pensaras en \Ch{C}{mí}, no teme\Ch{G}{ré}
+
+            \Ch{Am}{aun}que mi cora\Ch{F}{zón}
+
+            estremecido es\Ch{C}{té}, en Ti confia\Ch{G}{ré}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            No teme\Ch{F}{ré} a \Ch{G}{nin}gún \Ch{Am}{hom}bre,
+
+            que se \Ch{F}{jun}te contra \Ch{C}{mí}\Ch{G}{}
+
+            Tu eres mi \Ch{F}{Dios} mi \Ch{G}{for}ta\Ch{Am}{le}za
+
+            mi salva\Ch{F}{ción} esta en \Ch{G}{Ti}
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Le\Ch{Am}{ván}ta\Ch{F}{te} y \Ch{C}{sál}va\Ch{G}{me}////
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\Am}\qquad La Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\C}\qquad Do Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill\null\break
         \end{SBOpGroup}
         \fi
     \end{song}

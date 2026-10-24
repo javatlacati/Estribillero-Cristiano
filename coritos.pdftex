@@ -232,6 +232,47 @@
 %%%
 % Songbook begins.
 %%%
+    \begin{song}{Abrió el mar}{Gm}
+        {2020} %año
+        {Ebenezer} %autor
+        {} %pasaje
+        {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/7dfM0tEUNUNvqddMNvxH8A}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \SBIntro{G-G-A-A\#  F-F-G-A
+           G (x3) - A\#-A(x2)
+           G(x3) D-C-A\#
+           F(x3)-C-A\#-A}
+
+        \begin{SBOpGroup}
+            \Ch{Gm}{Ab}rió el mar
+
+            \Ch{Eb}{Ab}rió el Jordán
+
+            \Ch{F}{Y} a sus enemigos de\Ch{Gm}{stru}yó//
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            \Ch{Am}{Ab}rió el mar
+
+            \Ch{F}{Ab}rió el Jordán
+
+            \Ch{G}{Y} a sus enemigos de\Ch{Am}{stru}yó
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\Gm}\qquad Sol Menor \hfill
+            \upchord{\Eflat}\qquad Mi Bemol Mayor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill
+            \upchord{\G}\qquad Sol Mayor \hfill
+            \upchord{\Am}\qquad La Menor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
 
     \begin{song}{Adonai}{Em}
     {1991} %copyright \SBPubDom

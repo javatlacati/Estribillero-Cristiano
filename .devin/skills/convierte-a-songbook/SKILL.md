@@ -140,3 +140,5 @@ perdido y Él me halló.
 * at the chords listing for chords with bass transposed instead of writing \CslashE write \CE
 * before the chords listing, instead of writing "\Ch{Fsharpm}{eter}na" write "\Ch{F\#m}{eter}na"
 * at the chords listing instead of writing "\upchord{\F\#m}\qquad Fa Sostenido Menor \hfill" write "\upchord{\Fsm}\qquad Fa Sostenido Menor \hfill"
+* at the chords listing instead of writing "\upchord{\Eb}\qquad Mi Bemol Mayor \hfill" write "\upchord{\Eflat}\qquad Mi Bemol Mayor \hfill"
+* es poco común que haya más de un coro incluso hay cantos que no tienen coro

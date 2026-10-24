@@ -2638,6 +2638,69 @@
         \fi
     \end{song}
 
+    \begin{song}{Jehová Gibbor}{Gm}
+        {2020} %año
+        {Ebenezer} %autor
+        {} %pasaje
+        {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/1TJFtzvQCqpfKnkxqbzk61}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \begin{SBChorus}
+            \Ch{Gm}{A} la presencia de \Ch{F}{Je}hová tiembla la tierra
+
+            a la \Ch{Eb}{pre}sencia del \Ch{D}{Dios} de \Ch{Eb}{Ja}\Ch{D}{cob}//
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            ¿Qué \Ch{D}{tu}viste, oh \Ch{Eb}{mar} que huíste?
+
+            \Ch{Cm}{Tú}, oh \Ch{D}{Jor}\Ch{Eb}{dán} que te \Ch{D}{vol}\Ch{Cm}{vis}\Ch{D}{te} a\Ch{Eb}{trás}//
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Él \Ch{D}{con}virtió la \Ch{Eb}{pe}ña en estanque de \Ch{Cm}{a}gua,
+
+            de \Ch{D}{a}gua, de \Ch{Eb}{a}gua \Ch{Cm}{vi}\Ch{D}{va}//
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y a\Ch{D}{ho}ra \Ch{Eb}{sal}ta, a\Ch{Cm}{ho}ra salta, a\Ch{D}{ho}ra salta
+
+            \Ch{Eb}{pa}ra tu \Ch{D}{Dios}//
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y a\Ch{D}{ho}ra \Ch{Eb}{gri}ta, a\Ch{Cm}{ho}ra grita, a\Ch{D}{ho}ra grita
+
+            \Ch{Eb}{pa}ra tu \Ch{D}{Dios}//
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y a\Ch{D}{ho}ra \Ch{Eb}{dan}za, a\Ch{Cm}{ho}ra danza, a\Ch{D}{ho}ra danza
+
+            \Ch{Eb}{pa}ra tu \Ch{D}{Dios}//
+        \end{SBOpGroup}
+
+        \begin{SBOpGroup}
+            Y a\Ch{D}{ho}ra \Ch{Eb}{cor}re, a\Ch{Cm}{ho}ra corre, a\Ch{D}{ho}ra corre
+
+            \Ch{Eb}{pa}ra tu \Ch{D}{Dios}//
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\Gm}\qquad Sol Menor \hfill
+            \upchord{\F}\qquad Fa Mayor \hfill\null\break
+            \upchord{\Eflat}\qquad Mi Bemol Mayor \hfill
+            \upchord{\D}\qquad Re Mayor \hfill\null\break
+            \upchord{\Cm}\qquad Do Menor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Jehová le dijo a Moisés}{Cm}
     {} %copyright \SBPubDom
     {}

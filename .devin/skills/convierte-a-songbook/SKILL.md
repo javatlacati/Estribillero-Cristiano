@@ -136,4 +136,7 @@ perdido y Él me halló.
 
 # considerations
 
-*if you find orthographic errors fix them
+* if you find orthographic errors fix them
+* at the chords listing for chords with bass transposed instead of writing \CslashE write \CE
+* before the chords listing, instead of writing "\Ch{Fsharpm}{eter}na" write "\Ch{F\#m}{eter}na"
+* at the chords listing instead of writing "\upchord{\F\#m}\qquad Fa Sostenido Menor \hfill" write "\upchord{\Fsm}\qquad Fa Sostenido Menor \hfill"

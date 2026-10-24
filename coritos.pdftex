@@ -2035,6 +2035,103 @@
         \fi
     \end{song}
 
+    \begin{song}{Gloria Gloria Aleluya}{A}
+        {} %año
+        {Wilfredo H} %autor
+        {} %pasaje
+        {}
+        \ifChordBk
+        \paragraph{\mbox{}\hfill\protect\href{https://open.spotify.com/intl-es/track/4k1QX5eGSSGAk5uyhZ8c0H}{Escuchar}\mbox{}\hfill}
+        \fi
+
+        \FLineIdx{Gloria a ti Jesús divino}
+
+        \begin{SBOpGroup}
+            Es el \Ch{D}{Dios} de los ejércitos en quien yo con\Ch{E}{fia}ré
+
+            Y con címbalos de gozo al Señor en\Ch{A}{sal}zaré
+
+            El de\Ch{F\#m}{spi}de los relámpagos, mas nunca te\Ch{Bm}{me}ré
+
+            Él es mi \Ch{E}{Pro}tec\Ch{A}{tor}
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            \Ch{A}{Glo}ria a ti Jesús di\Ch{A7}{vi}no, \Ch{D}{glo}ria a ti por tus bon\Ch{A}{da}\Ch{E7}{des}
+
+            \Ch{C\#m}{glo}ria \Ch{F\#m}{eter}na a tus \Ch{Bm}{pie}dades \Ch{E7}{que}rido \Ch{A}{Sal}vador.
+        \end{SBOpGroup}
+
+        \begin{SBChorus}
+            \Ch{A}{Glo}ria, \Ch{A7}{glo}ria, \Ch{D}{ale}lu\Ch{A}{ya}
+
+            \Ch{A}{Glo}ria, \Ch{A7}{glo}ria, \Ch{D}{ale}lu\Ch{A}{ya}
+
+            \Ch{F\#m}{Glo}ria, \Ch{Bm}{glo}ria, \Ch{E}{ale}lu\Ch{A}{ya}
+
+            A Cristo doy loor
+        \end{SBChorus}
+
+        \begin{SBOpGroup}
+            Con ejército no gana sus victorias el Señor
+
+            Ni con fuerza lucha en contra de luzbel, el tentador
+
+            La potencia del Espíritu, ha dicho el Dios de amor
+
+            Es lo que vencerá
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            Tú me a\Ch{A}{mas}te con ter\Ch{A7}{nu}ra \Ch{D}{y} por mí en la cruz mo\Ch{A}{ris}\Ch{E7}{te}{}
+
+            con ternura me \Ch{C\#m}{qui}sis\Ch{F\#m}{te}, \Ch{Bm}{que}rido \Ch{E7}{Sal}va\Ch{A}{dor}.
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            En Belén de Palestina, el Señor Jesús nació
+
+            Y después de treinta años en la cruenta cruz murió
+
+            Pero vive para siempre, pues la tumba ya venció
+
+            Su nombre alabaré
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            Tengo \Ch{A}{fe} sólo en tu \Ch{A7}{muer}te, pues con ella me \Ch{D}{sal}vas\Ch{A}{te} \Ch{E7}{}
+
+            \Ch{C\#m}{vi}da \Ch{F\#m}{eter}na me \Ch{Bm}{com}pras\Ch{E7}{te} \Ch{A}{que}rido \Ch{A}{Sal}vador.
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            Te ve\Ch{A}{re}mos en el \Ch{A7}{cie}lo, \Ch{D}{a} vivir contigo \Ch{A}{ire}\Ch{E7}{mos}
+
+            tu \Ch{C\#m}{pre}sencia \Ch{F\#m}{go}za\Ch{Bm}{re}mos, \Ch{E7}{que}rido \Ch{A}{Sal}vador.
+        \end{SBOpGroup}
+        \vskip 20pt
+        \begin{SBOpGroup}
+            Ten va\Ch{A}{lor}, valor cris\Ch{A7}{tia}no, Cristo es tu mejor \Ch{D}{a}mi\Ch{A}{go} \Ch{E7}{}
+
+            Él te \Ch{C\#m}{lle}vará con\Ch{F\#m}{si}go, \Ch{Bm}{Je}sús es tu \Ch{E7}{Se}\Ch{A}{ñor}
+        \end{SBOpGroup}
+
+        \ifChordBk
+        \begin{SBOpGroup}
+            Acordes:\break
+            \upchord{\A}\qquad La Mayor \hfill
+            \upchord{\Aseven}\qquad La Séptima \hfill\null\break
+            \upchord{\D}\qquad Re Mayor \hfill
+            \upchord{\Eseven}\qquad Mi Séptima \hfill\null\break
+            \upchord{\Csm}\qquad Do Sostenido Menor \hfill
+            \upchord{\Fsm}\qquad Fa Sostenido Menor \hfill\null\break
+            \upchord{\Bm}\qquad Si Menor \hfill
+            \upchord{\B}\qquad Si Mayor \hfill\null\break
+            \upchord{\E}\qquad Mi Mayor \hfill\null\break
+        \end{SBOpGroup}
+        \fi
+    \end{song}
+
     \begin{song}{Gózate delante del Señor}{Cm}
     {} %copyright \SBPubDom
     {Inspiración}
